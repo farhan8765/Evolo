@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import PotentialWorkers from './components/PotentialWorkers';
 import Partner from './components/Partner';
 import Skills from './components/Skills';
+import StudentTestimonial from './components/Student-testmonial';
 import VideoHome from './components/Video-Home';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Partner />
       <VideoHome />
       <Skills />
+      <StudentTestimonial />
     </>
   );
 }
