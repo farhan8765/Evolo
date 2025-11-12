@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const navigate = useNavigate();
 
   const NAV_ITEMS = [
-    { label: "Home", active: true },
+    { label: "Home", active: true, path: "/" },
     {
       label: "Solutions",
       hasDropdown: true,
@@ -12,17 +14,17 @@ const Navbar = () => {
         {
           name: "Adult Education",
           description: [
-            "Students",
-            "Employers",
-            "Institutions",
+            { label: "Students", path: "/student" },
+            { label: "Employers" },
+            { label: "Institutions" },
           ],
         },
         {
           name: "K-12 Mental Health (CYBHI)",
           description: [
-            "Counselors",
-            "Administrators",
-            "Districts",
+            { label: "Counselors" },
+            { label: "Administrators" },
+            { label: "Districts" },
           ],
         },
       ],
@@ -31,6 +33,12 @@ const Navbar = () => {
     { label: "About us", hasDropdown: true },
     { label: "Events", hasDropdown: true },
   ];
+
+  const handleNavigate = (path) => {
+    if (!path) return;
+    navigate(path);
+    setOpenDropdown(null);
+  };
 
   return (
 <nav className="absolute top-12 left-1/2 -translate-x-1/2 w-[92%] bg-white rounded-2xl shadow-lg z-50 px-6 py-3">      <div className="w-full max-w-6xl bg-[#f9f8ff] rounded-3xl shadow-[0px_18px_32px_rgba(0,0,0,0.08)] flex items-center justify-between px-8 py-4 font-[Inter,sans-serif]">
@@ -51,7 +59,7 @@ const Navbar = () => {
 
         {/* Menu */}
         <div className="hidden md:flex flex-1 justify-center gap-10">
-          {NAV_ITEMS.map(({ label, active, hasDropdown, subItems }) => (
+          {NAV_ITEMS.map(({ label, active, hasDropdown, subItems, path }) => (
             <div
               key={label}
               className="relative group"
@@ -61,11 +69,15 @@ const Navbar = () => {
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <button
-                onClick={() =>
-                  setOpenDropdown(
-                    openDropdown === label ? null : label
-                  )
-                }
+                onClick={() => {
+                  if (hasDropdown) {
+                    setOpenDropdown(
+                      openDropdown === label ? null : label
+                    );
+                  } else {
+                    handleNavigate(path);
+                  }
+                }}
                 className={`flex items-center gap-1 text-[16px] font-medium transition ${
                   active
                     ? "text-[#6b3dff] font-semibold"
@@ -106,14 +118,24 @@ const Navbar = () => {
                       </span>
                       {item.description ? (
                         <div className="flex flex-col gap-1">
-                          {item.description.map((desc) => (
-                            <span
-                              key={desc}
-                              className="text-[14px] text-[#5d5f66] hover:text-[#6b3dff] cursor-pointer transition"
-                            >
-                              {desc}
-                            </span>
-                          ))}
+                          {item.description.map((desc) =>
+                            desc.path ? (
+                              <button
+                                key={desc.label}
+                                onClick={() => handleNavigate(desc.path)}
+                                className="text-left text-[14px] text-[#5d5f66] hover:text-[#6b3dff] cursor-pointer transition"
+                              >
+                                {desc.label}
+                              </button>
+                            ) : (
+                              <span
+                                key={desc.label}
+                                className="text-[14px] text-[#5d5f66] cursor-default"
+                              >
+                                {desc.label}
+                              </span>
+                            )
+                          )}
                         </div>
                       ) : (
                         <span className="text-[14px] text-[#5d5f66] hover:text-[#6b3dff] cursor-pointer transition">
