@@ -15,12 +15,13 @@ const fullBleedStyle = {
 const PotentialWorkers = () => {
   return (
     <section style={fullBleedStyle} className="bg-[#eef0ff] py-16 font-[Inter,sans-serif]">
-      <div className="w-full flex flex-col items-center gap-12">
-        <h2 className="text-[36px] font-bold text-[#0f1b66] text-center w-full">
-          95% Of Employers Are Missing Out On:
-        </h2>
+      <div className="w-full max-w-[2000px] mx-auto flex flex-col items-center gap-12 px-4">
+        <h2 className="text-[36px] font-bold text-center w-full bg-gradient-to-r from-[#0f1b66] to-[#5327ff] bg-clip-text text-transparent">
+  95% Of Employers Are Missing Out On:
+</h2>
 
-        <div className="flex flex-wrap justify-center gap-20 w-full">
+
+        <div className="flex flex-wrap justify-center gap-60 w-full">
           {STATS.map(({ figure, label }) => (
             <div key={label} className="flex flex-col items-center gap-2">
               <span className="text-[48px] font-bold text-[#6b3dff]">{figure}</span>

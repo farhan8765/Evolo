@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const testimonials = [
   {
@@ -17,6 +17,13 @@ const testimonials = [
   },
   {
     id: 3,
+    quote:
+      '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.”',
+    name: 'Name Surname',
+    role: 'Position, Company name',
+  },
+  {
+    id: 4,
     quote:
       '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.”',
     name: 'Name Surname',
@@ -59,17 +66,34 @@ const TestimonialCard = ({ quote, name, role }) => (
 );
 
 const StudentTestimonial = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const cardsToShow = 2;
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => Math.max(prev - cardsToShow, 0));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) =>
+      Math.min(prev + cardsToShow, testimonials.length - cardsToShow)
+    );
+  };
+
+  const visibleTestimonials = testimonials.slice(
+    currentIndex,
+    currentIndex + cardsToShow
+  );
+
   return (
-    <section
-      style={fullBleed}
-      className="bg-[#eef0ff] py-20 font-[Inter,sans-serif]"
-    >
+    <section style={fullBleed} className="bg-[#eef0ff] py-20 font-[Inter,sans-serif]">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
+          {/* Left content */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-5xl font-semibold text-[#080a2b]">
-              Students <span className="text-[#5533ff]">Testimonials</span>
-            </h2>
+            <h2 className="text-5xl font-semibold bg-gradient-to-r from-[#080a2b] to-[#5533ff] bg-clip-text text-transparent">
+  Students Testimonials
+</h2>
+
             <p className="text-lg leading-relaxed text-[#4e4e68]">
               See how Evolo is reshaping adult education through firsthand stories from students
               who&apos;ve experienced its impact. Evolo empowers learners to reach their full
@@ -80,31 +104,41 @@ const StudentTestimonial = () => {
             </p>
           </div>
 
+          {/* Right testimonial cards */}
           <div className="grid gap-6 lg:grid-cols-2">
-            {testimonials.map((item) => (
+            {visibleTestimonials.map((item) => (
               <TestimonialCard key={item.id} {...item} />
             ))}
           </div>
         </div>
 
+        {/* Navigation */}
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
           <div className="flex gap-4">
-            {['←', '→'].map((symbol) => (
-              <button
-                key={symbol}
-                type="button"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-[#0f1b66] text-lg font-semibold text-[#0f1b66] transition hover:bg-[#0f1b66] hover:text-white"
-              >
-                {symbol}
-              </button>
-            ))}
+            <button
+              onClick={handlePrev}
+              type="button"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[#0f1b66] text-lg font-semibold text-[#0f1b66] transition hover:bg-[#0f1b66] hover:text-white"
+            >
+              ←
+            </button>
+            <button
+              onClick={handleNext}
+              type="button"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[#0f1b66] text-lg font-semibold text-[#0f1b66] transition hover:bg-[#0f1b66] hover:text-white"
+            >
+              →
+            </button>
           </div>
+
           <div className="flex gap-3">
             {[0, 1, 2, 3, 4].map((index) => (
               <span
                 key={index}
                 className={`h-2 w-2 rounded-full ${
-                  index === 1 ? 'bg-[#0f1b66]' : 'bg-[#c3c5d9]'
+                  index === Math.floor(currentIndex / cardsToShow)
+                    ? 'bg-[#0f1b66]'
+                    : 'bg-[#c3c5d9]'
                 }`}
               />
             ))}

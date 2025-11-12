@@ -37,12 +37,10 @@ const Skills = () => {
       className="bg-[#f7f7fb] py-20 font-[Inter,sans-serif]"
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-6">
-        <h2 className="text-center text-4xl font-semibold leading-snug text-[#0f1b66]">
-          Our platform helps <span className="text-[#5327ff]">Students</span>,
-          <span className="text-[#5327ff]"> Institutions</span>, and{' '}
-          <span className="text-[#5327ff]">Employers</span> through our exclusive
-          focus on Adult Schools and their Students.
-        </h2>
+        <h2 className="text-center text-4xl font-semibold leading-snug bg-gradient-to-r from-[#0f1b66] to-[#5327ff] bg-clip-text text-transparent">
+  Our platform helps Students, Institutions, and Employers through our exclusive focus on Adult Schools and their Students.
+</h2>
+
 
         <div className="grid w-full gap-8 lg:grid-cols-3">
           {audienceCards.map(({ title, subtitle }) => (
