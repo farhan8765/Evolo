@@ -4,17 +4,17 @@ const highlights = [
   {
     title: "Seamless Employer Connections",
     description:
-      "Apply for a job and start chatting with employers right away. Our in-app chat keeps you in the loop for questions, interviews, and building relationships—all in one place.",
+      "Apply for a job and start chatting with employers right away. Our in-app chat feature keeps you in the loop, making it easy to ask questions, schedule interviews, and build relationships all in one place.",
   },
   {
     title: "Empowerment Through AI",
     description:
-      "Showcase your strengths with smart profiles. Our AI helps craft standout summaries and taglines so employers remember you.",
+      "Easily create a profile that showcases your strengths and unique skills. Our AI even generates attention-grabbing taglines, helping your application make a lasting impact on employers.",
   },
   {
     title: "Built for Your Success",
     description:
-      "From education to employment, we provide the tools and guidance you need to take the first step toward your future.",
+      "We’re here to help you take the first step toward your future. With all the tools and support you need, we make your journey from education to employment seamless and successful.",
   },
 ];
 
@@ -30,9 +30,7 @@ const StudentChoose = () => {
 </h2>
 
         <p className="mt-4 text-lg text-[#5b5f77]">
-          Are you switching careers or pursuing your first job? Evolo AI matches
-          you with the right opportunities while guiding you every step of the
-          way.
+        Are you looking to switch to a new career? Our app helps you navigate the job market, providing resources and job listings tailored to your new career path. Whether you’re seeking a fresh start or looking to leverage your existing skills in a new industry, we’re here to help you succeed.
         </p>
       </div>
 

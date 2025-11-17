@@ -1,0 +1,41 @@
+import React from "react";
+
+const logos = [
+  { name: "Optum", src: "/images/ins1.png" },
+  { name: "Tarzana Treatment Centers", src: "/images/ins2.png" },
+  { name: "Adventist Health", src: "/images/ins3.png" },
+  { name: "Arosa", src: "/images/ins4.png" },
+  { name: "Bali Construction", src: "/images/ins5.png" },
+  { name: "Glen Park", src: "/images/ins6.png" },
+];
+
+const Instestmonials = () => {
+  return (
+    <section className="bg-white py-14">
+      <div className="max-w-full mx-auto px-4">
+     <h2 className="text-center text-3xl font-semibold mb-10 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+  Featured Jobs by
+</h2>
+
+        <div className="overflow-hidden relative">
+          <div className="flex gap-16 animate-logo-marquee" style={{ width: 'calc(200% + 64px)' }}>
+            {[...logos, ...logos].map((logo, index) => (
+              <div
+                key={`${logo.name}-${index}`}
+                className="flex items-center justify-center min-w-[150px] max-w-[200px]"
+              >
+                <img
+                  src={logo.src}
+                  alt={`${logo.name} logo`}
+                  className="w-full h-auto object-contain opacity-90 hover:opacity-100 transition"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Instestmonials;

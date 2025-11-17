@@ -4,25 +4,25 @@ const features = [
   {
     title: "AI Profile Builder",
     description:
-      "Craft a standout profile in a few guided steps. Our AI highlights your strengths so employers notice you faster.",
+      "Our AI-powered Profile Builder helps you create a standout profile in just a few quick steps. Tailored to highlight your unique skills, your profile card makes job applications effortless, ensuring you leave a lasting impression on employers.",
     icon: "/images/MagicWand.svg",
   },
   {
     title: "Swipe to Apply",
     description:
-      "Applying is as easy as a swipe. Browse roles, favorite the ones you love, and send an application instantly.",
+      "Job applications just got a whole lot simpler! Experience the convenience of applying for jobs with a simple swipe to the right. Say goodbye to tedious application processes and hello to seamless opportunities at your fingertips.",
     icon: "/images/hand.svg",
   },
   {
     title: "Instant Employer Chats",
     description:
-      "Jump into conversations the moment you apply. Ask questions, schedule interviews, and stay in the loop effortlessly.",
+      "Take the stress out of job hunting! Whenever you apply for a position, our app automatically initiates a conversation with the employer. Get answers to your questions, express your enthusiasm, and make a great first impression—all within the app.",
     icon: "/images/message.png",
   },
   {
     title: "Empowered Schools",
     description:
-      "Schools track student progress in real time, offering tailored support that leads to better job matches.",
+      "Schools can now track the status of student applications in real-time. This visibility allows educators to provide tailored guidance, helping students identify the best job opportunities that align with their skills and aspirations.",
     icon: "/images/Student.png",
   },
 ];

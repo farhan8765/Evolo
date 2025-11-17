@@ -5,15 +5,13 @@ export default function LastHome() {
         
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-5">
-          <p className="font-semibold text-gray-800">Tagline</p>
+          {/* <p className="font-semibold text-gray-800">Tagline</p> */}
           <h2 className="text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-[#12005E] to-[#4D04DB] bg-clip-text text-transparent">
-  Medium length section heading goes here
+ Presenting our Student App - Evolo AI
 </h2>
 
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-            ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+       Learn how Evolo AI streamlines your job search. Discover the ease of finding your dream job —just swipe, match, and succeed!
           </p>
 
           {/* App Store Buttons */}

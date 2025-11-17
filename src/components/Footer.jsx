@@ -44,18 +44,20 @@ export default function Footer() {
           {/* Middle Links Section */}
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div className="space-y-2">
-              <p>Link One</p>
-              <p>Link Two</p>
-              <p>Link Three</p>
-              <p>Link Four</p>
-              <p>Link Five</p>
+              <h1>Quick Links</h1>
+              <p>About us</p>
+              <p>Employers</p>
+              <p>Institutions</p>
+              <p>Students</p>
+              {/* <p>Link Five</p> */}
             </div>
             <div className="space-y-2">
-              <p>Link Six</p>
-              <p>Link Seven</p>
+              <br/>
+              <p>Blog</p>
+              <p>FAQS</p>
               <p>Link Eight</p>
-              <p>Link Nine</p>
-              <p>Link Ten</p>
+              <p>Accessibility</p>
+              <p>Contact Us</p>
             </div>
           </div>
 

@@ -4,31 +4,32 @@ const testimonials = [
   {
     id: 1,
     quote:
-      '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.”',
-    name: 'Name Surname',
-    role: 'Position, Company name',
+      '“Being introduced to the Evolo app today was a fantastic experience. Evolo functions like a dating app for jobs, allowing me to swipe left or right to connect with potential employers. Creating an in-depth profile made it easy for employers to find me and reach out directly. I love how Evolo facilitates connections in such a simple and effective way, making my job search both engaging and efficient!”',
+    name: 'Sarah',
+    role: 'CNA Nursing Assistant Program Student at Claremont Adult School',
   },
   {
     id: 2,
     quote:
-      '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.”',
-    name: 'Name Surname',
-    role: 'Position, Company name',
+      '“Participating in the Evolo program today was a great experience. We learned new skills, gained hands-on job experience, and had the opportunity to hear from an industry professional about the CNA and Home Care programs. Evolo also assists with résumé building, making it an invaluable tool for anyone looking to advance their career. I highly recommend it to others!" building, making it an invaluable tool for anyone looking to advance their career. I highly recommend it to others!"”',
+    name: 'David',
+    role: 'CNA Program Student at Claremont Adult School',
   },
   {
     id: 3,
     quote:
-      '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.”',
-    name: 'Name Surname',
-    role: 'Position, Company name',
+      '“Using the Evolo app today was a game-changer. It not only showed us available jobs but also provided detailed insights into each position, such as how much it pays and where its located. This level of information is incredibly helpful for planning my career path!”',
+    name: 'Katherine',
+    role: 'Student at Claremont Adult School',
   },
-  {
+   {
     id: 4,
     quote:
-      '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.”',
-    name: 'Name Surname',
-    role: 'Position, Company name',
+      '“Being introduced to the Evolo app today was a fantastic experience. Evolo functions like a dating app for jobs, allowing me to swipe left or right to connect with potential employers. Creating an in-depth profile made it easy for employers to find me and reach out directly. I love how Evolo facilitates connections in such a simple and effective way, making my job search both engaging and efficient!”',
+    name: 'Sarah',
+    role: 'CNA Nursing Assistant Program Student at Claremont Adult School',
   },
+ 
 ];
 
 const fullBleed = {
@@ -54,19 +55,35 @@ const StarRow = () => (
   </div>
 );
 
-const TestimonialCard = ({ quote, name, role }) => (
-  <article className="flex min-h-[250px] flex-col gap-4 rounded-[20px] bg-white p-8 text-[#1b1833] shadow-[0_12px_35px_rgba(15,27,102,0.08)]">
-    <StarRow />
-    <p className="text-lg leading-relaxed text-[#4b4b60]">{quote}</p>
-    <div className="mt-auto">
-      <p className="text-lg font-semibold text-[#1b1833]">{name}</p>
-      <p className="text-sm text-[#7a7b8c]">{role}</p>
-    </div>
-  </article>
-);
+const TestimonialCard = ({ quote, name, role, onReadMore }) => {
+  const maxPreviewLength = 210;
+  const isLongQuote = quote.length > maxPreviewLength;
+  const displayQuote = isLongQuote ? `${quote.slice(0, maxPreviewLength)}...` : quote;
+
+  return (
+    <article className="flex min-h-[250px] flex-col gap-4 rounded-[20px] bg-white p-8 text-[#1b1833] shadow-[0_12px_35px_rgba(15,27,102,0.08)]">
+      <StarRow />
+      <p className="text-lg leading-relaxed text-[#4b4b60]">{displayQuote}</p>
+      {isLongQuote && (
+        <button
+          type="button"
+          onClick={onReadMore}
+          className="self-start text-sm font-semibold text-[#5533ff] transition hover:text-[#3b26b1]"
+        >
+          Read more
+        </button>
+      )}
+      <div className="mt-auto">
+        <p className="text-lg font-semibold text-[#1b1833]">{name}</p>
+        <p className="text-sm text-[#7a7b8c]">{role}</p>
+      </div>
+    </article>
+  );
+};
 
 const StudentTestimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedTestimonial, setSelectedTestimonial] = useState(null);
   const cardsToShow = 2;
 
   const handlePrev = () => {
@@ -83,6 +100,14 @@ const StudentTestimonial = () => {
     currentIndex,
     currentIndex + cardsToShow
   );
+
+  const handleReadMore = (testimonial) => {
+    setSelectedTestimonial(testimonial);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedTestimonial(null);
+  };
 
   return (
     <section style={fullBleed} className="bg-[#eef0ff] py-20 font-[Inter,sans-serif]">
@@ -107,7 +132,11 @@ const StudentTestimonial = () => {
           {/* Right testimonial cards */}
           <div className="grid gap-6 lg:grid-cols-2">
             {visibleTestimonials.map((item) => (
-              <TestimonialCard key={item.id} {...item} />
+              <TestimonialCard
+                key={item.id}
+                {...item}
+                onReadMore={() => handleReadMore(item)}
+              />
             ))}
           </div>
         </div>
@@ -145,6 +174,36 @@ const StudentTestimonial = () => {
           </div>
         </div>
       </div>
+      {selectedTestimonial && (
+        <div
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/50 px-4"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) handleCloseModal();
+          }}
+        >
+          <div className="relative w-full max-w-3xl rounded-[30px] bg-white p-10 text-[#1b1833] shadow-[0_25px_60px_rgba(0,0,0,0.15)]">
+            <button
+              type="button"
+              className="absolute right-6 top-6 text-2xl text-[#999]"
+              aria-label="Close testimonial"
+              onClick={handleCloseModal}
+            >
+              ×
+            </button>
+            <StarRow />
+            <h3 className="mt-4 text-2xl font-semibold text-[#1b1833]">
+              {selectedTestimonial.name}
+            </h3>
+            <p className="text-sm text-[#7a7b8c]">
+              {selectedTestimonial.role}
+            </p>
+            <hr className="my-6 border-[#e5e7f3]" />
+            <p className="text-lg leading-relaxed text-[#4b4b60]">
+              {selectedTestimonial.quote}
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

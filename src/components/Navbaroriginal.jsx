@@ -40,7 +40,7 @@ const DropdownIcon = ({ open }) => (
   </svg>
 );
 
-const Navbar = () => {
+const Navbaroriginal = () => {
   const [openTab, setOpenTab] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -49,22 +49,25 @@ const Navbar = () => {
   const handleNavigate = (path) => {
     if (!path) return;
     navigate(path);
+    setOpenTab(null);
   };
 
   const toggleDropdown = (label) => {
     setOpenTab((prev) => (prev === label ? null : label));
   };
 
-  // Keep dropdown open if child route is active
+  const handleMouseEnter = (label, hasDropdown) => {
+    if (!hasDropdown) return;
+    setOpenTab(label);
+  };
+
+  const handleMouseLeave = (hasDropdown) => {
+    if (!hasDropdown) return;
+    setOpenTab(null);
+  };
+
   useEffect(() => {
-    NAV_TABS.forEach((tab) => {
-      if (
-        tab.subItems &&
-        tab.subItems.some((item) => item.path === location.pathname)
-      ) {
-        setOpenTab(tab.label);
-      }
-    });
+    setOpenTab(null);
   }, [location.pathname]);
 
   // Close dropdown when clicking outside
@@ -102,7 +105,12 @@ const Navbar = () => {
                 subItems.some((item) => item.path === location.pathname));
 
             return (
-              <div key={label} className="relative">
+              <div
+                key={label}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(label, !!subItems)}
+                onMouseLeave={() => handleMouseLeave(!!subItems)}
+              >
                 <div
                   onClick={() =>
                     subItems ? toggleDropdown(label) : handleNavigate(path)
@@ -139,19 +147,20 @@ const Navbar = () => {
         </div>
 
         {/* Contact */}
-        <div
+        <button
+          type="button"
           onClick={() => handleNavigate("/contact")}
-          className={`rounded-md border border-white/40 px-5 py-2 text-sm font-semibold uppercase tracking-wide cursor-pointer transition ${
+          className={`rounded-md border border-white/40 px-5 py-2 text-sm font-semibold uppercase tracking-wide transition ${
             location.pathname === "/contact"
               ? "bg-white text-[#130046]"
               : "bg-[#2B1BDD] text-white hover:bg-white hover:text-[#130046]"
           }`}
         >
           Contact
-        </div>
+        </button>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbaroriginal;

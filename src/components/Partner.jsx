@@ -21,14 +21,15 @@ export default function Partner() {
         {/* Section 1 */}
      <div className="relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-10 overflow-visible mt-6">
   <div className="md:w-1/2 space-y-4">
-    <p className="text-sm font-semibold">Tagline</p>
+    {/* <p className="text-sm font-semibold">Tagline</p> */}
     <h2 className="text-2xl md:text-3xl font-semibold">
-      Medium length section heading goes here
+      Swipe to Apply
+
     </h2>
     <p className="text-sm md:text-base leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    Job applications just got a whole lot simpler! Experience the convenience of applying for jobs with a simple swipe to the right. Say goodbye to tedious application processes and hello to seamless opportunities at your fingertips.
+
+
     </p>
   </div>
 
@@ -49,14 +50,12 @@ export default function Partner() {
 />
 
           <div className="md:w-1/2 space-y-4 md:ml-auto">
-            <p className="text-sm font-semibold">Tagline</p>
+            {/* <p className="text-sm font-semibold">Tagline</p> */}
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Medium length section heading goes here
+             Instant Communication with Employers
             </h2>
             <p className="text-sm md:text-base leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            Take the stress out of job hunting! Whenever you apply for a position, our app automatically initiates a conversation with the employer. Get answers to your questions, express your enthusiasm, and make a great first impression—all within the app.
             </p>
           </div>
         </div>
@@ -64,14 +63,12 @@ export default function Partner() {
         {/* Section 3 */}
         <div className="relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-10 overflow-visible">
           <div className="md:w-1/2 space-y-4">
-            <p className="text-sm font-semibold">Tagline</p>
+            {/* <p className="text-sm font-semibold">Tagline</p> */}
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Medium length section heading goes here
+            Unlock Opportunities At Career Events!
             </h2>
             <p className="text-sm md:text-base leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            Easily sign up and preview upcoming job fairs and career events. Be prepared to stand out and make an impression before you even walk through the door.
             </p>
           </div>
 <img
@@ -91,14 +88,12 @@ export default function Partner() {
 />
 
           <div className="md:w-1/2 space-y-4 md:ml-auto">
-            <p className="text-sm font-semibold">Tagline</p>
+            {/* <p className="text-sm font-semibold">Tagline</p> */}
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Medium length section heading goes here
+            AI-Powered Profile Builder
             </h2>
             <p className="text-sm md:text-base leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+       Evolo AI helps you build a standout profile in minutes. Showcase your skills with ease, apply for jobs effortlessly, and impress employers with custom AI-generated taglines tailored just for you.
             </p>
             <button className="bg-black text-white text-sm px-4 py-2 rounded mt-2 hover:bg-gray-900">
               Get Started
