@@ -11,12 +11,12 @@ const PLAN_DATA = {
       border: "border-transparent",
       badge: null,
       features: [
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: false },
-        { label: "300 monthly queries", available: false },
-        { label: "300 monthly queries", available: false },
+        { label: "Designed for employers with less than 10 recruits annually" },
+        { label: "Speak with up to 10 candidates per month." },
+        { label: "Set up an Employer profile and photos to showcase your company." },
+        { label: "Reach local adult area schools and become relevant on campus." },
+        { label: "Credit Card Required" },
+        { label: "$199 setup fee" },
       ],
     },
     {
@@ -28,12 +28,15 @@ const PLAN_DATA = {
       border: "border-transparent",
       badge: null,
       features: [
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
+        { label: "For employers with up to 100 recruits annually" },
+        { label: "Unlimited candidate conversations" },
+        { label: "Unlimited screening" },
+        { label: "Employer Profile and Video" },
+        { label: "Regional School Reach" },
+        { label: "Schedule Events on Campus" },
+         { label: "Credit Card Required" },
+          { label: "Automatic Job Uploads" },
+           { label: "$499 setup fee" },
       ],
     },
     {
@@ -45,12 +48,17 @@ const PLAN_DATA = {
       border: "border-[#FF8A00]",
       badge: "Best Value",
       features: [
-        { label: "10,000 monthly queries", available: true },
-        { label: "Artwork analysis 100", available: true },
-        { label: "3 days free trial", available: true },
-        { label: "Ad-free experience", available: true },
-        { label: "Premium support", available: true },
-        { label: "Premium support", available: true },
+        { label: "Designed for enterprise customers with > 100 candidates needed annually." },
+        { label: "Unlimited conversations." },
+        { label: "Unlimited screenings." },
+        { label: "Premium job listings with video." },
+        { label: "Every school presence every new school you are featured" },
+        { label: "Featured employer status." },
+          { label: "Schedule Events on Campus" },
+            { label: "Credit Card Required" },
+               { label: "Preferential Job Placements" },
+              { label: "Al tailored Job Descriptions" },
+                { label: "$999 setup fee" },
       ],
     },
   ],
@@ -59,86 +67,65 @@ const PLAN_DATA = {
       name: "Basic",
       description:
         "Gallery-Level Art Promotion Comprehensive analysis, promotion, and engagement.",
-      price: 39,
+      price: 469,
       accent: "from-[#5437FF] to-[#7B5CFF]",
       border: "border-transparent",
       badge: null,
       features: [
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: false },
-        { label: "300 monthly queries", available: false },
-        { label: "300 monthly queries", available: false },
+        { label: "Designed for employers with less than 10 recruits annually" },
+        { label: "Speak with up to 10 candidates per month." },
+        { label: "Set up an Employer profile and photos to showcase your company." },
+        { label: "Reach local adult area schools and become relevant on campus." },
+        { label: "Credit Card Required" },
+        { label: "$199 setup fee" },
       ],
     },
     {
       name: "Premium",
       description:
         "Gallery-Level Art Promotion Comprehensive analysis, promotion, and engagement.",
-      price: 79,
+      price: 999,
       accent: "from-[#5437FF] to-[#7B5CFF]",
       border: "border-transparent",
       badge: null,
       features: [
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
-        { label: "300 monthly queries", available: true },
+        { label: "For employers with up to 100 recruits annually" },
+        { label: "Unlimited candidate conversations" },
+        { label: "Unlimited screening" },
+        { label: "Employer Profile and Video" },
+        { label: "Regional School Reach" },
+        { label: "Schedule Events on Campus" },
+          { label: "Credit Card Required" },
+            { label: "Automatic Job Uploads" },
+              { label: "$499 setup fee" },
       ],
     },
     {
       name: "Enterprise",
       description:
         "Gallery-Level Art Promotion Comprehensive analysis, promotion, and engagement.",
-      price: 549,
+      price: 4999,
       accent: "from-[#FF8A00] to-[#FF5F1F]",
       border: "border-[#FF8A00]",
       badge: "Best Value",
       features: [
-        { label: "10,000 monthly queries", available: true },
-        { label: "Artwork analysis 100", available: true },
-        { label: "3 days free trial", available: true },
-        { label: "Ad-free experience", available: true },
-        { label: "Premium support", available: true },
-        { label: "Premium support", available: true },
+        { label: "Designed for enterprise customers with > 100 candidates needed annually." },
+        { label: "Unlimited conversations." },
+        { label: "Unlimited screenings." },
+        { label: "Premium job listings with video." },
+        { label: "Every school presence every new school you are featured" },
+        { label: "Featured employer status." },
+           { label: "Schedule Events on Campus" },
+              { label: "Preferential Job Placements" },
+               { label: "Al tailored Job Descriptions" },
+                { label: "$999 setup fee" },
       ],
     },
   ],
 };
 
-const TickIcon = ({ available }) => (
-  <span
-    className={`flex h-6 w-6 items-center justify-center rounded-full border ${
-      available
-        ? "border-[#3ED598] text-[#26C281]"
-        : "border-[#FF6B6B] text-[#FF5C5C]"
-    }`}
-  >
-    {available ? (
-      <svg
-        viewBox="0 0 20 20"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        className="h-3.5 w-3.5"
-      >
-        <path d="M5 10l3 3 7-7" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ) : (
-      <svg
-        viewBox="0 0 20 20"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        className="h-3.5 w-3.5"
-      >
-        <path d="M6 6l8 8M14 6l-8 8" strokeLinecap="round" />
-      </svg>
-    )}
-  </span>
+const BulletIcon = () => (
+  <span className="h-2 w-2 rounded-full bg-[#7a7f94] inline-block"></span>
 );
 
 const EmpFeatureCards = () => {
@@ -151,8 +138,8 @@ const EmpFeatureCards = () => {
         <div className="text-center">
           <h2 className="text-4xl font-bold text-[#2b1bdd]">Features Plan</h2>
           <p className="mx-auto mt-4 max-w-3xl text-base text-[#6f6f7b]">
-            We have a plan for every type of business. Try each plan for free, and
-            see the benefits in building a brand on campus.
+            We have a plan for every type of business. Try each plan for free,
+            and see the benefits in building a brand on campus.
           </p>
         </div>
 
@@ -213,25 +200,22 @@ const EmpFeatureCards = () => {
                 <div className="flex items-baseline gap-1 text-[#2f2f3a]">
                   <span className="text-4xl font-bold">${plan.price}</span>
                   <span className="text-base font-medium text-[#9a9eb8]">
-                    per {billingCycle === "monthly" ? "month" : "month (billed yearly)"}
+                    per{" "}
+                    {billingCycle === "monthly"
+                      ? "month"
+                      : "month (billed yearly)"}
                   </span>
                 </div>
               </div>
 
               <ul className="mt-6 space-y-4">
-                {plan.features.map((feature, featureIdx) => (
+                {plan.features.map((feature, i) => (
                   <li
-                    key={`${plan.name}-${featureIdx}`}
+                    key={i}
                     className="flex items-center gap-3 text-sm font-medium text-[#4a4a55]"
                   >
-                    <TickIcon available={feature.available} />
-                    <span
-                      className={
-                        feature.available ? "" : "text-[#9a9eb8] line-through"
-                      }
-                    >
-                      {feature.label}
-                    </span>
+                    <BulletIcon />
+                    <span>{feature.label}</span>
                   </li>
                 ))}
               </ul>
