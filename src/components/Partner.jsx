@@ -1,14 +1,88 @@
+import { useEffect, useRef, useState } from 'react';
+
+const SECTION_COUNT = 4;
+
 export default function Partner() {
+  const headerRef = useRef(null);
+  const blockRefs = useRef([]);
+  const [headerVisible, setHeaderVisible] = useState(false);
+  const [visibleBlocks, setVisibleBlocks] = useState(() =>
+    Array(SECTION_COUNT).fill(false)
+  );
+
+  useEffect(() => {
+    const headerNode = headerRef.current;
+    const blockNodes = blockRefs.current;
+
+    const headerObserver = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setHeaderVisible(true);
+          headerObserver.disconnect();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    if (headerNode) {
+      headerObserver.observe(headerNode);
+    }
+
+    const blockObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Number(entry.target.dataset.index);
+            setVisibleBlocks((prev) => {
+              if (prev[index]) return prev;
+              const next = [...prev];
+              next[index] = true;
+              return next;
+            });
+            blockObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    blockNodes.forEach((node) => node && blockObserver.observe(node));
+
+    return () => {
+      headerObserver.disconnect();
+      blockObserver.disconnect();
+    };
+  }, []);
+
+  const registerBlockRef = (el, index) => {
+    blockRefs.current[index] = el;
+  };
+
   return (
     <section className="bg-white text-black mb-16">
       {/* Header */}
-      <div className="max-w-6xl mx-auto text-center px-6 pt-20 pb-10">
-        <p className="text-sm font-semibold text-gray-700 mb-2">Tagline</p>
-        <h1 className="text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r from-[#12005E] to-[#4D04DB] bg-clip-text text-transparent">
+      <div ref={headerRef} className="max-w-6xl mx-auto text-center px-6 pt-20 pb-10">
+        <p
+          className={`text-sm font-semibold text-gray-700 mb-2 transition-all duration-700 ${
+            headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+          }`}
+        >
+          Tagline
+        </p>
+        <h1
+          className={`text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r from-[#12005E] to-[#4D04DB] bg-clip-text text-transparent transition-all duration-700 delay-100 ${
+            headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+          }`}
+        >
   AdultED Pro Presents Evolo AI: Your Partner in Adult Education Success
 </h1>
 
-        <p className="text-gray-600 mt-4 text-base md:text-lg">
+        <p
+          className={`text-gray-600 mt-4 text-base md:text-lg transition-all duration-700 delay-200 ${
+            headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+          }`}
+        >
           We proudly present Evolo AI, the app that empowers students to succeed while
           helping schools connect with employers. Together, we can make education more
           effective and impactful.
@@ -19,8 +93,20 @@ export default function Partner() {
       <div className="space-y-16 md:space-y-20">
 
         {/* Section 1 */}
-     <div className="relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-10 overflow-visible mt-6">
-  <div className="md:w-1/2 space-y-4">
+     <div
+  ref={(el) => registerBlockRef(el, 0)}
+  data-index="0"
+  className={`relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-10 overflow-visible mt-6 transition-all duration-700 ease-out ${
+    visibleBlocks[0] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+  }`}
+>
+  <div
+    className={`md:w-1/2 space-y-4 transition-all duration-700 ease-out ${
+      visibleBlocks[0]
+        ? 'opacity-100 translate-y-0 md:translate-x-0'
+        : 'opacity-0 translate-y-6 md:-translate-x-8'
+    }`}
+  >
     {/* <p className="text-sm font-semibold">Tagline</p> */}
     <h2 className="text-2xl md:text-3xl font-semibold">
       Swipe to Apply
@@ -36,20 +122,40 @@ export default function Partner() {
   <img
     src="/images/right.png"
     alt="App preview"
-    className="md:absolute md:-right-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] md:w-[310px] h-[290px] md:h-[430px] rotate-[1deg] drop-shadow-2xl mt-6 md:mt-0"
+    className={`md:absolute md:-right-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] md:w-[310px] h-[290px] md:h-[430px] rotate-[1deg] drop-shadow-2xl mt-6 md:mt-0 transition-all duration-700 ease-out delay-100 ${
+      visibleBlocks[0]
+        ? 'opacity-100 translate-y-0 md:translate-x-0'
+        : 'opacity-0 translate-y-4 md:translate-x-10'
+    }`}
   />
 </div>
 
 
         {/* Section 2 */}
-        <div className="relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center p-10 overflow-visible">
+        <div
+          ref={(el) => registerBlockRef(el, 1)}
+          data-index="1"
+          className={`relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center p-10 overflow-visible transition-all duration-700 ease-out ${
+            visibleBlocks[1] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          }`}
+        >
        <img
   src="/images/left.png"
   alt="App preview"
-  className="md:absolute md:-left-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] h-[290px] md:w-[320px] md:h-[430px] rotate-[-1deg] drop-shadow-2xl mt-6 md:mt-0"
+  className={`md:absolute md:-left-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] h-[290px] md:w-[320px] md:h-[430px] rotate-[-1deg] drop-shadow-2xl mt-6 md:mt-0 transition-all duration-700 ease-out ${
+    visibleBlocks[1]
+      ? 'opacity-100 translate-y-0 md:translate-x-0'
+      : 'opacity-0 translate-y-4 md:-translate-x-10'
+  }`}
 />
 
-          <div className="md:w-1/2 space-y-4 md:ml-auto">
+          <div
+            className={`md:w-1/2 space-y-4 md:ml-auto transition-all duration-700 ease-out delay-100 ${
+              visibleBlocks[1]
+                ? 'opacity-100 translate-y-0 md:translate-x-0'
+                : 'opacity-0 translate-y-6 md:translate-x-8'
+            }`}
+          >
             {/* <p className="text-sm font-semibold">Tagline</p> */}
             <h2 className="text-2xl md:text-3xl font-semibold">
              Instant Communication with Employers
@@ -61,8 +167,20 @@ export default function Partner() {
         </div>
 
         {/* Section 3 */}
-        <div className="relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-10 overflow-visible">
-          <div className="md:w-1/2 space-y-4">
+        <div
+          ref={(el) => registerBlockRef(el, 2)}
+          data-index="2"
+          className={`relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-10 overflow-visible transition-all duration-700 ease-out ${
+            visibleBlocks[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          }`}
+        >
+          <div
+            className={`md:w-1/2 space-y-4 transition-all duration-700 ease-out ${
+              visibleBlocks[2]
+                ? 'opacity-100 translate-y-0 md:translate-x-0'
+                : 'opacity-0 translate-y-6 md:-translate-x-8'
+            }`}
+          >
             {/* <p className="text-sm font-semibold">Tagline</p> */}
             <h2 className="text-2xl md:text-3xl font-semibold">
             Unlock Opportunities At Career Events!
@@ -74,20 +192,40 @@ export default function Partner() {
 <img
   src="/images/right.png"
   alt="App preview"
-  className="md:absolute md:-right-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] h-[290px] md:w-[310px] md:h-[430px] rotate-[1deg] drop-shadow-2xl mt-6 md:mt-0"
+  className={`md:absolute md:-right-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] h-[290px] md:w-[310px] md:h-[430px] rotate-[1deg] drop-shadow-2xl mt-6 md:mt-0 transition-all duration-700 ease-out delay-100 ${
+    visibleBlocks[2]
+      ? 'opacity-100 translate-y-0 md:translate-x-0'
+      : 'opacity-0 translate-y-4 md:translate-x-10'
+  }`}
 />
 
         </div>
 
         {/* Section 4 (with button) */}
-        <div className="relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center p-10 overflow-visible">
+        <div
+          ref={(el) => registerBlockRef(el, 3)}
+          data-index="3"
+          className={`relative bg-[#4D04DB] text-white rounded-2xl max-w-5xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center p-10 overflow-visible transition-all duration-700 ease-out ${
+            visibleBlocks[3] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          }`}
+        >
         <img
   src="/images/left.png"
   alt="App preview"
-  className="md:absolute md:-left-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] h-[290px] md:w-[320px] md:h-[430px] rotate-[-1deg] drop-shadow-2xl mt-6 md:mt-0"
+  className={`md:absolute md:-left-[-40px] md:top-1/2 md:-translate-y-1/2 w-[220px] h-[290px] md:w-[320px] md:h-[430px] rotate-[-1deg] drop-shadow-2xl mt-6 md:mt-0 transition-all duration-700 ease-out ${
+    visibleBlocks[3]
+      ? 'opacity-100 translate-y-0 md:translate-x-0'
+      : 'opacity-0 translate-y-4 md:-translate-x-10'
+  }`}
 />
 
-          <div className="md:w-1/2 space-y-4 md:ml-auto">
+          <div
+            className={`md:w-1/2 space-y-4 md:ml-auto transition-all duration-700 ease-out delay-100 ${
+              visibleBlocks[3]
+                ? 'opacity-100 translate-y-0 md:translate-x-0'
+                : 'opacity-0 translate-y-6 md:translate-x-8'
+            }`}
+          >
             {/* <p className="text-sm font-semibold">Tagline</p> */}
             <h2 className="text-2xl md:text-3xl font-semibold">
             AI-Powered Profile Builder

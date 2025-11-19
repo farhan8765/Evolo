@@ -29,10 +29,16 @@ const Inschoose = () => {
         <p className="text-xs uppercase tracking-[0.35em] text-[#1e1e2f]">
           Tagline
         </p>
-        <h2 className="mt-4 text-4xl md:text-5xl font-bold leading-tight text-[#121437]">
-          Empowering <span className="text-[#4b34ff]">Futures</span>, One
-          <br className="hidden sm:block" /> Swipe at a Time
-        </h2>
+       <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+  <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+    Empowering Futures, One
+  </span>
+  <br />
+  <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+    Swipe at a Time
+  </span>
+</h2>
+
 
         <p className="mt-5 text-base md:text-lg text-[#5d6075]">
           Join the innovative platform that bridges students, institutions, and

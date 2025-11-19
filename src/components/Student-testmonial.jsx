@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const testimonials = [
   {
@@ -84,6 +84,8 @@ const TestimonialCard = ({ quote, name, role, onReadMore }) => {
 const StudentTestimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedTestimonial, setSelectedTestimonial] = useState(null);
+  const [visible, setVisible] = useState(false);
+  const sectionRef = useRef(null);
   const cardsToShow = 2;
 
   const handlePrev = () => {
@@ -109,12 +111,40 @@ const StudentTestimonial = () => {
     setSelectedTestimonial(null);
   };
 
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section style={fullBleed} className="bg-[#eef0ff] py-20 font-[Inter,sans-serif]">
+    <section
+      ref={sectionRef}
+      style={fullBleed}
+      className="bg-[#eef0ff] py-20 font-[Inter,sans-serif]"
+    >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
           {/* Left content */}
-          <div className="flex flex-col gap-4">
+          <div
+            className={`flex flex-col gap-4 transition-all duration-700 ${
+              visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
             <h2 className="text-5xl font-semibold bg-gradient-to-r from-[#080a2b] to-[#5533ff] bg-clip-text text-transparent">
   Students Testimonials
 </h2>
@@ -131,11 +161,14 @@ const StudentTestimonial = () => {
 
           {/* Right testimonial cards */}
           <div className="grid gap-6 lg:grid-cols-2">
-            {visibleTestimonials.map((item) => (
+            {visibleTestimonials.map((item, index) => (
               <TestimonialCard
                 key={item.id}
                 {...item}
                 onReadMore={() => handleReadMore(item)}
+                className={`transition-all duration-700 ${
+                  visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+                }`}
               />
             ))}
           </div>

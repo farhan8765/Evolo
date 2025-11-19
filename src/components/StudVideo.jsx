@@ -21,7 +21,7 @@ const fullBleed = {
   marginRight: "calc(50% - 50vw)",
 };
 
-const VideoCard = ({ link }) => {
+const VideoCard = ({ link, index }) => {
   // Convert YouTube link to embed format
   const embedUrl = link.replace("watch?v=", "embed/");
 
@@ -31,7 +31,9 @@ const VideoCard = ({ link }) => {
         relative overflow-hidden rounded-[26px]
         shadow-[0_15px_35px_rgba(0,0,0,0.15)]
         transition-transform duration-300 hover:-translate-y-1
+      animate-hero-reveal
       "
+      style={{ animationDelay: `${0.35 + index * 0.1}s` }}
     >
       {/* YouTube Iframe */}
       <iframe
@@ -60,25 +62,37 @@ const StudVideo = () => {
       <div className="mx-auto w-full max-w-6xl flex flex-col gap-14 px-6">
         {/* Header */}
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-[#0f1b66]">
+          <span
+            className="text-sm font-semibold uppercase tracking-wide text-[#0f1b66] animate-hero-reveal"
+            style={{ animationDelay: "0.05s" }}
+          >
             Tagline
           </span>
 
-          <h2 className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold">
+          <h2
+            className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold animate-hero-reveal"
+            style={{ animationDelay: "0.15s" }}
+          >
             Student Success Stories: How Evolo is Shaping Futures
           </h2>
 
-          <p className="mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto">
+          <p
+            className="mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto animate-hero-reveal"
+            style={{ animationDelay: "0.25s" }}
+          >
             Discover the transformative experiences of students who have used
             Evolo to advance their education and career goals.
           </p>
         </div>
 
         {/* Equal Width Videos */}
-        <div className="flex flex-col md:flex-row gap-6">
-          {videos.map(({ id, ...video }) => (
+        <div
+          className="flex flex-col md:flex-row gap-6 animate-hero-reveal"
+          style={{ animationDelay: "0.3s" }}
+        >
+          {videos.map(({ id, ...video }, index) => (
             <div key={id} className="flex-1">
-              <VideoCard {...video} />
+              <VideoCard {...video} index={index} />
             </div>
           ))}
         </div>

@@ -9,10 +9,10 @@ const EventMap = () => {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#33385c]">
               Tagline
             </p>
-            <h2 className="mt-3 text-4xl md:text-5xl font-semibold leading-tight text-[#151740]">
-              Fill in your <span className="text-[#492dff]">information</span>{" "}
-              below
-            </h2>
+            <h2 className="mt-3 text-4xl md:text-5xl font-semibold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+  Fill in your information below
+</h2>
+
             <p className="mt-4 text-lg text-[#666a83]">
               Get started for Free and see how quickly AdultEd Pro can help your
               business, large or small

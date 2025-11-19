@@ -31,24 +31,41 @@ const EmpChoose = () => {
   return (
     <section className="bg-[#EFF0FF] px-4 py-20">
       <div className="mx-auto max-w-5xl text-center">
-        <p className="text-xs uppercase tracking-[0.35em] text-[#182126]">
+        <p
+          className="text-md font-bold tracking-[0.35em] text-[#182126] animate-hero-reveal"
+          style={{ animationDelay: "0.05s" }}
+        >
           Tagline
         </p>
-      <h2 className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-  Why Choose Evolo AI
-</h2>
+        <h2
+          className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
+          style={{ animationDelay: "0.15s" }}
+        >
+          Why Choose Evolo AI
+        </h2>
 
-        <p className="mt-4 text-lg text-[#5c5f77]">
-        Are you looking to switch to a new career? Our app helps you navigate the job market, providing resources and job listings tailored to your new career path. Whether you’re seeking a fresh start or looking to leverage your existing skills in a new industry, we’re here to help you succeed.
+        <p
+          className="mt-4 text-lg text-[#5c5f77] animate-hero-reveal"
+          style={{ animationDelay: "0.25s" }}
+        >
+          Are you looking to switch to a new career? Our app helps you navigate
+          the job market, providing resources and job listings tailored to your
+          new career path. Whether you’re seeking a fresh start or looking to
+          leverage your existing skills in a new industry, we’re here to help
+          you succeed.
         </p>
       </div>
 
-      <div className="mx-auto mt-12 max-w-6xl rounded-[36px] bg-white p-8 ">
+      <div
+        className="mx-auto mt-12 max-w-6xl rounded-[36px] bg-white p-8 animate-hero-reveal"
+        style={{ animationDelay: "0.35s" }}
+      >
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {pillars.map(({ title, subtitle, description }) => (
+          {pillars.map(({ title, subtitle, description }, index) => (
             <article
               key={title}
-              className="rounded-3xl bg-[#E4E6FF] p-6 text-left "
+              className="rounded-3xl bg-[#E4E6FF] p-6 text-left animate-hero-reveal"
+              style={{ animationDelay: `${0.4 + index * 0.1}s` }}
             >
 <h3 className="text-2xl font-bold bg-gradient-to-br from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
   {title}

@@ -31,14 +31,23 @@ const StudentFeatures = () => {
   return (
     <section className="bg-white px-4 py-20">
       <div className="mx-auto max-w-5xl text-center">
-        <p className="text-xs uppercase tracking-[0.35em] text-[#9fa2c1]">
+        <p
+          className="text-xs uppercase tracking-[0.35em] text-[#9fa2c1] animate-hero-reveal"
+          style={{ animationDelay: "0.05s" }}
+        >
           Tagline
         </p>
-        <h2 className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+        <h2
+          className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
+          style={{ animationDelay: "0.15s" }}
+        >
           Key Features
         </h2>
 
-        <p className="mt-4 text-lg text-[#5b5f77]">
+        <p
+          className="mt-4 text-lg text-[#5b5f77] animate-hero-reveal"
+          style={{ animationDelay: "0.25s" }}
+        >
           Discover how Evolo AI helps students connect with employers and find
           the right opportunities for success.
         </p>
@@ -47,10 +56,11 @@ const StudentFeatures = () => {
       <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-10 lg:grid-cols-3">
         {/* Left Column */}
         <div className="flex flex-col justify-between gap-8">
-          {features.slice(0, 2).map((feature) => (
+          {features.slice(0, 2).map((feature, index) => (
             <article
               key={feature.title}
-              className="p-6 text-center flex flex-col items-center"
+              className="p-6 text-center flex flex-col items-center animate-hero-reveal"
+              style={{ animationDelay: `${0.35 + index * 0.1}s` }}
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ede8ff]">
                 <img
@@ -70,23 +80,27 @@ const StudentFeatures = () => {
         </div>
 
         {/* Center Image */}
-        <div className="flex items-center justify-center">
+        <div
+          className="flex items-center justify-center animate-hero-reveal"
+          style={{ animationDelay: "0.45s" }}
+        >
           <div className="relative w-full max-w-sm">
             <div className="absolute inset-0 rounded-[40px] opacity-80" />
             <img
               src="/images/student-feature.png"
               alt="Evolo AI mobile preview"
-              className="relative z-10 w-full drop-shadow-[0_45px_65px_rgba(15,13,56,0.3)]"
+              className="relative z-10 w-full drop-shadow-[0_45px_65px_rgba(15,13,56,0.3)] animate-hero-float"
             />
           </div>
         </div>
 
         {/* Right Column */}
         <div className="flex flex-col justify-between gap-8">
-          {features.slice(2).map((feature) => (
+          {features.slice(2).map((feature, index) => (
             <article
               key={feature.title}
-              className="p-6 text-center flex flex-col items-center"
+              className="p-6 text-center flex flex-col items-center animate-hero-reveal"
+              style={{ animationDelay: `${0.4 + (index + 2) * 0.1}s` }}
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ede8ff]">
                 <img

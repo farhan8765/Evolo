@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const images = ['h1.png', 'h1.png', 'h1.png'];
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,13 +58,22 @@ export default function Hero() {
         
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-4">
-          <button className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+          <button
+            onClick={() => navigate('/student')}
+            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+          >
             Find Jobs
           </button>
-          <button className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+          <button
+            onClick={() => navigate('/institute')}
+            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+          >
             Career Centers
           </button>
-          <button className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+          <button
+            onClick={() => navigate('/employee')}
+            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+          >
             Discover Talent
           </button>
         </div>

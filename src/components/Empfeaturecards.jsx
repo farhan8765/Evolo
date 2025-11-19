@@ -136,14 +136,25 @@ const EmpFeatureCards = () => {
     <section className="bg-[#f4f1ff] py-20">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-[#2b1bdd]">Features Plan</h2>
-          <p className="mx-auto mt-4 max-w-3xl text-base text-[#6f6f7b]">
+          <h2
+            className="text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
+            style={{ animationDelay: "0.05s" }}
+          >
+            Features Plan
+          </h2>
+          <p
+            className="mx-auto mt-4 max-w-3xl text-base text-[#6f6f7b] animate-hero-reveal"
+            style={{ animationDelay: "0.15s" }}
+          >
             We have a plan for every type of business. Try each plan for free,
             and see the benefits in building a brand on campus.
           </p>
         </div>
 
-        <div className="mx-auto mt-10 flex w-fit items-center rounded-full bg-white p-1 shadow-lg">
+        <div
+          className="mx-auto mt-10 flex w-fit items-center rounded-full bg-white p-1 shadow-lg animate-hero-reveal"
+          style={{ animationDelay: "0.25s" }}
+        >
           {["monthly", "yearly"].map((cycle) => {
             const isActive = billingCycle === cycle;
             return (
@@ -172,7 +183,8 @@ const EmpFeatureCards = () => {
               key={`${plan.name}-${billingCycle}`}
               className={`rounded-3xl border bg-white p-8 shadow-[0_20px_40px_rgba(78,66,171,0.12)] ${
                 idx === 2 ? "lg:-mt-6" : ""
-              } ${plan.border}`}
+              } ${plan.border} flex flex-col justify-between animate-hero-reveal`}
+              style={{ animationDelay: `${0.35 + idx * 0.1}s` }}
             >
               <div className="flex items-start justify-between">
                 <div>
@@ -222,7 +234,7 @@ const EmpFeatureCards = () => {
 
               <button
                 type="button"
-                className={`mt-8 w-full rounded-2xl bg-gradient-to-r ${plan.accent} py-3 text-center text-sm font-semibold text-white shadow-[0_12px_30px_rgba(93,62,255,0.25)] transition hover:opacity-95`}
+                className={`mt-auto w-full rounded-2xl bg-gradient-to-r ${plan.accent} py-3 text-center text-sm font-semibold text-white shadow-[0_12px_30px_rgba(93,62,255,0.25)] transition hover:opacity-95`}
               >
                 Start trial
               </button>

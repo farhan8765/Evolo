@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const videos = [
   {
@@ -22,15 +22,18 @@ const fullBleed = {
   marginRight: "calc(50% - 50vw)",
 };
 
-const VideoCard = ({ link, highlight }) => {
+const VideoCard = ({ link, highlight, delay, visible }) => {
   const embedUrl = link.replace("watch?v=", "embed/");
 
   return (
     <article
-      className={`relative overflow-hidden rounded-[26px] transition-transform duration-300 hover:-translate-y-1 ${
+      style={{ transitionDelay: delay }}
+      className={`relative overflow-hidden rounded-[26px] transition-all duration-700 ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      } ${
         highlight
-          ? "shadow-[0_20px_45px_rgba(83,39,255,0.4)]"
-          : "shadow-[0_15px_35px_rgba(0,0,0,0.15)]"
+          ? "shadow-[0_20px_45px_rgba(83,39,255,0.4)] hover:-translate-y-1"
+          : "shadow-[0_15px_35px_rgba(0,0,0,0.15)] hover:-translate-y-1"
       }`}
     >
       <iframe
@@ -60,8 +63,32 @@ const VideoCard = ({ link, highlight }) => {
 };
 
 const VideoHome = () => {
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       style={fullBleed}
       className="bg-[#f7f6fb] py-20 font-[Inter,sans-serif]"
     >
@@ -72,11 +99,19 @@ const VideoHome = () => {
             Tagline
           </span> */}
 
-          <h2 className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold">
+          <h2
+            className={`bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold transition-all duration-700 ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            }`}
+          >
             Real Stories of Transformation with Evolo
           </h2>
 
-          <p className="mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto">
+          <p
+            className={`mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto transition-all duration-700 delay-100 ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            }`}
+          >
             Our users say it best. Discover how Evolo is transforming adult
             education through real-life experiences from educational leaders and
             career counselors who use Evolo's platform every day.
@@ -85,9 +120,13 @@ const VideoHome = () => {
 
         {/* All videos same width */}
         <div className="flex flex-col md:flex-row gap-6">
-          {videos.map(({ id, ...video }) => (
+          {videos.map(({ id, ...video }, index) => (
             <div key={id} className="flex-1 md:flex-1">
-              <VideoCard {...video} />
+              <VideoCard
+                {...video}
+                visible={visible}
+                delay={`${index * 120}ms`}
+              />
             </div>
           ))}
         </div>

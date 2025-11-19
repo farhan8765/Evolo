@@ -55,16 +55,9 @@ const Navbar = () => {
     setOpenTab((prev) => (prev === label ? null : label));
   };
 
-  // Keep dropdown open if child route is active
+  // Close dropdown whenever route changes so other nav items stay accessible
   useEffect(() => {
-    NAV_TABS.forEach((tab) => {
-      if (
-        tab.subItems &&
-        tab.subItems.some((item) => item.path === location.pathname)
-      ) {
-        setOpenTab(tab.label);
-      }
-    });
+    setOpenTab(null);
   }, [location.pathname]);
 
   // Close dropdown when clicking outside
@@ -117,7 +110,7 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 {subItems && openTab === label && (
-                  <div className="absolute left-1/2 top-9 w-52 -translate-x-1/2 rounded-2xl bg-white py-3 text-[14px] text-[#1b1833] shadow-xl">
+                  <div className="absolute left-1/2 top-9 w-52 -translate-x-1/2 rounded-2xl bg-white py-3 text-[14px] text-[#1b1833] shadow-xl z-30">
                     {subItems.map((item) => (
                       <div
                         key={item.label}

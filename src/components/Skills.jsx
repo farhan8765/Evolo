@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const audienceCards = [
   {
@@ -40,22 +40,53 @@ const fullBleed = {
 };
 
 const Skills = () => {
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       style={fullBleed}
       className="bg-[#f7f7fb] py-20 font-[Inter,sans-serif]"
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-6">
 
-        <h2 className="text-center text-4xl font-semibold leading-snug bg-gradient-to-r from-[#0f1b66] to-[#5327ff] bg-clip-text text-transparent">
+        <h2
+          className={`text-center text-4xl font-semibold leading-snug bg-gradient-to-r from-[#0f1b66] to-[#5327ff] bg-clip-text text-transparent transition-all duration-700 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
           Our platform helps Students, Institutions, and Employers through our exclusive focus on Adult Schools and their Students.
         </h2>
 
         <div className="grid w-full gap-8 lg:grid-cols-3">
-          {audienceCards.map(({ title, subtitle, points }) => (
+          {audienceCards.map(({ title, subtitle, points }, index) => (
             <article
               key={title}
-              className="flex flex-col rounded-[26px] bg-white p-8 shadow-[0px_25px_50px_rgba(15,27,102,0.08)]"
+              style={{ transitionDelay: `${index * 150}ms` }}
+              className={`flex flex-col rounded-[26px] bg-white p-8 shadow-[0px_25px_50px_rgba(15,27,102,0.08)] transition-all duration-700 ${
+                visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`}
             >
               <h3 className="text-2xl font-semibold text-[#111827]">{title}</h3>
               <p className="mt-2 text-base text-[#6b7280]">{subtitle}</p>

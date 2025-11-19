@@ -23,13 +23,13 @@ const Abouttagline = () => {
     <section className="w-full bg-[#EFF0FF] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         <div className="text-center mb-12">
-          <p className="text-xs md:text-sm tracking-[0.45em] font-semibold text-[#6b3dff] uppercase">
+          <p className="text-xs md:text-sm tracking-[0.45em] font-semibold text-black">
             Tagline
           </p>
-          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-[#0f1535] leading-tight">
-            Transforming Adult learning with{" "}
-            <span className="text-[#5b32ff]">AI innovation</span>
-          </h2>
+          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+  Transforming Adult learning with AI innovation
+</h2>
+
         </div>
 
         <div className="bg-white rounded-[32px] shadow-[0_32px_70px_rgba(47,15,110,0.08)] p-6 md:p-10 grid gap-10 md:grid-cols-[1.15fr,0.95fr] items-center">
