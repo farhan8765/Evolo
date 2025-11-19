@@ -2,7 +2,7 @@ import React from "react";
 
 const Institutehero = () => {
   return (
-    <section className="relative overflow-hidden bg-[white] text-white pt-44 pb-16">
+    <section className="relative overflow-hidden bg-[white] text-white pt-40 pb-16">
       <div className="absolute -right-28 top-12 h-[520px] w-[520px] " />
       <div className="absolute -left-24 bottom-0 h-[360px] w-[360px]" />
 

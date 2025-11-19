@@ -6,6 +6,7 @@ const NAV_TABS = [
   { label: "Students", path: "/student" },
   { label: "Employers", path: "/employee" },
   { label: "Institutions", path: "/institute" },
+  { label: "Resources", path: "/resources" },
   {
     label: "About Us",
     path: null,
