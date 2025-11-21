@@ -1,4 +1,20 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const quickLinks = [
+  { label: "About us", to: "/about" },
+  { label: "Employers", to: "/employee" },
+  { label: "Institutions", to: "/institute" },
+  { label: "Students", to: "/student" },
+];
+
+const supportLinks = [
+  { label: "Blog", to: "/resources" },
+  { label: "FAQS", to: "/faqs" },
+  { label: "Events", to: "/events" },
+  { label: "Accessibility", to: "/resources" },
+  { label: "Contact Us", to: "/contact" },
+];
 
 export default function Footer() {
   return (
@@ -45,19 +61,19 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div className="space-y-2">
               <h1>Quick Links</h1>
-              <p>About us</p>
-              <p>Employers</p>
-              <p>Institutions</p>
-              <p>Students</p>
-              {/* <p>Link Five</p> */}
+              {quickLinks.map(({ label, to }) => (
+                <Link key={label} to={to} className="block hover:underline">
+                  {label}
+                </Link>
+              ))}
             </div>
             <div className="space-y-2">
-              <br/>
-              <p>Blog</p>
-              <p>FAQS</p>
-              <p>Link Eight</p>
-              <p>Accessibility</p>
-              <p>Contact Us</p>
+              <h1>Resources</h1>
+              {supportLinks.map(({ label, to }) => (
+                <Link key={label} to={to} className="block hover:underline">
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
 

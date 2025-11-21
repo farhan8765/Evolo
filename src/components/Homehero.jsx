@@ -39,7 +39,7 @@ export default function Homehero() {
         {/* Bottom Image */}
         <div className="relative w-full max-w-8xl mx-auto">
           <img
-            src="/images/bottom.png"
+            src="/images/main-home.png"
             alt="Platform Preview"
             className="w-full h-auto "
           />
