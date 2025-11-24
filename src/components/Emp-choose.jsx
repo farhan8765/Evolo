@@ -31,12 +31,12 @@ const EmpChoose = () => {
   return (
     <section className="bg-[#EFF0FF] px-4 py-20">
       <div className="mx-auto max-w-5xl text-center">
-        <p
+        {/* <p
           className="text-md font-bold tracking-[0.35em] text-[#182126] animate-hero-reveal"
           style={{ animationDelay: "0.05s" }}
         >
           Tagline
-        </p>
+        </p> */}
         <h2
           className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
           style={{ animationDelay: "0.15s" }}

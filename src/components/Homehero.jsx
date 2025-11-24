@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Homehero() {
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 px-4 py-8 font-['Raleway'] pt-16s md:pt-40">
+    <div className="bg-gradient-to-b from-white to-gray-50 px-4 py-8 font-['Raleway'] pt-4 md:pt-20">
       <div className="max-w-7xl mx-auto">
         {/* Top Tagline */}
         <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-700 mb-4 md:mb-2 italic">

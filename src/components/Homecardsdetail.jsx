@@ -19,7 +19,7 @@ const Homecardsdetail = () => {
       description: 'Get the data you need to prove impact, secure funding, and scale programs that work.'
     },
     {
-      title: 'District Leaders',
+      title: 'Classified Staff',
       description: 'Unlock CYBHI revenue, improve mental health outcomes, and build sustainable systems that serve students and communities.'
     }
   ];

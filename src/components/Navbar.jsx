@@ -23,7 +23,7 @@ const NAV_TABS = [
         items: [
           { label: "Counselors", path: "/counselors" },
           { label: "Administrators", path: "/administrators" },
-          { label: "Districts", path: "/districts" },
+          { label: "Classified Staff", path: "/districts" },
         ],
       },
     ],
