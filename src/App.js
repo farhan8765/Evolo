@@ -2,6 +2,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+
 // import LastHome from './components/Last-home';
 import Navbar from './components/Navbar';
 // import Navbaroriginal from './components/Navbaroriginal';
@@ -21,6 +22,7 @@ import Events from './pages/Events';
 import Faqs from './pages/Faqs';
 import Resources from './pages/Resources';
 import Mainhome from './pages/Mainhome';
+import AdultEducation from './pages/AdultEducation';
 
 function App() {
   return (
@@ -30,7 +32,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Mainhome/>} />
-          {/* <Route path="/adult" element={<Home />} /> */}
+          <Route path="/adult" element={<AdultEducation />} />
           <Route path="/student" element={<Student />} />
           <Route path="/employee" element={<Employee />} />
           <Route path="/institute" element={<Institute />} />
