@@ -24,17 +24,17 @@ const EmpGraph = () => {
     const rowPositions = {
       1: { center: { left: '50%', top: '8%' } },
       2: { 
-        left: { left: '20%', top: '30%' },
+        left: { left: '16%', top: '30%' },
         center: { left: '50%', top: '24%' },
         right: { left: '80%', top: '30%' }
       },
       3: { 
-        left: { left: '20%', top: '50%' },
+        left: { left: '16%', top: '50%' },
         center: { left: '50%', top: '52%' },
         right: { left: '80%', top: '50%' }
       },
       4: { 
-        left: { left: '25%', top: '78%' },
+        left: { left: '21%', top: '78%' },
         right: { left: '75%', top: '78%' }
       }
     };

@@ -2,46 +2,46 @@ import React from 'react';
 
 export default function Homehero() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 px-4 py-8 font-['Raleway'] pt-40">
+    <div className="bg-gradient-to-b from-white to-gray-50 px-4 py-8 font-['Raleway'] pt-16s md:pt-40">
       <div className="max-w-7xl mx-auto">
         {/* Top Tagline */}
-        <p className="text-center font-bold text-sm md:text-base text-gray-700 mb-2 italic">
+        <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-700 mb-4 md:mb-2 italic">
           Empowering Education Through Technology
         </p>
 
         {/* Main Heading */}
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             AI-powered solutions for
           </span>
         </h1>
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             Adult Education & K-12
           </span>
         </h1>
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-6 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             Mental Health
           </span>
         </h1>
 
         {/* CTA Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <button className="bg-[#5A14ED] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
+          <button className="bg-[#5A14ED] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto">
             Adult Education Programs
           </button>
-          <button className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg">
+          <button className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto">
             K-12 Mental Health (CYBHI)
           </button>
         </div>
 
         {/* Bottom Image */}
-        <div className="relative w-full max-w-8xl mx-auto">
+        <div className="relative w-full max-w-8xl mx-auto px-2 sm:px-0">
           <img
             src="/images/main-home.png"
             alt="Platform Preview"
-            className="w-full h-auto "
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </div>

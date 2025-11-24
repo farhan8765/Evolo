@@ -7,15 +7,15 @@ const appStores = [
 
 const Studdowner = () => {
   return (
-    <section className="bg-[#EFF0FF] px-4 py-24">
+    <section className="bg-[#EFF0FF] px-4 py-12">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 lg:flex-row lg:items-center">
         <div className="flex-1 text-center lg:text-left">
-          <p
+          {/* <p
             className="text-xs uppercase tracking-[0.35em] text-[#827fad] animate-hero-reveal"
             style={{ animationDelay: "0.05s" }}
           >
             Tagline
-          </p>
+          </p> */}
           <h2
             className="mt-4 text-5xl font-bold leading-tight text-[#1b1f3b] animate-hero-reveal"
             style={{ animationDelay: "0.15s" }}

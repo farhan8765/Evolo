@@ -29,14 +29,14 @@ const features = [
 
 const StudentFeatures = () => {
   return (
-    <section className="bg-white px-4 py-20">
+    <section className="bg-white px-4 py-12">
       <div className="mx-auto max-w-5xl text-center">
-        <p
+        {/* <p
           className="text-xs uppercase tracking-[0.35em] text-[#9fa2c1] animate-hero-reveal"
           style={{ animationDelay: "0.05s" }}
         >
           Tagline
-        </p>
+        </p> */}
         <h2
           className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
           style={{ animationDelay: "0.15s" }}

@@ -60,7 +60,7 @@ export default function Footer() {
           {/* Middle Links Section */}
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div className="space-y-2">
-              <h1>Quick Links</h1>
+              <h1 className="font-bold text-lg">Quick Links</h1>
               {quickLinks.map(({ label, to }) => (
                 <Link key={label} to={to} className="block hover:underline">
                   {label}
@@ -68,7 +68,7 @@ export default function Footer() {
               ))}
             </div>
             <div className="space-y-2">
-              <h1>Resources</h1>
+              <h1 className="font-bold text-lg">Resources</h1>
               {supportLinks.map(({ label, to }) => (
                 <Link key={label} to={to} className="block hover:underline">
                   {label}
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* Right Section */}
           <div>
-            <h3 className="font-semibold mb-2">Address:</h3>
+            <h3 className="font-bold text-lg">Address:</h3>
             <p className="text-sm">Adult Ed Pro</p>
             <p className="text-sm">1110 N Virgil Ave</p>
             <p className="text-sm">PMB 98121</p>

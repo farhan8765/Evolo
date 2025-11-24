@@ -65,6 +65,7 @@ const DropdownIcon = ({ open }) => (
 
 const Navbar = () => {
   const [openTab, setOpenTab] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const navRef = useRef();
@@ -72,6 +73,7 @@ const Navbar = () => {
   const handleNavigate = (path) => {
     if (!path) return;
     navigate(path);
+    setMobileMenuOpen(false);
   };
 
   const toggleDropdown = (label) => {
@@ -81,6 +83,7 @@ const Navbar = () => {
   // Close dropdown whenever route changes so other nav items stay accessible
   useEffect(() => {
     setOpenTab(null);
+    setMobileMenuOpen(false);
   }, [location.pathname]);
 
   // Close dropdown when clicking outside
@@ -94,15 +97,27 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenuOpen]);
+
   return (
-    <header className="w-full bg-[#F3F2F9] text-[#5C6174]">
+    <header className="w-full text-[#5C6174]">
       {/* <div className="bg-gradient-to-r from-[#161AA5] via-[#3719C8] to-[#5616D8] px-4 py-2 text-center text-xs font-medium text-white md:text-sm">
         {ANNOUNCEMENT_TEXT}
       </div> */}
       <nav className="w-full px-4 py-6">
         <div
           ref={navRef}
-          className="mx-auto flex w-full max-w-5xl items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4 shadow-[0px_25px_60px_rgba(27,16,63,0.12)]"
+          className="mx-auto flex w-full max-w-5xl items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4"
         >
           {/* Logo */}
           <div className="flex items-center gap-3">
@@ -116,7 +131,7 @@ const Navbar = () => {
             <span className="text-xl font-bold text-[#2B1BDD]">Evolo AI</span>
           </div>
 
-          {/* Nav links */}
+          {/* Desktop Nav links */}
           <div className="hidden items-center gap-8 text-[15px] font-medium md:flex">
             {NAV_TABS.map(({ label, path, subItems, columns }) => {
               const isActive =
@@ -217,7 +232,7 @@ const Navbar = () => {
             })}
           </div>
 
-          {/* Contact */}
+          {/* Desktop Contact */}
           <button
             type="button"
             onClick={() => handleNavigate("/contact")}
@@ -229,6 +244,204 @@ const Navbar = () => {
           >
             Contact
           </button>
+
+          {/* Mobile Hamburger Button */}
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="flex flex-col gap-1.5 md:hidden"
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`h-0.5 w-6 bg-[#5C2DD5] transition-all ${
+                mobileMenuOpen ? "translate-y-2 rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`h-0.5 w-6 bg-[#5C2DD5] transition-all ${
+                mobileMenuOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`h-0.5 w-6 bg-[#5C2DD5] transition-all ${
+                mobileMenuOpen ? "-translate-y-2 -rotate-45" : ""
+              }`}
+            />
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`fixed inset-0 z-40 bg-black/50 transition-opacity md:hidden ${
+            mobileMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
+        >
+          <div
+            className={`absolute right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-xl transition-transform ${
+              mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex h-full flex-col overflow-y-auto">
+              {/* Mobile Menu Header */}
+              <div className="flex items-center justify-between border-b border-[#EAECF4] px-6 py-5">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E1DFFC] bg-white">
+                    <img
+                      src="/images/Vector.png"
+                      alt="Evolo AI logo"
+                      className="h-6 w-6 object-contain"
+                    />
+                  </div>
+                  <span className="text-lg font-bold text-[#2B1BDD]">
+                    Evolo AI
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-[#4D4F58]"
+                  aria-label="Close menu"
+                >
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Mobile Nav Items */}
+              <div className="flex-1 px-6 py-4">
+                {NAV_TABS.map(({ label, path, subItems, columns }) => {
+                  const isActive =
+                    path === location.pathname ||
+                    (subItems &&
+                      subItems.some(
+                        (item) => item.path === location.pathname
+                      )) ||
+                    (columns &&
+                      columns.some(
+                        (group) =>
+                          group.path === location.pathname ||
+                          group.items.some(
+                            (item) => item.path === location.pathname
+                          )
+                      ));
+
+                  return (
+                    <div key={label} className="border-b border-[#EAECF4] py-3">
+                      <div
+                        onClick={() =>
+                          subItems || columns
+                            ? toggleDropdown(label)
+                            : handleNavigate(path)
+                        }
+                        className={`flex cursor-pointer items-center justify-between text-[15px] font-medium ${
+                          isActive
+                            ? "text-[#5C2DD5] font-semibold"
+                            : "text-[#4D4F58]"
+                        }`}
+                      >
+                        {label}
+                        {(subItems || columns) && (
+                          <DropdownIcon open={openTab === label} />
+                        )}
+                      </div>
+
+                      {/* Mobile Dropdown - subItems */}
+                      {subItems && openTab === label && (
+                        <div className="mt-3 space-y-2 pl-4">
+                          {subItems.map((item) => (
+                            <div
+                              key={item.label}
+                              onClick={() => handleNavigate(item.path)}
+                              className={`cursor-pointer py-2 text-[14px] ${
+                                location.pathname === item.path
+                                  ? "text-[#5C2DD5] font-semibold"
+                                  : "text-[#4D4F58]"
+                              }`}
+                            >
+                              {item.label}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Mobile Dropdown - columns */}
+                      {columns && openTab === label && (
+                        <div className="mt-3 space-y-4 pl-4">
+                          {columns.map((group) => (
+                            <div key={group.title}>
+                              {group.path ? (
+                                <button
+                                  type="button"
+                                  onClick={() => handleNavigate(group.path)}
+                                  className={`text-left text-[15px] font-semibold ${
+                                    location.pathname === group.path
+                                      ? "text-[#5C2DD5]"
+                                      : "text-[#151532]"
+                                  }`}
+                                >
+                                  {group.title}
+                                </button>
+                              ) : (
+                                <p className="text-[15px] font-semibold text-[#151532]">
+                                  {group.title}
+                                </p>
+                              )}
+                              <div className="mt-2 space-y-2 pl-3">
+                                {group.items.map((item) => (
+                                  <button
+                                    key={item.label}
+                                    type="button"
+                                    onClick={() => handleNavigate(item.path)}
+                                    className={`block w-full text-left text-[14px] ${
+                                      location.pathname === item.path
+                                        ? "text-[#5C2DD5] font-semibold"
+                                        : "text-[#4D4F58]"
+                                    }`}
+                                  >
+                                    {item.label}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Mobile Contact Button */}
+              <div className="border-t border-[#EAECF4] p-6">
+                <button
+                  type="button"
+                  onClick={() => handleNavigate("/contact")}
+                  className={`w-full rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-[0px_18px_30px_rgba(92,45,213,0.25)] transition-colors ${
+                    location.pathname === "/contact"
+                      ? "bg-[#4C2CC9]"
+                      : "bg-[#5C2DD5]"
+                  }`}
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>

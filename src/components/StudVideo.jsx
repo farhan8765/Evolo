@@ -62,12 +62,12 @@ const StudVideo = () => {
       <div className="mx-auto w-full max-w-6xl flex flex-col gap-14 px-6">
         {/* Header */}
         <div className="text-center">
-          <span
+          {/* <span
             className="text-sm font-semibold uppercase tracking-wide text-[#0f1b66] animate-hero-reveal"
             style={{ animationDelay: "0.05s" }}
           >
             Tagline
-          </span>
+          </span> */}
 
           <h2
             className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold animate-hero-reveal"

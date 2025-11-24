@@ -5,6 +5,7 @@ import HomeWho from '../components/HomeWho'
 import ConnectStudent from '../components/ConnectStudent'
 import Aboutstay from '../components/Aboutstay'
 import NewVideo from '../components/NewVideo'
+import Homecardsdetail from '../components/Homecardsdetail'
 
 
 
@@ -16,6 +17,7 @@ const Mainhome = () => {
       <HomePlatform/>
    
       <ConnectStudent/>
+      <Homecardsdetail/>
       <NewVideo/>
       <Aboutstay/>
     </div>

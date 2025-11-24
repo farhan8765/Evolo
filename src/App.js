@@ -21,7 +21,7 @@ import Events from './pages/Events';
 import Faqs from './pages/Faqs';
 import Resources from './pages/Resources';
 import Mainhome from './pages/Mainhome';
-import AdultEducation from './pages/AdultEducation';
+
 function App() {
   return (
     <Router>
@@ -30,7 +30,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Mainhome/>} />
-          <Route path="/adult" element={<AdultEducation />} />
+          {/* <Route path="/adult" element={<Home />} /> */}
           <Route path="/student" element={<Student />} />
           <Route path="/employee" element={<Employee />} />
           <Route path="/institute" element={<Institute />} />
