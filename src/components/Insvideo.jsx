@@ -47,9 +47,9 @@ const Insvideo = () => {
         
         {/* Header */}
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-[#0f1b66]">
+          {/* <span className="text-sm font-semibold uppercase tracking-wide text-[#0f1b66]">
             Tagline
-          </span>
+          </span> */}
 
           <h2 className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold">
             Real Stories of Transformation with Evolo

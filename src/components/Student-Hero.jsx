@@ -13,7 +13,7 @@ const StudentHero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden text-white pt-8 md:pt-12">
+    <section className="relative overflow-hidden text-white ">
       <div className="absolute -right-24 top-0 h-[520px] w-[520px] rounded-full bg-gradient-to-br animate-hero-gradient bg-[length:200%_200%]" />
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-8 md:gap-12 px-4 sm:px-6 py-4 md:py-20 lg:flex-row lg:items-center lg:gap-16">
         <div className="flex-1 text-center lg:text-left">

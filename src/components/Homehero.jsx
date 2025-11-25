@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Homehero() {
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 px-4 py-8 font-['Raleway'] pt-4 md:pt-20">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gradient-to-b from-white to-gray-50 py-8 font-['Raleway'] pt-4 md:pt-20">
+      <div className="max-w-8xl mx-auto">
         {/* Top Tagline */}
         <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-700 mb-4 md:mb-2 italic">
           Empowering Education Through Technology
@@ -37,7 +37,7 @@ export default function Homehero() {
         </div>
 
         {/* Bottom Image */}
-        <div className="relative w-full max-w-8xl mx-auto px-2 sm:px-0">
+        <div className="relative w-full mx-auto px-2 sm:px-0">
           <img
             src="/images/main-home.png"
             alt="Platform Preview"

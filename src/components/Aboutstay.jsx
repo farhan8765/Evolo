@@ -2,7 +2,7 @@ import React from "react";
 
 const Aboutstay = () => {
   return (
-    <section className="bg-[#F5F6FF] py-16 px-6 text-center">
+    <section className="bg-[#F5F6FF] py-8 px-6 text-center">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-snug">
         Stay informed and{" "}

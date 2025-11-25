@@ -88,25 +88,25 @@ export default function Footer() {
             <h3 className="font-semibold mb-2">Follow us:</h3>
             <div className="flex space-x-3">
               <a
-                href="/"
+                href="https://www.facebook.com/GoEvolo/"
                 className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
               >
                 <FaFacebookF />
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/evoloai/"
                 className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
               >
                 <FaInstagram />
               </a>
               <a
-                href="/"
+                href="https://www.linkedin.com/company/evoloai/"
                 className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
               >
                 <FaLinkedinIn />
               </a>
               <a
-                href="/"
+                href="https://www.youtube.com/@EvoloAI"
                 className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
               >
                 <FaYoutube />

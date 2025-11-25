@@ -26,9 +26,9 @@ const Inschoose = () => {
   return (
     <section className="bg-[#f4f2ff] px-4 py-20">
       <div className="mx-auto max-w-5xl text-center">
-        <p className="text-xs uppercase tracking-[0.35em] text-[#1e1e2f]">
+        {/* <p className="text-xs uppercase tracking-[0.35em] text-[#1e1e2f]">
           Tagline
-        </p>
+        </p> */}
        <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
   <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
     Empowering Futures, One

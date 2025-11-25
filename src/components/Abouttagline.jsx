@@ -23,9 +23,9 @@ const Abouttagline = () => {
     <section className="w-full bg-[#EFF0FF] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         <div className="text-center mb-12">
-          <p className="text-xs md:text-sm tracking-[0.45em] font-semibold text-black">
+          {/* <p className="text-xs md:text-sm tracking-[0.45em] font-semibold text-black">
             Tagline
-          </p>
+          </p> */}
           <h2 className="mt-3 text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
   Transforming Adult learning with AI innovation
 </h2>

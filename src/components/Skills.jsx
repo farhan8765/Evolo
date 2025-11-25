@@ -72,7 +72,7 @@ const Skills = () => {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-6">
 
         <h2
-          className={`text-center text-4xl font-semibold leading-snug bg-gradient-to-r from-[#0f1b66] to-[#5327ff] bg-clip-text text-transparent transition-all duration-700 ${
+          className={`text-center text-3xl font-semibold leading-snug bg-gradient-to-r from-[#0f1b66] to-[#5327ff] bg-clip-text text-transparent transition-all duration-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
