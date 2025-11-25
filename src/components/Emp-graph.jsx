@@ -22,20 +22,20 @@ const EmpGraph = () => {
 
   const getRowPosition = (row, position) => {
     const rowPositions = {
-      1: { center: { left: '50%', top: '8%' } },
+      1: { center: { left: '45%', top: '2%' } },
       2: { 
-        left: { left: '16%', top: '30%' },
-        center: { left: '50%', top: '24%' },
-        right: { left: '80%', top: '30%' }
+        left: { left: '16%', top: '17%' },
+        center: { left: '45%', top: '16%' },
+        right: { left: '72%', top: '15%' }
       },
       3: { 
-        left: { left: '16%', top: '50%' },
-        center: { left: '50%', top: '52%' },
-        right: { left: '80%', top: '50%' }
+        left: { left: '16%', top: '37%' },
+        center: { left: '46%', top: '30%' },
+        right: { left: '70%', top: '32%' }
       },
       4: { 
-        left: { left: '21%', top: '78%' },
-        right: { left: '75%', top: '78%' }
+        left: { left: '18%', top: '60%' },
+        right: { left: '75%', top: '58%' }
       }
     };
     
@@ -107,8 +107,8 @@ const EmpGraph = () => {
 
           {/* Center Logo at Bottom (Row 4 Center) */}
           <div
-            className="absolute left-1/2 -translate-x-1/2 z-30 animate-hero-reveal"
-            style={{ top: '78%', transform: 'translate(-50%, -50%)', animationDelay: '0.7s' }}
+            className="absolute left-[40%] -translate-x-1/2 z-30 animate-hero-reveal"
+            style={{ top: '58%', transform: 'translate(-50%, -50%)', animationDelay: '0.7s' }}
           >
             <div className="p-5">
               <img 
