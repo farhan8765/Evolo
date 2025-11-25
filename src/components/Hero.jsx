@@ -18,61 +18,61 @@ export default function Hero() {
     const diff = (index - activeIndex + 3) % 3;
     
     if (diff === 0) {
-      return 'z-30 scale-100 translate-x-0 opacity-100'; // Center image - larger scale
+      return 'z-30 scale-100 translate-x-0 opacity-100';
     } else if (diff === 1) {
-      return 'z-20 scale-60 translate-x-52 opacity-70';
+      return 'z-20 scale-60 translate-x-32 sm:translate-x-40 md:translate-x-52 opacity-70';
     } else {
-      return 'z-10 scale-60 -translate-x-52 opacity-70';
+      return 'z-10 scale-60 -translate-x-32 sm:-translate-x-40 md:-translate-x-52 opacity-70';
     }
   };
 
   return (
     <div 
-      className="min-h-[90vh] px-4 py-8 pt-36 font-['Raleway']"
+      className="min-h-[90vh] px-4 py-6 pt-8 sm:py-8 sm:pt-12 font-['Raleway']"
       style={{
         background: 'white'
       }}
     >
       {/* Hero Content */}
-      <div className="max-w-7xl mx-auto text-center mb-8">
-        <p className="text-black text-sm font-semibold md:text-base mb-4 italic">
+      <div className="max-w-7xl mx-auto text-center mb-6 sm:mb-8">
+        <p className="text-black text-xs sm:text-sm md:text-base font-semibold mb-3 sm:mb-4 italic">
           The Future of Adult Education
         </p>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-2">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             The Future of Adult
           </span>
         </h1>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             Education
           </span>
         </h1>
         
-        <p className="text-black text-lg md:text-xl mb-4 max-w-3xl mx-auto">
-          We connect <span className="bg-[#6035EE]/20 text-[#6035EE] font-bold px-2 py-1 rounded">Students,</span>
-          <span className="bg-[#6035EE]/25  text-[#6035EE] font-bold px-2 py-1 rounded mx-2">Employers,</span> and 
-          <span className="bg-[#6035EE]/30 text-[#6035EE] font-bold px-2 py-1 rounded ml-2">Institutions,</span> to improve outcomes for everyone.
+        <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 max-w-3xl mx-auto px-2">
+          We connect <span className="bg-[#6035EE]/20 text-[#6035EE] font-bold px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-sm sm:text-base md:text-lg">Students,</span>
+          <span className="bg-[#6035EE]/25 text-[#6035EE] font-bold px-1.5 sm:px-2 py-0.5 sm:py-1 rounded mx-1 sm:mx-2 text-sm sm:text-base md:text-lg">Employers,</span> and 
+          <span className="bg-[#6035EE]/30 text-[#6035EE] font-bold px-1.5 sm:px-2 py-0.5 sm:py-1 rounded ml-1 sm:ml-2 text-sm sm:text-base md:text-lg">Institutions,</span> to improve outcomes for everyone.
         </p>
         
         {/* CTA Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-4">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-4 sm:mb-6 px-4">
           <button
             onClick={() => navigate('/student')}
-            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
           >
             Find Jobs
           </button>
           <button
             onClick={() => navigate('/institute')}
-            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
           >
             Career Centers
           </button>
           <button
             onClick={() => navigate('/employee')}
-            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+            className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
           >
             Discover Talent
           </button>
@@ -80,7 +80,8 @@ export default function Hero() {
       </div>
 
       {/* Rotating Images Section */}
-<div className="relative max-w-8xl mx-auto h-[40vh] md:h-[60vh] flex items-center justify-center">        {images.map((img, index) => (
+      <div className="relative max-w-8xl mx-auto h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] flex items-center justify-center overflow-hidden">
+        {images.map((img, index) => (
           <div
             key={index}
             className={`absolute transition-all duration-700 ease-in-out ${getImagePosition(index)}`}
@@ -88,10 +89,10 @@ export default function Hero() {
             <img
               src={`/images/${img}`}
               alt={`Preview ${index + 1}`}
-              className={`rounded-2xl shadow-2xl ${
+              className={`rounded-xl sm:rounded-2xl shadow-2xl ${
                 (index - activeIndex + 3) % 3 === 0 
-                  ? 'w-[350px] md:w-[450px] lg:w-[600px]' // Larger size for center image
-                  : 'w-[280px] md:w-[350px] lg:w-[500px]'
+                  ? 'w-[240px] sm:w-[300px] md:w-[450px] lg:w-[600px]'
+                  : 'w-[180px] sm:w-[220px] md:w-[350px] lg:w-[500px]'
               } h-auto`}
             />
           </div>
@@ -99,14 +100,14 @@ export default function Hero() {
       </div>
 
       {/* Navigation Dots */}
-      <div className="flex justify-center gap-3 mt-4">
+      <div className="flex justify-center gap-2 sm:gap-3 mt-4 sm:mt-6">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all ${
               index === activeIndex 
-                ? 'bg-[#5A14ED] w-8' 
+                ? 'bg-[#5A14ED] w-6 sm:w-8' 
                 : 'bg-[#5A14ED]/50 hover:bg-[#5A14ED]/70'
             }`}
           />

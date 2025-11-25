@@ -6,9 +6,9 @@ const EventMap = () => {
       <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-[1fr_minmax(0,1.05fr)]">
         <div className="space-y-6">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#33385c]">
+            {/* <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#33385c]">
               Tagline
-            </p>
+            </p> */}
             <h2 className="mt-3 text-4xl md:text-5xl font-semibold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
   Fill in your information below
 </h2>

@@ -76,18 +76,17 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-['Raleway'] relative overflow-hidden pt-36">
+    <div className="min-h-screen bg-white font-['Raleway'] relative overflow-hidden pt-8">
 
       {/* Left Background Image */}
-      <div className="absolute left-0 top-52 w-48 md:w-64 pointer-events-none">
+      <div className="hidden md:block absolute left-0 top-52 w-48 md:w-64 pointer-events-none">
         <img src="/images/lefticon.png" alt="" className="w-320 h-320 object-contain" />
       </div>
 
       {/* Right Background Image */}
-      <div className="absolute right-0 bottom-56 w-48 pointer-events-none">
-        <img src="/images/righticon.png" alt="" className="w-400 h-400 object-contain rotate-[45deg]" />
-      </div>
-
+    <div className="hidden md:block absolute right-0 bottom-56 w-48 pointer-events-none">
+  <img src="/images/righticon.png" alt="" className="w-400 h-400 object-contain" />
+</div>
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-16">
 

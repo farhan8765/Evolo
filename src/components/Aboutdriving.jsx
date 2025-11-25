@@ -5,18 +5,26 @@ const Aboutdriving = () => {
     <section className="flex flex-col px-16 py-20 md:flex-row items-start justify-between gap-10 md:gap-16 px-6 md:px-12 py-12 bg-white">
       {/* Left Gradient Heading */}
       <div className="md:w-1/2">
-        <h2 className="text-3xl pt-12 pl-12 md:text-5xl font-bold leading-tight text-left">
-          <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-            Driving career
+        <h2 className="text-3xl px-4 pt-12 md:pl-12 md:text-5xl font-bold leading-tight text-left">
+          {/* Mobile: single line, Desktop: separate lines */}
+          <span className="md:hidden bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+            Driving career success and institutional excellence
           </span>
-          <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-            success and
-          </span>
-          <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-            institutional
-          </span>
-          <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-            excellence
+          
+          {/* Desktop only: separate lines */}
+          <span className="hidden md:block">
+            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+              Driving career
+            </span>
+            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+              success and
+            </span>
+            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+              institutional
+            </span>
+            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+              excellence
+            </span>
           </span>
         </h2>
       </div>

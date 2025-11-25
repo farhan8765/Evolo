@@ -60,7 +60,7 @@ export default function Blogs() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-24">
+    <div className="min-h-screen bg-gray-50 pt-8">
 
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-center">

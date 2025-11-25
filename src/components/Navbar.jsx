@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-// const ANNOUNCEMENT_TEXT =
-//   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-
 const NAV_TABS = [
   { label: "Home", path: "/" },
   {
@@ -80,13 +77,11 @@ const Navbar = () => {
     setOpenTab((prev) => (prev === label ? null : label));
   };
 
-  // Close dropdown whenever route changes so other nav items stay accessible
   useEffect(() => {
     setOpenTab(null);
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -97,7 +92,6 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -111,24 +105,19 @@ const Navbar = () => {
 
   return (
     <header className="w-full text-[#5C6174]">
-      {/* <div className="bg-gradient-to-r from-[#161AA5] via-[#3719C8] to-[#5616D8] px-4 py-2 text-center text-xs font-medium text-white md:text-sm">
-        {ANNOUNCEMENT_TEXT}
-      </div> */}
       <nav className="w-full px-4 py-6">
         <div
           ref={navRef}
-          className="mx-auto flex w-full max-w-5xl items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4"
+          className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4"
         >
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#E1DFFC] bg-white">
-              <img
-                src="/images/Vector.png"
-                alt="Evolo AI logo"
-                className="h-7 w-7 object-contain"
-              />
-            </div>
-            <span className="text-xl font-bold text-[#2B1BDD]">Evolo AI</span>
+            <img
+              src="/images/evolologo.png"
+              alt="Evolo AI logo"
+              className="h-8 w-auto object-contain cursor-pointer"
+              onClick={() => handleNavigate("/")}
+            />
           </div>
 
           {/* Desktop Nav links */}
@@ -288,18 +277,11 @@ const Navbar = () => {
             <div className="flex h-full flex-col overflow-y-auto">
               {/* Mobile Menu Header */}
               <div className="flex items-center justify-between border-b border-[#EAECF4] px-6 py-5">
-                <div className="flex items-center gap-2">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#E1DFFC] bg-white">
-                    <img
-                      src="/images/Vector.png"
-                      alt="Evolo AI logo"
-                      className="h-6 w-6 object-contain"
-                    />
-                  </div>
-                  <span className="text-lg font-bold text-[#2B1BDD]">
-                    Evolo AI
-                  </span>
-                </div>
+                <img
+                  src="/images/evolologo.png"
+                  alt="Evolo AI logo"
+                  className="h-10 w-auto object-contain"
+                />
                 <button
                   type="button"
                   onClick={() => setMobileMenuOpen(false)}

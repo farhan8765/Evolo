@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function EventSummit() {
   return (
-    <div className="bg-[#EFF0FF] py-16 px-6">
+    <div className="bg-[#EFF0FF] py-16 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* LEFT SIDE : Title + Image (same card) */}
-          <div className="space-y-6 pl-10">
+          <div className="space-y-6 md:pl-10">
            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
   Let's Connect at the CAEP Summit 2025!
 </h1>
@@ -20,7 +20,7 @@ export default function EventSummit() {
           </div>
 
           {/* RIGHT SIDE : Content */}
-          <div className="space-y-6 pr-10">
+          <div className="space-y-6 md:pr-10">
             <p className="text-gray-700">
               We're excited to share that the{' '}
               <span className="font-semibold">CAEP Summit 2025</span> is taking place from{' '}

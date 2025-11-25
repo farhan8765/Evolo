@@ -2,15 +2,15 @@ import React from "react";
 
 const Institutehero = () => {
   return (
-    <section className="relative overflow-hidden bg-[white] text-white pt-40 pb-16">
+    <section className="relative overflow-hidden bg-[white] text-white pt-8 pb-16">
       <div className="absolute -right-28 top-12 h-[520px] w-[520px] " />
       <div className="absolute -left-24 bottom-0 h-[360px] w-[360px]" />
 
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16">
         <div className="flex-1 text-center lg:text-left">
-          <p className="text-xs uppercase tracking-[0.35em] text-[#182126]">
+          {/* <p className="text-xs uppercase tracking-[0.35em] text-[#182126]">
             Tagline
-          </p>
+          </p> */}
       <h1 className="mt-4 text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl ">
   <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent whitespace-nowrap">
     The Future of Adult 
