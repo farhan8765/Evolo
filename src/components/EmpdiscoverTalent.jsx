@@ -15,7 +15,7 @@ const EmpdiscoverTalent = () => {
         
         {/* Subtitle with Gradient */}
         <h2
-          className="text-[48px] md:text-[52px] font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
+          className="text-3xl sm:text-4xl md:text-[52px] font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
           style={{ animationDelay: "0.15s" }}
         >
           The Recruitment solution for you
@@ -23,7 +23,7 @@ const EmpdiscoverTalent = () => {
 
         {/* Description */}
         <p
-          className="text-gray-600 mb-8 text-lg max-w-2xl mx-auto animate-hero-reveal"
+          className="text-gray-600 mb-8 text-base sm:text-lg max-w-2xl mx-auto animate-hero-reveal"
           style={{ animationDelay: "0.25s" }}
         >
           At Adulted Pro, we bridge the gap between employers and job seekers by providing a

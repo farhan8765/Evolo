@@ -43,8 +43,8 @@ const EmpGraph = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FBFCFD] flex items-center justify-center py-8">
-      <div className="max-w-7xl w-full px-4">
+    <section className="bg-[#FBFCFD] py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl w-full px-4 mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
           <p
@@ -54,7 +54,7 @@ const EmpGraph = () => {
             Tagline
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
             style={{ animationDelay: "0.15s" }}
           >
             Evolo AI Powered by AdultED Pro
@@ -68,59 +68,93 @@ const EmpGraph = () => {
         </div>
 
         {/* Graph Section */}
-        <div className="relative w-full max-w-5xl mx-auto" style={{ height: '550px' }}>
-          {/* Semi-circular Background with Concentric Circles */}
-        <div className="absolute left-1/2 bottom-0 -translate-x-1/2" style={{ width: '1100px', height: '700px', overflow: 'hidden' }}>
-            <svg className="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1400 700" preserveAspectRatio="xMidYMax meet">
-              {/* Concentric semi-circles */}
-              <path d="M 50 700 A 650 650 0 0 1 1350 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
-              <path d="M 150 700 A 550 550 0 0 1 1250 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
-              <path d="M 250 700 A 450 450 0 0 1 1150 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
-              <path d="M 350 700 A 350 350 0 0 1 1050 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
-            </svg>
-          </div>
+        <div className="hidden lg:block">
+          <div className="relative w-full max-w-5xl mx-auto" style={{ height: '550px' }}>
+            {/* Semi-circular Background with Concentric Circles */}
+            <div className="absolute left-1/2 bottom-0 -translate-x-1/2" style={{ width: '1100px', height: '700px', overflow: 'hidden' }}>
+              <svg className="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1400 700" preserveAspectRatio="xMidYMax meet">
+                {/* Concentric semi-circles */}
+                <path d="M 50 700 A 650 650 0 0 1 1350 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
+                <path d="M 150 700 A 550 550 0 0 1 1250 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
+                <path d="M 250 700 A 450 450 0 0 1 1150 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
+                <path d="M 350 700 A 350 350 0 0 1 1050 700" fill="none" stroke="#E5E7EB" strokeWidth="1.5" />
+              </svg>
+            </div>
 
-          {/* Category Icons positioned in rows */}
-          <div className="relative w-full h-full">
-            {categories.map((category, index) => (
-              <div
-                key={index}
-                className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-20 animate-hero-reveal"
-                style={{
-                  ...getRowPosition(category.row, category.position),
-                  animationDelay: `${0.35 + index * 0.05}s`,
-                }}
-              >
-                <div className="w-16 h-16 flex items-center justify-center transition-all ">
-                  <img 
-                    src={category.icon} 
-                    alt={category.name}
-                    className="w-9 h-9 object-contain"
-                  />
+            {/* Category Icons positioned in rows */}
+            <div className="relative w-full h-full">
+              {categories.map((category, index) => (
+                <div
+                  key={index}
+                  className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-20 animate-hero-reveal"
+                  style={{
+                    ...getRowPosition(category.row, category.position),
+                    animationDelay: `${0.35 + index * 0.05}s`,
+                  }}
+                >
+                  <div className="w-16 h-16 flex items-center justify-center transition-all ">
+                    <img 
+                      src={category.icon} 
+                      alt={category.name}
+                      className="w-9 h-9 object-contain"
+                    />
+                  </div>
+                  <p className="text-xs font-semibold text-gray-800 text-center max-w-[130px] leading-tight whitespace-pre-line">
+                    {category.name}
+                  </p>
                 </div>
-                <p className="text-xs font-semibold text-gray-800 text-center max-w-[130px] leading-tight whitespace-pre-line">
-                  {category.name}
-                </p>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {/* Center Logo at Bottom (Row 4 Center) */}
-          <div
-            className="absolute left-[40%] -translate-x-1/2 z-30 animate-hero-reveal"
-            style={{ top: '58%', transform: 'translate(-50%, -50%)', animationDelay: '0.7s' }}
-          >
-            <div className="p-5">
-              <img 
-                src="images/evolologos.png" 
-                alt="Evolo AI Logo" 
-                className="w-40 h-40 object-contain"
-              />
+            {/* Center Logo at Bottom (Row 4 Center) */}
+            <div
+              className="absolute left-1/2 -translate-x-1/2 z-30 animate-hero-reveal"
+              style={{ top: '58%', transform: 'translate(-50%, -50%)', animationDelay: '0.7s' }}
+            >
+              <div className="p-5">
+                <img 
+                  src="images/evolologos.png" 
+                  alt="Evolo AI Logo" 
+                  className="w-40 h-40 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Mobile / Tablet stacked icons */}
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 lg:hidden">
+          {categories.map((category, index) => (
+            <div
+              key={`mobile-${category.name}-${index}`}
+              className="flex flex-col items-center rounded-2xl bg-white p-4 shadow-sm animate-hero-reveal"
+              style={{ animationDelay: `${0.35 + index * 0.05}s` }}
+            >
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#EEF2FF] mb-3">
+                <img
+                  src={category.icon}
+                  alt={category.name}
+                  className="w-8 h-8 object-contain"
+                />
+              </div>
+              <p className="text-sm font-semibold text-gray-800 text-center whitespace-pre-line">
+                {category.name}
+              </p>
+            </div>
+          ))}
+          <div className="col-span-2 sm:col-span-3 flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#E5E7EB] p-6">
+            <img
+              src="images/evolologos.png"
+              alt="Evolo AI logo"
+              className="w-24 h-24 object-contain mb-3"
+            />
+            <p className="text-sm font-semibold text-[#2B1BDD]">
+              Always on campus with Evolo AI
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
