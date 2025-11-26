@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const audienceCards = [
   {
@@ -7,9 +8,10 @@ const audienceCards = [
     points: [
       'Swipe to Apply',
       'Instant Communication',
-      'AI-Powered Profile Builde',
+      'AI-Powered Profile Builder',
       'Exclusive Career Events',
     ],
+    pageUrl: '/student'
   },
   {
     title: 'Need Talent?',
@@ -20,6 +22,7 @@ const audienceCards = [
       'Built-In Applicant Tracking',
       'Employer Partnerships',
     ],
+    pageUrl: '/employee'
   },
   {
     title: 'Empower Your Students',
@@ -30,6 +33,7 @@ const audienceCards = [
       'Host Career Fairs with Ease',
       'Mobile App for Student Success',
     ],
+    pageUrl: '/institute'
   },
 ];
 
@@ -42,6 +46,7 @@ const fullBleed = {
 const Skills = () => {
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const node = sectionRef.current;
@@ -63,6 +68,10 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
+  const handleLearnMoreClick = (pageUrl) => {
+    navigate(pageUrl);
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -80,7 +89,7 @@ const Skills = () => {
         </h2>
 
         <div className="grid w-full gap-8 lg:grid-cols-3">
-          {audienceCards.map(({ title, subtitle, points }, index) => (
+          {audienceCards.map(({ title, subtitle, points, pageUrl }, index) => (
             <article
               key={title}
               style={{ transitionDelay: `${index * 150}ms` }}
@@ -116,6 +125,7 @@ const Skills = () => {
 
               <button
                 type="button"
+                onClick={() => handleLearnMoreClick(pageUrl)}
                 className="mt-8 rounded-[14px] bg-[#5b20ff] py-3 text-center text-base font-semibold text-white shadow-[0px_12px_24px_rgba(91,32,255,0.35)] transition hover:bg-[#4a12f0]"
               >
                 Learn More

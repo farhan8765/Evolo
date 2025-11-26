@@ -61,7 +61,7 @@ export default function ConnectStudent() {
           <img
             src="/images/home-fourth.png"
             alt="Mobile Preview"
-            className="w-full sm:w-[90%] md:w-[75%] lg:w-[70%] h-auto drop-shadow-xl"
+            className="w-full sm:w-[80%] md:w-[75%] lg:w-[700px] xl:w-[800px] 2xl:w-[900px] h-auto drop-shadow-xl"
           />
         </div>
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PLAN_DATA = {
   monthly: [
@@ -130,7 +131,16 @@ const BulletIcon = () => (
 
 const EmpFeatureCards = () => {
   const [billingCycle, setBillingCycle] = useState("monthly");
+  const navigate = useNavigate();
   const plans = PLAN_DATA[billingCycle];
+
+  const handleStartTrialClick = (planName) => {
+    // Contact page par navigate karega
+    navigate('/contact');
+    
+    // Optional: Agar ap plan name bhi pass karna chahte hain
+    // navigate('/contact', { state: { selectedPlan: planName } });
+  };
 
   return (
     <section className="bg-[#f4f1ff] py-20">
@@ -234,6 +244,7 @@ const EmpFeatureCards = () => {
 
               <button
                 type="button"
+                onClick={() => handleStartTrialClick(plan.name)}
                 className={`mt-auto w-full rounded-2xl bg-gradient-to-r ${plan.accent} py-3 text-center text-sm font-semibold text-white shadow-[0_12px_30px_rgba(93,62,255,0.25)] transition hover:opacity-95`}
               >
                 Start trial

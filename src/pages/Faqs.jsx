@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState(null);
+  const navigate = useNavigate();
 
   const faqs = [
     {
@@ -11,7 +13,7 @@ export default function FAQPage() {
     },
     {
       question: "How do I create an account on Evolo AI?",
-      answer: "To create an account, download the Evolo AI app from the App Store or Google Play, or visit the website. Click on “Sign Up,” enter your personal information, and follow the steps to complete your registration"
+      answer: "To create an account, download the Evolo AI app from the App Store or Google Play, or visit the website. Click on \"Sign Up,\" enter your personal information, and follow the steps to complete your registration"
     },
     {
       question: "Can I log in using my social media account?",
@@ -35,11 +37,11 @@ export default function FAQPage() {
     },
     {
       question: "How can I personalize my job preferences?",
-      answer: "You can personalize your job preferences by going to the “Career Assesment” section in your profile. Set your preferred job titles, industries, locations, and salary expectations to receive tailored job recommendations."
+      answer: "You can personalize your job preferences by going to the \"Career Assesment\" section in your profile. Set your preferred job titles, industries, locations, and salary expectations to receive tailored job recommendations."
     },
     {
       question: "How can I build a resume using Evolo AI?",
-      answer: "Navigate to the “Resume” section of the app. Enter your information and follow steps and preview your resume. Once completed, you can download it in formats like PDF."
+      answer: "Navigate to the \"Resume\" section of the app. Enter your information and follow steps and preview your resume. Once completed, you can download it in formats like PDF."
     },
     {
       question: "How does the Mock Interview feature help me prepare?",
@@ -47,15 +49,15 @@ export default function FAQPage() {
     },
     {
       question: "What is the Spotlight feature?",
-      answer: "The Spotlight feature enables you to showcase your achievements. It’s a way of engaging between  students and teachers through real-time updates and shared accomplishments."
+      answer: "The Spotlight feature enables you to showcase your achievements. It's a way of engaging between  students and teachers through real-time updates and shared accomplishments."
     },
     {
-      question: "Can I track the jobs I’ve applied for?",
-      answer: "Yes, you can view the jobs you’ve applied for in the “Applied Jobs” section of your dashboard. You’ll also be able to track the application status, whether it’s pending, under review, or closed."
+      question: "Can I track the jobs I've applied for?",
+      answer: "Yes, you can view the jobs you've applied for in the \"Applied Jobs\" section of your dashboard. You'll also be able to track the application status, whether it's pending, under review, or closed."
     },
     {
       question: "Can I apply to jobs directly through the app?",
-      answer: "Yes, Evolo AI allows you to apply for jobs directly within the app. Once you find a job that fits your qualifications, click the “Apply” button, and your resume and profile will be sent to the employer automatically."
+      answer: "Yes, Evolo AI allows you to apply for jobs directly within the app. Once you find a job that fits your qualifications, click the \"Apply\" button, and your resume and profile will be sent to the employer automatically."
     },
     {
       question: "How does the Events section work?",
@@ -75,8 +77,12 @@ export default function FAQPage() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
+
   return (
-    <div className="min-h-screen bg-white font-['Raleway'] relative overflow-hidden pt-8">
+    <div className="min-h-screen bg-white font-['Raleway'] relative overflow-hidden pt-0">
 
       {/* Left Background Image */}
       <div className="hidden md:block absolute left-0 top-52 w-48 md:w-64 pointer-events-none">
@@ -144,7 +150,10 @@ export default function FAQPage() {
           <h3 className="text-2xl font-bold text-gray-900">Still have questions?</h3>
           <p className="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-          <button className="mt-6 px-6 py-2 rounded-lg border border-[#6C4BFF] text-[#6C4BFF] hover:bg-[#6C4BFF] hover:text-white transition-all">
+          <button 
+            onClick={handleContactClick}
+            className="mt-6 px-6 py-2 rounded-lg border border-[#6C4BFF] text-[#6C4BFF] hover:bg-[#6C4BFF] hover:text-white transition-all"
+          >
             Contact Us
           </button>
         </div>

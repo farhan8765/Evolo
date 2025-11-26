@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 const videos = [
   {
     id: 1,
-    link: "https://www.youtube.com/watch?v=zPSqLfjj8WM",
+    link: "https://www.youtube.com/watch?v=RwS4MQCVjHg",
     highlight: true,
   },
   {
@@ -12,7 +12,7 @@ const videos = [
   },
   {
     id: 3,
-    link: "https://www.youtube.com/watch?v=Q_fFcJqZ4bU",
+    link: "https://www.youtube.com/watch?v=zPSqLfjj8WM",
   },
 ];
 

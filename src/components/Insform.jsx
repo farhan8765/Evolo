@@ -68,7 +68,7 @@ const InsForm = () => {
   }, [formContainerId, formId, hubspotRegion, portalId]);
 
   return (
-    <section className="bg-white px-4 py-20">
+    <section className="bg-white px-4 py-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 rounded-[32px] bg-white p-8 md:flex-row md:items-start md:gap-16 md:p-14">
 
         {/* LEFT SECTION */}

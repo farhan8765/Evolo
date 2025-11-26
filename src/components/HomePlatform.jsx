@@ -62,12 +62,12 @@ export default function HomePlatform() {
 
         {/* Right Side – Image */}
         <div className="flex items-center justify-center mt-8 md:mt-0">
-          <img
-            src="/images/home-second.png"
-            alt="Platform Mobile Preview"
-            className="w-full sm:w-[90%] md:w-[75%] lg:w-[70%] h-auto drop-shadow-xl"
-          />
-        </div>
+  <img
+    src="/images/home-second.png"
+    alt="Platform Mobile Preview"
+    className="w-full sm:w-[90%] md:w-[80%] lg:w-[700px] xl:w-[800px] 2xl:w-[900px] h-auto drop-shadow-xl"
+  />
+</div>
 
       </div>
     </div>

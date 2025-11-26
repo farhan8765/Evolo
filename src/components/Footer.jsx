@@ -24,15 +24,14 @@ export default function Footer() {
           {/* Left Section */}
           <div>
             {/* Logo */}
-           <div className="flex items-center space-x-3 mb-4">
-  <div className="flex items-center justify-center w-12 h-12 bg-white rounded-lg overflow-hidden">
+           <div className="flex items-center mb-4">
+  <div className="flex items-center justify-center w-35 h-20 overflow-hidden">
     <img
-      src="/images/Vector.png" // replace with your logo path
+      src="/images/Footer-logo.png" // replace with your logo path
       alt="Evolo AI Logo"
-      className="w-8 h-8 object-contain"
+      className="w-30 h-20 object-contain"
     />
   </div>
-  <h2 className="text-2xl font-semibold">Evolo AI</h2>
 </div>
 
 

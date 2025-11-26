@@ -27,7 +27,7 @@ export default function LastHome() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#F9F9FB] py-20 px-6 md:px-16"
+      className="bg-[white] py-20 px-6 md:px-16"
     >
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         
@@ -70,7 +70,7 @@ export default function LastHome() {
           <img
             src="/images/Group 5.png" // ← only one image now
             alt="App preview"
-            className="w-[280px] md:w-[330px] lg:w-[350px] drop-shadow-2xl"
+            className="w-[280px] md:w-[330px] lg:w-[480px] drop-shadow-2xl"
           />
         </div>
       </div>

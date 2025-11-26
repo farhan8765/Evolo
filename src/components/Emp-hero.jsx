@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const EmpHero = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <section className="relative overflow-hidden bg-[white] text-white pt-12 pb-10 sm:pt-16 sm:pb-12 lg:pt-20 lg:pb-16">
       <div className="absolute -right-28 top-12 h-[520px] w-[520px] " />
@@ -30,6 +37,7 @@ const EmpHero = () => {
           </p>
           
           <button
+            onClick={handleContactClick}
             className="mt-6 inline-flex items-center rounded-2xl bg-[#5e2bff] px-6 py-2.5 text-sm font-semibold text-white transition sm:mt-8 sm:px-8 sm:py-3 sm:text-base hover:bg-[#4e1fd9] animate-hero-reveal"
             style={{ animationDelay: "0.35s" }}
           >
