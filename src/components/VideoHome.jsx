@@ -90,7 +90,7 @@ const VideoHome = () => {
     <section
       ref={sectionRef}
       style={fullBleed}
-      className="bg-[#f7f6fb] py-20 font-[Inter,sans-serif]"
+      className="bg-[#FBFCFD] py-20 font-[Inter,sans-serif]"
     >
       <div className="mx-auto w-full max-w-6xl flex flex-col gap-14 px-6">
         

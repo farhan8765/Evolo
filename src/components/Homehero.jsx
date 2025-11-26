@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Homehero() {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 py-8 font-['Raleway'] pt-4 md:pt-20">
+    <div className="bg-gradient-to-b from-white to-gray-50 pt-8 font-['Raleway'] pt-4 md:pt-20">
       <div className="max-w-8xl mx-auto">
         {/* Top Tagline */}
         <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-700 mb-4 md:mb-2 italic">
@@ -28,10 +31,16 @@ export default function Homehero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
-          <button className="bg-[#5A14ED] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto">
+          <button 
+            onClick={() => navigate('/adult')}
+            className="bg-[#5A14ED] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
+          >
             Adult Education Programs
           </button>
-          <button className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto">
+          <button 
+            onClick={() => navigate('/mental')}
+            className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
+          >
             K-12 Mental Health (CYBHI)
           </button>
         </div>

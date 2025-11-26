@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeWho() {
   return (
-    <div className="w-full bg-[#F4F4FF] py-10 md:py-20 px-4 sm:px-6 font-['Raleway']">
+    <div className="w-full bg-[#EFF0FF] py-10 md:py-20 px-4 sm:px-6 font-['Raleway']">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
 
         {/* LEFT SIDE */}

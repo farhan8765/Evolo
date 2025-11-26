@@ -23,6 +23,7 @@ import Faqs from './pages/Faqs';
 import Resources from './pages/Resources';
 import Mainhome from './pages/Mainhome';
 import AdultEducation from './pages/AdultEducation';
+import MentalHealthCybhi from './pages/MentalHealthCybhi';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/student" element={<Student />} />
           <Route path="/employee" element={<Employee />} />
           <Route path="/institute" element={<Institute />} />
+          <Route path="/mental" element={<MentalHealthCybhi />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />

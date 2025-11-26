@@ -25,7 +25,7 @@ const Homecardsdetail = () => {
   ];
 
   return (
-    <div className="w-full bg-[#F8F9FA] py-16 px-4 font-['Raleway']">
+    <div className="w-full bg-[white] py-16 px-4 font-['Raleway']">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

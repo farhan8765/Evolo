@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SECTION_COUNT = 4;
 
@@ -9,6 +10,7 @@ export default function Partner() {
   const [visibleBlocks, setVisibleBlocks] = useState(() =>
     Array(SECTION_COUNT).fill(false)
   );
+  const navigate = useNavigate();
 
   useEffect(() => {
     const headerNode = headerRef.current;
@@ -218,7 +220,10 @@ export default function Partner() {
             <p className="text-xs sm:text-sm md:text-base leading-relaxed">
               Evolo AI helps you build a standout profile in minutes. Showcase your skills with ease, apply for jobs effortlessly, and impress employers with custom AI-generated taglines tailored just for you.
             </p>
-            <button className="bg-black text-white text-xs sm:text-sm px-4 py-2 rounded mt-2 hover:bg-gray-900 transition-colors">
+            <button 
+              onClick={() => navigate('/contact')}
+              className="bg-black text-white text-xs sm:text-sm px-4 py-2 rounded mt-2 hover:bg-gray-900 transition-colors"
+            >
               Get Started
             </button>
           </div>
