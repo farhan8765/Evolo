@@ -40,7 +40,7 @@ const NAV_TABS = [
     path: null,
     subItems: [
       { label: "Upcoming Events", path: "/events" },
-      { label: "Past Events", path: "/events" },
+      { label: "Past Events", path: "/eventone" },
     ],
   },
 ];

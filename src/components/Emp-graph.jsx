@@ -108,7 +108,7 @@ const EmpGraph = () => {
 
             {/* Center Logo at Bottom (Row 4 Center) */}
             <div
-              className="absolute left-1/2 -translate-x-1/2 z-30 animate-hero-reveal"
+              className="absolute left-[41%] -translate-x-1/2 z-30 animate-hero-reveal"
               style={{ top: '58%', transform: 'translate(-50%, -50%)', animationDelay: '0.7s' }}
             >
               <div className="p-5">

@@ -6,24 +6,30 @@ const EmpTransforming = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 lg:gap-16">
         {/* Left Text Section */}
         <div
-          className="w-full md:w-1/2 text-center md:text-left animate-hero-reveal"
-          style={{ animationDelay: "0.05s" }}
-        >
-          <h2 className="text-3xl sm:text-4xl lg:text-[52px] font-bold leading-tight">
-            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              Transforming
-            </span>
-            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              AdultEd with
-            </span>
-            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              Mobile-First
-            </span>
-            <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              Recruitment
-            </span>
-          </h2>
-        </div>
+  className="w-full md:w-1/2 text-center md:text-left animate-hero-reveal"
+  style={{ animationDelay: "0.05s" }}
+>
+  <h2 className="lg:pt-10 lg:pl-12 sm:pl-4 sm:pt-4 text-3xl sm:text-4xl lg:text-[48px] font-bold leading-normal">
+    {/* Mobile: Single line */}
+    <span className="block md:hidden bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+      Transforming AdultEd with Mobile-First Recruitment
+    </span>
+    
+    {/* Desktop: Multiple lines */}
+    <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent mb-3">
+      Transforming
+    </span>
+    <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent mb-3">
+      AdultEd with
+    </span>
+    <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent mb-3">
+      Mobile-First
+    </span>
+    <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+      Recruitment
+    </span>
+  </h2>
+</div>
 
         {/* Right Bullet Points */}
         <div className="w-full md:w-1/2 text-gray-700 text-base md:text-lg md:pr-10 lg:pr-20">

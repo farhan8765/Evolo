@@ -24,6 +24,7 @@ import Resources from './pages/Resources';
 import Mainhome from './pages/Mainhome';
 import AdultEducation from './pages/AdultEducation';
 import MentalHealthCybhi from './pages/MentalHealthCybhi';
+import OneEvent from './pages/OneEvent';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/eventone" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/resources" element={<Resources />} />
         </Routes>
