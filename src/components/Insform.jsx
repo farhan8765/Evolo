@@ -82,11 +82,11 @@ const InsForm = () => {
           </div>
 
           {/* IMAGE CARD EXACTLY LIKE SCREENSHOT */}
-          <div className="rounded-3xl bg-[#5b2bff] w-full max-w-[700px] h-[350px] flex items-center justify-center overflow-hidden shadow-lg">
+          <div className="flex items-center justify-center overflow-hidden">
             <img
               src="/images/evoloo.png"
               alt="Evolo AI dashboard preview"
-              className="w-full h-[100%] "
+              className="w-full "
             />
           </div>
         </div>

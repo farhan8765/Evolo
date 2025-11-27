@@ -152,13 +152,13 @@ const GetinTouch = () => {
             Get in Touch
           </h2>
           <p className="text-gray-600 mb-8 text-lg">
-            Get started for Free and see how quickly Adults@ Pro can help your business, large or small.
+            Get started for Free and see how quickly Adults@ Pro can help your business, large or small
           </p>
           <div className="mb-8">
             <img
               src="/images/evoloo.png"
               alt="Evolo"
-              className="w-full h-auto mb-6"
+              className="w-[100%] mb-6"
             />
           </div>
         </div>
