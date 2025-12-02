@@ -155,7 +155,7 @@ export default function Blogs() {
               </p> */}
             </div>
             
-           <Link to={`/blog/${post.slug}`}>
+           <Link to={post.slug ? `/${post.slug}` : '#'}>
                     <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
                       Learn More
                       <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
