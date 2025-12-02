@@ -13,16 +13,13 @@ export default function HomePlatform() {
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4 md:mb-6">
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              One Platform.
-            </span>
+CYBHI-Compliant            </span>
             <br />
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              Two Powerful Solutions.
-            </span>
+Platform for School            </span>
             <br />
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-              Infinite Possibilities.
-            </span>
+Behavioral            </span>
           </h2>
 
           <p className="text-gray-600 mb-6 md:mb-8 text-sm sm:text-base">

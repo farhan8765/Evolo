@@ -85,13 +85,13 @@ export default function Partner() {
       </div>
 
       {/* Sections */}
-      <div className="space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-20 px-4 sm:px-6">
+      <div className="space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-24 lg:pt-8 px-4 sm:px-6">
 
         {/* Section 1 */}
         <div
           ref={(el) => registerBlockRef(el, 0)}
           data-index="0"
-          className={`relative bg-[#4D04DB] text-white rounded-xl sm:rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-6 sm:p-8 md:p-10 overflow-visible mt-6 transition-all duration-700 ease-out ${
+          className={`relative bg-[#4D04DB] text-white rounded-xl sm:rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center p-8 sm:p-8 md:p-10 overflow-visible mt-6 transition-all duration-700 ease-out ${
             visibleBlocks[0] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >

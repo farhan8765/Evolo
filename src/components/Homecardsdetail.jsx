@@ -4,23 +4,23 @@ const Homecardsdetail = () => {
   const cards = [
     {
       title: 'Students',
-      description: "Whether you're pursuing a new career or managing personal challenges, Evolo AI gives you the tools to succeed."
+      description: "Whether you're pursuing a new career or looking to leverage your existing skills in a new industry, Evolo AI makes job searching effortless. Swipe to apply for jobs, connect directly with employers, and prepare for career fairs—all from your mobile device."
     },
     {
       title: 'Employers',
-      description: 'Access pre-vetted talent from California\'s top adult education programs. Post jobs, review applicants, and hire faster.'
+      description: 'Access pre-vetted talent from California top adult education programs. Post job opportunities, review qualified candidates, and streamline your hiring process through one intuitive platform.'
     },
     {
       title: 'Counselors',
-      description: 'Spend less time on paperwork, more time with students. Our AI handles documentation, compliance, and scheduling automatically.'
+      description: 'Spend less time on paperwork, more time with students. Our AI generates CYBHI-compliant session notes, manages scheduling, tracks follow-ups, and reviews incident reports—so you can focus on providing quality behavioral health support.'
     },
     {
       title: 'Administrators',
-      description: 'Get the data you need to prove impact, secure funding, and scale programs that work.'
+      description: 'Gain complete oversight of behavioral incidents and counseling sessions across your school or district. Access comprehensive analytics, ensure CYBHI compliance, and make data-driven decisions that improve student mental health outcomes.'
     },
     {
       title: 'Classified Staff',
-      description: 'Unlock CYBHI revenue, improve mental health outcomes, and build sustainable systems that serve students and communities.'
+      description: 'Document behavioral incidents quickly and accurately with AI-powered assistance. Simply describe what happened using voice or text, and our platform generates structured, CYBHI-compliant incident reports ready for counselor review—no specialized training required.'
     }
   ];
 
