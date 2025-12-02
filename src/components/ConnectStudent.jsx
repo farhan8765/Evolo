@@ -22,8 +22,8 @@ export default function ConnectStudent() {
           </h2>
 
           <p className="text-gray-600 mb-6 md:mb-8 text-sm sm:text-base">
-            Whether you're seeking a fresh start or looking to leverage your existing
-            skills in a new industry, we're here to help you succeed.
+            Building a three-way ecosystem where students find careers, 
+employers discover talent, and institutions prove impact.
           </p>
 
           {/* Feature Buttons */}

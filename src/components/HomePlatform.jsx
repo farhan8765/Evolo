@@ -23,8 +23,8 @@ Behavioral            </span>
           </h2>
 
           <p className="text-gray-600 mb-6 md:mb-8 text-sm sm:text-base">
-            Whether you're seeking a fresh start or looking to leverage your existing
-            skills in a new industry, we're here to help you succeed.
+            We connect staff, counselors, and administrators to streamline 
+incident reporting, session management, and compliance documentation.
           </p>
 
           {/* Feature Buttons */}

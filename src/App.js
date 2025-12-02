@@ -25,12 +25,12 @@ import Mainhome from './pages/Mainhome';
 import AdultEducation from './pages/AdultEducation';
 import MentalHealthCybhi from './pages/MentalHealthCybhi';
 import OneEvent from './pages/OneEvent';
-
+import Blog1 from './components/Blog1';
 function App() {
   return (
     <Router>
       <div className="w-full">
-        <Header />
+        {/* <Header /> */}
         <Navbar/>
         <Routes>
           <Route path="/" element={<Mainhome/>} />
@@ -45,6 +45,7 @@ function App() {
           <Route path="/eventone" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/blog/single-parents-benefit-adult-schools" element={<Blog1 />} />
         </Routes>
         <Footer />
       </div>

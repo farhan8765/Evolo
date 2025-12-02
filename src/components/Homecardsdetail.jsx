@@ -47,9 +47,7 @@ const Homecardsdetail = () => {
 
           
           <p className="text-gray-600 text-base max-w-2xl mx-auto font-['Raleway']">
-            Whether you're seeking a fresh start or looking to leverage your existing skills in a new industry,
-        
-            we're here to help you succeed
+            From adult education institutions connecting students to careers, to K-12 schools managing behavioral health services, Evolo AI provides tailored solutions for every stakeholder.
           </p>
         </div>
 
