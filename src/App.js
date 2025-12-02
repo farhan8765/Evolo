@@ -45,7 +45,7 @@ function App() {
           <Route path="/eventone" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/single-parents-benefit-adult-schools" element={<Blog1 />} />
+          <Route path="/blog/blog1" element={<Blog1 />} />
         </Routes>
         <Footer />
       </div>

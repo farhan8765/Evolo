@@ -6,7 +6,7 @@ export default function Blogs() {
   const blogPosts = [
     {
       id: 1,
-      slug: "single-parents-benefit-adult-schools", // Unique identifier
+      slug: "blog1", // Unique identifier
       image: "/images/blog1.png",
       title: "How Single Parents Benefit from Adult Schools",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
