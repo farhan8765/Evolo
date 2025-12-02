@@ -21,16 +21,11 @@ export default function HomeWho() {
         {/* RIGHT SIDE PARAGRAPH */}
         <div className="text-gray-600 text-sm sm:text-[15px] leading-relaxed">
           <p className="mb-4 md:mb-6">
-            Evolo AI partners with educational institutions to solve their most
-            pressing challenges. Whether you're connecting adult learners to
-            career opportunities or managing behavioral health services in K–12
-            schools, our AI-powered platforms streamline operations, ensure
-            compliance, and drive measurable results.
+          Evolo AI partners with educational institutions to solve their most pressing challenges. Whether you're connecting adult learners to career opportunities or supporting the well-being and mental health of K-12 students, our AI-powered platforms streamline operations, ensure compliance, and drive measurable results.
           </p>
 
           <p>
-            We don't just build software—we build systems that work for students,
-            staff, and institutions.
+          We don't just build software, we build systems that work for students, staff, and institutions.
           </p>
         </div>
 

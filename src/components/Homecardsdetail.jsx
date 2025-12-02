@@ -4,11 +4,11 @@ const Homecardsdetail = () => {
   const cards = [
     {
       title: 'Students',
-      description: "Whether you're pursuing a new career or looking to leverage your existing skills in a new industry, Evolo AI makes job searching effortless. Swipe to apply for jobs, connect directly with employers, and prepare for career fairs—all from your mobile device."
+      description: "Whether you're pursuing a new career or looking to leverage your existing skills in a new industry, Evolo AI makes job searching effortless. Swipe to apply for jobs, connect directly with employers, and prepare for career fairs, all from your mobile device."
     },
     {
       title: 'Employers',
-      description: 'Access pre-vetted talent from California top adult education programs. Post job opportunities, review qualified candidates, and streamline your hiring process through one intuitive platform.'
+      description: 'Access pre-vetted talent from Californias top adult education programs. Post job opportunities, review qualified candidates, and streamline your hiring process through one intuitive platform.'
     },
      {
       title: 'Institutions',
@@ -16,15 +16,15 @@ const Homecardsdetail = () => {
     },
     {
       title: 'Counselors',
-      description: 'Spend less time on paperwork, more time with students. Our AI generates CYBHI-compliant session notes, manages scheduling, tracks follow-ups, and reviews incident reports—so you can focus on providing quality behavioral health support.'
+      description: 'Spend less time on paperwork, more time with students. Our AI generates session notes, manages scheduling, tracks follow-ups, and reviews incident reports, so you can focus on providing quality mental health support and student well-being services.'
     },
     {
       title: 'Administrators',
-      description: 'Gain complete oversight of behavioral incidents and counseling sessions across your school or district. Access comprehensive analytics, ensure CYBHI compliance, and make data-driven decisions that improve student mental health outcomes.'
+      description: 'Gain complete oversight of student incidents and counseling sessions across your school or district. Access comprehensive analytics, ensure compliance with FERPA, HIPAA, and CYBHI guidelines, and make data-driven decisions that improve student well-being and mental health outcomes.'
     },
     {
       title: 'Classified Staff',
-      description: 'Document behavioral incidents quickly and accurately with AI-powered assistance. Simply describe what happened using voice or text, and our platform generates structured, CYBHI-compliant incident reports ready for counselor review—no specialized training required.'
+      description: 'Document student incidents quickly and accurately with AI-powered assistance compliant with CYBHI guidelines. Simply describe what happened using voice or text, and our platform generates structured incident reports ready for review by a counselor.'
     }
   ];
 
@@ -47,7 +47,7 @@ const Homecardsdetail = () => {
 
           
           <p className="text-gray-600 text-base max-w-2xl mx-auto font-['Raleway']">
-            From adult education institutions connecting students to careers, to K-12 schools managing behavioral health services, Evolo AI provides tailored solutions for every stakeholder.
+          From adult education institutions connecting students to careers, to K-12 schools supporting student well-being, Evolo AI provides tailored solutions for every stakeholder.
           </p>
         </div>
 

@@ -8,18 +8,19 @@ export default function HomePlatform() {
         {/* Left Side – Text Content */}
         <div>
           <p className="text-xs font-semibold tracking-wider text-black mb-2">
-            K–12 Mental Health (CYBHI)
+          K-12
+
           </p>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4 md:mb-6">
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-CYBHI-Compliant            </span>
+            CYBHI-Compliant          </span>
             <br />
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-Platform for School            </span>
+            Student Support          </span>
             <br />
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-Behavioral            </span>
+            & Counseling Platform          </span>
           </h2>
 
           <p className="text-gray-600 mb-6 md:mb-8 text-sm sm:text-base">
@@ -33,7 +34,7 @@ incident reporting, session management, and compliance documentation.
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/images/Hic1.svg" alt="AI Documentation" className="w-5 h-5" />
               </span>
-              AI Incident Reporting
+              Reports for Medical Billing
             </button>
 
             <button className="w-full text-left bg-[#F3F3FF] px-4 sm:px-6 py-3 rounded-xl flex gap-3 items-center font-semibold text-black shadow-sm text-sm sm:text-base hover:bg-[#E8E8FF] transition-colors">
@@ -47,7 +48,7 @@ incident reporting, session management, and compliance documentation.
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/images/Hic3.svg" alt="Session Management" className="w-5 h-5" />
               </span>
-              CYBHI Compliance
+              AI Incident Reporting
             </button>
           </div>
 
