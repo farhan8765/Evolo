@@ -1,13 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Aboutstay from "../components/Aboutstay"
 
 export default function Blogs() {
   const blogPosts = [
     {
       id: 1,
+      slug: "single-parents-benefit-adult-schools", // Unique identifier
       image: "/images/blog1.png",
       title: "How Single Parents Benefit from Adult Schools",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog1" // Optional: component name
+
     },
     {
       id: 2,
@@ -151,12 +155,14 @@ export default function Blogs() {
               </p> */}
             </div>
             
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
-              Learn More
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+           <Link to={`/blog/${post.slug}`}>
+                    <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
+                      Learn More
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </Link>
           </div>
         </div>
       </div>

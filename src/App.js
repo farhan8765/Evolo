@@ -1,7 +1,7 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+// import Header from './components/Header';
 
 // import LastHome from './components/Last-home';
 import Navbar from './components/Navbar';
@@ -45,7 +45,7 @@ function App() {
           <Route path="/eventone" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/blog/single-parents-benefit-adult-schools" element={<Blog1 />} />
+          <Route path="/single-parents-benefit-adult-schools" element={<Blog1 />} />
         </Routes>
         <Footer />
       </div>
