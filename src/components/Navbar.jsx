@@ -85,13 +85,18 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
+      // Desktop-only: mobile drawer is rendered outside navRef,
+      // so we don't want to immediately close dropdowns on mobile.
+      if (mobileMenuOpen) return;
+
       if (navRef.current && !navRef.current.contains(event.target)) {
         setOpenTab(null);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [mobileMenuOpen]);
 
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -267,7 +272,10 @@ const Navbar = () => {
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
-          onClick={() => setMobileMenuOpen(false)}
+          onClick={() => {
+            setMobileMenuOpen(false);
+            setOpenTab(null);
+          }}
         >
           <div
             className={`absolute right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-xl transition-transform ${

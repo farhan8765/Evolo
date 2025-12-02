@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 const GetinTouch = () => {
   const portalId = process.env.REACT_APP_HUBSPOT_PORTAL_ID;
   const formId = process.env.REACT_APP_HUBSPOT_GET_IN_TOUCH_FORM_ID;
-  const hubspotRegion = process.env.REACT_APP_HUBSPOT_REGION || 'na1';
+  const hubspotRegion = process.env.REACT_APP_HUBSPOT_REGION || 'na2';
   const baseFormContainerId = 'hubspot-get-in-touch';
   const formRef = useRef(null);
   const submissionTimerRef = useRef(null);
@@ -24,6 +24,7 @@ const GetinTouch = () => {
 
   useEffect(() => {
     if (!formRef.current || !portalId || !formId) {
+      console.warn('HubSpot form missing config:', { portalId, formId, region: hubspotRegion });
       return;
     }
 
@@ -40,8 +41,17 @@ const GetinTouch = () => {
         portalId,
         formId,
         target: `#${currentFormContainerId}`,
-        onFormReady: () => setHubspotStatus('ready'),
-        onFormSubmit: () => setHubspotStatus('submitted'),
+        onFormReady: () => {
+          console.log('HubSpot form ready', { portalId, formId, region: hubspotRegion });
+          setHubspotStatus('ready');
+        },
+        onFormSubmit: (form) => {
+          console.log('HubSpot form submitted', form);
+          setHubspotStatus('submitted');
+        },
+        onFormSubmitted: (form) => {
+          console.log('HubSpot form submission confirmed', form);
+        },
       });
     };
 
