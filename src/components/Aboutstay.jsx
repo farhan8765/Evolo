@@ -10,7 +10,7 @@ const Aboutstay = () => {
   // Portal ID: Found in your HubSpot account settings
   // Form GUID: Found in your HubSpot form settings
   const HUBSPOT_PORTAL_ID = process.env.REACT_APP_HUBSPOT_PORTAL_ID || "YOUR_PORTAL_ID";
-  const HUBSPOT_FORM_GUID = process.env.REACT_APP_HUBSPOT_FORM_GUID || "YOUR_FORM_GUID";
+  const HUBSPOT_FORM_GUID = process.env.REACT_APP_HUBSPOT_FORM_GUID_ID|| "YOUR_FORM_GUID";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
