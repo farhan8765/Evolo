@@ -4,7 +4,7 @@ const TAGLINE_CARDS = [
   {
     title: "Our Vision",
     copy:
-      "Empowering every adult learner with next-gen technology, bridging support, pride, and ensuring equitable access to career-advancing education success."
+      "Empowering every adult learner with cutting-edge technology, bridging opportunities, and ensuring equitable access to career and higher education success."
   },
   {
     title: "Our Mission",
@@ -26,7 +26,7 @@ const Abouttagline = () => {
           {/* <p className="text-xs md:text-sm tracking-[0.45em] font-semibold text-black">
             Tagline
           </p> */}
-          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent font-[Raleway]">
   Transforming Adult learning with AI innovation
 </h2>
 
@@ -47,12 +47,12 @@ const Abouttagline = () => {
             {TAGLINE_CARDS.map(({ title, copy }) => (
               <div
                 key={title}
-                className="bg-[#f6f4ff] border border-[#ebe8ff] rounded-2xl p-5 shadow-[0_12px_30px_rgba(91,50,255,0.06)]"
+                className="bg-[#f6f4ff] border border-[#ebe8ff] rounded-2xl p-5 shadow-[0_12px_30px_rgba(91,50,255,0.06)] font-[Raleway]"
               >
-                <h3 className="text-lg font-semibold text-[#1b1b38] mb-2">
+                <h3 className="text-lg font-semibold text-[#1b1b38] mb-2 font-[Raleway]">
                   {title}
                 </h3>
-                <p className="text-sm text-[#4b4e63] leading-relaxed">{copy}</p>
+                <p className="text-sm text-[#4b4e63] leading-relaxed font-[Raleway]">{copy}</p>
               </div>
             ))}
           </div>

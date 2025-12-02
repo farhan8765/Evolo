@@ -2,12 +2,12 @@ import React from "react";
 
 const Aboutdriving = () => {
   return (
-    <section className="flex flex-col px-16 py-12 md:flex-row items-start justify-between gap-10 md:gap-16 px-6 md:px-12 py-12 bg-white">
+    <section className="flex flex-col px-16 py-12 md:flex-row items-start justify-between gap-10 md:gap-16 px-6 md:px-12 py-12 bg-white font-[Raleway]">
       {/* Left Gradient Heading */}
       <div className="md:w-1/2">
         <h2 className="text-3xl md:pl-4 md:text-5xl font-bold leading-tight text-left">
           {/* Mobile: single line, Desktop: separate lines */}
-          <span className="md:hidden bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+          <span className="md:hidden bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent font-[Raleway]">
             Driving career success and institutional excellence
           </span>
           
