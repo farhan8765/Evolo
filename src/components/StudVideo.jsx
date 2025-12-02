@@ -77,11 +77,10 @@ const StudVideo = () => {
           </h2>
 
           <p
-            className="mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto animate-hero-reveal"
+            className="mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto animate-hero-reveal font-['Raleway']"
             style={{ animationDelay: "0.25s" }}
           >
-            Discover the transformative experiences of students who have used
-            Evolo to advance their education and career goals.
+            Discover the transformative experiences of students who have used Evolo to advance their education and career goals. With AI-powered tools and personalized guidance, Evolo empowers students to confidently highlight their strengths, connect with employers, and step into rewarding careers.
           </p>
         </div>
 

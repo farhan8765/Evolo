@@ -14,13 +14,13 @@ const features = [
     icon: "/images/hand.svg",
   },
   {
-    title: "Instant Employer Chats",
+    title: "Instant Communication with Employers",
     description:
       "Take the stress out of job hunting! Whenever you apply for a position, our app automatically initiates a conversation with the employer. Get answers to your questions, express your enthusiasm, and make a great first impression—all within the app.",
     icon: "/images/message.png",
   },
   {
-    title: "Empowered Schools",
+    title: "Empowered Schools, Supported Students",
     description:
       "Schools can now track the status of student applications in real-time. This visibility allows educators to provide tailored guidance, helping students identify the best job opportunities that align with their skills and aspirations.",
     icon: "/images/Student.png",

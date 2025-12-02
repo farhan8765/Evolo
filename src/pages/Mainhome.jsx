@@ -13,12 +13,13 @@ const Mainhome = () => {
   return (
     <div>
       <Homehero/>
+        <NewVideo/>
          <HomeWho/>
+
       <HomePlatform/>
    
       <ConnectStudent/>
       <Homecardsdetail/>
-      <NewVideo/>
       <Aboutstay/>
     </div>
   )

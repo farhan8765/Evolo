@@ -41,7 +41,7 @@ const Insvideo = () => {
   return (
     <section
       style={fullBleed}
-      className="bg-[#f7f6fb] py-20 font-[Inter,sans-serif]"
+      className="bg-[#f7f6fb] py-20 font-[Raleway]"
     >
       <div className="mx-auto w-full max-w-6xl flex flex-col gap-14 px-6">
         
@@ -52,13 +52,10 @@ const Insvideo = () => {
           </span> */}
 
           <h2 className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold">
-            Real Stories of Transformation with Evolo
-          </h2>
+Empowering Adult Learners with Evolo AI: Testimonials from Educators          </h2>
 
           <p className="mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto">
-            Our users say it best. Discover how Evolo is transforming adult
-            education through real-life experiences from educational leaders and
-            career counselors.
+            Discover how dedicated educators and administrators are transforming adult education by leveraging Evolo AI to overcome challenges and enhance student success
           </p>
         </div>
 

@@ -29,11 +29,10 @@ const EmpHero = () => {
           </h1>
           
           <p
-            className="mt-4 text-sm text-[#5A666E] sm:mt-6 sm:text-base md:text-lg animate-hero-reveal max-w-2xl mx-auto lg:mx-0"
+            className="mt-4 text-sm text-[#5A666E] sm:mt-6 sm:text-base md:text-lg animate-hero-reveal max-w-2xl mx-auto lg:mx-0 font-[Raleway]"
             style={{ animationDelay: "0.25s" }}
           >
-            We work directly with Adult and Technical Schools to help you recruit
-            their best and brightest candidates faster than ever.
+            We work directly with Adult/Technical Schools to help you recruit their best and brightest.
           </p>
           
           <button

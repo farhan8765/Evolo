@@ -23,7 +23,7 @@ const EmpdiscoverTalent = () => {
 
         {/* Description */}
         <p
-          className="text-gray-600 mb-8 text-base sm:text-lg max-w-2xl mx-auto animate-hero-reveal"
+          className="text-gray-600 pt-8 mb-8 text-base sm:text-lg max-w-2xl mx-auto animate-hero-reveal font-[Raleway]"
           style={{ animationDelay: "0.25s" }}
         >
           At Adulted Pro, we bridge the gap between employers and job seekers by providing a

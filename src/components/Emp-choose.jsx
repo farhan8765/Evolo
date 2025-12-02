@@ -45,7 +45,7 @@ const EmpChoose = () => {
         </h2>
 
         <p
-          className="mt-4 text-lg text-[#5c5f77] animate-hero-reveal"
+          className="mt-4 text-lg text-[#5c5f77] animate-hero-reveal font-[Raleway]"
           style={{ animationDelay: "0.25s" }}
         >
           Are you looking to switch to a new career? Our app helps you navigate
