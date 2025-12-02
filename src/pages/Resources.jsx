@@ -15,15 +15,19 @@ export default function Blogs() {
     },
     {
       id: 2,
+      slug: "blog/blog2",
       image: "/images/blog2.png",
       title: "Adult School vs Online College: Career Change Guide",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog2"
     },
     {
       id: 3,
+      slug: "blog/blog3",
       image: "/images/blog3.png",
       title: "Career Change After 30: How Adults Can Successfully Pivot to New Industries",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog3"
     },
     {
       id: 4,
