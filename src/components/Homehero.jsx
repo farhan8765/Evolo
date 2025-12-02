@@ -31,12 +31,13 @@ export default function Homehero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
-          <button 
-            onClick={() => navigate('/mental')}
-            className="bg-[#5A14ED] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
-          >
-            K12
-          </button>
+        <button 
+  onClick={() => navigate('/mental')}
+  className="bg-[#5A14ED] text-white px-16 sm:px-28 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-auto"
+>
+  K12
+</button>
+
           <button 
             onClick={() => navigate('/adult')}
             className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
