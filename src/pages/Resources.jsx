@@ -7,7 +7,7 @@ export default function Blogs() {
       id: 1,
       image: "/images/blog1.png",
       title: "How Single Parents Benefit from Adult Schools",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     },
     {
       id: 2,

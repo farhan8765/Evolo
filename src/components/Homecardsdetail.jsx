@@ -10,6 +10,10 @@ const Homecardsdetail = () => {
       title: 'Employers',
       description: 'Access pre-vetted talent from California top adult education programs. Post job opportunities, review qualified candidates, and streamline your hiring process through one intuitive platform.'
     },
+     {
+      title: 'Institutions',
+      description: 'Expand your employer network, track student placement outcomes, and demonstrate program success with real-time data and analytics. Prove your impact to funders and stakeholders with measurable results.'
+    },
     {
       title: 'Counselors',
       description: 'Spend less time on paperwork, more time with students. Our AI generates CYBHI-compliant session notes, manages scheduling, tracks follow-ups, and reviews incident reports—so you can focus on providing quality behavioral health support.'
@@ -55,7 +59,7 @@ const Homecardsdetail = () => {
             <div
               key={index}
               className="bg-[#F7F8FF] rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex-shrink-0 font-['Raleway']"
-              style={{ width: '220px' }}
+              style={{ width: '320px' }}
             >
               <h3 className="text-lg font-bold text-[#1a1a2e] mb-3 font-['Raleway']">
                 {card.title}
