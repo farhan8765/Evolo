@@ -13,7 +13,7 @@ const Mainhome = () => {
   return (
     <div>
       <Homehero/>
-        <NewVideo/>
+        <NewVideo/> 
          <HomeWho/>
 
       <HomePlatform/>

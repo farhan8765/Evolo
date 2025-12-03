@@ -28,6 +28,7 @@ import OneEvent from './pages/OneEvent';
 import Blog1 from './components/Blog1';
 import Blog2 from './components/Blog2';
 import Blog3 from './components/Blog3';
+import Blog4 from './components/Blog4';
 
 function App() {
   return (
@@ -51,6 +52,8 @@ function App() {
           <Route path="/blog/blog1" element={<Blog1 />} />
           <Route path="/blog/blog2" element={<Blog2 />} />
           <Route path="/blog/blog3" element={<Blog3 />} />
+          <Route path="/blog/blog4" element={<Blog4 />} />
+
 
         </Routes>
         <Footer />

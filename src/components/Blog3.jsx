@@ -51,518 +51,645 @@ const Blog3 = () => {
         <div className="prose prose-lg max-w-none text-gray-700 font-['Raleway']">
           
           <p className="mb-6">
-            The notion that career changes are only for recent graduates is outdated. In today's dynamic job market, professionals over 30 are increasingly pivoting to new industries, driven by evolving personal goals, technological shifts, and the pursuit of greater fulfillment. While the transition may seem daunting, it is entirely achievable with strategic planning, leveraging existing experience, and targeted skill development. This guide explores practical steps for navigating a successful career change after 30.
+           You’re in your 30s and still working at a job that doesn’t satisfy you. You may be restless, feel behind, or even jealous of people who seem to be more enthusiastic about their work. But you’re held back by your fear of beginning again. Your current job has become the centre of your life, possibly even your family. Now, the stakes are higher. Is the time and expense of re-education within your means? Will an older person without any prior experience be hired?
+          </p>
+           <p className="mb-6">
+            It’s not too late, and you’re not alone. After the age of 30, changing careers is not only possible but also becoming more and more popular and frequently successful. You can switch to a completely different field that fits with your values and strengths if you have the correct approach, attitude, and tools, such as career coaches, skill boot camps, and adult education programmes.
           </p>
 
-          {/* Table of Contents */}
-          <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
-            
-            <ol className="list-decimal pl-5 space-y-2">
-              <li className="text-gray-700 font-medium">Why Career Change After 30 is More Common Than You Think</li>
-              <li className="text-gray-700 font-medium">Assessing Your Transferable Skills: What You Already Bring</li>
-              <li className="text-gray-700 font-medium">Strategic Reskilling: Identifying What You Need to Learn</li>
-              <li className="text-gray-700 font-medium">Building a Strong Professional Network in Your Target Industry</li>
-              <li className="text-gray-700 font-medium">Overcoming Psychological Barriers and Self-Doubt</li>
-              <li className="text-gray-700 font-medium">Financial Planning for a Career Transition</li>
-              <li className="text-gray-700 font-medium">Crafting Your Career Change Resume and Portfolio</li>
-              <li className="text-gray-700 font-medium">Navigating Interviews as a Career Changer</li>
-              <li className="text-gray-700 font-medium">Industry-Specific Transition Strategies</li>
-              <li className="text-gray-700 font-medium">Frequently Asked Questions</li>
-              <li className="text-gray-700 font-medium">Success Stories: Real-Life Career Changers</li>
-              <li className="text-gray-700 font-medium">Final Takeaways</li>
-              <li className="text-gray-700 font-medium">Resources & References</li>
-            </ol>
-          </div>
+      {/* Table of Contents */}
+<div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
+  <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
+  
+  <ol className="list-decimal pl-5 space-y-2">
+    <li className="text-gray-700 font-medium">The Reasons Behind Adults' Career Changes After 30</li>
+    <li className="text-gray-700 font-medium">Evaluating Strengths and Transferable Skills</li>
+    <li className="text-gray-700 font-medium">Education, Upskilling, and Certification Paths</li>
+    <li className="text-gray-700 font-medium">Building a Network in a New Industry</li>
+    <li className="text-gray-700 font-medium">Mental and Financial Preparation</li>
+    <li className="text-gray-700 font-medium">Best Industries to Transition Into After 30</li>
+    <li className="text-gray-700 font-medium">High-Demand Career Paths vs Required Skills</li>
+    <li className="text-gray-700 font-medium">Frequently Asked Questions</li>
+    <li className="text-gray-700 font-medium">Final Thoughts</li>
+    <li className="text-gray-700 font-medium">References</li>
+  </ol>
+</div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Why Career Change After 30 is More Common Than You Think
-          </h2>
-          <div className="space-y-4">
-            <p className="text-gray-700">
-              Contrary to popular belief, career changes after 30 are not only common but increasingly normalized. According to recent labor market studies, the average professional will change careers 3-5 times throughout their working life. For adults over 30, motivations range from seeking better work-life balance, pursuing long-delayed passions, or adapting to industry disruptions like automation and digital transformation.
-            </p>
-            
-            <p className="text-gray-700">
-              The stability and experience gained in your 20s provide a solid foundation for calculated risk-taking in your 30s. You're not starting from scratch; you're repositioning your accumulated knowledge and skills in a new context. This perspective shift is crucial for overcoming the initial hesitation many feel when contemplating a major professional pivot.
-            </p>
-            
-            <div className="my-8 flex justify-center">
-              <img 
-                src="/images/blog3img2.png" 
-                alt="Career change statistics and trends" 
-                className="rounded-xl shadow-lg"
-              />
-            </div>
-          </div>
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  The Reasons Behind Adults' Career Changes After 30
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    In recent years, there's been a notable surge in mid-life career transitions. Several driving forces are behind this shift:
+  </p>
+  
+  <ul className="space-y-2 pl-5">
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Technological disruption is rendering some roles obsolete while creating demand in others, encouraging reskilling.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">When early career momentum wanes in one’s 30s, burnout and mental exhaustion frequently reach their peak.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Flexible work arrangements have made non-linear career transitions easier to access.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Career flexibility is also being made possible by the expanding gig economy and remote work options.</span>
+    </li>
+  </ul>
+  
+  <p className="text-gray-700">
+    According to a report by the Pew Research Center, over 53% of workers who changed jobs in 2021 cited no room for advancement as their top reason for leaving. Many of these individuals were in their early to mid-30s.
+  </p>
+  
+  <p className="text-gray-700">
+    This shift also aligns with a broader push toward empowering lifelong learners. Adults now seek purpose-driven roles, meaningful impact, and better work-life balance more than ever before.
+  </p>
+</div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Assessing Your Transferable Skills: What You Already Bring
-          </h2>
-          <div className="space-y-4">
-            <p className="text-gray-700">
-              Before pursuing additional training, conduct a comprehensive audit of your transferable skills. These are competencies that apply across industries, including project management, communication, problem-solving, leadership, and client relations. A marketing professional, for example, possesses analytical skills valuable in data science, while a teacher's communication abilities translate well to corporate training or content creation.
-            </p>
-            
-            <p className="text-gray-700">
-              Document specific examples of how you've applied these skills in your current role. Quantify achievements where possible—"increased team productivity by 20%" or "managed a budget of $500K." This exercise not only builds confidence but provides concrete material for resumes and interviews in your target industry.
-            </p>
-          </div>
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Evaluating Strengths and Transferable Skills
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    Knowing your strengths is essential before venturing into a new field. Transferable skills are useful in a variety of fields:
+  </p>
+  
+  <p className="text-gray-700 font-medium">Transferable skill examples include:</p>
+  
+  <div className="grid md:grid-cols-2 gap-4 mb-4">
+    <div className="p-4 rounded-lg" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
+      <p className="font-medium" style={{ color: '#5A14ED' }}>Collaboration & Communication</p>
+      <p className="text-gray-600 text-sm">Important in project management, sales, human resources, and education.</p>
+    </div>
+    
+    <div className="p-4 rounded-lg" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
+      <p className="font-medium" style={{ color: '#5A14ED' }}>Analytical Thinking</p>
+      <p className="text-gray-600 text-sm">Beneficial for data analysis, market research, and tech positions.</p>
+    </div>
+    
+    <div className="p-4 rounded-lg" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
+      <p className="font-medium" style={{ color: '#5A14ED' }}>Time Management & Organization</p>
+      <p className="text-gray-600 text-sm">Essential for managerial, administrative, and remote work positions.</p>
+    </div>
+    
+    <div className="p-4 rounded-lg" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
+      <p className="font-medium" style={{ color: '#5A14ED' }}>Empathy & Customer Service</p>
+      <p className="text-gray-600 text-sm">Useful in social work, healthcare, and education.</p>
+    </div>
+  </div>
+  
+  <p className="text-gray-700 font-medium">Start by performing a skills audit:</p>
+  
+  <ul className="space-y-2 pl-5">
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Conduct a skills audit first by going over previous performance evaluations.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Utilise resources such as Skills Matcher and MyNextMove.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Consider your accomplishments and the things that give you energy.</span>
+    </li>
+  </ul>
+  
+  <p className="text-gray-700">
+    This self-awareness can guide your career change in a direction that maximizes your strengths, especially if you're eyeing roles in high-value youth work or mentoring.
+  </p>
+</div>
 
-          <div className="mt-10 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Strategic Reskilling Pathways</h2>
-            
-            <div className="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-200">
-              <table className="min-w-full">
-                <thead>
-                  <tr>
-                    <th className="px-6 py-4 text-left text-lg font-bold text-gray-900 bg-gray-100 border-r border-gray-300">
-                      Skill Category
-                    </th>
-                    <th className="px-6 py-4 text-left text-lg font-bold text-white border-r border-gray-300" style={{ backgroundColor: '#5A14ED' }}>
-                      Recommended Approach
-                    </th>
-                    <th className="px-6 py-4 text-left text-lg font-bold text-gray-900 bg-gray-50">
-                      Time Investment
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-gray-200 hover:bg-gray-50">
-                    <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
-                      Technical/Digital Skills
-                    </td>
-                    <td className="px-6 py-4 border-r border-gray-300">
-                      <span className="text-gray-700">Online courses (Coursera, Udemy), coding bootcamps, certifications</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-gray-700">3-12 months</span>
-                    </td>
-                  </tr>
-                  <tr className="border-t border-gray-200 hover:bg-gray-50">
-                    <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
-                      Industry-Specific Knowledge
-                    </td>
-                    <td className="px-6 py-4 border-r border-gray-300">
-                      <span className="text-gray-700">Professional workshops, industry conferences, mentorship</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-gray-700">6-18 months</span>
-                    </td>
-                  </tr>
-                  <tr className="border-t border-gray-200 hover:bg-gray-50">
-                    <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
-                      Soft Skills Development
-                    </td>
-                    <td className="px-6 py-4 border-r border-gray-300">
-                      <span className="text-gray-700">Communication coaching, leadership training, networking groups</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-gray-700">Ongoing</span>
-                    </td>
-                  </tr>
-                  <tr className="border-t border-gray-200 hover:bg-gray-50">
-                    <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
-                      Formal Education
-                    </td>
-                    <td className="px-6 py-4 border-r border-gray-300">
-                      <span className="text-gray-700">Part-time degrees, executive education, graduate certificates</span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="text-gray-700">1-3 years</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Education, Upskilling, and Certification Paths
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    Formal degrees aren't always required to pivot careers. Many adults succeed through short-term training, online courses, and certifications.
+  </p>
+  
+  <p className="text-gray-700 font-medium">Popular Education Routes for Adults Over 30:</p>
+  
+  <div className="bg-white rounded-xl shadow-md border border-gray-200 my-6">
+    <div className="overflow-x-auto">
+      <table className="min-w-full">
+        <thead>
+          <tr>
+            <th className="px-6 py-4 text-left text-lg font-bold text-white" style={{ backgroundColor: '#5A14ED' }}>
+              Pathway
+            </th>
+            <th className="px-6 py-4 text-left text-lg font-bold text-gray-900 bg-gray-50">
+              Description & Best For
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
+              Bootcamps
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Ideal for fields like software development, UI/UX, and digital marketing.</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
+              Community College Certificates
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Affordable, flexible, and career-focused.</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
+              Online Platforms
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Coursera, edX, LinkedIn Learning, Google Career Certificates.</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300 font-medium text-gray-900">
+              Government-Funded Adult Learning Programs
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Offered in most regions.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <p className="text-gray-700">
+    According to the World Economic Forum's 2023 Future of Jobs Report, 44% of workers' core skills are expected to change in the next five years, making reskilling essential.
+  </p>
+  
+  <div className="p-4 rounded-lg bg-blue-50 border border-blue-200 mt-4">
+    <p className="text-gray-700">
+      For more on how adult learning is evolving, see our blog{" "}
+      <a 
+        href="/" 
+        className="font-medium text-blue-600 hover:text-blue-800 hover:underline"
+      >
+        The Future of Adult Education
+      </a>
+    </p>
+  </div>
+</div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Building a Strong Professional Network in Your Target Industry
-          </h2>
-          <div className="space-y-4">
-            <p className="text-gray-700">
-              Networking is arguably the most critical component of a successful career change. Start by identifying professionals in your target industry through LinkedIn, alumni networks, and professional associations. Request informational interviews to learn about industry trends, required skills, and potential opportunities.
-            </p>
-            
-            <p className="text-gray-700">
-              Attend industry conferences, webinars, and local meetups. When networking, focus on building genuine relationships rather than immediately seeking job opportunities. Offer value by sharing relevant insights from your previous experience. According to recruitment data, over 70% of career changers find opportunities through referrals and connections rather than traditional applications.
-            </p>
-            
-            <div className="my-8 flex justify-center">
-              <img 
-                src="/images/blog3img3.png" 
-                alt="Networking strategies for career changers" 
-                className="rounded-xl shadow-lg"
-              />
-            </div>
-          </div>
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Building a Network in a New Industry
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    Shifting careers requires more than skills, it requires connections. A robust network can open doors to jobs that never get posted.
+  </p>
+</div>
 
-          <div className="mt-10 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Key Transferable Skills by Previous Industry</h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Left Column */}
-              <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#5A14ED' }}>From Corporate Roles</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1" style={{ backgroundColor: '#5A14ED20' }}>
-                      <span style={{ color: '#5A14ED' }}>•</span>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Project Management</p>
-                      <p className="text-gray-600 text-sm">Applicable to tech, consulting, operations</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1" style={{ backgroundColor: '#5A14ED20' }}>
-                      <span style={{ color: '#5A14ED' }}>•</span>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Stakeholder Communication</p>
-                      <p className="text-gray-600 text-sm">Valuable in client services, HR, marketing</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1" style={{ backgroundColor: '#5A14ED20' }}>
-                      <span style={{ color: '#5A14ED' }}>•</span>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Budget Management</p>
-                      <p className="text-gray-600 text-sm">Transferable to nonprofit, education, startups</p>
-                    </div>
-                  </li>
-                </ul>
+<p className="text-gray-700 font-medium">Effective Networking Tips:</p>
+  
+  <ul className="space-y-3 pl-5">
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Attend industry-specific webinars and workshops.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Join LinkedIn groups and comment on posts within your target field.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Find a mentor or career coach through platforms like MentorCruise or SCORE.</span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+      <span className="text-gray-700">Volunteer or freelance in your new field to build both skills and relationships.</span>
+    </li>
+  </ul>
+  
+  <div className="my-8 flex justify-center">
+    <img 
+      src="/images/blogthreeimg2.png" 
+      alt="Networking strategies for career changers" 
+      className="rounded-xl shadow-lg max-w-md"
+    />
+  </div>
+
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Mental and Financial Preparation
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    A career pivot is both an emotional and financial investment. Planning ahead will help you weather the uncertainty.
+  </p>
+  
+  <div className="grid md:grid-cols-2 gap-8 mt-6">
+    {/* Emotional Readiness Column */}
+    <div className="p-6 rounded-xl" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
+      <div className="flex items-center mb-4">
+        <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3" style={{ backgroundColor: '#5A14ED' }}>
+          <span className="text-white font-bold">💭</span>
+        </div>
+        <h3 className="text-xl font-bold" style={{ color: '#5A14ED' }}>Emotional Readiness</h3>
+      </div>
+      
+      <ul className="space-y-3">
+        <li className="flex items-start">
+          <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+          <span className="text-gray-700">Accept that imposter syndrome is natural.</span>
+        </li>
+        <li className="flex items-start">
+          <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+          <span className="text-gray-700">Surround yourself with positive reinforcement and success stories.</span>
+        </li>
+        <li className="flex items-start">
+          <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
+          <span className="text-gray-700">Keep a journal to track small wins and learning moments.</span>
+        </li>
+      </ul>
+    </div>
+    
+    {/* Financial Planning Column */}
+    <div className="p-6 rounded-xl bg-white border border-gray-300">
+      <div className="flex items-center mb-4">
+        <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+          <span className="text-green-600 font-bold">💰</span>
+        </div>
+        <h3 className="text-xl font-bold text-gray-900">Financial Planning</h3>
+      </div>
+      
+      <ul className="space-y-3">
+        <li className="flex items-start">
+          <span className="text-green-600 mr-2 mt-1">•</span>
+          <span className="text-gray-700">Build a 6-month emergency fund, if possible.</span>
+        </li>
+        <li className="flex items-start">
+          <span className="text-green-600 mr-2 mt-1">•</span>
+          <span className="text-gray-700">Take part-time gigs or freelance to sustain income while transitioning.</span>
+        </li>
+        <li className="flex items-start">
+          <span className="text-green-600 mr-2 mt-1">•</span>
+          <span className="text-gray-700">Check if you're eligible for upskilling stipends or grants, often offered by government or nonprofit organizations.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Best Industries to Transition Into After 30
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    Some industries are more welcoming to mid-career changers due to high demand, flexible entry points, or skill compatibility:
+  </p>
+  
+  <div className="bg-white rounded-xl shadow-md border border-gray-200 my-6 overflow-hidden">
+    <div className="overflow-x-auto">
+      <table className="min-w-full">
+        <thead>
+          <tr>
+            <th className="px-6 py-4 text-left text-lg font-bold text-white" style={{ backgroundColor: '#5A14ED' }}>
+              Industry
+            </th>
+            <th className="px-6 py-4 text-left text-lg font-bold text-white" style={{ backgroundColor: '#5A14ED' }}>
+              Why It's Great for Career Changers
+            </th>
+            <th className="px-6 py-4 text-left text-lg font-bold text-white" style={{ backgroundColor: '#5A14ED' }}>
+              Entry Pathways
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Healthcare</span>
+            </td>
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="text-gray-700">Growing demand, aging population</span>
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Certifications (e.g., CNA, MA)</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Tech & IT</span>
+            </td>
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="text-gray-700">High demand, remote options</span>
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Coding bootcamps, IT certificates</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Education</span>
+            </td>
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="text-gray-700">Value of real-life experience</span>
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Teaching certifications</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Marketing & UX Design</span>
+            </td>
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="text-gray-700">Skill-focused, creativity valued</span>
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Online portfolios, internships</span>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Trades & Repair</span>
+            </td>
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="text-gray-700">Skilled labor shortage</span>
+            </td>
+            <td className="px-6 py-4">
+              <span className="text-gray-700">Apprenticeships, vocational training</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  High-Demand Career Paths vs Required Skills
+</h2>
+<div className="space-y-4">
+  <p className="text-gray-700">
+    Understanding which skills transfer to high-demand careers can help you identify the most promising transition paths.
+  </p>
+  
+  <div className="bg-white rounded-xl shadow-md border border-gray-200 my-6 overflow-hidden">
+    <div className="overflow-x-auto">
+      <table className="min-w-full">
+        <thead>
+          <tr>
+            <th className="px-6 py-4 text-left text-lg font-bold text-white" style={{ backgroundColor: '#5A14ED' }}>
+              Career Path
+            </th>
+            <th className="px-6 py-4 text-left text-lg font-bold text-white" style={{ backgroundColor: '#5A14ED' }}>
+              Transferable Skills Needed
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Project Management</span>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Leadership
+                </span>
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Time Management
+                </span>
               </div>
-              
-              {/* Right Column */}
-              <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#5A14ED' }}>From Creative/Service Roles</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1" style={{ backgroundColor: '#5A14ED20' }}>
-                      <span style={{ color: '#5A14ED' }}>•</span>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Problem-Solving</p>
-                      <p className="text-gray-600 text-sm">Essential for tech, engineering, consulting</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1" style={{ backgroundColor: '#5A14ED20' }}>
-                      <span style={{ color: '#5A14ED' }}>•</span>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Adaptability</p>
-                      <p className="text-gray-600 text-sm">Critical in startups, healthcare, education</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1" style={{ backgroundColor: '#5A14ED20' }}>
-                      <span style={{ color: '#5A14ED' }}>•</span>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Client Relationship Management</p>
-                      <p className="text-gray-600 text-sm">Transferable to sales, account management, consulting</p>
-                    </div>
-                  </li>
-                </ul>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Data Analyst</span>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Analytical Thinking
+                </span>
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Excel
+                </span>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-10 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Overcoming Common Career Change Challenges</h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Challenges Column */}
-              <div className="rounded-xl p-6" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3" style={{ backgroundColor: '#5A14ED20' }}>
-                    <span className="font-bold" style={{ color: '#5A14ED' }}>!</span>
-                  </div>
-                  <h3 className="text-xl font-bold" style={{ color: '#5A14ED' }}>Common Challenges</h3>
-                </div>
-                
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
-                    <span className="text-gray-700">Fear of starting over financially</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
-                    <span className="text-gray-700">Imposter syndrome in new field</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
-                    <span className="text-gray-700">Age discrimination concerns</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 mt-1" style={{ color: '#5A14ED' }}>•</span>
-                    <span className="text-gray-700">Balancing reskilling with current job</span>
-                  </li>
-                </ul>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Teacher/Trainer</span>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Public Speaking
+                </span>
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Patience
+                </span>
               </div>
-              
-              {/* Solutions Column */}
-              <div className="bg-white border border-gray-300 rounded-xl p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                    <span className="text-green-600 font-bold text-xl">✓</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900">Proven Solutions</h3>
-                </div>
-                
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2 mt-1">•</span>
-                    <span className="text-gray-700">Build 6-12 month financial runway before transition</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2 mt-1">•</span>
-                    <span className="text-gray-700">Focus on transferable skills you already possess</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2 mt-1">•</span>
-                    <span className="text-gray-700">Frame experience as asset, not liability</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2 mt-1">•</span>
-                    <span className="text-gray-700">Create structured learning schedule (10-15 hrs/week)</span>
-                  </li>
-                </ul>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Digital Marketer</span>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Creativity
+                </span>
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Research
+                </span>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-10 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Career Change Timeline: Realistic Expectations</h2>
-            
-            <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-              <div className="relative">
-                {/* Timeline */}
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
-                  <div className="mb-4 md:mb-0">
-                    <div className="w-8 h-8 rounded-full mb-2 mx-auto" style={{ backgroundColor: '#5A14ED' }}></div>
-                    <p className="font-bold text-center" style={{ color: '#5A14ED' }}>Months 1-3</p>
-                    <p className="text-gray-600 text-sm text-center">Self-Assessment & Research</p>
-                  </div>
-                  
-                  <div className="hidden md:block flex-grow h-1 mx-4" style={{ backgroundColor: '#5A14ED50' }}></div>
-                  
-                  <div className="mb-4 md:mb-0">
-                    <div className="w-8 h-8 rounded-full mb-2 mx-auto" style={{ backgroundColor: '#5A14ED' }}></div>
-                    <p className="font-bold text-center" style={{ color: '#5A14ED' }}>Months 4-9</p>
-                    <p className="text-gray-600 text-sm text-center">Skill Development & Networking</p>
-                  </div>
-                  
-                  <div className="hidden md:block flex-grow h-1 mx-4" style={{ backgroundColor: '#5A14ED50' }}></div>
-                  
-                  <div className="mb-4 md:mb-0">
-                    <div className="w-8 h-8 rounded-full mb-2 mx-auto" style={{ backgroundColor: '#5A14ED' }}></div>
-                    <p className="font-bold text-center" style={{ color: '#5A14ED' }}>Months 10-15</p>
-                    <p className="text-gray-600 text-sm text-center">Application & Interview Phase</p>
-                  </div>
-                  
-                  <div className="hidden md:block flex-grow h-1 mx-4" style={{ backgroundColor: '#5A14ED50' }}></div>
-                  
-                  <div>
-                    <div className="w-8 h-8 rounded-full mb-2 mx-auto" style={{ backgroundColor: '#5A14ED' }}></div>
-                    <p className="font-bold text-center" style={{ color: '#5A14ED' }}>Month 16+</p>
-                    <p className="text-gray-600 text-sm text-center">Transition & Onboarding</p>
-                  </div>
-                </div>
-                
-                <p className="text-gray-700 text-center mt-6">
-                  <strong>Note:</strong> Most successful career transitions after 30 take 12-24 months from initial consideration to full transition. Patience and persistence are key.
-                </p>
+            </td>
+          </tr>
+          <tr className="border-t border-gray-200 hover:bg-gray-50">
+            <td className="px-6 py-4 border-r border-gray-300">
+              <span className="font-medium text-gray-900">Medical Assistant</span>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Communication
+                </span>
+                <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: '#5A14ED20', color: '#5A14ED' }}>
+                  Multitasking
+                </span>
               </div>
-            </div>
-          </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Frequently Asked Questions
-          </h2>
+         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Frequently Asked Questions
+</h2>
 
-          <div className="space-y-4">
-            <div className="border border-gray-200 rounded-lg overflow-hidden">
-              <button
-                className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
-                onClick={() => toggleFAQ(0)}
-              >
-                <span className="font-medium text-gray-900">Am I too old to change careers at 35+?</span>
-                <svg 
-                  className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 0 ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {openIndex === 0 && (
-                <div className="px-6 py-4 bg-white">
-                  <p className="text-gray-700">
-                    Absolutely not. Many successful career changers are in their 40s and 50s. Your experience is a valuable asset that younger candidates don't possess. Employers increasingly value the maturity, work ethic, and problem-solving skills that come with experience.
-                  </p>
-                </div>
-              )}
-            </div>
-            
-            <div className="border border-gray-200 rounded-lg overflow-hidden">
-              <button
-                className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
-                onClick={() => toggleFAQ(1)}
-              >
-                <span className="font-medium text-gray-900">How do I explain my career change to employers?</span>
-                <svg 
-                  className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 1 ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {openIndex === 1 && (
-                <div className="px-6 py-4 bg-white">
-                  <p className="text-gray-700">
-                    Frame your career change as a strategic decision, not a reactive one. Emphasize transferable skills, what you've learned about yourself and your goals, and how your previous experience uniquely positions you for this new role. Practice a concise, compelling narrative that connects your past to your future.
-                  </p>
-                </div>
-              )}
-            </div>
-            
-            <div className="border border-gray-200 rounded-lg overflow-hidden">
-              <button
-                className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
-                onClick={() => toggleFAQ(2)}
-              >
-                <span className="font-medium text-gray-900">Should I take a pay cut to change careers?</span>
-                <svg 
-                  className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 2 ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {openIndex === 2 && (
-                <div className="px-6 py-4 bg-white">
-                  <p className="text-gray-700">
-                    This depends on your financial situation and long-term goals. Many career changers accept a temporary reduction for entry-level positions in their new field, with the expectation of rapid advancement. However, by emphasizing transferable skills and relevant experience, you may negotiate a salary closer to your previous earnings.
-                  </p>
-                </div>
-              )}
-            </div>
-          </div>
+<div className="space-y-4">
+  <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <button
+      className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+      onClick={() => toggleFAQ(0)}
+    >
+      <span className="font-medium text-gray-900">Is it too late to change careers after 30?</span>
+      <svg 
+        className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 0 ? 'rotate-180' : ''}`}
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    
+    {openIndex === 0 && (
+      <div className="px-6 py-4 bg-white">
+        <p className="text-gray-700">
+          Not. Most people change careers between the ages of 30–45, when they have better self-awareness and work experience to guide their next move.
+        </p>
+      </div>
+    )}
+  </div>
+  
+  <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <button
+      className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+      onClick={() => toggleFAQ(1)}
+    >
+      <span className="font-medium text-gray-900">How do I know what career is right for me?</span>
+      <svg 
+        className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 1 ? 'rotate-180' : ''}`}
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    
+    {openIndex === 1 && (
+      <div className="px-6 py-4 bg-white">
+        <p className="text-gray-700">
+          Start with self-assessment tools and personality tests (e.g., MBTI, Holland Code). Look at what energizes you during the day—those clues are critical.
+        </p>
+      </div>
+    )}
+  </div>
+  
+  <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <button
+      className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+      onClick={() => toggleFAQ(2)}
+    >
+      <span className="font-medium text-gray-900">Can I afford a career change financially?</span>
+      <svg 
+        className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 2 ? 'rotate-180' : ''}`}
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    
+    {openIndex === 2 && (
+      <div className="px-6 py-4 bg-white">
+        <p className="text-gray-700">
+          Yes, with careful planning. Many low-cost or free learning options exist, and some employers even offer education stipends or tuition assistance.
+        </p>
+      </div>
+    )}
+  </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Success Stories: Real-Life Career Changers
-          </h2>
-          <div className="space-y-4">
-            <p className="text-gray-700">
-              • <strong>Marketing to Data Science:</strong> Sarah, 34, leveraged her analytical skills from marketing to transition into data science through a 6-month bootcamp. She now works as a data analyst at a tech startup.
-            </p>
-            
-            <p className="text-gray-700">
-              • <strong>Teaching to Corporate Training:</strong> Michael, 42, used his classroom experience and communication skills to become a corporate trainer, eventually starting his own consulting business.
-            </p>
-            
-            <p className="text-gray-700">
-              • <strong>Finance to UX Design:</strong> Priya, 37, combined her understanding of user behavior from finance with self-taught design skills to transition into UX design, securing a position at a digital agency.
-            </p>
-          </div>
+  <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <button
+      className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+      onClick={() => toggleFAQ(3)}
+    >
+      <span className="font-medium text-gray-900">Do I need to go back to college?</span>
+      <svg 
+        className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === 3 ? 'rotate-180' : ''}`}
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    
+    {openIndex === 3 && (
+      <div className="px-6 py-4 bg-white">
+        <p className="text-gray-700">
+          Not always. Bootcamps, certifications, and short courses often suffice in many in-demand fields like tech, marketing, or healthcare.
+        </p>
+      </div>
+    )}
+  </div>
+</div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Final Takeaways</h2>
-          <div className="space-y-4">
-            <div className="p-6 rounded-xl" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
-              <p className="text-gray-700 font-medium">
-                1. Your experience is an asset, not a liability. Frame your career change as an evolution, not a restart.
-              </p>
-            </div>
-            
-            <div className="p-6 rounded-xl" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
-              <p className="text-gray-700 font-medium">
-                2. Strategic networking often matters more than additional credentials. Build relationships before you need them.
-              </p>
-            </div>
-            
-            <div className="p-6 rounded-xl" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
-              <p className="text-gray-700 font-medium">
-                3. Most successful transitions take 12-24 months. Be patient and celebrate incremental progress.
-              </p>
-            </div>
-            
-            <div className="p-6 rounded-xl" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
-              <p className="text-gray-700 font-medium">
-                4. The most successful career changers combine reskilling with leveraging existing transferable skills.
-              </p>
-            </div>
-          </div>
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  Final Thoughts
+</h2>
+<div className="space-y-4">
+  <div className="p-6 rounded-xl" style={{ backgroundColor: '#5A14ED10', border: '1px solid #5A14ED30' }}>
+    <p className="text-gray-700 text-lg leading-relaxed">
+      Reinventing yourself after 30 is not a risk; it's an investment in long-term satisfaction and well-being. Today's job market rewards curiosity, adaptability, and lifelong learning—making adult education employment pathways more valuable than ever.
+    </p>
+  </div>
+  
+  <div className="p-6 rounded-xl bg-white border border-gray-300 shadow-sm">
+    <p className="text-gray-700 text-lg leading-relaxed">
+      Whether you're stepping into healthcare, teaching, design, or another field, remember this: the path may be new, but your foundation is strong, and the right education can open doors to meaningful, sustainable careers.
+    </p>
+  </div>
+</div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Resources & References
-          </h2>
-          <div className="space-y-3 bg-gray-50 p-6 rounded-lg">
-            <p className="text-gray-700 text-sm">
-              LinkedIn Economic Graph. (2023). Career Changes and the Future of Work.{" "}
-              <a 
-                href="https://economicgraph.linkedin.com/research/career-changes" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                https://economicgraph.linkedin.com/research/career-changes
-              </a>
-            </p>
-            
-            <p className="text-gray-700 text-sm">
-              Harvard Business Review. (2022). Making a Mid-Career Transition.{" "}
-              <a 
-                href="https://hbr.org/2022/03/making-a-mid-career-transition" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                https://hbr.org/2022/03/making-a-mid-career-transition
-              </a>
-            </p>
-            
-            <p className="text-gray-700 text-sm">
-              Bureau of Labor Statistics. (2023). Occupational Outlook Handbook: Career Changes.{" "}
-              <a 
-                href="https://www.bls.gov/ooh/about/career-changes.htm" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                https://www.bls.gov/ooh/about/career-changes.htm
-              </a>
-            </p>
-            
-            <p className="text-gray-700 text-sm">
-              McKinsey & Company. (2023). The Future of Work: Reskilling for Career Transitions.{" "}
-              <a 
-                href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-future-of-work-reskilling-for-career-transitions" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-future-of-work-reskilling-for-career-transitions
-              </a>
-            </p>
-          </div>
+<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+  References
+</h2>
+<div className="space-y-3 bg-gray-50 p-6 rounded-lg">
+  <p className="text-gray-700 text-sm">
+    Pew Research Center (2022){" "}
+    <a 
+      href="https://www.pewresearch.org/short-reads/2022/03/09/majority-of-workers-who-quit-a-job-in-2021-cite-low-pay-no-opportunities-for-advancement-feeling-disrespected/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline"
+    >
+      https://www.pewresearch.org/short-reads/2022/03/09/majority-of-workers-who-quit-a-job-in-2021-cite-low-pay-no-opportunities-for-advancement-feeling-disrespected/
+    </a>
+  </p>
+  
+  <p className="text-gray-700 text-sm">
+    World Economic Forum – Future of Jobs Report 2023{" "}
+    <a 
+      href="https://www.weforum.org/publications/the-future-of-jobs-report-2023/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline"
+    >
+      https://www.weforum.org/publications/the-future-of-jobs-report-2023/
+    </a>
+  </p>
+</div>
 
         </div>
 
       </div>
-    </div>
+            </div>
+
+  
   );
 };
 

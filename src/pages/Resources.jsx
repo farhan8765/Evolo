@@ -31,9 +31,11 @@ export default function Blogs() {
     },
     {
       id: 4,
+      slug: "blog/blog4",
       image: "/images/blog4.jpg",
       title: "Low-stress jobs for autistic adults",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog4"
     },
     {
       id: 5,
