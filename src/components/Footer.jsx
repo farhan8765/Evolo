@@ -37,8 +37,7 @@ export default function Footer() {
 
             {/* Text */}
             <p className="text-sm text-gray-100 mb-6 leading-relaxed">
-              We bridge students, schools, and employers at Evolo AI powered by
-              AdultEd Pro, enhancing career opportunities in adult education.
+              Evolo AI – Trusted AI solutions for education and student well-being.
             </p>
 
             {/* App Store Badges */}
