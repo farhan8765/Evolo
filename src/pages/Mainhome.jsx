@@ -11,18 +11,16 @@ import Homecardsdetail from '../components/Homecardsdetail'
 
 const Mainhome = () => {
   return (
-    <div>
-      <Homehero/>
-        <NewVideo/> 
-         <HomeWho/>
-
-      <HomePlatform/>
-   
-      <ConnectStudent/>
-      <Homecardsdetail/>
-      <Aboutstay/>
+    <div className="w-full overflow-x-hidden">
+      <Homehero />
+      <NewVideo />
+      <HomeWho />
+      <HomePlatform />
+      <ConnectStudent />
+      <Homecardsdetail />
+      <Aboutstay />
     </div>
-  )
-}
+  );
+};
 
 export default Mainhome

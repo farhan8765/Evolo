@@ -148,7 +148,7 @@ export default function FAQPage() {
         {/* Bottom Contact Section */}
         <div className="text-center mt-20 mb-10">
           <h3 className="text-2xl font-bold text-gray-900">Still have questions?</h3>
-          <p className="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          {/* <p className="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
 
           <button 
             onClick={handleContactClick}

@@ -11,7 +11,7 @@ export default function ConnectStudent() {
         {/* Right Side – Text + Buttons (Shows First on Mobile) */}
         <div className="order-1 md:order-2">
           <p className="text-xs font-semibold tracking-wider text-black mb-2">
-            Adult Education Programs
+            Adult Education Program
           </p>
           
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4 md:mb-6">

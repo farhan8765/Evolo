@@ -42,7 +42,7 @@ export default function Homehero() {
             onClick={() => navigate('/adult')}
             className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
           >
-         Adult Education Programs
+         Adult Education Program
           </button>
         </div>
 
