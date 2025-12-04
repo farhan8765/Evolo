@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const EmpdiscoverTalent = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-[#EFF0FF] py-16 px-6 font-['Raleway']">
       <div className="max-w-4xl mx-auto text-center">
@@ -32,6 +35,7 @@ const EmpdiscoverTalent = () => {
 
         {/* Get In Touch Button */}
         <button
+          onClick={() => navigate('/contact')}
           className="bg-[#4F00DA] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3A00B8] transition-colors shadow-md animate-hero-reveal"
           style={{ animationDelay: "0.35s" }}
         >

@@ -43,7 +43,7 @@ export default function LastHome() {
 </h2>
 
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-       Learn how Evolo AI streamlines your job search. Discover the ease of finding your dream job —just swipe, match, and succeed!
+       Learn how Evolo AI streamlines your job search. Discover the ease of finding your dream job just swipe, match, and succeed!
           </p>
 
           {/* App Store Buttons */}

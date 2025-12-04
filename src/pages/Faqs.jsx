@@ -101,9 +101,9 @@ export default function FAQPage() {
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             FAQs
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          {/* <p className="text-gray-600 max-w-2xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-          </p>
+          </p> */}
         </div>
 
         {/* FAQ Items */}

@@ -127,9 +127,9 @@ export default function Blogs() {
   Transforming Adult learning with AI innovation
 </h1>
 
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        {/* <p className="text-gray-600 max-w-2xl mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        </p> */}
       </div>
 
     {/* Blog Grid */}

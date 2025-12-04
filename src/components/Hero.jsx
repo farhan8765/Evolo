@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const images = ['h1.png', 'h1.png', 'h1.png'];
+  // Rotation order: main hero (h1) + two smaller variants
+  const images = ['h1.png', 'student-feature.png', 'home-second.png'];
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -81,7 +82,21 @@ export default function Hero() {
 
       {/* Rotating Images Section */}
       <div className="relative max-w-8xl mx-auto h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] flex items-center justify-center overflow-hidden">
-        {images.map((img, index) => (
+        {images.map((img, index) => {
+          const isCenter = (index - activeIndex + 3) % 3 === 0;
+          const isMainHero = img === 'h1.png';
+
+          // h1.png = main large image; others (student-feature, home-second) are smaller.
+          // Front (center) image is intentionally a bit larger than side images.
+          const sizeClasses = isMainHero
+            ? isCenter
+              ? 'w-[270px] sm:w-[330px] md:w-[500px] lg:w-[650px]' // bigger when in front
+              : 'w-[210px] sm:w-[260px] md:w-[380px] lg:w-[540px]'
+            : isCenter
+              ? 'w-[210px] sm:w-[250px] md:w-[330px] lg:w-[420px]' // slightly bigger in front
+              : 'w-[150px] sm:w-[190px] md:w-[250px] lg:w-[310px]';
+
+          return (
           <div
             key={index}
             className={`absolute transition-all duration-700 ease-in-out ${getImagePosition(index)}`}
@@ -89,14 +104,11 @@ export default function Hero() {
             <img
               src={`/images/${img}`}
               alt={`Preview ${index + 1}`}
-              className={`rounded-xl sm:rounded-2xl shadow-2xl ${
-                (index - activeIndex + 3) % 3 === 0 
-                  ? 'w-[240px] sm:w-[300px] md:w-[450px] lg:w-[600px]'
-                  : 'w-[180px] sm:w-[220px] md:w-[350px] lg:w-[500px]'
-              } h-auto`}
+              className={`rounded-xl sm:rounded-2xl shadow-2xl ${sizeClasses} h-auto`}
             />
           </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Navigation Dots */}

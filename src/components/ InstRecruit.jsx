@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function InstRecruit() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-[480px] bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center px-4 py-12 font-['Raleway']">
       <div className="max-w-6xl w-full">
@@ -49,7 +51,10 @@ export default function InstRecruit() {
 
         {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-[#5A14ED] hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <button
+            onClick={() => navigate('/contact')}
+            className="bg-[#5A14ED] hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
             Get In Touch
           </button>
         </div>

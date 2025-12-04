@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ConnectStudent() {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-white py-10 md:py-20 px-4 sm:px-6 font-['Raleway']">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -58,7 +61,10 @@ employers discover talent, and institutions prove impact.
           </div>
 
           {/* Learn More Button */}
-          <button className="bg-[#4F00DA] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-[#4200B8] transition-colors w-full sm:w-auto text-sm sm:text-base">
+          <button
+            onClick={() => navigate("/adult")}
+            className="bg-[#4F00DA] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-[#4200B8] transition-colors w-full sm:w-auto text-sm sm:text-base"
+          >
             Learn More
           </button>
         </div>

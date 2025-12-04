@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Institutehero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative overflow-hidden bg-[white] text-white pt-8 pb-16">
       <div className="absolute -right-28 top-12 h-[520px] w-[520px] " />
@@ -24,7 +27,10 @@ const Institutehero = () => {
           <p className="mt-6 text-base text-[#5A666E] md:text-lg">
          We help improve student outcomes and help you track and showcase your institution’s achievements, connect with employers and improve operations.
           </p>
-          <button className="mt-8 inline-flex items-center rounded-2xl bg-[#5e2bff] px-8 py-3 text-base font-semibold text-white  transition ">
+          <button
+            onClick={() => navigate("/contact")}
+            className="mt-8 inline-flex items-center rounded-2xl bg-[#5e2bff] px-8 py-3 text-base font-semibold text-white transition"
+          >
             Contact Us
           </button>
         </div>

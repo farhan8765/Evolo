@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePlatform() {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-white py-8 md:py-16 px-4 sm:px-8 md:px-12 lg:px-20 font-['Raleway']">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -53,7 +56,10 @@ incident reporting, session management, and compliance documentation.
           </div>
 
           {/* Button */}
-          <button className="bg-[#4F00DA] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-[#4200B8] transition-colors w-full sm:w-auto text-sm sm:text-base">
+          <button
+            onClick={() => navigate("/mental")}
+            className="bg-[#4F00DA] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-[#4200B8] transition-colors w-full sm:w-auto text-sm sm:text-base"
+          >
             Learn More
           </button>
         </div>
