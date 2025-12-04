@@ -5,56 +5,67 @@ export default function Homehero() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 pt-8 font-['Raleway'] pt-4 md:pt-20">
-      <div className="max-w-8xl mx-auto">
+    <section className="relative overflow-hidden bg-white pt-10 md:pt-16 font-['Raleway']">
+      {/* Side images (left / right) */}
+      <div className="pointer-events-none absolute inset-y-20 left-0 hidden lg:block">
+        <img
+          src="/images/left.png"
+          alt=""
+          className="h-[420px] w-auto object-cover"
+        />
+      </div>
+      <div className="pointer-events-none absolute inset-y-20 right-0 hidden lg:block">
+        <img
+          src="/images/right.png"
+          alt=""
+          className="h-[420px] w-auto object-cover"
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-4">
         {/* Top Tagline */}
-        <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-700 mb-4 md:mb-2 italic">
+        <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-600 mb-4 italic">
           Empowering Education Through Technology
         </p>
 
         {/* Main Heading */}
-        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
+        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-2">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-          AI-powered solutions for
+            AI-powered solutions for
           </span>
         </h1>
-        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
+        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-          Education & Student Well-Being
+            Adult Education & K-12 Mental Health
           </span>
         </h1>
-        {/* <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-6 leading-tight">
-          <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-            Mental Health
-          </span>
-        </h1> */}
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
-        <button 
-  onClick={() => navigate('/mental')}
-  className="bg-[#5A14ED] text-white px-16 sm:px-28 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-auto"
->
-  K12
-</button>
-
-          <button 
-            onClick={() => navigate('/adult')}
-            className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
+        <div className="mb-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <button
+            onClick={() => navigate('/mental')}
+            className="bg-[#5A14ED] text-white px-8 sm:px-10 lg:px-12 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base min-w-[220px] text-center"
           >
-         Adult Education Programs
+            K-12 Mental Health (CYBHI)
+          </button>
+
+          <button
+            onClick={() => navigate('/adult')}
+            className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-8 sm:px-10 lg:px-12 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base min-w-[260px] text-center"
+          >
+            Adult Education Programs
           </button>
         </div>
 
-        {/* Bottom Image */}
-        <div className="relative w-full mx-auto px-2 sm:px-0">
+        {/* Bottom main image */}
+        <div className="relative w-full mx-auto max-w-5xl">
           <img
             src="/images/main-home.png"
             alt="Platform Preview"
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto rounded-lg shadow-[0_25px_60px_rgba(27,16,63,0.25)]"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
