@@ -26,6 +26,10 @@ import AdultEducation from './pages/AdultEducation';
 import MentalHealthCybhi from './pages/MentalHealthCybhi';
 import OneEvent from './pages/OneEvent';
 import Blog1 from './components/Blog1';
+import Blog2 from './components/Blog2';
+import Blog3 from './components/Blog3';
+import Blog4 from './components/Blog4';
+
 function App() {
   return (
     <Router>
@@ -46,6 +50,11 @@ function App() {
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/blog/blog1" element={<Blog1 />} />
+          <Route path="/blog/blog2" element={<Blog2 />} />
+          <Route path="/blog/blog3" element={<Blog3 />} />
+          <Route path="/blog/blog4" element={<Blog4 />} />
+
+
         </Routes>
         <Footer />
       </div>
