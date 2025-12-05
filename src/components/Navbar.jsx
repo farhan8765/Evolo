@@ -39,7 +39,8 @@ const NAV_TABS = [
     label: "Events",
     path: null,
     subItems: [
-      { label: "CAEP 2024", path: "/events" },
+      { label: "CAEP 2025", path: "/events" },
+      { label: "CAEP 2024", path: "/eventtwo"},
       { label: "CCAE PD", path: "/eventone" },
     ],
   },

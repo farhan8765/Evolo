@@ -25,6 +25,7 @@ import Mainhome from './pages/Mainhome';
 import AdultEducation from './pages/AdultEducation';
 import MentalHealthCybhi from './pages/MentalHealthCybhi';
 import OneEvent from './pages/OneEvent';
+import EventTwo from './components/EventTwo';
 import Blog1 from './components/Blog1';
 import Blog2 from './components/Blog2';
 import Blog3 from './components/Blog3';
@@ -48,6 +49,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/eventone" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/eventtwo" element={<EventTwo />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/blog/blog1" element={<Blog1 />} />
           <Route path="/blog/blog2" element={<Blog2 />} />
