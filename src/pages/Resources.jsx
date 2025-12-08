@@ -39,27 +39,36 @@ export default function Blogs() {
     },
     {
       id: 5,
+      slug: "blog/blog5",
       image: "/images/blog5.png",
       title: "9 Benefits of Work for Teens and Young Adults",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog5"
     },
     {
       id: 6,
+      slug: "blog/blog6",
       image: "/images/blog6.png",
       title: "What Percentage of Teens and Young Adults Have Retail Jobs?",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog6"
     },
     {
       id: 7,
+      slug: "blog/blog7",
       image: "/images/blog7.png",
       title: "Best Remote Jobs Without a Degree",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog7"
     },
     {
       id: 8,
+      slug: "blog/blog8",
       image: "/images/blog8.jpg",
       title: "Upskilling vs. Reskilling: What’s Right for You in a Rapidly Changing Job Market",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog8"
+
     },
     {
       id: 9,
