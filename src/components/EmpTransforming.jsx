@@ -16,7 +16,7 @@ const EmpTransforming = () => {
     </span>
     
     {/* Desktop: Multiple lines */}
-    <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent mb-3">
+    <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent pb-4">
       Transforming
     </span>
     <span className="hidden md:block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent mb-3">

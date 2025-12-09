@@ -8,12 +8,11 @@ export default function InstRecruit() {
       <div className="max-w-6xl w-full">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-md font-bold text-black mb-4">
+          {/* <p className="text-md font-bold text-black mb-4">
             Discover Talent
-          </p>
+          </p> */}
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-black to-[#2B1BDD] bg-clip-text text-transparent">
-            The Recruitment solution for you
-          </h1>
+Seamless Event Tracking & Employer Interaction          </h1>
         </div>
 
         {/* Cards Section */}

@@ -47,12 +47,12 @@ const EmpGraph = () => {
       <div className="max-w-7xl w-full px-4 mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p
+          {/* <p
             className="text-[16px] font-semibold text-black mb-3 tracking-wide animate-hero-reveal"
             style={{ animationDelay: "0.05s" }}
           >
             Tagline
-          </p>
+          </p> */}
           <h1
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
             style={{ animationDelay: "0.15s" }}
