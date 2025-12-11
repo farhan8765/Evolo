@@ -13,8 +13,8 @@ const Student = () => {
       <StudentHero />
       <StudentChoose />
       <StudentFeatures />
-      <StudSlider />
       <MainStudTestMonials/>
+      <StudSlider />
       <Studdowner/>
       <StudVideo/>
     </>
