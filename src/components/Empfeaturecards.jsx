@@ -207,9 +207,9 @@ const EmpFeatureCards = () => {
                   >
                     {plan.name}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-[#7a7f94]">
+                  {/* <p className="mt-2 text-sm leading-relaxed text-[#7a7f94]">
                     {plan.description}
-                  </p>
+                  </p> */}
                 </div>
                 {plan.badge && (
                   <span className="rounded-full bg-[#ffefe2] px-3 py-1 text-xs font-semibold text-[#ff6a00]">
