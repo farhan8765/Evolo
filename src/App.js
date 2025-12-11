@@ -57,16 +57,16 @@ function App() {
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/eventtwo" element={<EventTwo />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/blog/blog1" element={<Blog1 />} />
-          <Route path="/blog/blog2" element={<Blog2 />} />
-          <Route path="/blog/blog3" element={<Blog3 />} />
-          <Route path="/blog/blog4" element={<Blog4 />} />
-          <Route path="/blog/blog5" element={<Blog5 />} />
-          <Route path="/blog/blog6" element={<Blog6 />} />
-          <Route path="/blog/blog7" element={<Blog7 />} />
-          <Route path="/blog/blog8" element={<Blog8 />} />
-          <Route path="/blog/blog9" element={<Blog9 />} />
-          <Route path="/blog/blog10" element={<Blog10 />} />
+          <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />
+          <Route path="/adult-school-vs-online-college/" element={<Blog2 />} />
+          <Route path="/career-switch-strategies-after-30s/" element={<Blog3 />} />
+          <Route path="/low-stress-jobs-for-autistic-adults/" element={<Blog4 />} />
+          <Route path="/9-benefits-of-work-for-teens-young-adults/" element={<Blog5 />} />
+          <Route path="/how-many-teens-and-young-adults-work-retail/" element={<Blog6 />} />
+          <Route path="/best-remote-jobs-without-degree/" element={<Blog7 />} />
+          <Route path="/upskilling-vs-reskilling-2025/" element={<Blog8 />} />
+          <Route path="/the-role-of-ai-in-hiring-how-adult-job-seekers-can-stay-competitive/" element={<Blog9 />} />
+          <Route path="/overcoming-employment-gaps-a-guide-for-adult-job-seekers/" element={<Blog10 />} />
 
 
 

@@ -6,7 +6,7 @@ export default function Blogs() {
   const blogPosts = [
     {
       id: 1,
-      slug: "blog/blog1", // Unique identifier
+      slug: "overcoming-barriers-how-single-parents-benefit-from-adult-schools/", // Unique identifier
       image: "/images/blog1.png",
       title: "How Single Parents Benefit from Adult Schools",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -15,7 +15,7 @@ export default function Blogs() {
     },
     {
       id: 2,
-      slug: "blog/blog2",
+      slug: "adult-school-vs-online-college/",
       image: "/images/blog2.png",
       title: "Adult School vs Online College: Career Change Guide",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -23,7 +23,7 @@ export default function Blogs() {
     },
     {
       id: 3,
-      slug: "blog/blog3",
+      slug: "career-switch-strategies-after-30s/",
       image: "/images/blog3.png",
       title: "Career Change After 30: How Adults Can Successfully Pivot to New Industries",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -31,7 +31,7 @@ export default function Blogs() {
     },
     {
       id: 4,
-      slug: "blog/blog4",
+      slug: "low-stress-jobs-for-autistic-adults/",
       image: "/images/blog4.jpg",
       title: "Low-stress jobs for autistic adults",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -39,7 +39,7 @@ export default function Blogs() {
     },
     {
       id: 5,
-      slug: "blog/blog5",
+      slug: "9-benefits-of-work-for-teens-young-adults/",
       image: "/images/blog5.png",
       title: "9 Benefits of Work for Teens and Young Adults",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -47,7 +47,7 @@ export default function Blogs() {
     },
     {
       id: 6,
-      slug: "blog/blog6",
+      slug: "how-many-teens-and-young-adults-work-retail/",
       image: "/images/blog6.png",
       title: "What Percentage of Teens and Young Adults Have Retail Jobs?",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -55,7 +55,7 @@ export default function Blogs() {
     },
     {
       id: 7,
-      slug: "blog/blog7",
+      slug: "best-remote-jobs-without-degree/",
       image: "/images/blog7.png",
       title: "Best Remote Jobs Without a Degree",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -63,7 +63,7 @@ export default function Blogs() {
     },
     {
       id: 8,
-      slug: "blog/blog8",
+      slug: "upskilling-vs-reskilling-2025/",
       image: "/images/blog8.jpg",
       title: "Upskilling vs. Reskilling: What’s Right for You in a Rapidly Changing Job Market",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -72,7 +72,7 @@ export default function Blogs() {
     },
     {
       id: 9,
-      slug: "blog/blog9",
+      slug: "the-role-of-ai-in-hiring-how-adult-job-seekers-can-stay-competitive/",
       image: "/images/blog9.png",
       title: "The Role of AI in Hiring: How Adult Job Seekers Can Stay Competitive",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
@@ -80,7 +80,7 @@ export default function Blogs() {
     },
       {
       id: 10,
-      slug: "blog/blog10",
+      slug: "overcoming-employment-gaps-a-guide-for-adult-job-seekers/",
       image: "/images/blog10.png",
       title: "Overcoming Employment Gaps: A Guide for Adult Job Seekers",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
