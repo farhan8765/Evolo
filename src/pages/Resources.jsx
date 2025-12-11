@@ -72,15 +72,19 @@ export default function Blogs() {
     },
     {
       id: 9,
+      slug: "blog/blog9",
       image: "/images/blog9.png",
       title: "The Role of AI in Hiring: How Adult Job Seekers Can Stay Competitive",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog9"
     },
       {
       id: 10,
+      slug: "blog/blog10",
       image: "/images/blog10.png",
       title: "Overcoming Employment Gaps: A Guide for Adult Job Seekers",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      component: "Blog10"
     },
       {
       id: 11,
