@@ -1,11 +1,11 @@
 import React from 'react'
-import InsForm from '../components/Insform'
+import Contactfrom from '../components/Contactfrom'
 import ContactMap from '../components/Contactmap'
 
 const Contact = () => {
   return (
     <div>
-      <InsForm/>
+      <Contactfrom />
       <ContactMap/>
     </div>
   )
