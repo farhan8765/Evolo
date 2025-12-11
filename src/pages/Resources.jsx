@@ -135,10 +135,9 @@ export default function Blogs() {
 
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-center">
-        <p className="text-black font-bold mb-4">Blog</p>
-       <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-  Transforming Adult learning with AI innovation
-</h1>
+        {/* <p className="text-black font-bold mb-4">Blog</p> */}
+       <h1 className="text-4xl md:text-5xl pb-2 font-bold mb-6 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
+Explore Our Blog</h1>
 
         {/* <p className="text-gray-600 max-w-2xl mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
