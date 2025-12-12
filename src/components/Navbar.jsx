@@ -10,9 +10,9 @@ const NAV_TABS = [
         title: "Adult Education",
         path: "/adult",
         items: [
-          { label: "Student", path: "/student" },
-          { label: "Employers", path: "/employee" },
-          { label: "Institutions", path: "/institute" },
+          { label: "Student", path: "/students" },
+          { label: "Employers", path: "/employers" },
+          { label: "Institutions", path: "/institution" },
         ],
       },
       {
@@ -26,12 +26,12 @@ const NAV_TABS = [
       },
     ],
   },
-  { label: "Resources", path: "/resources" },
+  { label: "Resources", path: "/blogs" },
   {
     label: "About us",
     path: null,
     subItems: [
-      { label: "About Evolo", path: "/about" },
+      { label: "About Evolo", path: "/about-us" },
       { label: "FAQs", path: "/faqs" },
     ],
   },

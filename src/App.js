@@ -46,17 +46,17 @@ function App() {
         <Routes>
           <Route path="/" element={<Mainhome/>} />
           <Route path="/adult" element={<AdultEducation />} />
-          <Route path="/student" element={<Student />} />
-          <Route path="/employee" element={<Employee />} />
-          <Route path="/institute" element={<Institute />} />
+          <Route path="/students" element={<Student />} />
+          <Route path="/employers" element={<Employee />} />
+          <Route path="/institution" element={<Institute />} />
           <Route path="/mental" element={<MentalHealthCybhi />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="/ccae-pd" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/caep-2024" element={<EventTwo />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/blogs" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />
           <Route path="/adult-school-vs-online-college/" element={<Blog2 />} />
           <Route path="/career-switch-strategies-after-30s/" element={<Blog3 />} />
