@@ -1,8 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Blog8 = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
+
+   useEffect(() => {
+    // Document title set karna
+    document.title = 'Upskilling vs. Reskilling: Which Path to Take in 2025?';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Explore the key differences between upskilling and reskilling, and find out which strategy best suits your career goals in the rapidly changing job market.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/upskilling-vs-reskilling-2025/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
+  
   const toggleFAQ = (index) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };

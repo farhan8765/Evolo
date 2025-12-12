@@ -1,9 +1,34 @@
 // Blog10.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Blog10 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+    useEffect(() => {
+    // Document title set karna
+    document.title = 'Overcoming Employment Gaps for Adults: A Practical Guide';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Struggling with resume gaps? Overcome employment gaps with expert tips, smart strategies, and career advice for adult job seekers. Learn how now!';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/overcoming-employment-gaps-a-guide-for-adult-job-seekers/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
+  
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);

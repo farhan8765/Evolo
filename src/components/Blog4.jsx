@@ -1,9 +1,35 @@
 // Blog4.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
 
 const Blog4 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+
+    useEffect(() => {
+    // Document title set karna
+    document.title = 'Low-Stress Jobs for Autistic Adults That Empower Independence';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Discover low-stress jobs for autistic adults that match strengths, reduce overwhelm, and offer stability. Learn how to find meaningful, accommodating careers.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/low-stress-jobs-for-autistic-adults/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
+  
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

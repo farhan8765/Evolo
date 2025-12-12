@@ -1,8 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
 
 const Blog5 = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
+
+   useEffect(() => {
+    // Document title set karna
+    document.title = '9 Powerful Benefits of Work for Teens & Young Adults';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Discover 9 real-world benefits of work for teens and young adults—from building skills to boosting confidence. Learn how early jobs shape brighter futures.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/9-benefits-of-work-for-teens-young-adults/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
+  
   const toggleFAQ = (index) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };

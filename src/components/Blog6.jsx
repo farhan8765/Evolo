@@ -1,8 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
 
 const Blog6 = () => {
      const [openFAQ, setOpenFAQ] = useState(null);
 
+
+      useEffect(() => {
+    // Document title set karna
+    document.title = 'How Many Teens & Young Adults Work Retail?';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Wondering how many teens and young adults work in retail? Discover key stats, trends, and career tips to help guide your journey. Learn more inside!';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/how-many-teens-and-young-adults-work-retail/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
+  
   const toggleFAQ = (index) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };

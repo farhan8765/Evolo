@@ -1,8 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
 
 const Blog7 = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
+   useEffect(() => {
+    // Document title set karna
+    document.title = 'Best Remote Jobs Without a Degree | Discover Top Roles';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Explore the best remote jobs for adults without a college degree. Learn how to find flexible, high-paying roles and discover success strategies.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/best-remote-jobs-without-degree/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
+  
   const toggleFAQ = (index) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };

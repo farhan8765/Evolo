@@ -1,9 +1,33 @@
 // Blog3.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
 
 const Blog3 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+
+  useEffect(() => {
+    // Document title set karna
+    document.title = 'Career Change After 30: Real Strategies That Work';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Thinking of switching careers after 30? Discover proven strategies, success stories, and resources to help you pivot with confidence. Learn how to thrive, starting now.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/career-switch-strategies-after-30s/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

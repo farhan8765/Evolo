@@ -1,8 +1,33 @@
 // Blog1.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // useEffect add kiya
 
 const Blog1 = () => {
   const [openIndex, setOpenIndex] = useState(null);
+
+// Meta tags ke liye useEffect add karo
+  useEffect(() => {
+    // Document title set karna
+    document.title = 'How Adult Schools Empower Single Parents';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Discover how single parents benefit from adult schools through flexible learning, career growth, and financial stability. Learn more today!';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/overcoming-barriers-how-single-parents-benefit-from-adult-schools/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hog
 
   const faqs = [
     {

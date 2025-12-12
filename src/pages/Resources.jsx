@@ -156,48 +156,48 @@ export default function Blogs() {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       component: "Blog10"
     },
-      {
-      id: 11,
-      image: "/images/blog11.jpg",
-      title: "Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-      {
-      id: 12,
-      image: "/images/blog12.jpg",
-      title: "Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-      {
-      id: 13,
-      image: "/images/blog13.jpg",
-      title: "The 2025 Job Search: How to Stand Out in a Competitive Market",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-      {
-      id: 14,
-      image: "/images/blog14.jpg",
-      title: "The Future of Adult Education: How Technology is Bridging the Gap Between Students, Institutions, and Employers",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-      {
-      id: 15,
-      image: "/images/blog15.png",
-      title: "Top 5 High-Income Skills Young Adults Should Learn for 2025",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-      {
-      id: 16,
-      image: "/images/blog16.png",
-      title: "Top 10 Career Tips and Advice for Young Adults Starting Their Journey",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    },
-      {
-      id: 17,
-      image: "/images/blog17.png",
-      title: "CAEP 2024 Summit",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    }
+    //   {
+    //   id: 11,
+    //   image: "/images/blog11.jpg",
+    //   title: "Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // },
+    //   {
+    //   id: 12,
+    //   image: "/images/blog12.jpg",
+    //   title: "Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // },
+    //   {
+    //   id: 13,
+    //   image: "/images/blog13.jpg",
+    //   title: "The 2025 Job Search: How to Stand Out in a Competitive Market",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // },
+    //   {
+    //   id: 14,
+    //   image: "/images/blog14.jpg",
+    //   title: "The Future of Adult Education: How Technology is Bridging the Gap Between Students, Institutions, and Employers",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // },
+    //   {
+    //   id: 15,
+    //   image: "/images/blog15.png",
+    //   title: "Top 5 High-Income Skills Young Adults Should Learn for 2025",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // },
+    //   {
+    //   id: 16,
+    //   image: "/images/blog16.png",
+    //   title: "Top 10 Career Tips and Advice for Young Adults Starting Their Journey",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // },
+    //   {
+    //   id: 17,
+    //   image: "/images/blog17.png",
+    //   title: "CAEP 2024 Summit",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    // }
   ];
 
   return (

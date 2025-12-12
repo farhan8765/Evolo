@@ -1,9 +1,33 @@
 // Blog2.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
 
 const Blog2 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+
+   useEffect(() => {
+    // Document title set karna
+    document.title = 'Adult School vs Online College: Career Change Guide';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Discover the pros and cons of adult schools vs online colleges for career changers. Learn which option best fits your goals, schedule, and future success.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/adult-school-vs-online-college/';
+    
+  }, []);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
