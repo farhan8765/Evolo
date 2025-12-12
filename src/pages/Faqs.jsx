@@ -1,10 +1,81 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState(null);
   const navigate = useNavigate();
+
+  // Meta tags set karne ka useEffect
+  useEffect(() => {
+    // Document title set karna
+    document.title = 'Evolo AI Frequently Asked Questions';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Find quick answers to common questions about Evolo AI services, policies, and support. Our FAQ page makes it easy to get the help you need.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/faqs/';
+    
+    // OG tags add/update karna (Facebook/WhatsApp ke liye)
+    const ogTags = [
+      { property: 'og:title', content: 'Evolo AI Frequently Asked Questions' },
+      { property: 'og:description', content: 'Find quick answers to common questions about Evolo AI services, policies, and support. Our FAQ page makes it easy to get the help you need.' },
+      { property: 'og:url', content: 'https://goevolo.com/faqs/' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Evolo AI' },
+    ];
+    
+    ogTags.forEach(tag => {
+      let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', tag.property);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.content = tag.content;
+    });
+    
+    // Twitter tags add/update karna
+    const twitterTags = [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Evolo AI Frequently Asked Questions' },
+      { name: 'twitter:description', content: 'Find quick answers to common questions about Evolo AI services, policies, and support. Our FAQ page makes it easy to get the help you need.' },
+      { name: 'twitter:url', content: 'https://goevolo.com/faqs/' },
+    ];
+    
+    twitterTags.forEach(tag => {
+      let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('name', tag.name);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.content = tag.content;
+    });
+    
+    // Keywords meta tag bhi add karna
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.name = 'keywords';
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.content = 'Evolo AI FAQs, frequently asked questions, support help, services questions, policies information, AI platform help';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
 
   const faqs = [
     {

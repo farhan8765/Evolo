@@ -1,8 +1,78 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Aboutstay from "../components/Aboutstay"
 
 export default function Blogs() {
+  useEffect(() => {
+    // Document title set karna
+    document.title = 'Evolo AI Blog & Insights';
+    
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/blogs/';
+    
+    // OG tags add/update karna (Facebook/WhatsApp ke liye)
+    const ogTags = [
+      { property: 'og:title', content: 'Evolo AI Blog & Insights' },
+      { property: 'og:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
+      { property: 'og:url', content: 'https://goevolo.com/blogs/' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Evolo AI' },
+    ];
+    
+    ogTags.forEach(tag => {
+      let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', tag.property);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.content = tag.content;
+    });
+    
+    // Twitter tags add/update karna
+    const twitterTags = [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Evolo AI Blog & Insights' },
+      { name: 'twitter:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
+      { name: 'twitter:url', content: 'https://goevolo.com/blogs/' },
+    ];
+    
+    twitterTags.forEach(tag => {
+      let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('name', tag.name);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.content = tag.content;
+    });
+    
+    // Keywords meta tag bhi add karna
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.name = 'keywords';
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.content = 'Evolo AI blog, career insights, AI learning, education tips, career advice, adult education, job market trends, learning resources';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
   const blogPosts = [
     {
       id: 1,
@@ -65,7 +135,7 @@ export default function Blogs() {
       id: 8,
       slug: "upskilling-vs-reskilling-2025/",
       image: "/images/blog8.jpg",
-      title: "Upskilling vs. Reskilling: What’s Right for You in a Rapidly Changing Job Market",
+      title: "Upskilling vs. Reskilling: What's Right for You in a Rapidly Changing Job Market",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       component: "Blog8"
 
@@ -135,21 +205,15 @@ export default function Blogs() {
 
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-center">
-        {/* <p className="text-black font-bold mb-4">Blog</p> */}
        <h1 className="text-4xl md:text-5xl pb-2 font-bold mb-6 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
 Explore Our Blog</h1>
-
-        {/* <p className="text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p> */}
       </div>
 
     {/* Blog Grid */}
-{/* Blog Grid */}
 <div className="max-w-7xl mx-auto px-6 pb-16">
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch"> {/* items-stretch add kiya */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
     {blogPosts.map((post) => (
-      <div key={post.id} className="flex flex-col"> {/* Parent flex container */}
+      <div key={post.id} className="flex flex-col">
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col h-full">
           
           {/* Image - Fixed Height */}
@@ -168,9 +232,6 @@ Explore Our Blog</h1>
             </h3>
             
             <div className="flex-1 mb-4">
-              {/* <p className="text-gray-600">
-                {post.description}
-              </p> */}
             </div>
             
            <Link to={post.slug ? `/${post.slug}` : '#'}>

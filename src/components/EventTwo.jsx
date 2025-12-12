@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const EventTwo = () => {
+  useEffect(() => {
+    // Document title set karna
+    document.title = 'CAEP 2024 - Evolo AI';
+    
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/caep-2024/';
+    
+  }, []); // Empty dependency array - sirf ek baar run hoga
+
   return (
     <>
       {/* Hero Banner Section */}
@@ -129,11 +144,11 @@ const EventTwo = () => {
           <div className="space-y-6">
             <div>
               <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-                Attending the conference? Let’s connect!
+                Attending the conference? Let's connect!
               </h2>
 
               <p className="mt-4 text-lg text-[#666a83]">
-                Set up a time to meet with us and you’ll be entered to Win an exclusive Stanley Mug! 🎁
+                Set up a time to meet with us and you'll be entered to Win an exclusive Stanley Mug! 🎁
               </p>
             </div>
 

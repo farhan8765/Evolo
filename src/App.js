@@ -53,9 +53,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/eventone" element={<OneEvent />} />
+          <Route path="/ccae-pd" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/eventtwo" element={<EventTwo />} />
+          <Route path="/caep-2024" element={<EventTwo />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />
           <Route path="/adult-school-vs-online-college/" element={<Blog2 />} />
