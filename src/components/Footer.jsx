@@ -9,7 +9,7 @@ const quickLinks = [
 ];
 
 const supportLinks = [
-  { label: "Blog", to: "/resources" },
+  { label: "Blog", to: "/blogs" },
   { label: "FAQS", to: "/faqs" },
   { label: "Events", to: "/events" },
   { label: "Accessibility", to: "/resources" },

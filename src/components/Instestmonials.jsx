@@ -14,8 +14,7 @@ const Instestmonials = () => {
     <section className="bg-white py-14">
       <div className="max-w-full mx-auto px-4">
      <h2 className="text-center text-3xl font-semibold mb-10 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-  Featured Jobs by
-</h2>
+Trusted Partners</h2>
 
         <div className="overflow-hidden relative">
           <div className="flex gap-16 animate-logo-marquee" style={{ width: 'calc(200% + 64px)' }}>

@@ -11,7 +11,7 @@ export default function InstRecruit() {
           {/* <p className="text-md font-bold text-black mb-4">
             Discover Talent
           </p> */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-black to-[#2B1BDD] bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl pb-4 font-bold mb-4 bg-gradient-to-r from-black to-[#2B1BDD] bg-clip-text text-transparent">
 Seamless Event Tracking & Employer Interaction          </h1>
         </div>
 

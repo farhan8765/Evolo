@@ -8,5 +8,5 @@
 }
 
 .animate-logo-marquee {
-  animation: logo-marquee 25s linear infinite;
+  animation: logo-marquee 50s linear infinite;
 }

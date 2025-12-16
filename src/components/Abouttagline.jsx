@@ -20,7 +20,7 @@ const TAGLINE_CARDS = [
 
 const Abouttagline = () => {
   return (
-    <section className="w-full bg-[#EFF0FF] py-16 md:py-24">
+    <section className="w-full bg-[#EFF0FF] py-4 md:py-12">
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         <div className="text-center mb-12">
           {/* <p className="text-xs md:text-sm tracking-[0.45em] font-semibold text-black">
@@ -33,14 +33,20 @@ const Abouttagline = () => {
         </div>
 
         <div className="bg-white rounded-[32px] shadow-[0_32px_70px_rgba(47,15,110,0.08)] p-6 md:p-10 grid gap-10 md:grid-cols-[1.15fr,0.95fr] items-center">
-          <div className="relative flex justify-center">
-            <div className="w-full max-w-full  p-4 md:p-6">
+          <div className="relative flex flex-col items-center">
+            <div className="w-full max-w-full p-4 md:p-6">
               <img
                 src="/images/About.png"
                 alt="Evolo AI mobile preview"
-                className="w-full h-full object-contain "
+                className="w-full h-full object-contain"
               />
             </div>
+            <button
+              type="button"
+              className="mt-2 md:mt-4 px-6 py-2 md:px-8 md:py-3 rounded-full bg-[#2B1BDD] text-white font-semibold text-sm md:text-base shadow-md hover:bg-[#2110c0] transition-colors duration-200"
+            >
+              Get App Now
+            </button>
           </div>
 
           <div className="space-y-5">

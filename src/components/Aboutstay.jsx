@@ -75,14 +75,8 @@ const Aboutstay = () => {
     <section className="bg-[#F5F6FF] py-8 px-6 text-center">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-snug">
-        Stay informed and{" "}
         <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-          ahead of the curve!
-        </span>
-        <br />
-        Sign up and{" "}
-        <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-          stay up to date!
+          Looking for a Solution?
         </span>
       </h2>
 
