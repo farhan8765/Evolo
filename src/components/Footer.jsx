@@ -2,10 +2,10 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/f
 import { Link } from "react-router-dom";
 
 const quickLinks = [
-  { label: "About us", to: "/about" },
-  { label: "Employers", to: "/employee" },
-  { label: "Institutions", to: "/institute" },
-  { label: "Students", to: "/student" },
+  { label: "About us", to: "/about-us" },
+  { label: "Employers", to: "/employers" },
+  { label: "Institutions", to: "/institution" },
+  { label: "Students", to: "/students" },
 ];
 
 const supportLinks = [

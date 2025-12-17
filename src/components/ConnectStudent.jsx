@@ -54,7 +54,7 @@ employers discover talent, and institutions prove impact.
 
             <button className="w-full text-left bg-[#F3F3FF] px-4 sm:px-6 py-3 rounded-xl flex gap-3 items-center font-semibold text-black shadow-sm text-sm sm:text-base hover:bg-[#E8E8FF] transition-colors">
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/images/Hic6.svg" alt="Student Tracking" className="w-5 h-5" />
+                <img src="/images/Hic3.svg" alt="AB104 Compliance" className="w-5 h-5" />
               </span>
               AB104
             </button>
