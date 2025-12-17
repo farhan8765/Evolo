@@ -12,6 +12,7 @@ import Navbar from './components/Navbar';
 // import VideoHome from './components/VideoHome';
 // import StudentTestimonial from './components/Student-testmonial';
 import Footer from './components/Footer';
+import FloatingQr from './components/FloatingQr';
 // import Hero from './components/Hero';
 import Student from './pages/Student';
 import Employee from './pages/Employee';
@@ -72,6 +73,7 @@ function App() {
 
         </Routes>
         <Footer />
+        <FloatingQr />
       </div>
     </Router>
   );
