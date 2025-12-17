@@ -37,6 +37,8 @@ import Blog7 from './components/Blog7';
 import Blog8 from './components/Blog8';
 import Blog9 from './components/Blog9';
 import Blog10 from './components/Blog10';
+import Accessibility from './pages/Accessibility';
+
 
 function App() {
   return (
@@ -56,6 +58,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/ccae-pd" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/caep-2024" element={<EventTwo />} />
           <Route path="/blogs" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />

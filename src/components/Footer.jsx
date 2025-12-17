@@ -12,7 +12,7 @@ const supportLinks = [
   { label: "Blog", to: "/blogs" },
   { label: "FAQS", to: "/faqs" },
   { label: "Events", to: "/events" },
-  { label: "Accessibility", to: "/resources" },
+  { label: "Accessibility", to: "/accessibility" },
   { label: "Contact Us", to: "/contact" },
 ];
 
@@ -24,17 +24,29 @@ export default function Footer() {
           {/* Left Section */}
           <div>
             {/* Logo */}
-           <div className="flex items-center mb-4">
-  <div className="flex items-center justify-center w-35 h-20 overflow-hidden">
-    <img
-      src="/images/Footer-logo.png" // replace with your logo path
-      alt="Evolo AI Logo"
-      className="w-30 h-20 object-contain"
-    />
-  </div>
-</div>
+            <div className="flex flex-col items-start mb-4 space-y-3">
+              <div className="flex items-center justify-center w-35 h-20 overflow-hidden">
+                <img
+                  src="/images/Footer-logo.png" // replace with your logo path
+                  alt="Evolo AI Logo"
+                  className="w-30 h-20 object-contain"
+                />
+              </div>
 
-
+              {/* WCAG 2.1 Level A badge */}
+              <a
+                href="https://www.w3.org/WAI/WCAG2A-Conformance"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <img
+                  src="/images/wcag2.1A-blue-v.png"
+                  alt="WCAG 2.1 Level A Conformance (claimed)"
+                  className="h-8 object-contain"
+                />
+              </a>
+            </div>
             {/* Text */}
             <p className="text-sm text-gray-100 mb-6 leading-relaxed">
               Evolo AI – Trusted AI solutions for education and student well-being.
