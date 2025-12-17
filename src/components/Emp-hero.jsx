@@ -20,11 +20,11 @@ const EmpHero = () => {
             style={{ animationDelay: "0.15s" }}
           >
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent inline sm:whitespace-nowrap">
-              Your future workforce is 
+              Your future workforce is  
             </span>
             <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-               at your fingertips
+                at your fingertips
             </span>
           </h1>
           
