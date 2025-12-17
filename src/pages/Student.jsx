@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import StudentHero from "../components/Student-Hero";
 import StudentChoose from "../components/Student-choose";
 import StudentFeatures from "../components/Student-features";
@@ -6,8 +6,11 @@ import StudSlider from "../components/Studslider";  // ✅ Capital 'S'
 import MainStudTestMonials from "../components/Mainstudtestmonials";
 import Studdowner from "../components/Studdowner";
 import StudVideo from "../components/StudVideo";
+import StudentInterestModal from "../components/StudentInterestModal";
 
 const Student = () => {
+  const [showStudentForm, setShowStudentForm] = useState(true);
+
   useEffect(() => {
     // Document title set karna
     document.title = 'Find Your Next Career Move with Evolo AI\'s Student Job App';
@@ -78,8 +81,11 @@ const Student = () => {
     
   }, []); // Empty dependency array - sirf ek baar run hoga
 
+  const handleCloseForm = () => setShowStudentForm(false);
+
   return (
     <>
+      <StudentInterestModal open={showStudentForm} onClose={handleCloseForm} />
       <StudentHero />
       <StudentChoose />
       <StudentFeatures />
