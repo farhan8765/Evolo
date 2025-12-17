@@ -13,7 +13,7 @@ const logos = [
   { name: "Optum", src: "/images/flogo13.jpg" },
   { name: "Optum", src: "/images/flogo14.jpg" },
   { name: "Optum", src: "/images/flogo15.jpg" },
-    { name: "Optum", src: "/images/flogo16.jpg" },
+  { name: "Optum", src: "/images/flogo16.jpg" },
   { name: "Optum", src: "/images/flogo17.jpg" },
   { name: "Optum", src: "/images/flogo19.jpg" },
   { name: "Optum", src: "/images/flogo20.jpg" },
@@ -21,6 +21,16 @@ const logos = [
   { name: "Optum", src: "/images/flogo22.jpg" },
   { name: "Optum", src: "/images/flogo23.jpg" },
   { name: "Optum", src: "/images/flogo24.jpg" },
+  { name: "Optum", src: "/images/flogo25.jpg" },
+  { name: "Optum", src: "/images/flogo26.jpg" },
+  { name: "Optum", src: "/images/flogo27.jpg" },
+  { name: "Optum", src: "/images/flogo28.jpg" },
+  { name: "Optum", src: "/images/flogo29.jpg" },
+  { name: "Optum", src: "/images/flogo30.jpg" },
+  { name: "Optum", src: "/images/flogo31.jpg" },
+  { name: "Optum", src: "/images/flogo32.jpg" },
+  { name: "Optum", src: "/images/flogo33.jpg" },
+
 
 
 
@@ -34,8 +44,8 @@ const EmpTestimonials = () => {
 Featured Jobs by </h2>
 
         <div className="overflow-hidden relative">
-          <div className="flex gap-16 animate-logo-marquee" style={{ width: 'calc(200% + 64px)' }}>
-            {[...logos, ...logos].map((logo, index) => (
+          <div className="flex gap-16 animate-logo-marquee">
+            {logos.map((logo, index) => (
               <div
                 key={`${logo.name}-${index}`}
                 className="flex items-center justify-center min-w-[150px] max-w-[200px]"
