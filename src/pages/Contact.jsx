@@ -7,6 +7,7 @@ const Contact = () => {
     <div>
       <Contactfrom />
       <ContactMap/>
+      {/* data */}
     </div>
   )
 }
