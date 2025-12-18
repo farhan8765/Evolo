@@ -80,7 +80,7 @@ const StudentInterestModal = ({ open, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40 px-4">
-      <div className="relative w-full max-w-4xl rounded-[32px] border border-[#DFE7EF] bg-white p-6 shadow-2xl sm:p-10">
+      <div className="relative w-full max-w-xl rounded-[32px] border border-[#DFE7EF] bg-white p-5 shadow-2xl sm:p-8">
         <button
           type="button"
           onClick={() => onClose?.()}

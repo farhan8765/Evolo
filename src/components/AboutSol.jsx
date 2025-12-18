@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Aboutstay = () => {
+const AboutSol = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
@@ -9,8 +9,12 @@ const Aboutstay = () => {
   // HubSpot Configuration - Get these from your HubSpot account
   // Portal ID: Found in your HubSpot account settings
   // Form GUID: Found in your HubSpot form settings
-  const HUBSPOT_PORTAL_ID = process.env.REACT_APP_HUBSPOT_PORTAL_ID || "YOUR_PORTAL_ID";
-  const HUBSPOT_FORM_GUID = process.env.REACT_APP_HUBSPOT_FORM_GUID_ID|| "YOUR_FORM_GUID";
+  const HUBSPOT_PORTAL_ID =
+    (typeof process !== "undefined" && process.env.REACT_APP_HUBSPOT_PORTAL_ID) ||
+    "YOUR_PORTAL_ID";
+  const HUBSPOT_FORM_GUID =
+    (typeof process !== "undefined" && process.env.REACT_APP_HUBSPOT_FORM_GUID_ID) ||
+    "YOUR_FORM_GUID";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,10 +80,8 @@ const Aboutstay = () => {
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-snug">
         <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-        Stay informed and ahead of the curve!        </span>
-      <br />
-        <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-        Sign up and stay up to date!         </span>
+        Looking For a Solution?       </span>
+      
       </h2>
 
       {/* Email Input Section */}
@@ -120,4 +122,4 @@ const Aboutstay = () => {
   );
 };
 
-export default Aboutstay;
+export default AboutSol;

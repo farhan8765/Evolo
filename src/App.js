@@ -70,7 +70,7 @@ function App() {
           <Route path="/cookie-policy" element={<CookiesPolicy />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/caep-2024" element={<EventTwo />} />
-          <Route path="/blogs" element={<Resources />} />
+          <Route path="/blog" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />
           <Route path="/adult-school-vs-online-college/" element={<Blog2 />} />
           <Route path="/career-switch-strategies-after-30s/" element={<Blog3 />} />

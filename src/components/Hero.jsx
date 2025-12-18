@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   // Rotation order: main hero (h1) + two smaller variants
-  const images = ['h1.png', 'student-feature.png', 'home-second.png'];
+  const images = ['h1.png', 'Group 5.png', 'home-second.png'];
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -60,19 +60,19 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-4 sm:mb-6 px-4">
           <button
-            onClick={() => navigate('/student')}
+            onClick={() => navigate('/students')}
             className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
           >
             Find Jobs
           </button>
           <button
-            onClick={() => navigate('/institute')}
+            onClick={() => navigate('/institution')}
             className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
           >
             Career Centers
           </button>
           <button
-            onClick={() => navigate('/employee')}
+            onClick={() => navigate('/employers')}
             className="bg-white text-[#4F00DA] border-2 border-[#9B96FF] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
           >
             Discover Talent

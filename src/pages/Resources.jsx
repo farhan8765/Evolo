@@ -23,13 +23,13 @@ export default function Blogs() {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/blogs/';
+    canonicalLink.href = 'https://goevolo.com/blog/';
     
     // OG tags add/update karna (Facebook/WhatsApp ke liye)
     const ogTags = [
       { property: 'og:title', content: 'Evolo AI Blog & Insights' },
       { property: 'og:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
-      { property: 'og:url', content: 'https://goevolo.com/blogs/' },
+      { property: 'og:url', content: 'https://goevolo.com/blog/' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
     ];
@@ -49,7 +49,7 @@ export default function Blogs() {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Evolo AI Blog & Insights' },
       { name: 'twitter:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
-      { name: 'twitter:url', content: 'https://goevolo.com/blogs/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/blog/' },
     ];
     
     twitterTags.forEach(tag => {
@@ -228,7 +228,12 @@ Explore Our Blog</h1>
           {/* Content - Grow to fill space */}
           <div className="p-6 flex flex-col flex-1">
             <h3 className="text-xl font-bold text-gray-900 mb-3">
-              {post.title}
+              <Link
+                to={post.slug ? `/${post.slug}` : '#'}
+                className="hover:text-[#2B1BDD] transition-colors"
+              >
+                {post.title}
+              </Link>
             </h3>
             
             <div className="flex-1 mb-4">
@@ -236,7 +241,7 @@ Explore Our Blog</h1>
             
            <Link to={post.slug ? `/${post.slug}` : '#'}>
                     <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
-                      Learn More
+                      Read More
                       <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>

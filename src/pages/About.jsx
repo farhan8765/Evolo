@@ -2,8 +2,7 @@ import React, { useEffect } from 'react'
 import Abouthero from '../components/Abouthero'
 import Abouttagline from '../components/Abouttagline'
 import Aboutdriving from '../components/Aboutdriving'
-import Aboutstay from '../components/Aboutstay'
-
+import AboutSol from '../components/AboutSol'
 const About = () => {
   useEffect(() => {
     // Document title set karna
@@ -80,7 +79,7 @@ const About = () => {
       <Abouthero/>
       <Abouttagline/>
       <Aboutdriving/>
-      <Aboutstay/>
+      <AboutSol/>
     </div>
   )
 }

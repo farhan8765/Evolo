@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const NAV_TABS = [
   { label: "Home", path: "/" },
@@ -26,7 +26,7 @@ const NAV_TABS = [
       },
     ],
   },
-  { label: "Resources", path: "/blogs" },
+  { label: "Resources", path: "/blog" },
   {
     label: "About us",
     path: null,
@@ -119,12 +119,13 @@ const Navbar = () => {
         >
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img
-              src="/images/evolologo.png"
-              alt="Evolo AI logo"
-              className="h-8 w-auto object-contain cursor-pointer"
-              onClick={() => handleNavigate("/")}
-            />
+            <Link to="/">
+              <img
+                src="/images/evolologo.png"
+                alt="Evolo AI logo"
+                className="h-8 w-auto object-contain cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* Desktop Nav links */}
@@ -143,39 +144,48 @@ const Navbar = () => {
 
               return (
                 <div key={label} className="relative">
-                  <div
-                    onClick={() =>
-                      subItems || columns
-                        ? toggleDropdown(label)
-                        : handleNavigate(path)
-                    }
-                    className={`flex cursor-pointer select-none items-center gap-2 transition-colors ${
-                      isActive
-                        ? "text-[#5C2DD5] font-semibold"
-                        : "text-[#4D4F58] hover:text-[#5C2DD5]"
-                    }`}
-                  >
-                    {label}
-                    {(subItems || columns) && (
-                      <DropdownIcon open={openTab === label} />
-                    )}
-                  </div>
+                  {path && !subItems && !columns ? (
+                    <Link
+                      to={path}
+                      className={`flex cursor-pointer select-none items-center gap-2 transition-colors ${
+                        isActive
+                          ? "text-[#5C2DD5] font-semibold"
+                          : "text-[#4D4F58] hover:text-[#5C2DD5]"
+                      }`}
+                    >
+                      {label}
+                    </Link>
+                  ) : (
+                    <div
+                      onClick={() => toggleDropdown(label)}
+                      className={`flex cursor-pointer select-none items-center gap-2 transition-colors ${
+                        isActive
+                          ? "text-[#5C2DD5] font-semibold"
+                          : "text-[#4D4F58] hover:text-[#5C2DD5]"
+                      }`}
+                    >
+                      {label}
+                      {(subItems || columns) && (
+                        <DropdownIcon open={openTab === label} />
+                      )}
+                    </div>
+                  )}
 
                   {/* Dropdown */}
                   {subItems && openTab === label && (
                     <div className="absolute left-1/2 top-9 z-30 w-52 -translate-x-1/2 rounded-2xl border border-[#E7E5F5] bg-white py-3 text-[14px] text-[#1b1833] shadow-[0px_20px_45px_rgba(30,22,51,0.12)]">
                       {subItems.map((item) => (
-                        <div
+                        <Link
                           key={item.label}
-                          onClick={() => handleNavigate(item.path)}
-                          className={`block w-full cursor-pointer px-5 py-2 text-left transition hover:bg-[#F4F2FF] ${
+                          to={item.path}
+                          className={`block w-full px-5 py-2 text-left transition hover:bg-[#F4F2FF] ${
                             location.pathname === item.path
                               ? "text-[#5C2DD5] font-semibold"
-                              : ""
+                              : "text-[#4D4F58]"
                           }`}
                         >
                           {item.label}
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -186,9 +196,8 @@ const Navbar = () => {
                         {columns.map((group) => (
                           <div key={group.title}>
                             {group.path ? (
-                              <button
-                                type="button"
-                                onClick={() => handleNavigate(group.path)}
+                              <Link
+                                to={group.path}
                                 className={`text-left text-[16px] font-semibold transition hover:text-[#5C2DD5] ${
                                   location.pathname === group.path
                                     ? "text-[#5C2DD5]"
@@ -196,7 +205,7 @@ const Navbar = () => {
                                 }`}
                               >
                                 {group.title}
-                              </button>
+                              </Link>
                             ) : (
                               <p className="text-[16px] font-semibold text-[#151532]">
                                 {group.title}
@@ -204,18 +213,17 @@ const Navbar = () => {
                             )}
                             <div className="mt-4 flex flex-col gap-2 text-[14px] text-[#4D4F58]">
                               {group.items.map((item) => (
-                                <button
+                                <Link
                                   key={item.label}
-                                  type="button"
-                                  onClick={() => handleNavigate(item.path)}
-                                  className={`w-full text-left transition hover:text-[#5C2DD5] ${
+                                  to={item.path}
+                                  className={`w-full block text-left transition hover:text-[#5C2DD5] ${
                                     location.pathname === item.path
                                       ? "text-[#5C2DD5] font-semibold"
-                                      : ""
+                                      : "text-[#4D4F58]"
                                   }`}
                                 >
                                   {item.label}
-                                </button>
+                                </Link>
                               ))}
                             </div>
                           </div>
@@ -229,9 +237,8 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Contact */}
-          <button
-            type="button"
-            onClick={() => handleNavigate("/contact")}
+          <Link
+            to="/contact"
             className={`hidden rounded-xl px-6 py-2.5 text-sm font-semibold text-white shadow-[0px_18px_30px_rgba(92,45,213,0.25)] transition-colors md:inline-flex ${
               location.pathname === "/contact"
                 ? "bg-[#4C2CC9]"
@@ -239,7 +246,7 @@ const Navbar = () => {
             }`}
           >
             Contact
-          </button>
+          </Link>
 
           {/* Mobile Hamburger Button */}
           <button

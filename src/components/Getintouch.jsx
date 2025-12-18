@@ -162,7 +162,7 @@ const GetinTouch = () => {
             Get in Touch
           </h2>
           <p className="text-gray-600 mb-8 text-lg">
-            Get started for Free and see how quickly AdultsEd Pro can help your business, large or small.
+            Get started for Free and see how quickly AdultEd Pro can help your business, large or small.
           </p>
           <div className="mb-8">
             <img

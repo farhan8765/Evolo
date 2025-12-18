@@ -1,8 +1,16 @@
 import React from "react";
 
 const appStores = [
-  { alt: "Download on the App Store", src: "/images/Apple logo.png" },
-  { alt: "Get it on Google Play", src: "/images/Google logo.png" },
+  {
+    alt: "Download on the App Store",
+    src: "/images/Apple logo.png",
+    href: "https://apps.apple.com/us/app/evolo-ai/id6569237819",
+  },
+  {
+    alt: "Get it on Google Play",
+    src: "/images/Google logo.png",
+    href: "https://play.google.com/store/apps/details?id=com.hiddenworkers.evoloaiapp&hl=en&pli=1",
+  },
 ];
 
 const Studdowner = () => {
@@ -36,12 +44,18 @@ const Studdowner = () => {
             style={{ animationDelay: "0.35s" }}
           >
             {appStores.map((store) => (
-              <img
+              <a
                 key={store.alt}
-                src={store.src}
-                alt={store.alt}
-                className="h-16 w-auto transition-transform duration-500 hover:-translate-y-1"
-              />
+                href={store.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={store.src}
+                  alt={store.alt}
+                  className="h-16 w-auto transition-transform duration-500 hover:-translate-y-1"
+                />
+              </a>
             ))}
           </div>
         </div>

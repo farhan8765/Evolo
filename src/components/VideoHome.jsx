@@ -112,9 +112,7 @@ const VideoHome = () => {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
-            Our users say it best. Discover how Evolo is transforming adult
-            education through real-life experiences from educational leaders and
-            career counselors who use Evolo's platform every day.
+            Our users say it best. Discover how Evolo is transforming adult education through real-life experiences from educational leaders and career counselors who have integrated Evolo’s innovative platform into their programs. With Evolo, institutions empower students to succeed in both their educational and career pursuits.
           </p>
         </div>
 

@@ -41,12 +41,19 @@ const Abouttagline = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <button
-              type="button"
-              className="mt-2 md:mt-4 px-6 py-2 md:px-8 md:py-3 rounded-full bg-[#2B1BDD] text-white font-semibold text-sm md:text-base shadow-md hover:bg-[#2110c0] transition-colors duration-200"
+            <a
+              href="https://play.google.com/store/apps/details?id=com.hiddenworkers.evoloaiapp&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 md:mt-4 inline-block"
             >
-              Get App Now
-            </button>
+              <button
+                type="button"
+                className="px-6 py-2 md:px-8 md:py-3 rounded-full bg-[#2B1BDD] text-white font-semibold text-sm md:text-base shadow-md hover:bg-[#2110c0] transition-colors duration-200"
+              >
+                Get App Now
+              </button>
+            </a>
           </div>
 
           <div className="space-y-5">

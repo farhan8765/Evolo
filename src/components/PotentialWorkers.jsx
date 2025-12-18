@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const STATS = [
-  { figure: '3M+', label: 'Potential Workers' },
-  { figure: '3K+', label: 'Adult Schools' },
-  { figure: '~5M', label: 'Annual Job Openings' },
+  { target: 3, prefix: '', suffix: 'M+', label: 'Potential Workers' },
+  { target: 3, prefix: '', suffix: 'K+', label: 'Adult Schools' },
+  { target: 5, prefix: '~', suffix: 'M', label: 'Annual Job Openings' },
 ];
 
 const fullBleedStyle = {
@@ -15,6 +15,7 @@ const fullBleedStyle = {
 const PotentialWorkers = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [counts, setCounts] = useState(STATS.map(() => 0));
 
   useEffect(() => {
     const node = sectionRef.current;
@@ -36,6 +37,34 @@ const PotentialWorkers = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Number count-up animation when section becomes visible
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const interval = setInterval(() => {
+      setCounts((prev) => {
+        let allDone = true;
+
+        const updated = prev.map((value, index) => {
+          const target = STATS[index].target;
+          if (value < target) {
+            allDone = false;
+            return value + 1;
+          }
+          return value;
+        });
+
+        if (allDone) {
+          clearInterval(interval);
+        }
+
+        return updated;
+      });
+    }, 300); // speed of increment (ms)
+
+    return () => clearInterval(interval);
+  }, [isVisible]);
+
   return (
     <section
       ref={sectionRef}
@@ -52,7 +81,7 @@ const PotentialWorkers = () => {
         </h2>
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8 sm:gap-12 md:gap-20 lg:gap-40 xl:gap-60 w-full">
-          {STATS.map(({ figure, label }, index) => (
+          {STATS.map(({ prefix, suffix, label }, index) => (
             <div
               key={label}
               style={{ transitionDelay: `${index * 120}ms` }}
@@ -61,7 +90,7 @@ const PotentialWorkers = () => {
               }`}
             >
               <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[48px] font-black text-[#6b3dff]">
-                {figure}
+                {`${prefix}${counts[index]}${suffix}`}
               </span>
               <span className="text-sm sm:text-base md:text-lg lg:text-[18px] font-medium text-[#1c1d21] text-center">
                 {label}

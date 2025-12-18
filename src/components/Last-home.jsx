@@ -48,16 +48,28 @@ export default function LastHome() {
 
           {/* App Store Buttons */}
           <div className="flex space-x-4 pt-2">
-            <img
-              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-              alt="Download on the App Store"
-              className="h-12"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-              alt="Get it on Google Play"
-              className="h-12"
-            />
+            <a
+              href="https://apps.apple.com/us/app/evolo-ai/id6569237819"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download Evolo AI on the App Store"
+                className="h-12"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.hiddenworkers.evoloaiapp&hl=en&pli=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get Evolo AI on Google Play"
+                className="h-12"
+              />
+            </a>
           </div>
         </div>
 

@@ -7,11 +7,11 @@ const videos = [
   },
   {
     id: 2,
-    link: "https://www.youtube.com/watch?v=zPSqLfjj8WM",
+    link: "https://www.youtube.com/watch?v=Z1tbucQjduk",
   },
   {
     id: 3,
-    link: "https://www.youtube.com/watch?v=Q_fFcJqZ4bU",
+    link: "https://www.youtube.com/watch?v=NcJQOQDMEHc",
   },
 ];
 

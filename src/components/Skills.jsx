@@ -11,7 +11,7 @@ const audienceCards = [
       'AI-Powered Profile Builder',
       'Exclusive Career Events',
     ],
-    pageUrl: '/student'
+    pageUrl: '/students'
   },
   {
     title: 'Need Talent?',
@@ -22,7 +22,7 @@ const audienceCards = [
       'Built-In Applicant Tracking',
       'Employer Partnerships',
     ],
-    pageUrl: '/employee'
+    pageUrl: '/employers'
   },
   {
     title: 'Empower Your Students',
@@ -33,7 +33,7 @@ const audienceCards = [
       'Host Career Fairs with Ease',
       'Mobile App for Student Success',
     ],
-    pageUrl: '/institute'
+    pageUrl: '/institution'
   },
 ];
 
