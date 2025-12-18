@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 // import StudentTestimonial from './components/Student-testmonial';
 import Footer from './components/Footer';
 import FloatingQr from './components/FloatingQr';
+import ScrollToTop from './components/ScrollToTop';
 // import Hero from './components/Hero';
 import Student from './pages/Student';
 import Employee from './pages/Employee';
@@ -38,11 +39,16 @@ import Blog8 from './components/Blog8';
 import Blog9 from './components/Blog9';
 import Blog10 from './components/Blog10';
 import Accessibility from './pages/Accessibility';
+import SecurityPrivacy from './pages/SecurityPrivacy';
+import TermsofService from './pages/TermsofService';
+import CookiesPolicy from './pages/CookiesPolicy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="w-full">
         {/* <Header /> */}
         <Navbar/>
@@ -59,6 +65,10 @@ function App() {
           <Route path="/ccae-pd" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/security-privacy" element={<SecurityPrivacy />} />
+          <Route path="/terms-of-service" element={<TermsofService />} />
+          <Route path="/cookie-policy" element={<CookiesPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/caep-2024" element={<EventTwo />} />
           <Route path="/blogs" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />

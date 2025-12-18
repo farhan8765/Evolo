@@ -129,15 +129,19 @@ export default function Footer() {
         <div className="border-t border-white/30 mt-10 pt-6 text-xs text-gray-200 flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
           <p>© 2025 Powered by AdultEd Pro. All rights reserved.</p>
           <div className="flex space-x-4">
-            <a href="/" className="hover:underline">
+            <Link to="/privacy-policy" className="hover:underline">
               Privacy Policy
-            </a>
-            <a href="/" className="hover:underline">
+            </Link>
+            <Link to="/terms-of-service" className="hover:underline">
               Terms of Service
-            </a>
-            <a href="/" className="hover:underline">
+            </Link>
+            <Link to="/security-privacy" className="hover:underline">
+              Security & Privacy
+            </Link>
+            <Link to="/cookie-policy" className="hover:underline">
               Cookies Settings
-            </a>
+            </Link>
+           
           </div>
         </div>
       </footer>
