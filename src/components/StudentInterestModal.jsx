@@ -80,31 +80,31 @@ const StudentInterestModal = ({ open, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40 px-4">
-      <div className="relative w-full max-w-xl rounded-[32px] border border-[#DFE7EF] bg-white p-5 shadow-2xl sm:p-8">
+      <div className="relative w-full max-w-xl rounded-[32px] border border-[#DFE7EF] bg-white p-4 shadow-2xl sm:p-6">
         <button
           type="button"
           onClick={() => onClose?.()}
-          className="absolute right-5 top-5 text-[#90A3B0] transition hover:text-[#5E2BFF]"
+          className="absolute right-4 top-4 text-[#90A3B0] transition hover:text-[#5E2BFF]"
           aria-label="Close"
         >
-          <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M18 6L6 18M6 6l12 12" />
           </svg>
         </button>
 
-        <div className="mb-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F2634C]">
+        <div className="mb-5 text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F2634C]">
             Student Sign Up
           </p>
-          <h3 className="mt-3 text-3xl font-bold text-[#131834]">
+          <h3 className="mt-2 text-2xl font-bold text-[#131834]">
             Gain a head start with Evolo
           </h3>
-          <p className="mt-2 text-base text-[#4D5A68]">
+          <p className="mt-1.5 text-sm text-[#4D5A68]">
             Share a few details and we will help you connect with the right program.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-5 text-left">
+        <form onSubmit={handleSubmit} className="space-y-3.5 text-left">
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="flex flex-col text-sm font-semibold text-[#17223A]">
               Email <span className="text-[#F2634C]">*</span>
@@ -115,7 +115,7 @@ const StudentInterestModal = ({ open, onClose }) => {
                 value={formValues.email}
                 onChange={handleChange}
                 placeholder="John@gmail.com"
-                className="mt-2 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-5 py-3 text-base text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
+                className="mt-1.5 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-4 py-2.5 text-sm text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
               />
             </label>
             <label className="flex flex-col text-sm font-semibold text-[#17223A]">
@@ -127,7 +127,7 @@ const StudentInterestModal = ({ open, onClose }) => {
                 value={formValues.name}
                 onChange={handleChange}
                 placeholder="John Doe"
-                className="mt-2 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-5 py-3 text-base text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
+                className="mt-1.5 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-4 py-2.5 text-sm text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
               />
             </label>
           </div>
@@ -140,7 +140,7 @@ const StudentInterestModal = ({ open, onClose }) => {
               value={formValues.program}
               onChange={handleChange}
               placeholder="e.g. Surgical Tech, Cybersecurity"
-              className="mt-2 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-5 py-3 text-base text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
+              className="mt-1.5 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-4 py-2.5 text-sm text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
             />
           </label>
 
@@ -150,7 +150,7 @@ const StudentInterestModal = ({ open, onClose }) => {
               name="state"
               value={formValues.state}
               onChange={handleChange}
-              className="mt-2 appearance-none rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-5 py-3 text-base text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
+              className="mt-1.5 appearance-none rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-4 py-2.5 text-sm text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
             >
               <option value="">Please Select</option>
               {sortedStates.map((state) => (
@@ -169,14 +169,14 @@ const StudentInterestModal = ({ open, onClose }) => {
               value={formValues.school}
               onChange={handleChange}
               placeholder="Monrovia Adult school"
-              className="mt-2 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-5 py-3 text-base text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
+              className="mt-1.5 rounded-3xl border border-[#D5DCE8] bg-[#F5F8FC] px-4 py-2.5 text-sm text-[#1F2A37] outline-none focus:border-[#5E2BFF]"
             />
           </label>
 
-          <div className="pt-2">
+          <div className="pt-1">
             <button
               type="submit"
-              className="inline-flex rounded-full bg-[#F2634C] px-8 py-3 text-base font-semibold text-white transition hover:bg-[#E2543D]"
+              className="inline-flex rounded-full bg-[#F2634C] px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#E2543D]"
             >
               Submit
             </button>
