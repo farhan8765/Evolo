@@ -46,7 +46,7 @@ const Blog3 = () => {
           <img 
             src="/images/blog3.png" 
             alt="Career change after 30 illustration" 
-            className="rounded-xl shadow-lg"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
 
@@ -83,7 +83,7 @@ const Blog3 = () => {
 
       {/* Table of Contents */}
 <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-  <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
   
   <ol className="list-decimal pl-5 space-y-2">
     <li className="text-gray-700 font-medium">The Reasons Behind Adults' Career Changes After 30</li>
@@ -99,7 +99,7 @@ const Blog3 = () => {
   </ol>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   The Reasons Behind Adults' Career Changes After 30
 </h2>
 <div className="space-y-4">
@@ -135,7 +135,7 @@ const Blog3 = () => {
   </p>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Evaluating Strengths and Transferable Skills
 </h2>
 <div className="space-y-4">
@@ -189,7 +189,7 @@ const Blog3 = () => {
   </p>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Education, Upskilling, and Certification Paths
 </h2>
 <div className="space-y-4">
@@ -267,7 +267,7 @@ const Blog3 = () => {
   </div>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Building a Network in a New Industry
 </h2>
 <div className="space-y-4">
@@ -305,7 +305,7 @@ const Blog3 = () => {
     />
   </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Mental and Financial Preparation
 </h2>
 <div className="space-y-4">
@@ -366,7 +366,7 @@ const Blog3 = () => {
   </div>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Best Industries to Transition Into After 30
 </h2>
 <div className="space-y-4">
@@ -453,7 +453,7 @@ const Blog3 = () => {
 </div>
 
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   High-Demand Career Paths vs Required Skills
 </h2>
 <div className="space-y-4">
@@ -556,7 +556,7 @@ const Blog3 = () => {
   </div>
 </div>
 
-         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Frequently Asked Questions
 </h2>
 
@@ -662,7 +662,7 @@ const Blog3 = () => {
   </div>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Final Thoughts
 </h2>
 <div className="space-y-4">
@@ -679,7 +679,7 @@ const Blog3 = () => {
   </div>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   References
 </h2>
 <div className="space-y-3 bg-gray-50 p-6 rounded-lg">

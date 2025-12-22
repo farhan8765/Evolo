@@ -78,7 +78,7 @@ const Blog5 = () => {
 
            {/* Section 1: Builds Confidence and Self-Esteem */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Builds Confidence and Self-Esteem</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Builds Confidence and Self-Esteem</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               For many young adults and teenagers, a first job is their first step closer to independence. 
@@ -106,7 +106,7 @@ const Blog5 = () => {
 
         {/* Section 2: Time management and responsibility */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Time management and responsibility</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Time management and responsibility</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               Teenagers who work should prioritize the tasks, plan further, and complete the time limit. 
@@ -131,7 +131,7 @@ const Blog5 = () => {
 
         {/* Section 3: Develops Communication and Teamwork Skills */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Develops Communication and Teamwork Skills</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Develops Communication and Teamwork Skills</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               Whether it's speaking to customers or coordinating with coworkers, communication is key. 
@@ -154,7 +154,7 @@ const Blog5 = () => {
 
         {/* Section 4: Introduces Financial Literacy Early */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Introduces Financial Literacy Early</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Introduces Financial Literacy Early</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               A paycheck opens up a new world of budgeting, saving, and spending decisions. 
@@ -178,7 +178,7 @@ const Blog5 = () => {
 
         {/* Section 5: Offers Real-World Career Exploration */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Offers Real-World Career Exploration</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Offers Real-World Career Exploration</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               Early jobs can serve as a gateway into career discovery. While most teen jobs are entry-level, 
@@ -199,7 +199,7 @@ const Blog5 = () => {
 
         {/* Section 6: Fosters Skill Building and Upskilling */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Fosters Skill Building and Upskilling</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Fosters Skill Building and Upskilling</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               Working teens pick up more than just the classic soft skills; they learn tech-savvy tasks 
@@ -227,7 +227,7 @@ const Blog5 = () => {
 
         {/* Section 7: Improves College and Scholarship Applications */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Improves College and Scholarship Applications</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Improves College and Scholarship Applications</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               Scholarship committees and admission officials value practical experience. 
@@ -508,7 +508,7 @@ const Blog5 = () => {
 </div>
 
  <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             
             {/* FAQ 1 */}

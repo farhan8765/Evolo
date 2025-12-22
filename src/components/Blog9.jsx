@@ -45,7 +45,7 @@ const Blog9 = () => {
     <img 
       src="/images/blog9.png" 
       alt="AI in hiring process for adult job seekers" 
-      className="rounded-xl shadow-lg"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
     />
   </div>
 
@@ -103,7 +103,7 @@ const Blog9 = () => {
 
     {/* Table of Contents */}
     <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
       
       <ol className="list-decimal pl-5 space-y-2">
         <li className="text-gray-700 font-medium">Understanding AI in the Hiring Process</li>
@@ -123,7 +123,7 @@ const Blog9 = () => {
     </div>
 
     {/* Understanding AI in the Hiring Process */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Understanding AI in the Hiring Process
     </h2>
     <div className="space-y-4">
@@ -137,7 +137,7 @@ const Blog9 = () => {
     </div>
 
     {/* Key Ways AI is Transforming Recruitment */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Key Ways AI is Transforming Recruitment
     </h2>
     <div className="space-y-4">
@@ -171,7 +171,7 @@ const Blog9 = () => {
     </div>
 
     {/* Common AI Tools Employers Use Today */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Common AI Tools Employers Use Today
     </h2>
     <div className="space-y-4">
@@ -205,7 +205,7 @@ const Blog9 = () => {
     </div>
 
     {/* The Challenges AI Brings for Adult Job Seekers */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       The Challenges AI Brings for Adult Job Seekers
     </h2>
     <div className="space-y-4">
@@ -239,7 +239,7 @@ const Blog9 = () => {
     </div>
 
     {/* How to Optimize Your Resume for AI Screening */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       How to Optimize Your Resume for AI Screening
     </h2>
     <div className="space-y-4">
@@ -260,7 +260,7 @@ const Blog9 = () => {
     </div>
 
     {/* The Importance of Upskilling and Lifelong Learning */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       The Importance of Upskilling and Lifelong Learning
     </h2>
     <div className="space-y-4">
@@ -292,7 +292,7 @@ const Blog9 = () => {
     </div>
 
     {/* Leveraging LinkedIn and Online Portfolios */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Leveraging LinkedIn and Online Portfolios
     </h2>
     <div className="space-y-4">
@@ -306,7 +306,7 @@ const Blog9 = () => {
     </div>
 
     {/* Navigating AI-Powered Interviews */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Navigating AI-Powered Interviews
     </h2>
     <div className="space-y-4">
@@ -320,7 +320,7 @@ const Blog9 = () => {
     </div>
 
     {/* How Emotional Intelligence Still Wins */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       How Emotional Intelligence Still Wins
     </h2>
     <div className="space-y-4">
@@ -334,7 +334,7 @@ const Blog9 = () => {
     </div>
 
     {/* Best Practices to Stay Competitive in an AI-Driven Job Market */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Best Practices to Stay Competitive in an AI-Driven Job Market
     </h2>
     <div className="space-y-4">
@@ -368,7 +368,7 @@ const Blog9 = () => {
     </div>
 
    {/* AI Tools vs Human Skills—What Employers Seek */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   AI Tools vs Human Skills—What Employers Seek
 </h2>
 <div className="space-y-4">
@@ -450,7 +450,7 @@ const Blog9 = () => {
 
     {/* Frequently Asked Questions */}
    {/* Frequently Asked Questions */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Frequently Asked Questions
 </h2>
 
@@ -559,7 +559,7 @@ const Blog9 = () => {
 </div>
 
   {/* Final Thoughts */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Final Thoughts
 </h2>
 <div className="space-y-4">
@@ -573,7 +573,7 @@ const Blog9 = () => {
 </div>
 
 {/* References */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   References
 </h2>
 

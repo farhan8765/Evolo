@@ -48,7 +48,7 @@ const Blog4 = () => {
           <img 
             src="/images/blog4.jpg" 
             alt="Low-stress jobs for autistic adults" 
-            className="rounded-xl shadow-lg max-w-full"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
 
@@ -83,7 +83,7 @@ const Blog4 = () => {
 
           {/* Table of Contents */}
           <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
             
             <ol className="list-decimal pl-5 space-y-2">
               <li className="text-gray-700 font-medium">What Qualifies as a "Low Stress" Job for Adults with Autism?</li>
@@ -97,7 +97,7 @@ const Blog4 = () => {
           </div>
 
           {/* Section 1 */}
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             What Qualifies as a "Low Stress" Job for Adults with Autism?
           </h2>
           <div className="space-y-4">

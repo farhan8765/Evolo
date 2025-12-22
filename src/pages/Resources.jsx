@@ -164,12 +164,14 @@ export default function Blogs() {
       description: "Lifelong learning is essential in today's rapidly evolving job market. Adult education bridges skill gaps, enhances career growth, and drives economic sustainability.",
       component: "Blog11"
     },
-    //   {
-    //   id: 12,
-    //   image: "/images/blog12.jpg",
-    //   title: "Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
+      {
+      id: 12,
+      slug: "top-7-in-demand-careers-for-adults-in-2025/",
+      image: "/images/blog12.jpg",
+      title: "Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.",
+      description: "Discover the top 7 in-demand careers in the U.S. for 2025. Explore opportunities in healthcare, tech, renewable energy, and more.",
+      component: "Blog12"
+    },
     //   {
     //   id: 13,
     //   image: "/images/blog13.jpg",

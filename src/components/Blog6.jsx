@@ -100,7 +100,7 @@ const Blog6 = () => {
 
 {/* Table of Content */}
 <div className="bg-white p-6 mb-12 rounded-xl border border-gray-200">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Table of Content</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Table of Content</h2>
   <ol className="list-decimal pl-5 space-y-3">
     <li className="text-gray-700 font-medium">Current employment data between teen and young adults</li>
     <li className="text-gray-700 font-medium">Why retail jobs attract young workers</li>
@@ -117,7 +117,7 @@ const Blog6 = () => {
 
 {/* Section 1: Current employment data between teen and young adults */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Current employment data between teen and young adults</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Current employment data between teen and young adults</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-4">
       According to the US Bureau of Labor Statistics (BLS), retail trade is one of the top employment 
@@ -157,7 +157,7 @@ const Blog6 = () => {
 
 {/* Section 2: Why retail jobs attract young workers */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Why retail jobs attract young workers</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Why retail jobs attract young workers</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-6">
       Retail jobs are often appealing to young workers because they usually do not require advanced 
@@ -218,7 +218,7 @@ const Blog6 = () => {
 </div>
 {/* Section 3: The most common supermarket occupations for youths */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">The most common supermarket occupations for youths</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">The most common supermarket occupations for youths</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-4">
       Retail provides very varied job titles for young adults, such as
@@ -268,7 +268,7 @@ const Blog6 = () => {
 
 {/* Section 4: Skills learned through employment in retailing */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Skills learned through employment in retailing</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Skills learned through employment in retailing</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-6">
       Retail work allows for various forms of transferable skills useful for any career:
@@ -316,7 +316,7 @@ const Blog6 = () => {
 
 {/* Section 5: Young adults and teenagers in merchandising are faced with numerous problems */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Young adults and teenagers in merchandising are faced with numerous problems</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Young adults and teenagers in merchandising are faced with numerous problems</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-6">
       It isn't without its negatives for young people, though:
@@ -353,7 +353,7 @@ const Blog6 = () => {
 
 {/* Section 6: Career Development and Transition Prospects */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Career Development and Transition Prospects</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Career Development and Transition Prospects</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-6">
       Retail is often utilized as a springboard to upper positions by many young adults and teenagers. Career opportunities may be
@@ -670,7 +670,7 @@ const Blog6 = () => {
 
 {/* Simple Version */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Final Thoughts</h2>
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Final Thoughts</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-4">
       Retail jobs play a critical role in youth employment, serving as the first work experience 
@@ -684,7 +684,7 @@ const Blog6 = () => {
       online programs may be the next empowering step.
     </p>
 
-    <h2 className="text-2xl font-bold text-gray-900 mb-6">References</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">References</h2>
 
     <div className="bg-gray-50 p-6 rounded-lg mt-8">
       <div className="space-y-3">

@@ -46,7 +46,7 @@ const Blog2 = () => {
           <img 
             src="/images/blog2.png" 
             alt="Adult School vs Online College comparison" 
-            className="rounded-xl shadow-lg"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
 
@@ -102,7 +102,7 @@ const Blog2 = () => {
   </ol>
 </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Understanding Adult Schools: Practical Learning for Immediate Skills
           </h2>
           <div className="space-y-4">
@@ -117,13 +117,13 @@ const Blog2 = () => {
             <img 
               src="/images/blogtwoimg2.png" 
               alt="Adult school vs online college comparison" 
-              className="rounded-xl shadow-lg"
+              className="w-full max-w-full h-auto rounded-xl shadow-lg"
             />
           </div>
            
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
 The Rise of Online Colleges: Flexible and Accredited Pathways          </h2>
           <div className="space-y-4">
             <p className="text-gray-700">
@@ -137,7 +137,7 @@ The Rise of Online Colleges: Flexible and Accredited Pathways          </h2>
           </div>
 
           
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
 Cost Comparison: Affordability vs. Long-Term Investment          </h2>
           <div className="space-y-4">
             <p className="text-gray-700">
@@ -154,11 +154,11 @@ Cost Comparison: Affordability vs. Long-Term Investment          </h2>
             <img 
               src="/images/blogtwoimg3.png" 
               alt="Adult school vs online college comparison" 
-              className="rounded-xl shadow-lg"
+              className="w-full max-w-md sm:max-w-lg md:max-w-xl h-auto rounded-xl shadow-lg"
             />
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
 Career Outcomes: Which Path Leads to Better Opportunities?          </h2>
           <div className="space-y-4">
             <p className="text-gray-700">
@@ -481,7 +481,7 @@ Career Outcomes: Which Path Leads to Better Opportunities?          </h2>
     </table>
   </div>
 </div>
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Frequently Asked Questions
 </h2>
 
@@ -562,7 +562,7 @@ Career Outcomes: Which Path Leads to Better Opportunities?          </h2>
   </div>
 </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Final Thoughts
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">Final Thoughts
 </h2>
           <div className="space-y-4">
             <p className="text-gray-700">

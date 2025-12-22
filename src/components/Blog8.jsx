@@ -97,7 +97,7 @@ const Blog8 = () => {
     </p>
     
     <div className="my-8 p-1">
-      <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Table of Content</h2>
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-8 mb-4">Table of Content</h2>
       <ul className="space-y-2 text-gray-700">
         <li>Key Summary:</li>
         <li>Understanding Upskilling and Reskilling</li>
@@ -563,7 +563,7 @@ const Blog8 = () => {
     </p>
     
     <div className="mt-8">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">References</h2>
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">References</h2>
       <div className="space-y-4">
         <p>
           <strong>Coursera:</strong> 8 High-Income Skills to Learn in 2025<br/>

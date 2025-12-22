@@ -84,7 +84,7 @@ const Blog11 = () => {
           <img 
             src="/images/blog11.jpg" 
             alt="Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce" 
-            className="rounded-xl shadow-lg"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
 
@@ -118,7 +118,7 @@ const Blog11 = () => {
 
           {/* Table of Contents */}
           <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Contents</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Table of Contents</h2>
             
             <ol className="list-decimal pl-5 space-y-2">
               <li className="text-gray-700 font-medium">The Role of Adult Education in Sustainable Development</li>
@@ -140,7 +140,7 @@ const Blog11 = () => {
             </ol>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             The Role of Adult Education in Sustainable Development
           </h2>
           <div className="space-y-4">
@@ -162,7 +162,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Lifelong Learning: A Catalyst for Change
           </h2>
           <div className="space-y-4">
@@ -184,7 +184,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Empowering Adult Learners
           </h2>
           <div className="space-y-4">
@@ -202,7 +202,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Developing Foundational Skills
           </h2>
           <div className="space-y-4">
@@ -280,7 +280,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Fostering Active Citizenship
           </h2>
           <div className="space-y-4">
@@ -298,7 +298,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Sustainable Technologies and Innovation
           </h2>
           <div className="space-y-4">
@@ -316,7 +316,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Addressing the Skills Gap
           </h2>
           <div className="space-y-4">
@@ -334,7 +334,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             The Impact of Adult Education on Employability
           </h2>
           <div className="space-y-4">
@@ -352,7 +352,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Promoting Sustainable Work Practices
           </h2>
           <div className="space-y-4">
@@ -370,7 +370,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Challenges in Adult Education
           </h2>
           <div className="space-y-4">
@@ -388,7 +388,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Strategies for Effective Adult Learning
           </h2>
           <div className="space-y-4">
@@ -406,7 +406,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             The Role of Technology in Adult Education
           </h2>
           <div className="space-y-4">
@@ -424,7 +424,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Global Perspectives on Adult Learning
           </h2>
           <div className="space-y-4">
@@ -433,7 +433,7 @@ const Blog11 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Frequently Asked Questions
           </h2>
           
@@ -554,7 +554,7 @@ const Blog11 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Final Thoughts
           </h2>
           <div className="space-y-4">
@@ -567,7 +567,7 @@ const Blog11 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             References
           </h2>
           <div className="space-y-3 bg-gray-50 p-6 rounded-lg">

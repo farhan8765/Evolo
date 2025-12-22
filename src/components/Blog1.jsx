@@ -65,7 +65,7 @@ const Blog1 = () => {
           <img 
             src="/images/blog1.png" 
             alt="Single parent studying at adult school" 
-            className="rounded-xl shadow-lg"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
 
@@ -108,7 +108,7 @@ const Blog1 = () => {
 
           {/* Table of Contents */}
           <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
             
             <ol className="list-decimal pl-5 space-y-2">
               <li className="text-gray-700 font-medium">The Special Problems of Single Parents.</li>
@@ -124,7 +124,7 @@ const Blog1 = () => {
             </ol>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">The Special Problems of Single Parents</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">The Special Problems of Single Parents</h2>
           <p className="text-gray-700 mb-4">
             The plight of single parents is quite different compared to that of those in families of two parents. 
             Working, taking care of children, and other household duties can make the issue of education secondary. 
@@ -140,7 +140,7 @@ const Blog1 = () => {
             by having a structured program to cater to non-traditional students.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Why Adult Schools are a Lifesaver for Single Parents
           </h2>
           <div className="space-y-4">
@@ -167,7 +167,7 @@ const Blog1 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Flexible Learning Alternatives: A Combination of Parenting and Education
           </h2>
           <div className="space-y-4">
@@ -194,7 +194,7 @@ const Blog1 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Career Pathways and Job Readiness Through Adult Schools
           </h2>
           <div className="space-y-4">
@@ -222,11 +222,11 @@ const Blog1 = () => {
             <img 
               src="/images/blogoneimg2.png" 
               alt="Career pathways through adult education" 
-              className="rounded-xl shadow-lg"
+              className="w-full max-w-md sm:max-w-lg md:max-w-xl h-auto rounded-xl shadow-lg"
             />
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Building Confidence and Emotional Resilience
           </h2>
           <div className="space-y-4">
@@ -251,7 +251,7 @@ const Blog1 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             The Financial Benefits of Adult Education for Single Parents
           </h2>
           <div className="space-y-4">
@@ -269,7 +269,7 @@ const Blog1 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Key Benefits of Adult Schools for Single Parents
           </h2>
           <div className="space-y-4">
@@ -277,52 +277,52 @@ const Blog1 = () => {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider">
+                    <th className="px-3 sm:px-6 py-3 text-left text-sm sm:text-md font-bold text-black uppercase tracking-wider">
                       Benefit Area
                     </th>
-                    <th className="px-6 py-3 text-left text-md font-bold text-black uppercase tracking-wider">
+                    <th className="px-3 sm:px-6 py-3 text-left text-sm sm:text-md font-bold text-black uppercase tracking-wider">
                       How It Helps Single Parents
                     </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
+                    <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm sm:text-base font-medium text-gray-900">
                       Flexibility
                     </td>
-                    <td className="px-6 py-4 text-gray-700">
+                    <td className="px-3 sm:px-6 py-4 text-sm sm:text-base text-gray-700">
                       Evening/online classes allow balance between childcare, work, and learning.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
+                    <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm sm:text-base font-medium text-gray-900">
                       Career Development
                     </td>
-                    <td className="px-6 py-4 text-gray-700">
+                    <td className="px-3 sm:px-6 py-4 text-sm sm:text-base text-gray-700">
                       Provides training in high-demand fields for stable and better-paying jobs.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
+                    <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm sm:text-base font-medium text-gray-900">
                       Financial Support
                     </td>
-                    <td className="px-6 py-4 text-gray-700">
+                    <td className="px-3 sm:px-6 py-4 text-sm sm:text-base text-gray-700">
                       Access to grants, scholarships, and affordable tuition reduces the financial burden.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
+                    <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm sm:text-base font-medium text-gray-900">
                       Emotional Resilience
                     </td>
-                    <td className="px-6 py-4 text-gray-700">
+                    <td className="px-3 sm:px-6 py-4 text-sm sm:text-base text-gray-700">
                       Builds confidence, reduces isolation, and fosters supportive peer networks.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
+                    <td className="px-3 sm:px-6 py-4 whitespace-nowrap text-sm sm:text-base font-medium text-gray-900">
                       Long-Term Stability
                     </td>
-                    <td className="px-6 py-4 text-gray-700">
+                    <td className="px-3 sm:px-6 py-4 text-sm sm:text-base text-gray-700">
                       Equips parents with marketable skills, leading to financial independence and job security.
                     </td>
                   </tr>
@@ -331,7 +331,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
             Frequently Asked Questions
           </h2>
           
@@ -361,7 +361,7 @@ const Blog1 = () => {
               </div>
             ))}
           </div>
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+<h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Final Thoughts
 </h2>
 <div className="space-y-4">
@@ -378,7 +378,7 @@ const Blog1 = () => {
   </p>
 </div>
 
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+<h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   References
 </h2>
 <div className="space-y-3 bg-gray-50 p-6 rounded-lg">

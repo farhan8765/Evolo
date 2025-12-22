@@ -137,6 +137,105 @@ const PrivacyPolicy = () => {
           </p>
         </div>
 
+        {/* Employee and Subcontractor Confidentiality Training Section */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Employee and Subcontractor Confidentiality Training
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
+            Evolo AI is committed to safeguarding sensitive information through comprehensive training programs for all employees, contractors, and subcontractors responsible for handling or having access to customer data.
+          </p>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Onboarding Training:
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Upon joining the organization, new hires, contractors, and subcontractors are required to participate in mandatory confidentiality and data protection training within their initial week. This training encompasses modules on identifying confidential information, implementing secure handling procedures, adhering to non-disclosure obligations, categorizing data, and reporting data breaches. Training is delivered through interactive online modules accompanied by quizzes, and participants must sign a completed acknowledgment of training completion.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Annual Refresher Training:
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Existing personnel are mandated to complete annual refresher training on the latest confidentiality best practices, updates to privacy laws such as the GDPR and CCPA, AI-specific data risks, and incident response procedures. Completion rates for relevant roles are monitored at 100%, and retraining is required for non-completion.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Role-Specific Training:
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Staff members handling sensitive data, including developers and support teams, undergo specialized training on encryption, access controls, secure coding, and AI model security. Subcontractors are expected to demonstrate equivalent training through certifications or attestations prior to engagement.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Training Documentation and Auditing:
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Records of all training sessions, including dates, participants, content outlines, and completion certificates, are retained for a minimum of three years. These records are available for customer audits upon request. Evolo AI conducts quarterly internal audits to assess the effectiveness of training programs.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Enforcement and Breach Response:
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Violations of training protocols result in disciplinary action, potentially extending to termination of employment. All personnel are required to reaffirm their confidentiality obligations annually through signed agreements.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Implementation Procedures:
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="min-w-full border border-gray-300 text-sm md:text-base">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Step</th>
+                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Action</th>
+                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Responsible Party</th>
+                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Timeline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">1</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Develop/update training modules with legal review</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">HR/Security Team</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Within 30 days</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">2</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Roll out to current staff and subcontractors</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">HR</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Next onboarding cycle</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">3</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Track via LMS (e.g., integrated with HRIS) and report completion to leadership</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Security Officer</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Monthly</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">4</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Annual policy review and training refresh</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Compliance Team</td>
+                    <td className="border border-gray-300 px-4 py-2 text-gray-600">End of fiscal year</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
         {/* Personal Data We Collect Section */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">

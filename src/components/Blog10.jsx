@@ -47,7 +47,7 @@ const Blog10 = () => {
           <img 
             src="/images/blog10.png" 
             alt="Overcoming employment gaps for adult job seekers" 
-            className="rounded-xl shadow-lg"
+            className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
 
@@ -88,7 +88,7 @@ const Blog10 = () => {
 
 
  <div className="bg-white p-6 mt-8 rounded-xl border border-gray-200 mb-10">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Table of Content</h2>
       
       <ol className="list-decimal pl-5 space-y-2">
         <li className="text-gray-700 font-medium">Understanding Employment Gaps and Their Causes</li>
@@ -104,7 +104,7 @@ const Blog10 = () => {
     </div>
 
     {/* Understanding Employment Gaps and Their Causes */}
-    <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
       Understanding Employment Gaps and Their Causes
     </h2>
     <div className="space-y-4">
@@ -118,7 +118,7 @@ const Blog10 = () => {
     </div>
 
 {/* How to Explain Gaps on Your Resume */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   How to Explain Gaps on Your Resume
 </h2>
 <div className="space-y-4">
@@ -152,7 +152,7 @@ const Blog10 = () => {
 </div>
 
 {/* Rebuilding Confidence After Time Off */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Rebuilding Confidence After Time Off
 </h2>
 <div className="space-y-4">
@@ -170,7 +170,7 @@ const Blog10 = () => {
 </div>
 
 {/* Training and Education: Refreshing Your Skills */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Training and Education: Refreshing Your Skills
 </h2>
 <div className="space-y-4">
@@ -188,7 +188,7 @@ const Blog10 = () => {
 </div>
 
 {/* Smart Job Search Strategies for Adults */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Smart Job Search Strategies for Adults
 </h2>
 <div className="space-y-4">
@@ -206,7 +206,7 @@ const Blog10 = () => {
 </div>
 
 {/* How to Prepare for Interviews */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   How to Prepare for Interviews
 </h2>
 <div className="space-y-4">
@@ -224,7 +224,7 @@ const Blog10 = () => {
 </div>
 
 {/* Common Gaps and Best Approaches */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Common Gaps and Best Approaches
 </h2>
 <div className="space-y-4">
@@ -305,7 +305,7 @@ const Blog10 = () => {
 </div>
 
 {/* Frequently Asked Questions */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Frequently Asked Questions
 </h2>
 
@@ -440,7 +440,7 @@ const Blog10 = () => {
   </div>
 </div>
 {/* Final Thoughts */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   Final Thoughts
 </h2>
 <div className="space-y-4">
@@ -454,7 +454,7 @@ const Blog10 = () => {
 </div>
 
 {/* References */}
-<h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-10 mb-4">
   References
 </h2>
 <div className="space-y-3 bg-gray-50 p-6 rounded-lg">

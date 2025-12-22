@@ -79,7 +79,7 @@ const Blog7 = () => {
 
        {/* Introduction Section */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Breaking Barriers in the Modern Job Market</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Breaking Barriers in the Modern Job Market</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-4">
       Many adults without a college degree are stuck in low-salary, rigid jobs that do not allow much 
@@ -1146,7 +1146,7 @@ const Blog7 = () => {
 
 {/* Simple Version */}
 <div className="mb-12">
-  <h2 className="text-2xl font-bold text-gray-900 mb-6">Final Thoughts</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Final Thoughts</h2>
   <div className="prose prose-lg max-w-none text-gray-700">
     <p className="mb-4">
       Remote work is not just a trend—it's the future of employment. For adults without a college 
@@ -1160,7 +1160,7 @@ const Blog7 = () => {
       a place for you in it.
     </p>
 
-   <h2 className="text-2xl font-bold text-gray-900 mb-6">References</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">References</h2>
    
     <div className="bg-gray-50 p-6 rounded-lg mt-8">
       <div className="space-y-4">
