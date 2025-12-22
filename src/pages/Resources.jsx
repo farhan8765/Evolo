@@ -156,18 +156,20 @@ export default function Blogs() {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       component: "Blog10"
     },
-    //   {
-    //   id: 11,
-    //   image: "/images/blog11.jpg",
-    //   title: "Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
-    //   {
-    //   id: 12,
-    //   image: "/images/blog12.jpg",
-    //   title: "Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
+      {
+      id: 11,
+      slug: "empowering-lifelong-learners-how-adult-education-is-key-to-building-a-sustainable-workforce/",
+      image: "/images/blog11.jpg",
+      title: "Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce",
+      description: "Lifelong learning is essential in today's rapidly evolving job market. Adult education bridges skill gaps, enhances career growth, and drives economic sustainability.",
+      component: "Blog11"
+    },
+      {
+      id: 12,
+      image: "/images/blog12.jpg",
+      title: "Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    },
     //   {
     //   id: 13,
     //   image: "/images/blog13.jpg",
