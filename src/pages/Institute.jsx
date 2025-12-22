@@ -27,13 +27,13 @@ const Institute = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/institution/';
+    canonicalLink.href = 'https://goevolo.com/institution';
     
     // OG tags add/update karna (Facebook/WhatsApp ke liye)
     const ogTags = [
       { property: 'og:title', content: 'Evolution of Instructions: Drive Career Success' },
       { property: 'og:description', content: 'Empower your institution with Evolo AI\'s tools to connect students with employers, streamline career services, and elevate adult education success rates.' },
-      { property: 'og:url', content: 'https://goevolo.com/institution/' },
+      { property: 'og:url', content: 'https://goevolo.com/institution' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
     ];
@@ -53,7 +53,7 @@ const Institute = () => {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Evolution of Instructions: Drive Career Success' },
       { name: 'twitter:description', content: 'Empower your institution with Evolo AI\'s tools to connect students with employers, streamline career services, and elevate adult education success rates.' },
-      { name: 'twitter:url', content: 'https://goevolo.com/institution/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/institution' },
     ];
     
     twitterTags.forEach(tag => {

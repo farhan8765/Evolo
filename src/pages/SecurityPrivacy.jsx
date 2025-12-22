@@ -28,7 +28,7 @@ const SecurityPrivacy = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/security-and-privacy/';
+    canonicalLink.href = 'https://goevolo.com/security-privacy';
 
     // Open Graph tags (for social sharing)
     const ogTags = [
@@ -43,7 +43,7 @@ const SecurityPrivacy = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/security-and-privacy/',
+        content: 'https://goevolo.com/security-privacy',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -68,7 +68,7 @@ const SecurityPrivacy = () => {
         content:
           'Learn about Evolo AI\'s comprehensive security and privacy measures, including data encryption, access control, authentication protocols, and compliance with industry best practices.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/security-and-privacy/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/security-privacy' },
     ];
 
     twitterTags.forEach((tag) => {

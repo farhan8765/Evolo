@@ -29,13 +29,13 @@ const AdultEducation = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/';
+    canonicalLink.href = 'https://goevolo.com/adult';
     
     // OG tags add/update karna (Facebook/WhatsApp ke liye)
     const ogTags = [
       { property: 'og:title', content: 'Evolo AI - Empowering Students and Connecting Schools' },
       { property: 'og:description', content: 'Introducing Evolo AI, the app empowering students and connecting schools with employers. Together, we can make education more effective and impactful!' },
-      { property: 'og:url', content: 'https://goevolo.com/' },
+      { property: 'og:url', content: 'https://goevolo.com/adult' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
     ];
@@ -55,7 +55,7 @@ const AdultEducation = () => {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Evolo AI - Empowering Students and Connecting Schools' },
       { name: 'twitter:description', content: 'Introducing Evolo AI, the app empowering students and connecting schools with employers. Together, we can make education more effective and impactful!' },
-      { name: 'twitter:url', content: 'https://goevolo.com/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/adult' },
     ];
     
     twitterTags.forEach(tag => {

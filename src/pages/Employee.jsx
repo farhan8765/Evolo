@@ -29,13 +29,13 @@ const Employee = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/employers/';
+    canonicalLink.href = 'https://goevolo.com/employers';
     
     // OG tags add/update karna (Facebook/WhatsApp ke liye)
     const ogTags = [
       { property: 'og:title', content: 'Recruit the Best: Evolo AI\'s Adult Education Job Platform' },
       { property: 'og:description', content: 'Evolo AI helps you connect with top talent from adult schools. Simplify your recruitment process, find skilled candidates, and grow your workforce efficiently.' },
-      { property: 'og:url', content: 'https://goevolo.com/employers/' },
+      { property: 'og:url', content: 'https://goevolo.com/employers' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
     ];
@@ -55,7 +55,7 @@ const Employee = () => {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Recruit the Best: Evolo AI\'s Adult Education Job Platform' },
       { name: 'twitter:description', content: 'Evolo AI helps you connect with top talent from adult schools. Simplify your recruitment process, find skilled candidates, and grow your workforce efficiently.' },
-      { name: 'twitter:url', content: 'https://goevolo.com/employers/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/employers' },
     ];
     
     twitterTags.forEach(tag => {

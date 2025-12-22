@@ -15,7 +15,7 @@ const OneEvent = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/ccae-pd/';
+    canonicalLink.href = 'https://goevolo.com/ccae-pd';
     
   }, []); // Empty dependency array - sirf ek baar run hoga
 

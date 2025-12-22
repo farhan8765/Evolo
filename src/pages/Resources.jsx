@@ -23,7 +23,7 @@ export default function Blogs() {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/blog/';
+    canonicalLink.href = 'https://goevolo.com/blog';
     
     // OG tags add/update karna (Facebook/WhatsApp ke liye)
     const ogTags = [

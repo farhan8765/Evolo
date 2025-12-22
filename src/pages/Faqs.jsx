@@ -27,13 +27,13 @@ export default function FAQPage() {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/faqs/';
+    canonicalLink.href = 'https://goevolo.com/faqs';
     
     // OG tags add/update karna (Facebook/WhatsApp ke liye)
     const ogTags = [
       { property: 'og:title', content: 'Evolo AI Frequently Asked Questions' },
       { property: 'og:description', content: 'Find quick answers to common questions about Evolo AI services, policies, and support. Our FAQ page makes it easy to get the help you need.' },
-      { property: 'og:url', content: 'https://goevolo.com/faqs/' },
+      { property: 'og:url', content: 'https://goevolo.com/faqs' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
     ];
@@ -53,7 +53,7 @@ export default function FAQPage() {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Evolo AI Frequently Asked Questions' },
       { name: 'twitter:description', content: 'Find quick answers to common questions about Evolo AI services, policies, and support. Our FAQ page makes it easy to get the help you need.' },
-      { name: 'twitter:url', content: 'https://goevolo.com/faqs/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/faqs' },
     ];
     
     twitterTags.forEach(tag => {

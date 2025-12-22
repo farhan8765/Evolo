@@ -28,7 +28,7 @@ const CookiesPolicy = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/cookie-policy/';
+    canonicalLink.href = 'https://goevolo.com/cookie-policy';
 
     // Open Graph tags
     const ogTags = [
@@ -43,7 +43,7 @@ const CookiesPolicy = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/cookie-policy/',
+        content: 'https://goevolo.com/cookie-policy',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -68,7 +68,7 @@ const CookiesPolicy = () => {
         content:
           'Read Evolo AI cookies and privacy policy. Learn how we collect, use, and protect your data to ensure a safe and transparent browsing experience.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/cookie-policy/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/cookie-policy' },
     ];
 
     twitterTags.forEach((tag) => {

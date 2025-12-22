@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/privacy-policy/';
+    canonicalLink.href = 'https://goevolo.com/privacy-policy';
 
     // Open Graph tags
     const ogTags = [
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/privacy-policy/',
+        content: 'https://goevolo.com/privacy-policy',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
         content:
           'Learn how Evolo AI collects, uses, and protects your personal information. Our Privacy Policy ensures transparency and safeguards your online data.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/privacy-policy/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/privacy-policy' },
     ];
 
     twitterTags.forEach((tag) => {

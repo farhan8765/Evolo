@@ -28,7 +28,7 @@ const TermsofService = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/terms-of-service/';
+    canonicalLink.href = 'https://goevolo.com/terms-of-service';
 
     // Open Graph tags
     const ogTags = [
@@ -43,7 +43,7 @@ const TermsofService = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/terms-of-service/',
+        content: 'https://goevolo.com/terms-of-service',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -68,7 +68,7 @@ const TermsofService = () => {
         content:
           'Read Evolo AI Terms of Service to know your rights, responsibilities, and the conditions of using our website and services.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/terms-of-service/' },
+      { name: 'twitter:url', content: 'https://goevolo.com/terms-of-service' },
     ];
 
     twitterTags.forEach((tag) => {

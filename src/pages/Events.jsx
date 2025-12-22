@@ -15,7 +15,7 @@ const Events = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/events/';
+    canonicalLink.href = 'https://goevolo.com/events';
     
   }, []); // Empty dependency array - sirf ek baar run hoga
 
