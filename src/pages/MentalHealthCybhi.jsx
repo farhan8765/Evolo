@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function MentalHealthCybhi() {
+  useEffect(() => {
+    // Document title set karna
+    document.title = 'K-12 Mental Health (CYBHI) - Evolo AI';
+
+    // Meta description update karna
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content =
+      'Learn how Evolo AI supports K-12 student mental health through CYBHI-aligned, AI-powered tools for counselors, administrators, and school staff.';
+
+    // Canonical link add karna
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://goevolo.com/mental/';
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
