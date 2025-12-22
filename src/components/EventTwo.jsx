@@ -4,7 +4,7 @@ const EventTwo = () => {
   useEffect(() => {
     // Document title set karna
     document.title = 'CAEP 2024 - Evolo AI';
-    
+
     // Canonical link add karna
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
@@ -12,8 +12,7 @@ const EventTwo = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/caep-2024/';
-    
+    canonicalLink.href = 'https://goevolo.com/caep-2024';
   }, []); // Empty dependency array - sirf ek baar run hoga
 
   return (
