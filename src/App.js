@@ -40,6 +40,8 @@ import Blog9 from './components/Blog9';
 import Blog10 from './components/Blog10';
 import Blog11 from './components/Blog11';
 import Blog12 from './components/Blog12';
+import Blog13 from './components/Blog13';
+import Blog14 from './components/Blog14';
 import Accessibility from './pages/Accessibility';
 import SecurityPrivacy from './pages/SecurityPrivacy';
 import TermsofService from './pages/TermsofService';
@@ -85,6 +87,8 @@ function App() {
           <Route path="/overcoming-employment-gaps-a-guide-for-adult-job-seekers/" element={<Blog10 />} />
           <Route path="/empowering-lifelong-learners-how-adult-education-is-key-to-building-a-sustainable-workforce/" element={<Blog11 />} />
           <Route path="/top-7-in-demand-careers-for-adults-in-2025/" element={<Blog12 />} />
+          <Route path="/the-2025-job-search-how-to-stand-out-in-a-competitive-market/" element={<Blog13 />} />
+          <Route path="/the-future-of-adult-education-how-technology-is-bridging-the-gap/" element={<Blog14 />} />
 
 
 

@@ -172,18 +172,22 @@ export default function Blogs() {
       description: "Discover the top 7 in-demand careers in the U.S. for 2025. Explore opportunities in healthcare, tech, renewable energy, and more.",
       component: "Blog12"
     },
-    //   {
-    //   id: 13,
-    //   image: "/images/blog13.jpg",
-    //   title: "The 2025 Job Search: How to Stand Out in a Competitive Market",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
-    //   {
-    //   id: 14,
-    //   image: "/images/blog14.jpg",
-    //   title: "The Future of Adult Education: How Technology is Bridging the Gap Between Students, Institutions, and Employers",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
+      {
+      id: 13,
+      slug: "the-2025-job-search-how-to-stand-out-in-a-competitive-market/",
+      image: "/images/blog13.jpg",
+      title: "The 2025 Job Search: How to Stand Out in a Competitive Market",
+      description: "Learn expert strategies to stand out in the 2025 job market. Discover tips for job seekers and businesses to thrive in today's competitive job environment.",
+      component: "Blog13"
+    },
+      {
+      id: 14,
+      slug: "the-future-of-adult-education-how-technology-is-bridging-the-gap/",
+      image: "/images/blog14.jpg",
+      title: "The Future of Adult Education: How Technology is Bridging the Gap Between Students, Institutions, and Employers",
+      description: "Explore how technology is revolutionizing adult education, seamlessly connecting students, institutions, and employers for a skill-driven future.",
+      component: "Blog14"
+    },
     //   {
     //   id: 15,
     //   image: "/images/blog15.png",
