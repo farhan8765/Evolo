@@ -188,24 +188,30 @@ export default function Blogs() {
       description: "Explore how technology is revolutionizing adult education, seamlessly connecting students, institutions, and employers for a skill-driven future.",
       component: "Blog14"
     },
-    //   {
-    //   id: 15,
-    //   image: "/images/blog15.png",
-    //   title: "Top 5 High-Income Skills Young Adults Should Learn for 2025",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
-    //   {
-    //   id: 16,
-    //   image: "/images/blog16.png",
-    //   title: "Top 10 Career Tips and Advice for Young Adults Starting Their Journey",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // },
-    //   {
-    //   id: 17,
-    //   image: "/images/blog17.png",
-    //   title: "CAEP 2024 Summit",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-    // }
+      {
+      id: 15,
+      slug: "top-5-high-income-skills-young-adults-should-learn-for-2025/",
+      image: "/images/blog15.png",
+      title: "Top 5 High-Income Skills Young Adults Should Learn for 2025",
+      description: "Learn the top 5 high-income skills young adults should master in 2025. Explore career paths in healthcare, IT, manufacturing, business, and sustainability with Evolo AI.",
+      component: "Blog15"
+    },
+      {
+      id: 16,
+      slug: "top-10-career-tips-and-advice-for-young-adults-starting-their-journey/",
+      image: "/images/blog16.png",
+      title: "Top 10 Career Tips and Advice for Young Adults Starting Their Journey",
+      description: "Explore 10 essential career tips for young adults. Learn goal-setting, networking, skill-building, and discover job opportunities with Evolo AI",
+      component: "Blog16"
+    },
+      {
+      id: 17,
+      slug: "caep-2024-summit/",
+      image: "/images/blog17.png",
+      title: "Evolo AI Shines at the CAEP 2024 Summit: Empowering Adult Education with Innovative AI Solutions",
+      description: "Discover how Evolo AI is revolutionizing adult education with AI solutions, enhancing student outcomes, and fostering success at the CAEP 2024 Summit in Oakland.",
+      component: "Blog17"
+    }
   ];
 
   return (
