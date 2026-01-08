@@ -1,22 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 
 const EventTwo = () => {
-  useEffect(() => {
-    // Document title set karna
-    document.title = 'CAEP 2024 - Evolo AI';
-
-    // Canonical link add karna
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.rel = 'canonical';
-      document.head.appendChild(canonicalLink);
-    }
-    canonicalLink.href = 'https://goevolo.com/caep-2024';
-  }, []); // Empty dependency array - sirf ek baar run hoga
-
   return (
     <>
+      <Helmet>
+        <title>CAEP 2024 - Evolo AI</title>
+        <link rel="canonical" href="https://goevolo.com/caep-2024" />
+      </Helmet>
       {/* Hero Banner Section */}
       <section className="w-full sm:pt-4 lg:pt-16 px-4 md:px-8 py-8">
          <img

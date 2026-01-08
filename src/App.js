@@ -1,10 +1,12 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 // import Header from './components/Header';
 
 // import LastHome from './components/Last-home';
 import Navbar from './components/Navbar';
+import GlobalSEO from './components/GlobalSEO';
 // import Navbaroriginal from './components/Navbaroriginal';
 // import Partner from './components/Partner';
 // import PotentialWorkers from './components/PotentialWorkers';
@@ -54,12 +56,14 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="w-full">
-        {/* <Header /> */}
-        <Navbar/>
-        <Routes>
+    <HelmetProvider>
+      <Router>
+        <GlobalSEO />
+        <ScrollToTop />
+        <div className="w-full">
+          {/* <Header /> */}
+          <Navbar/>
+          <Routes>
           <Route path="/" element={<Mainhome/>} />
           <Route path="/adult" element={<AdultEducation />} />
           <Route path="/students" element={<Student />} />
@@ -99,7 +103,8 @@ function App() {
         <Footer />
         <FloatingQr />
       </div>
-    </Router>
+      </Router>
+    </HelmetProvider>
   );
 }
 
