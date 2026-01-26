@@ -5,7 +5,7 @@ import EventMap from '../components/Eventmap'
 
 const Events = () => {
   useEffect(() => {
-    // Document title set karna
+    
     document.title = 'Events - Evolo AI';
     
     // Canonical link add karna
