@@ -1,7 +1,7 @@
-
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { useEffect } from 'react';
 // import Header from './components/Header';
 
 // import LastHome from './components/Last-home';
@@ -53,6 +53,37 @@ import TermsofService from './pages/TermsofService';
 import CookiesPolicy from './pages/CookiesPolicy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+// ====== YE NAYA COMPONENT HAI - SPAM BLOCKING KE LIYE ======
+function SpamBlocker() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Suspicious query parameters ki list
+    const spamParams = ['k', 'ref', 'click_id', 'fbclid', 'gclid', 'utm_spam'];
+    const params = new URLSearchParams(location.search);
+    
+    let hasSpam = false;
+    
+    // Check karo ke koi spam parameter hai ya nahi
+    spamParams.forEach(param => {
+      if (params.has(param)) {
+        params.delete(param);
+        hasSpam = true;
+      }
+    });
+
+    // Agar spam mila to clean URL par redirect karo
+    if (hasSpam) {
+      const newSearch = params.toString();
+      const cleanUrl = location.pathname + (newSearch ? `?${newSearch}` : '');
+      navigate(cleanUrl, { replace: true });
+    }
+  }, [location, navigate]);
+
+  return null; // Ye component kuch render nahi karta
+}
+// ====== SPAM BLOCKER COMPONENT END ======
 
 function App() {
   return (
@@ -60,6 +91,7 @@ function App() {
       <Router>
         <GlobalSEO />
         <ScrollToTop />
+        <SpamBlocker /> {/* YE LINE ADD KI HAI - Spam URLs ko block karega */}
         <div className="w-full">
           {/* <Header /> */}
           <Navbar/>
