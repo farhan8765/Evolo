@@ -1,42 +1,23 @@
 Options -MultiViews
 RewriteEngine On
 
-# Force HTTPS (if not already)
+# Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Block suspicious query parameters
+# NEW: Force clean homepage - redirect ANY query string to /
+RewriteCond %{REQUEST_URI} ^/?$ [NC]
+RewriteCond %{QUERY_STRING} .+ 
+RewriteRule ^(.*)$ /? [R=301,L]
+
+# Block specific spam parameters (keep for other pages)
 RewriteCond %{QUERY_STRING} ^k= [NC]
 RewriteRule ^(.*)$ /$1? [R=301,L]
 
-# Block other common spam parameters
 RewriteCond %{QUERY_STRING} (utm_source=|ref=|click_id=) [NC]
-RewriteCond %{HTTP_REFERER} !^https?://goevolo\.com [NC]
 RewriteRule ^(.*)$ /$1? [R=301,L]
 
-# Standard React routing
+# Standard React SPA routing (LAST)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
-```
-
-### **Explanation:**
-
-1. **Line 6-8**: `?k=` parameter wale URLs ko clean URL par redirect kar dega
-2. **Line 10-13**: Baaki spam parameters bhi block karenge
-3. **Line 15-17**: Normal React routing (without QSA flag)
-
----
-
-## **Alternative - Agar Netlify Ya Vercel Use Kar Rahe Ho:**
-
-### **Netlify Users:**
-
-`public/_redirects` file banao:
-```
-# Block query parameters
-/?k=* / 301!
-/*?k=* /:splat 301!
-
-# SPA routing
-/* /index.html 200
