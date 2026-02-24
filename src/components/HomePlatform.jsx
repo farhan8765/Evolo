@@ -57,7 +57,7 @@ incident reporting, session management, and compliance documentation.
 
           {/* Button */}
           <button
-            onClick={() => navigate("/mental")}
+            onClick={() => navigate("/")}
             className="bg-[#4F00DA] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-[#4200B8] transition-colors w-full sm:w-auto text-sm sm:text-base"
           >
             Learn More

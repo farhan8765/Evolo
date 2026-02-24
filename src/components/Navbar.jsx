@@ -17,11 +17,11 @@ const NAV_TABS = [
       },
       {
         title: "K-12 Mental Health (CYBHI)",
-        path: "/mental",
+        
         items: [
-          { label: "Counselors", path: "/counselors" },
-          { label: "Administrators", path: "/administrators" },
-          { label: "Classified Staff", path: "/districts" },
+          { label: "Counselors",  },
+          { label: "Administrators",  },
+          { label: "Classified Staff",  },
         ],
       },
     ],
@@ -212,19 +212,28 @@ const Navbar = () => {
                               </p>
                             )}
                             <div className="mt-4 flex flex-col gap-2 text-[14px] text-[#4D4F58]">
-                              {group.items.map((item) => (
-                                <Link
-                                  key={item.label}
-                                  to={item.path}
-                                  className={`w-full block text-left transition hover:text-[#5C2DD5] ${
-                                    location.pathname === item.path
-                                      ? "text-[#5C2DD5] font-semibold"
-                                      : "text-[#4D4F58]"
-                                  }`}
-                                >
-                                  {item.label}
-                                </Link>
-                              ))}
+                              {group.items.map((item) =>
+                                item.path ? (
+                                  <Link
+                                    key={item.label}
+                                    to={item.path}
+                                    className={`w-full block text-left transition hover:text-[#5C2DD5] ${
+                                      location.pathname === item.path
+                                        ? "text-[#5C2DD5] font-semibold"
+                                        : "text-[#4D4F58]"
+                                    }`}
+                                  >
+                                    {item.label}
+                                  </Link>
+                                ) : (
+                                  <span
+                                    key={item.label}
+                                    className="block w-full text-left text-[#4D4F58] cursor-default"
+                                  >
+                                    {item.label}
+                                  </span>
+                                )
+                              )}
                             </div>
                           </div>
                         ))}
@@ -401,20 +410,29 @@ const Navbar = () => {
                                 </p>
                               )}
                               <div className="mt-2 space-y-2 pl-3">
-                                {group.items.map((item) => (
-                                  <button
-                                    key={item.label}
-                                    type="button"
-                                    onClick={() => handleNavigate(item.path)}
-                                    className={`block w-full text-left text-[14px] ${
-                                      location.pathname === item.path
-                                        ? "text-[#5C2DD5] font-semibold"
-                                        : "text-[#4D4F58]"
-                                    }`}
-                                  >
-                                    {item.label}
-                                  </button>
-                                ))}
+                                {group.items.map((item) =>
+                                  item.path ? (
+                                    <button
+                                      key={item.label}
+                                      type="button"
+                                      onClick={() => handleNavigate(item.path)}
+                                      className={`block w-full text-left text-[14px] ${
+                                        location.pathname === item.path
+                                          ? "text-[#5C2DD5] font-semibold"
+                                          : "text-[#4D4F58]"
+                                      }`}
+                                    >
+                                      {item.label}
+                                    </button>
+                                  ) : (
+                                    <span
+                                      key={item.label}
+                                      className="block w-full text-left text-[14px] text-[#4D4F58]"
+                                    >
+                                      {item.label}
+                                    </span>
+                                  )
+                                )}
                               </div>
                             </div>
                           ))}
