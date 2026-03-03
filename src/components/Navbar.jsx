@@ -100,12 +100,15 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    const id = requestAnimationFrame(() => {
+      if (mobileMenuOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "unset";
+      }
+    });
     return () => {
+      cancelAnimationFrame(id);
       document.body.style.overflow = "unset";
     };
   }, [mobileMenuOpen]);
