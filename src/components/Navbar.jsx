@@ -115,7 +115,7 @@ const Navbar = () => {
       <nav className="w-full px-4 py-6">
         <div
           ref={navRef}
-          className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4"
+          className="mx-auto flex w-full max-w-6xl min-h-[56px] items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4"
         >
           {/* Logo */}
           <div className="flex items-center gap-3">
@@ -123,6 +123,8 @@ const Navbar = () => {
               <img
                 src="/images/evolologo.png"
                 alt="Evolo AI logo"
+                width={120}
+                height={32}
                 className="h-8 w-auto object-contain cursor-pointer"
               />
             </Link>
@@ -306,6 +308,8 @@ const Navbar = () => {
                 <img
                   src="/images/evolologo.png"
                   alt="Evolo AI logo"
+                  width={150}
+                  height={40}
                   className="h-10 w-auto object-contain"
                 />
                 <button

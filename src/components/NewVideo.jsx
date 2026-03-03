@@ -28,7 +28,7 @@ const VideoCard = ({ link, highlight, delay, visible }) => {
   return (
     <article
       style={{ transitionDelay: delay }}
-      className={`relative overflow-hidden rounded-[26px] transition-all duration-700 ${
+      className={`relative overflow-hidden rounded-[26px] min-h-[320px] transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       } ${
         highlight
@@ -90,7 +90,7 @@ const NewVideo = () => {
     <section
       ref={sectionRef}
       style={fullBleed}
-      className="bg-[#f7f6fb] py-10 font-[Inter,sans-serif]"
+      className="bg-[#f7f6fb] py-10 font-[Inter,sans-serif] min-h-[600px]"
     >
       <div className="mx-auto w-full max-w-6xl flex flex-col gap-14 px-6">
         
