@@ -28,8 +28,8 @@ const VideoCard = ({ link, highlight, delay, visible }) => {
   return (
     <article
       style={{ transitionDelay: delay }}
-      className={`relative overflow-hidden rounded-[26px] min-h-[320px] transition-all duration-700 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      className={`relative overflow-hidden rounded-[26px] min-h-[320px] transition-opacity duration-700 ${
+        visible ? "opacity-100" : "opacity-0"
       } ${
         highlight
           ? "shadow-[0_20px_45px_rgba(83,39,255,0.4)] hover:-translate-y-1"
@@ -100,16 +100,16 @@ const NewVideo = () => {
           </span> */}
 
           <h2
-            className={`bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold transition-all duration-700 ${
-              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            className={`bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent text-4xl md:text-5xl font-bold transition-opacity duration-700 ${
+              visible ? "opacity-100" : "opacity-0"
             }`}
           >
             Real Stories of Transformation with Evolo
           </h2>
 
           <p
-            className={`mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto transition-all duration-700 delay-100 ${
-              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            className={`mt-4 text-lg text-[#616370] leading-relaxed max-w-3xl mx-auto transition-opacity duration-700 delay-100 ${
+              visible ? "opacity-100" : "opacity-0"
             }`}
           >
             Our users say it best. Discover how Evolo is transforming adult

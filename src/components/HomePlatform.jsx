@@ -69,6 +69,8 @@ incident reporting, session management, and compliance documentation.
           <img
             src="/images/home-second.png"
             alt="Platform Mobile Preview"
+            width={900}
+            height={900}
             className="w-full sm:w-[90%] md:w-[80%] lg:w-[700px] xl:w-[800px] 2xl:w-[900px] h-auto drop-shadow-xl"
             loading="lazy"
             decoding="async"

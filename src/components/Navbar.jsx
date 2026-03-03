@@ -111,8 +111,8 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="w-full text-[#5C6174]">
-      <nav className="w-full px-4 py-6">
+    <header className="w-full min-h-[72px] text-[#5C6174]">
+      <nav className="w-full min-h-[72px] px-4 py-6">
         <div
           ref={navRef}
           className="mx-auto flex w-full max-w-6xl min-h-[56px] items-center justify-between gap-6 rounded-[32px] border border-[#EAECF4] bg-white px-6 py-4"
