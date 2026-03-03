@@ -25,8 +25,10 @@ const PotentialWorkers = () => {
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
+          requestAnimationFrame(() => {
+            setIsVisible(true);
+            observer.disconnect();
+          });
         }
       },
       { threshold: 0.35 }

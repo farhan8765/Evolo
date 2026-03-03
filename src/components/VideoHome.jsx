@@ -74,8 +74,10 @@ const VideoHome = () => {
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
+          requestAnimationFrame(() => {
+            setVisible(true);
+            observer.disconnect();
+          });
         }
       },
       { threshold: 0.3 }

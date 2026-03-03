@@ -42,7 +42,7 @@ export default function StudSlider() {
   useEffect(() => {
     let rafId = null;
     let lastCall = 0;
-    const THROTTLE_MS = 150;
+    const THROTTLE_MS = 250;
 
     const handleResize = () => {
       const now = performance.now();

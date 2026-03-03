@@ -20,8 +20,10 @@ export default function Partner() {
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setHeaderVisible(true);
-          headerObserver.disconnect();
+          requestAnimationFrame(() => {
+            setHeaderVisible(true);
+            headerObserver.disconnect();
+          });
         }
       },
       { threshold: 0.35 }
@@ -33,8 +35,10 @@ export default function Partner() {
 
     const blockObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+        const toUpdate = entries.filter((e) => e.isIntersecting);
+        if (toUpdate.length === 0) return;
+        requestAnimationFrame(() => {
+          toUpdate.forEach((entry) => {
             const index = Number(entry.target.dataset.index);
             setVisibleBlocks((prev) => {
               if (prev[index]) return prev;
@@ -43,7 +47,7 @@ export default function Partner() {
               return next;
             });
             blockObserver.unobserve(entry.target);
-          }
+          });
         });
       },
       { threshold: 0.25 }
