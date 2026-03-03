@@ -101,20 +101,14 @@ export default function Hero() {
             key={index}
             className={`absolute transition-all duration-700 ease-in-out ${getImagePosition(index)}`}
           >
-            <picture>
-              <source
-                srcSet={`/images/${img.replace('.png', '.webp')}`}
-                type="image/webp"
-              />
-              <img
-                src={`/images/${img}`}
-                alt={`Preview ${index + 1}`}
-                className={`rounded-xl sm:rounded-2xl shadow-2xl ${sizeClasses} h-auto`}
-                loading={index === 0 ? "eager" : "lazy"}
-                decoding="async"
-                fetchPriority={index === 0 ? "high" : "auto"}
-              />
-            </picture>
+            <img
+              src={`/images/${img}`}
+              alt={`Preview ${index + 1}`}
+              className={`rounded-xl sm:rounded-2xl shadow-2xl ${sizeClasses} h-auto`}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              fetchPriority={index === 0 ? "high" : "auto"}
+            />
           </div>
           );
         })}

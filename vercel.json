@@ -12,12 +12,12 @@
         "permanent": true
       }
     ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ],
+  "rewrites": [
+    {
+      "source": "/((?!images/)(?!static/)(?!assets/).*)",
+      "destination": "/index.html"
+    }
+  ],
     "headers": [
       {
         "source": "/(.*)",
