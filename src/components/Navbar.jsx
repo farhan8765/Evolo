@@ -86,13 +86,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Desktop-only: mobile drawer is rendered outside navRef,
-      // so we don't want to immediately close dropdowns on mobile.
       if (mobileMenuOpen) return;
 
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        setOpenTab(null);
-      }
+      requestAnimationFrame(() => {
+        if (navRef.current && !navRef.current.contains(event.target)) {
+          setOpenTab(null);
+        }
+      });
     };
 
     document.addEventListener("mousedown", handleClickOutside);

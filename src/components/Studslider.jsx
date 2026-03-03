@@ -40,12 +40,34 @@ export default function StudSlider() {
   const [visibleSlides, setVisibleSlides] = useState(getVisibleSlides());
 
   useEffect(() => {
+    let rafId = null;
+    let lastCall = 0;
+    const THROTTLE_MS = 150;
+
     const handleResize = () => {
-      setVisibleSlides(getVisibleSlides());
+      const now = performance.now();
+      if (now - lastCall < THROTTLE_MS) {
+        if (rafId === null) {
+          rafId = requestAnimationFrame(() => {
+            lastCall = performance.now();
+            setVisibleSlides(getVisibleSlides());
+            rafId = null;
+          });
+        }
+        return;
+      }
+      lastCall = now;
+      rafId = requestAnimationFrame(() => {
+        setVisibleSlides(getVisibleSlides());
+        rafId = null;
+      });
     };
-    
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
+    window.addEventListener('resize', handleResize, { passive: true });
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      if (rafId !== null) cancelAnimationFrame(rafId);
+    };
   }, []);
 
   // Create infinite slides by tripling the array

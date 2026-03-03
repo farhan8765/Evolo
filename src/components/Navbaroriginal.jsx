@@ -264,9 +264,11 @@ const Navbar = () => {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        setOpenTab(null);
-      }
+      requestAnimationFrame(() => {
+        if (navRef.current && !navRef.current.contains(event.target)) {
+          setOpenTab(null);
+        }
+      });
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
