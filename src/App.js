@@ -1,4 +1,4 @@
-import './App.css';
+/* App.css removed - logo-marquee moved to LogoMarquee.css (lazy-loaded in testimonials) */
 import React, { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';

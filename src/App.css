@@ -1,12 +1,1 @@
-@keyframes logo-marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-logo-marquee {
-  animation: logo-marquee 50s linear infinite;
-}
+/* Critical above-the-fold styles: none - logo-marquee moved to LogoMarquee.css (lazy-loaded) */

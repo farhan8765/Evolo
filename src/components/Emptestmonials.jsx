@@ -1,4 +1,5 @@
 import React from "react";
+import "./LogoMarquee.css";
 
 const logos = [
   { name: "Optum", src: "/images/student-test/image 6.png" },
