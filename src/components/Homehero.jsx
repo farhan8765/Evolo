@@ -64,7 +64,7 @@ export default function Homehero() {
 
           {/* Main center image */}
           <img
-            src="/images/Homehero.png"
+            src="/images/Homehero.webp"
             alt="Platform Preview"
             className="relative z-10 w-full h-auto rounded-lg"
           />
