@@ -1,5 +1,13 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+// Inline SVG icons to avoid react-icons bundle (Footer loads on every page)
+const SocialIcon = ({ href, label, children }) => (
+  <a href={href} className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg" aria-label={label}>
+    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      {children}
+    </svg>
+  </a>
+);
 
 const quickLinks = [
   { label: "About us", to: "/about-us" },
@@ -109,30 +117,18 @@ export default function Footer() {
 
             <h3 className="font-semibold mb-2">Follow us:</h3>
             <div className="flex space-x-3">
-              <a
-                href="https://www.facebook.com/GoEvolo/"
-                className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
-              >
-                <FaFacebookF />
-              </a>
-              <a
-                href="https://www.instagram.com/evoloai/"
-                className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/evoloai/"
-                className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
-              >
-                <FaLinkedinIn />
-              </a>
-              <a
-                href="https://www.youtube.com/@EvoloAI"
-                className="w-8 h-8 bg-white text-[#4D04DB] flex items-center justify-center rounded-lg"
-              >
-                <FaYoutube />
-              </a>
+              <SocialIcon href="https://www.facebook.com/GoEvolo/" label="Facebook">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </SocialIcon>
+              <SocialIcon href="https://www.instagram.com/evoloai/" label="Instagram">
+                <path d="M12 2.16c3.2 0 3.58 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85c.15-3.23 1.69-4.77 4.92-4.92C8.42 2.22 8.8 2.21 12 2.21zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.04 0 8.33 0 8.74 0 12s.01 3.67.07 4.96c.2 4.35 2.77 6.92 7.08 7.08C8.33 24 8.74 24 12 24s3.67-.01 4.96-.07c4.35-.2 6.92-2.77 7.08-7.08C24 15.67 24 15.26 24 12s-.01-3.67-.07-4.96c-.2-4.35-2.77-6.92-7.08-7.08C15.67 0 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-11.84a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" />
+              </SocialIcon>
+              <SocialIcon href="https://www.linkedin.com/company/evoloai/" label="LinkedIn">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </SocialIcon>
+              <SocialIcon href="https://www.youtube.com/@EvoloAI" label="YouTube">
+                <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </SocialIcon>
             </div>
           </div>
         </div>

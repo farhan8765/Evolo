@@ -5,12 +5,12 @@ import { HelmetProvider } from 'react-helmet-async';
 
 import Navbar from './components/Navbar';
 import GlobalSEO from './components/GlobalSEO';
-import Footer from './components/Footer';
-import FloatingQr from './components/FloatingQr';
 import ScrollToTop from './components/ScrollToTop';
-
-// Critical path - load immediately (homepage)
 import Mainhome from './pages/Mainhome';
+
+// Lazy-load below-the-fold layout components to reduce main-thread blocking
+const Footer = lazy(() => import('./components/Footer'));
+const FloatingQr = lazy(() => import('./components/FloatingQr'));
 
 // Lazy-load non-critical pages and components
 const Student = lazy(() => import('./pages/Student'));
@@ -135,8 +135,12 @@ function App() {
           <Route path="/caep-2024-summit/" element={<Blog17 />} />
         </Routes>
           </Suspense>
-        <Footer />
-        <FloatingQr />
+        <Suspense fallback={<div className="min-h-[280px]" aria-hidden="true" />}>
+          <Footer />
+        </Suspense>
+        <Suspense fallback={null}>
+          <FloatingQr />
+        </Suspense>
       </div>
       </Router>
     </HelmetProvider>
