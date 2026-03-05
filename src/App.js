@@ -1,57 +1,58 @@
 import './App.css';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { useEffect } from 'react';
-// import Header from './components/Header';
 
-// import LastHome from './components/Last-home';
 import Navbar from './components/Navbar';
 import GlobalSEO from './components/GlobalSEO';
-// import Navbaroriginal from './components/Navbaroriginal';
-// import Partner from './components/Partner';
-// import PotentialWorkers from './components/PotentialWorkers';
-// import Skills from './components/Skills';
-// import VideoHome from './components/VideoHome';
-// import StudentTestimonial from './components/Student-testmonial';
 import Footer from './components/Footer';
 import FloatingQr from './components/FloatingQr';
 import ScrollToTop from './components/ScrollToTop';
-// import Hero from './components/Hero';
-import Student from './pages/Student';
-import Employee from './pages/Employee';
-import Institute from './pages/Institute';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Events from './pages/Events';
-import Faqs from './pages/Faqs';
-import Resources from './pages/Resources';
+
+// Critical path - load immediately (homepage)
 import Mainhome from './pages/Mainhome';
-import AdultEducation from './pages/AdultEducation';
-import MentalHealthCybhi from './pages/MentalHealthCybhi';
-import OneEvent from './pages/OneEvent';
-import EventTwo from './components/EventTwo';
-import Blog1 from './components/Blog1';
-import Blog2 from './components/Blog2';
-import Blog3 from './components/Blog3';
-import Blog4 from './components/Blog4';
-import Blog5 from './components/Blog5';
-import Blog6 from './components/Blog6';
-import Blog7 from './components/Blog7';
-import Blog8 from './components/Blog8';
-import Blog9 from './components/Blog9';
-import Blog10 from './components/Blog10';
-import Blog11 from './components/Blog11';
-import Blog12 from './components/Blog12';
-import Blog13 from './components/Blog13';
-import Blog14 from './components/Blog14';
-import Blog15 from './components/Blog15';
-import Blog16 from './components/Blog16';
-import Blog17 from './components/Blog17';
-import Accessibility from './pages/Accessibility';
-import SecurityPrivacy from './pages/SecurityPrivacy';
-import TermsofService from './pages/TermsofService';
-import CookiesPolicy from './pages/CookiesPolicy';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+
+// Lazy-load non-critical pages and components
+const Student = lazy(() => import('./pages/Student'));
+const Employee = lazy(() => import('./pages/Employee'));
+const Institute = lazy(() => import('./pages/Institute'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Events = lazy(() => import('./pages/Events'));
+const Faqs = lazy(() => import('./pages/Faqs'));
+const Resources = lazy(() => import('./pages/Resources'));
+const AdultEducation = lazy(() => import('./pages/AdultEducation'));
+const MentalHealthCybhi = lazy(() => import('./pages/MentalHealthCybhi'));
+const OneEvent = lazy(() => import('./pages/OneEvent'));
+const EventTwo = lazy(() => import('./components/EventTwo'));
+const Blog1 = lazy(() => import('./components/Blog1'));
+const Blog2 = lazy(() => import('./components/Blog2'));
+const Blog3 = lazy(() => import('./components/Blog3'));
+const Blog4 = lazy(() => import('./components/Blog4'));
+const Blog5 = lazy(() => import('./components/Blog5'));
+const Blog6 = lazy(() => import('./components/Blog6'));
+const Blog7 = lazy(() => import('./components/Blog7'));
+const Blog8 = lazy(() => import('./components/Blog8'));
+const Blog9 = lazy(() => import('./components/Blog9'));
+const Blog10 = lazy(() => import('./components/Blog10'));
+const Blog11 = lazy(() => import('./components/Blog11'));
+const Blog12 = lazy(() => import('./components/Blog12'));
+const Blog13 = lazy(() => import('./components/Blog13'));
+const Blog14 = lazy(() => import('./components/Blog14'));
+const Blog15 = lazy(() => import('./components/Blog15'));
+const Blog16 = lazy(() => import('./components/Blog16'));
+const Blog17 = lazy(() => import('./components/Blog17'));
+const Accessibility = lazy(() => import('./pages/Accessibility'));
+const SecurityPrivacy = lazy(() => import('./pages/SecurityPrivacy'));
+const TermsofService = lazy(() => import('./pages/TermsofService'));
+const CookiesPolicy = lazy(() => import('./pages/CookiesPolicy'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+
+const PageFallback = () => (
+  <div className="min-h-[50vh] flex items-center justify-center" aria-hidden="true">
+    <div className="w-8 h-8 border-2 border-[#5A14ED] border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 // ====== YE NAYA COMPONENT HAI - SPAM BLOCKING KE LIYE ======
 function SpamBlocker() {
@@ -95,6 +96,7 @@ function App() {
         <div className="w-full">
           {/* <Header /> */}
           <Navbar/>
+          <Suspense fallback={<PageFallback />}>
           <Routes>
           <Route path="/" element={<Mainhome/>} />
           <Route path="/adult" element={<AdultEducation />} />
@@ -132,6 +134,7 @@ function App() {
           <Route path="/top-10-career-tips-and-advice-for-young-adults-starting-their-journey/" element={<Blog16 />} />
           <Route path="/caep-2024-summit/" element={<Blog17 />} />
         </Routes>
+          </Suspense>
         <Footer />
         <FloatingQr />
       </div>

@@ -74,6 +74,10 @@ employers discover talent, and institutions prove impact.
           <img
             src="/images/home-fourth.png"
             alt="Mobile Preview"
+            width={900}
+            height={900}
+            loading="lazy"
+            decoding="async"
             className="w-full sm:w-[80%] md:w-[75%] lg:w-[700px] xl:w-[800px] 2xl:w-[900px] h-auto drop-shadow-xl"
           />
         </div>

@@ -48,24 +48,37 @@ export default function Homehero() {
 
         {/* Bottom Image with side overlays */}
         <div className="relative w-full mx-auto px-2 sm:px-0">
-          {/* Left overlay image */}
+          {/* Left overlay image - lazy, below fold on mobile */}
           <img
             src="/images/hleft.png"
             alt=""
+            width={400}
+            height={600}
+            loading="lazy"
+            decoding="async"
             className="pointer-events-none hidden lg:block absolute left-[5%] top-[0%] -translate-y-1/2 -translate-x-1/3 h-[600px] w-auto object-cover"
           />
 
-          {/* Right overlay image */}
+          {/* Right overlay image - lazy */}
           <img
             src="/images/hright.png"
             alt=""
+            width={400}
+            height={600}
+            loading="lazy"
+            decoding="async"
             className="pointer-events-none hidden lg:block absolute right-[5%] top-[0%] -translate-y-1/2 translate-x-1/3 h-[600px] w-auto object-cover"
           />
 
-          {/* Main center image */}
+          {/* Main center image - LCP, eager load with priority */}
           <img
             src="/images/Homehero.webp"
             alt="Platform Preview"
+            width={1200}
+            height={675}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
             className="relative z-10 w-full h-auto rounded-lg"
           />
         </div>
