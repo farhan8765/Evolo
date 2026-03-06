@@ -50,7 +50,7 @@ export default function Homehero() {
         <div className="relative w-full mx-auto px-2 sm:px-0">
           {/* Left overlay image - lazy, below fold on mobile */}
           <img
-            src="/images/hleft.png"
+            src="/images/hleft.webp"
             alt=""
             width={400}
             height={600}
@@ -61,7 +61,7 @@ export default function Homehero() {
 
           {/* Right overlay image - lazy */}
           <img
-            src="/images/hright.png"
+            src="/images/hright.webp"
             alt=""
             width={400}
             height={600}
