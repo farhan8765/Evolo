@@ -47,6 +47,8 @@ const Blog5 = () => {
           <img 
             src="/images/blog5.png" 
             alt="Teens and Young Adults at Work - Benefits of Employment"
+            width={1200}
+            height={630}
             className="w-full h-auto object-cover"
           />
         </div>
@@ -292,6 +294,8 @@ const Blog5 = () => {
           <img 
             src="/images/blogfive2.png" 
             alt="Self-Esteem Comparison Chart - Working vs Non-Working Teens"
+            width={800}
+            height={600}
             className="w-full h-auto rounded-lg shadow-md"
           />
           <p className="text-gray-500 text-sm text-center mt-2">Source: U.S. Bureau of Labor Statistics</p>

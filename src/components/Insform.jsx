@@ -90,6 +90,8 @@ const InsForm = () => {
             <img
               src="/images/evoloo.png"
               alt="Evolo AI dashboard preview"
+              width={800}
+              height={600}
               className="w-full "
             />
           </div>

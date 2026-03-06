@@ -37,6 +37,8 @@ export default function Footer() {
                 <img
                   src="/images/Footer-logo.png" // replace with your logo path
                   alt="Evolo AI Logo"
+                  width={120}
+                  height={80}
                   className="w-30 h-20 object-contain"
                 />
               </div>
@@ -70,6 +72,8 @@ export default function Footer() {
                 <img
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                   alt="Download Evolo AI on the App Store"
+                  width={120}
+                  height={40}
                   className="h-10"
                 />
               </a>
@@ -81,6 +85,8 @@ export default function Footer() {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                   alt="Get Evolo AI on Google Play"
+                  width={135}
+                  height={40}
                   className="h-10"
                 />
               </a>

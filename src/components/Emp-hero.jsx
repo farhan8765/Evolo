@@ -52,6 +52,8 @@ const EmpHero = () => {
           <img
             src="/images/Emp-hero.png"
             alt="Employer dashboard preview"
+            width={576}
+            height={800}
             className="relative z-10 mx-auto w-full max-w-sm sm:max-w-md lg:max-w-xl animate-hero-float"
           />
         </div>

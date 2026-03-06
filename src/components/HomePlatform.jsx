@@ -35,21 +35,21 @@ incident reporting, session management, and compliance documentation.
           <div className="flex flex-col gap-3 md:gap-4 mb-6 md:mb-8">
             <button className="w-full text-left bg-[#F3F3FF] px-4 sm:px-6 py-3 rounded-xl flex gap-3 items-center font-semibold text-black shadow-sm text-sm sm:text-base hover:bg-[#E8E8FF] transition-colors">
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/images/Hic1.svg" alt="AI Documentation" className="w-5 h-5" />
+                <img src="/images/Hic1.svg" alt="AI Documentation" width={20} height={20} className="w-5 h-5" />
               </span>
               Reports for Medical Billing
             </button>
 
             <button className="w-full text-left bg-[#F3F3FF] px-4 sm:px-6 py-3 rounded-xl flex gap-3 items-center font-semibold text-black shadow-sm text-sm sm:text-base hover:bg-[#E8E8FF] transition-colors">
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/images/Hic2.svg" alt="Medi-Cal Billing" className="w-5 h-5" />
+                <img src="/images/Hic2.svg" alt="Medi-Cal Billing" width={20} height={20} className="w-5 h-5" />
               </span>
               Session Management 
             </button>
 
             <button className="w-full text-left bg-[#F3F3FF] px-4 sm:px-6 py-3 rounded-xl flex gap-3 items-center font-semibold text-black shadow-sm text-sm sm:text-base hover:bg-[#E8E8FF] transition-colors">
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/images/Hic3.svg" alt="Session Management" className="w-5 h-5" />
+                <img src="/images/Hic3.svg" alt="Session Management" width={20} height={20} className="w-5 h-5" />
               </span>
               AI Incident Reporting
             </button>

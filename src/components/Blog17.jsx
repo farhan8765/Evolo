@@ -97,6 +97,8 @@ const Blog17 = () => {
           <img
             src="/images/blog17.png"
             alt="Evolo AI Shines at the CAEP 2024 Summit: Empowering Adult Education with Innovative AI Solutions"
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>

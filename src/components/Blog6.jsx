@@ -47,6 +47,8 @@ const Blog6 = () => {
           <img 
             src="/images/blog6.png" 
             alt="Teens and Young Adults Working in Retail Jobs"
+            width={1200}
+            height={630}
             className="w-full h-auto object-cover"
           />
         </div>
@@ -211,6 +213,8 @@ const Blog6 = () => {
       <img 
         src="/images/blogsix3.png" 
         alt="Retail Jobs Benefits for Young Workers"
+        width={300}
+        height={400}
         className="w-[300px] h-[400px] rounded-lg shadow-md"
       />
     </div>
@@ -535,6 +539,8 @@ const Blog6 = () => {
       <img 
         src="/images/blogsix4.png" 
         alt="Career progression from Entry Level to Store Manager in retail sector"
+        width={600}
+        height={400}
         className="w-[600px] h-[400px]"
       />
     </div>

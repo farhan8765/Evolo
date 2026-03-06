@@ -102,6 +102,8 @@ const Blog16 = () => {
           <img
             src="/images/blog16.png"
             alt="Top 10 Career Tips and Advice for Young Adults Starting Their Journey"
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -156,6 +158,8 @@ const Blog16 = () => {
             <img
               src="/images/blog16two.jpg"
               alt="Why Career Planning Matters"
+              width={672}
+              height={448}
               className="w-full max-w-2xl h-auto rounded-xl shadow-lg"
             />
           </div>
@@ -205,6 +209,8 @@ const Blog16 = () => {
             <img
               src="/images/blog16three.jpg"
               alt="Top 10 Career Tips for Young Adults"
+              width={672}
+              height={448}
               className="w-full max-w-2xl h-auto rounded-xl shadow-lg"
             />
           </div>
@@ -277,6 +283,8 @@ const Blog16 = () => {
             <img
               src="/images/blog16four.jpg"
               alt="Stay Curious & Never Stop Learning"
+              width={672}
+              height={448}
               className="w-full max-w-2xl h-auto rounded-xl shadow-lg"
             />
           </div>

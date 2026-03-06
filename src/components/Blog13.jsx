@@ -84,6 +84,8 @@ const Blog13 = () => {
           <img 
             src="/images/blog13.jpg" 
             alt="The 2025 Job Search: How to Stand Out in a Competitive Market" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>

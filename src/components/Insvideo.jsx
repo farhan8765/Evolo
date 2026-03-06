@@ -1,4 +1,5 @@
 import React from "react";
+import YouTubeFacade from "./YouTubeFacade";
 
 const videos = [
   {
@@ -19,19 +20,13 @@ const fullBleed = {
 
 // ---------------------- VIDEO CARD ----------------------
 const VideoCard = ({ link }) => {
-  const embedUrl = link.replace("watch?v=", "embed/");
+  const videoId = link.split("v=")[1]?.split("&")[0] || link.replace("https://www.youtube.com/watch?v=", "");
 
   return (
     <article className="relative rounded-[26px] overflow-hidden shadow-[0_20px_45px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-transform duration-300">
-      {/* YouTube Iframe */}
-      <iframe
-        src={embedUrl}
-        title="Video"
-        frameBorder="0"
-        className="w-full h-[320px] rounded-[26px]"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+      <div className="relative w-full h-[320px] rounded-[26px] overflow-hidden">
+        <YouTubeFacade videoId={videoId} title="Video" fill />
+      </div>
     </article>
   );
 };

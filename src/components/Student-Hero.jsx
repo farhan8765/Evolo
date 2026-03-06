@@ -53,6 +53,8 @@ const StudentHero = () => {
                 key={badge.alt}
                 src={badge.src}
                 alt={badge.alt}
+                width={80}
+                height={80}
                 className="h-16 sm:h-20 w-auto rounded-[18px] p-2 transition-transform duration-500 hover:-translate-y-1"
               />
             ))}
@@ -64,6 +66,8 @@ const StudentHero = () => {
           <img
             src="/images/student-hero.png"
             alt="Student mobile mockups"
+            width={576}
+            height={800}
             className="relative z-10 mx-auto w-full max-w-md md:max-w-xl animate-hero-float"
           />
         </div>

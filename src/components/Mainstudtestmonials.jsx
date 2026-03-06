@@ -53,6 +53,8 @@ const MainStudTestMonials = () => {
                 <img
                   src={logo.src}
                   alt={`${logo.name} logo`}
+                  width={150}
+                  height={60}
                   className="w-full h-auto object-contain opacity-90 hover:opacity-100 transition"
                 />
               </div>

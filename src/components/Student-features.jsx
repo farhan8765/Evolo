@@ -66,6 +66,8 @@ const StudentFeatures = () => {
                 <img
                   src={feature.icon}
                   alt={feature.title}
+                  width={24}
+                  height={24}
                   className="w-6 h-6 object-center object-contain"
                 />
               </div>
@@ -89,6 +91,8 @@ const StudentFeatures = () => {
             <img
               src="/images/student-feature.png"
               alt="Evolo AI mobile preview"
+              width={400}
+              height={800}
               className="relative z-10 w-full drop-shadow-[0_45px_65px_rgba(15,13,56,0.3)] animate-hero-float"
             />
           </div>
@@ -106,6 +110,8 @@ const StudentFeatures = () => {
                 <img
                   src={feature.icon}
                   alt={feature.title}
+                  width={24}
+                  height={24}
                   className="w-6 h-6 object-center object-contain"
                 />
               </div>

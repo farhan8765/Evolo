@@ -84,6 +84,8 @@ const Blog14 = () => {
           <img 
             src="/images/blog14.jpg" 
             alt="The Future of Adult Education: How Technology is Bridging the Gap Between Students, Institutions, and Employers" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>

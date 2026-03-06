@@ -112,12 +112,12 @@ export default function FAQPage() {
 
       {/* Left Background Image */}
       <div className="hidden md:block absolute left-0 top-52 w-48 md:w-64 pointer-events-none">
-        <img src="/images/lefticon.png" alt="" className="w-320 h-320 object-contain" />
+        <img src="/images/lefticon.png" alt="" width={320} height={320} className="w-320 h-320 object-contain" />
       </div>
 
       {/* Right Background Image */}
     <div className="hidden md:block absolute right-0 bottom-56 w-48 pointer-events-none">
-  <img src="/images/righticon.png" alt="" className="w-400 h-400 object-contain" />
+  <img src="/images/righticon.png" alt="" width={400} height={400} className="w-400 h-400 object-contain" />
 </div>
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-16">

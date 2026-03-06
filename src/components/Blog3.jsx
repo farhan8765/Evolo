@@ -46,6 +46,8 @@ const Blog3 = () => {
           <img 
             src="/images/blog3.png" 
             alt="Career change after 30 illustration" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -301,6 +303,8 @@ const Blog3 = () => {
     <img 
       src="/images/blogthreeimg2.png" 
       alt="Networking strategies for career changers" 
+      width={448}
+      height={336}
       className="rounded-xl shadow-lg max-w-md"
     />
   </div>

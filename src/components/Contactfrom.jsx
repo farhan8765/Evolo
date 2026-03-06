@@ -93,6 +93,8 @@ Have questions or need assistance we’re here to help!        </h2>
             <img
               src="/images/evoloo.png"
               alt="Evolo AI dashboard preview"
+              width={800}
+              height={600}
               className="w-full "
             />
           </div>

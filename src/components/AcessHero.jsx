@@ -34,6 +34,8 @@ Accessibility            </span>
           <img
             src="/images/student-hero.png"
             alt="Student mobile mockups"
+            width={576}
+            height={800}
             className="relative z-10 mx-auto w-full max-w-md md:max-w-xl animate-hero-float"
           />
         </div>

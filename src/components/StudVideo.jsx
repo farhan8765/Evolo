@@ -1,4 +1,5 @@
 import React from "react";
+import YouTubeFacade from "./YouTubeFacade";
 
 const videos = [
   {
@@ -22,8 +23,7 @@ const fullBleed = {
 };
 
 const VideoCard = ({ link, index }) => {
-  // Convert YouTube link to embed format
-  const embedUrl = link.replace("watch?v=", "embed/");
+  const videoId = link.split("v=")[1]?.split("&")[0] || link.replace("https://www.youtube.com/watch?v=", "");
 
   return (
     <article
@@ -35,17 +35,9 @@ const VideoCard = ({ link, index }) => {
       "
       style={{ animationDelay: `${0.35 + index * 0.1}s` }}
     >
-      {/* YouTube Iframe */}
-      <iframe
-        width="100%"
-        height="320"
-        src={embedUrl}
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        className="rounded-[26px]"
-      ></iframe>
+      <div className="relative w-full h-[320px] rounded-[26px] overflow-hidden">
+        <YouTubeFacade videoId={videoId} title="YouTube video player" fill />
+      </div>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />

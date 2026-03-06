@@ -58,6 +58,8 @@ export default function LastHome() {
               <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                 alt="Download Evolo AI on the App Store"
+                width={120}
+                height={40}
                 className="h-12"
               />
             </a>
@@ -69,6 +71,8 @@ export default function LastHome() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                 alt="Get Evolo AI on Google Play"
+                width={135}
+                height={40}
                 className="h-12"
               />
             </a>
@@ -84,6 +88,8 @@ export default function LastHome() {
           <img
             src="/images/Group 5.png" // ← only one image now
             alt="App preview"
+            width={800}
+            height={600}
             className="w-[280px] md:w-[330px] lg:w-[480px] drop-shadow-2xl"
           />
         </div>

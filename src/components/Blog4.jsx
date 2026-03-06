@@ -48,6 +48,8 @@ const Blog4 = () => {
           <img 
             src="/images/blog4.jpg" 
             alt="Low-stress jobs for autistic adults" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -164,6 +166,8 @@ const Blog4 = () => {
               <img 
                 src="/images/blogfour.png" 
                 alt="Low-stress work environment for autistic adults" 
+                width={448}
+                height={336}
                 className="rounded-xl shadow-lg max-w-md"
               />
             </div>

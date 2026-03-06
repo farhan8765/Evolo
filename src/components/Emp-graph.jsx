@@ -96,6 +96,8 @@ const EmpGraph = () => {
                     <img 
                       src={category.icon} 
                       alt={category.name}
+                      width={36}
+                      height={36}
                       className="w-9 h-9 object-contain"
                     />
                   </div>
@@ -115,6 +117,8 @@ const EmpGraph = () => {
                 <img 
                   src="images/evolologos.png" 
                   alt="Evolo AI Logo" 
+                  width={160}
+                  height={160}
                   className="w-40 h-40 object-contain"
                 />
               </div>
@@ -134,6 +138,8 @@ const EmpGraph = () => {
                 <img
                   src={category.icon}
                   alt={category.name}
+                  width={32}
+                  height={32}
                   className="w-8 h-8 object-contain"
                 />
               </div>
@@ -146,6 +152,8 @@ const EmpGraph = () => {
             <img
               src="images/evolologos.png"
               alt="Evolo AI logo"
+              width={96}
+              height={96}
               className="w-24 h-24 object-contain mb-3"
             />
             <p className="text-sm font-semibold text-[#2B1BDD]">

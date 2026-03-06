@@ -117,6 +117,8 @@ export default function Partner() {
           <img
             src="/images/right.png"
             alt="App preview"
+            width={310}
+            height={430}
             className={`md:absolute md:-right-[-40px] md:top-1/2 md:-translate-y-1/2 w-[180px] h-[240px] sm:w-[220px] sm:h-[290px] md:w-[310px] md:h-[430px] rotate-[1deg] drop-shadow-2xl mt-4 sm:mt-6 md:mt-0 transition-all duration-700 ease-out delay-100 ${
               visibleBlocks[0]
                 ? 'opacity-100 translate-y-0 md:translate-x-0'
@@ -136,6 +138,8 @@ export default function Partner() {
           <img
             src="/images/left.png"
             alt="App preview"
+            width={320}
+            height={430}
             className={`md:absolute md:-left-[-40px] md:top-1/2 md:-translate-y-1/2 w-[180px] h-[240px] sm:w-[220px] sm:h-[290px] md:w-[320px] md:h-[430px] rotate-[-1deg] drop-shadow-2xl mt-4 sm:mt-6 md:mt-0 transition-all duration-700 ease-out ${
               visibleBlocks[1]
                 ? 'opacity-100 translate-y-0 md:translate-x-0'
@@ -185,6 +189,8 @@ export default function Partner() {
           <img
             src="/images/mble2.png"
             alt="App preview"
+            width={310}
+            height={430}
             className={`md:absolute md:-right-[-40px] md:top-1/2 md:-translate-y-1/2 w-[180px] h-[240px] sm:w-[220px] sm:h-[290px] md:w-[310px] md:h-[430px] rotate-[1deg] drop-shadow-2xl mt-4 sm:mt-6 md:mt-0 transition-all duration-700 ease-out delay-100 ${
               visibleBlocks[2]
                 ? 'opacity-100 translate-y-0 md:translate-x-0'
@@ -204,6 +210,8 @@ export default function Partner() {
           <img
             src="/images/cvmble.png"
             alt="App preview"
+            width={320}
+            height={430}
             className={`md:absolute md:-left-[-40px] md:top-1/2 md:-translate-y-1/2 w-[180px] h-[240px] sm:w-[220px] sm:h-[290px] md:w-[320px] md:h-[430px] rotate-[-1deg] drop-shadow-2xl mt-4 sm:mt-6 md:mt-0 transition-all duration-700 ease-out ${
               visibleBlocks[3]
                 ? 'opacity-100 translate-y-0 md:translate-x-0'

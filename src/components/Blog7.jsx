@@ -47,6 +47,8 @@ const Blog7 = () => {
             <img 
               src="/images/blog7.png" 
               alt="Remote work opportunities for adults without college degree - working from home"
+              width={1200}
+              height={630}
               className="w-full h-auto object-cover"
             />
           </div>

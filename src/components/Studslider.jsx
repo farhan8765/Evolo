@@ -146,6 +146,8 @@ export default function StudSlider() {
                       <img
                         src={slide.image}
                         alt={slide.alt}
+                        width={280}
+                        height={600}
                         className="w-full h-auto object-cover"
                         onError={(e) => {
                           e.target.src = `https://via.placeholder.com/300x600/6366f1/ffffff?text=Mobile+${slide.id}`;

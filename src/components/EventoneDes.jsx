@@ -14,11 +14,15 @@ Presenting "AI in Adult Education" on Thursday, March 14!</h1>
             <img 
               src="/images/amirimg.jpg" 
               alt="CAEP Summit 2025" 
+              width={448}
+              height={336}
               className="w-full max-w-md rounded-lg"
             />
              <img 
               src="/images/cup.jpg" 
               alt="CAEP Summit 2025" 
+              width={448}
+              height={336}
               className="w-full max-w-md rounded-lg"
             />
           </div>

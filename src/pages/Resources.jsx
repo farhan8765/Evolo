@@ -191,6 +191,8 @@ Explore Our Blog</h1>
             <img 
               src={post.image} 
               alt={post.title}
+              width={800}
+              height={448}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>

@@ -84,6 +84,8 @@ const Blog11 = () => {
           <img 
             src="/images/blog11.jpg" 
             alt="Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>

@@ -47,6 +47,8 @@ const Blog10 = () => {
           <img 
             src="/images/blog10.png" 
             alt="Overcoming employment gaps for adult job seekers" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -138,6 +140,8 @@ const Blog10 = () => {
     <img 
       src="/images/blognine2.jpg" 
       alt="Decision-making flowchart to help adult job seekers address resume gaps" 
+      width={800}
+      height={600}
       className="w-[800px] h-[600px] rounded-xl shadow-lg"
     />
   </div>

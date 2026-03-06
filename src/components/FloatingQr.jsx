@@ -6,6 +6,8 @@ const FloatingQr = () => (
       <img
         src="/images/Evolo-AI.png"
         alt="Scan to learn more about Evolo AI"
+        width={80}
+        height={80}
         className="h-20 w-20 object-contain"
         loading="lazy"
       />

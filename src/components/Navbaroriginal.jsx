@@ -283,6 +283,8 @@ const Navbar = () => {
             <img
               src="/images/Vector.png"
               alt="Evolo AI logo"
+              width={28}
+              height={28}
               className="h-7 w-7 object-contain"
             />
           </div>

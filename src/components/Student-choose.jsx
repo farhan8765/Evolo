@@ -54,6 +54,8 @@ const StudentChoose = () => {
             <img
               src="/images/choose.png"
               alt="Evolo AI mobile mockup"
+              width={400}
+              height={800}
               className="relative z-10 w-full drop-shadow-[0_35px_60px_rgba(34,23,72,0.25)] animate-hero-float"
             />
           </div>

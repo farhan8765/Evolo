@@ -46,6 +46,8 @@ const Blog2 = () => {
           <img 
             src="/images/blog2.png" 
             alt="Adult School vs Online College comparison" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -154,6 +156,8 @@ Cost Comparison: Affordability vs. Long-Term Investment          </h2>
             <img 
               src="/images/blogtwoimg3.png" 
               alt="Adult school vs online college comparison" 
+              width={576}
+              height={384}
               className="w-full max-w-md sm:max-w-lg md:max-w-xl h-auto rounded-xl shadow-lg"
             />
           </div>

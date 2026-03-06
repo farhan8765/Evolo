@@ -172,6 +172,8 @@ const GetinTouch = () => {
             <img
               src="/images/evoloo.png"
               alt="Evolo"
+              width={800}
+              height={600}
               className="w-[100%] mb-6"
             />
           </div>

@@ -84,6 +84,8 @@ const Blog12 = () => {
           <img 
             src="/images/blog12.jpg" 
             alt="Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S." 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>

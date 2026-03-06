@@ -36,6 +36,8 @@ const Abouthero = () => {
           <img
             src="/images/About-hero.png"
             alt="Employer dashboard preview"
+            width={576}
+            height={800}
             className="relative z-10 mx-auto w-full max-w-xl"
           />
         </div>

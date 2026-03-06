@@ -38,6 +38,8 @@ const Abouttagline = () => {
               <img
                 src="/images/About.png"
                 alt="Evolo AI mobile preview"
+                width={400}
+                height={800}
                 className="w-full h-full object-contain"
               />
             </div>

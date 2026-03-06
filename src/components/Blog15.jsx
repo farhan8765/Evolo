@@ -102,6 +102,8 @@ const Blog15 = () => {
           <img
             src="/images/blog15.png"
             alt="Top 5 High-Income Skills Young Adults Should Learn for 2025"
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -233,6 +235,8 @@ const Blog15 = () => {
             <img
               src="/images/blog15two.jpg"
               alt="Agriculture, Food & Natural Resources"
+              width={672}
+              height={448}
               className="w-full max-w-2xl h-auto rounded-xl shadow-lg"
             />
           </div>

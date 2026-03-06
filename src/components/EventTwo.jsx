@@ -13,6 +13,8 @@ const EventTwo = () => {
          <img
         src="/images/eventthree.jpeg"   // <-- update your actual image path
         alt="Events Hero Banner"
+        width={1200}
+        height={400}
         className="w-full max-w-8xl rounded-xl"
       />
       </section>

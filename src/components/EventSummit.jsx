@@ -15,6 +15,8 @@ export default function EventSummit() {
             <img 
               src="/images/eventtwo.png" 
               alt="CAEP Summit 2025" 
+              width={448}
+              height={336}
               className="w-full max-w-md rounded-lg"
             />
           </div>

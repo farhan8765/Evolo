@@ -104,6 +104,8 @@ export default function Hero() {
             <img
               src={`/images/${img}`}
               alt={`Preview ${index + 1}`}
+              width={800}
+              height={600}
               className={`rounded-xl sm:rounded-2xl shadow-2xl ${sizeClasses} h-auto`}
               loading={index === 0 ? "eager" : "lazy"}
               decoding="async"

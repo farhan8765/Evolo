@@ -53,6 +53,8 @@ const Studdowner = () => {
                 <img
                   src={store.src}
                   alt={store.alt}
+                  width={64}
+                  height={64}
                   className="h-16 w-auto transition-transform duration-500 hover:-translate-y-1"
                 />
               </a>
@@ -68,6 +70,8 @@ const Studdowner = () => {
           <img
             src="/images/Stud-downer.png"
             alt="Evolo app preview"
+            width={576}
+            height={800}
             className="relative z-10 mx-auto w-full max-w-xl animate-hero-float"
           />
         </div>

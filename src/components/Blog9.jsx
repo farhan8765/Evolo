@@ -45,6 +45,8 @@ const Blog9 = () => {
     <img 
       src="/images/blog9.png" 
       alt="AI in hiring process for adult job seekers" 
+      width={1200}
+      height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
     />
   </div>

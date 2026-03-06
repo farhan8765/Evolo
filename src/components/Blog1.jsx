@@ -65,6 +65,8 @@ const Blog1 = () => {
           <img 
             src="/images/blog1.png" 
             alt="Single parent studying at adult school" 
+            width={1200}
+            height={630}
             className="w-full max-w-full h-auto rounded-xl shadow-lg"
           />
         </div>
@@ -222,6 +224,8 @@ const Blog1 = () => {
             <img 
               src="/images/blogoneimg2.png" 
               alt="Career pathways through adult education" 
+              width={576}
+              height={384}
               className="w-full max-w-md sm:max-w-lg md:max-w-xl h-auto rounded-xl shadow-lg"
             />
           </div>

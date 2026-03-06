@@ -48,6 +48,8 @@ const Blog8 = () => {
             <img 
               src="/images/blog8.jpg" 
               alt="Upskilling vs Reskilling - Career Development in Changing Job Market"
+              width={1200}
+              height={630}
               className="w-full h-auto object-cover"
             />
           </div>
@@ -175,6 +177,8 @@ const Blog8 = () => {
       <img 
         src="/images/blogeight2.png" 
         alt="Projected Workforce Staff Needs by 2025"
+        width={500}
+        height={300}
         className="w-[500px] h-[300px] mb-2"
       />
       <p className="text-gray-600 text-sm italic">Volatility Sector</p>
@@ -331,6 +335,8 @@ const Blog8 = () => {
         <img 
           src="/images/blogeight3.png" 
           alt="Top In-Demand Skills for 2025 - Chart showing demand levels for different skills"
+          width={500}
+          height={300}
           className="w-[500px] h-[300px]"
         />
       </div>
