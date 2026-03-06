@@ -1,77 +1,33 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { applyPageMeta } from '../utils/pageMeta';
 import Aboutstay from "../components/Aboutstay"
 
 export default function Blogs() {
   useEffect(() => {
-    // Document title set karna
-    document.title = 'Evolo AI Blog & Insights';
-    
-    // Meta description update karna
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.name = 'description';
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.content = 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.';
-    
-    // Canonical link add karna
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.rel = 'canonical';
-      document.head.appendChild(canonicalLink);
-    }
-    canonicalLink.href = 'https://goevolo.com/blog';
-    
-    // OG tags add/update karna (Facebook/WhatsApp ke liye)
-    const ogTags = [
-      { property: 'og:title', content: 'Evolo AI Blog & Insights' },
-      { property: 'og:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
-      { property: 'og:url', content: 'https://goevolo.com/blog/' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Evolo AI' },
-    ];
-    
-    ogTags.forEach(tag => {
-      let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
-      if (!metaTag) {
-        metaTag = document.createElement('meta');
-        metaTag.setAttribute('property', tag.property);
-        document.head.appendChild(metaTag);
-      }
-      metaTag.content = tag.content;
-    });
-    
-    // Twitter tags add/update karna
-    const twitterTags = [
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Evolo AI Blog & Insights' },
-      { name: 'twitter:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
-      { name: 'twitter:url', content: 'https://goevolo.com/blog/' },
-    ];
-    
-    twitterTags.forEach(tag => {
-      let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
-      if (!metaTag) {
-        metaTag = document.createElement('meta');
-        metaTag.setAttribute('name', tag.name);
-        document.head.appendChild(metaTag);
-      }
-      metaTag.content = tag.content;
-    });
-    
-    // Keywords meta tag bhi add karna
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement('meta');
-      metaKeywords.name = 'keywords';
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.content = 'Evolo AI blog, career insights, AI learning, education tips, career advice, adult education, job market trends, learning resources';
-    
-  }, []); // Empty dependency array - sirf ek baar run hoga
+    const id = requestAnimationFrame(() => {
+      applyPageMeta({
+        title: 'Evolo AI Blog & Insights',
+        description: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.',
+        canonical: 'https://goevolo.com/blog',
+        keywords: 'Evolo AI blog, career insights, AI learning, education tips, career advice, adult education, job market trends, learning resources',
+        ogTags: [
+          { property: 'og:title', content: 'Evolo AI Blog & Insights' },
+          { property: 'og:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
+          { property: 'og:url', content: 'https://goevolo.com/blog/' },
+          { property: 'og:type', content: 'website' },
+          { property: 'og:site_name', content: 'Evolo AI' },
+        ],
+        twitterTags: [
+          { name: 'twitter:card', content: 'summary_large_image' },
+          { name: 'twitter:title', content: 'Evolo AI Blog & Insights' },
+          { name: 'twitter:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
+          { name: 'twitter:url', content: 'https://goevolo.com/blog/' },
+        ],
+      })
+    })
+    return () => cancelAnimationFrame(id)
+  }, [])
 
   const blogPosts = [
     {

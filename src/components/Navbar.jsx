@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const NAV_TABS = [
@@ -46,7 +46,7 @@ const NAV_TABS = [
   },
 ];
 
-const DropdownIcon = ({ open }) => (
+const DropdownIcon = React.memo(({ open }) => (
   <svg
     viewBox="0 0 12 7"
     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const DropdownIcon = ({ open }) => (
       strokeLinejoin="round"
     />
   </svg>
-);
+));
 
 const Navbar = () => {
   const [openTab, setOpenTab] = useState(null);
@@ -75,29 +75,28 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   };
 
-  const toggleDropdown = (label) => {
+  const toggleDropdown = useCallback((label) => {
     setOpenTab((prev) => (prev === label ? null : label));
-  };
+  }, []);
 
   useEffect(() => {
     setOpenTab(null);
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
+  const handleClickOutside = useCallback((event) => {
+    if (mobileMenuOpen) return;
+    requestAnimationFrame(() => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpenTab(null);
+      }
+    });
+  }, [mobileMenuOpen]);
+
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (mobileMenuOpen) return;
-
-      requestAnimationFrame(() => {
-        if (navRef.current && !navRef.current.contains(event.target)) {
-          setOpenTab(null);
-        }
-      });
-    };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [mobileMenuOpen]);
+  }, [handleClickOutside]);
 
   useEffect(() => {
     const id = requestAnimationFrame(() => {

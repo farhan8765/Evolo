@@ -27,54 +27,32 @@ export default function StudSlider() {
     }
   ];
 
-  const getVisibleSlides = () => {
+  const getVisibleSlidesFromMedia = () => {
     if (typeof window === 'undefined') return 3;
-    const isMobile = window.innerWidth < 768;
-    const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
-    
-    if (isMobile) return 1;
-    if (isTablet) return 2;
+    const mqMobile = window.matchMedia('(max-width: 767px)');
+    const mqTablet = window.matchMedia('(min-width: 768px) and (max-width: 1023px)');
+    if (mqMobile.matches) return 1;
+    if (mqTablet.matches) return 2;
     return 3;
   };
 
-  const [visibleSlides, setVisibleSlides] = useState(getVisibleSlides());
+  const [visibleSlides, setVisibleSlides] = useState(() =>
+    typeof window === 'undefined' ? 3 : getVisibleSlidesFromMedia()
+  );
 
   useEffect(() => {
-    let outerRafId = null;
-    let innerRafId = null;
-    let lastCall = 0;
-    const THROTTLE_MS = 250;
+    const mqMobile = window.matchMedia('(max-width: 767px)');
+    const mqTablet = window.matchMedia('(min-width: 768px) and (max-width: 1023px)');
 
-    const updateSlides = () => {
-      lastCall = performance.now();
-      setVisibleSlides(getVisibleSlides());
-    };
+    const updateSlides = () => setVisibleSlides(getVisibleSlidesFromMedia());
 
-    const scheduleUpdate = () => {
-      outerRafId = requestAnimationFrame(() => {
-        innerRafId = requestAnimationFrame(() => {
-          updateSlides();
-          outerRafId = null;
-          innerRafId = null;
-        });
-      });
-    };
+    const handler = () => requestAnimationFrame(updateSlides);
 
-    const handleResize = () => {
-      const now = performance.now();
-      if (now - lastCall < THROTTLE_MS) {
-        if (outerRafId === null) scheduleUpdate();
-        return;
-      }
-      lastCall = now;
-      scheduleUpdate();
-    };
-
-    window.addEventListener('resize', handleResize, { passive: true });
+    mqMobile.addEventListener('change', handler);
+    mqTablet.addEventListener('change', handler);
     return () => {
-      window.removeEventListener('resize', handleResize);
-      if (outerRafId !== null) cancelAnimationFrame(outerRafId);
-      if (innerRafId !== null) cancelAnimationFrame(innerRafId);
+      mqMobile.removeEventListener('change', handler);
+      mqTablet.removeEventListener('change', handler);
     };
   }, []);
 
