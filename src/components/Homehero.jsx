@@ -77,7 +77,7 @@ export default function Homehero() {
             width={1200}
             height={675}
             loading="eager"
-            decoding="async"
+            decoding="sync"
             fetchPriority="high"
             className="relative z-10 w-full h-auto rounded-lg"
           />
