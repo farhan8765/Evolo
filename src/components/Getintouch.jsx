@@ -36,8 +36,9 @@ const GetinTouch = () => {
 
       formRef.current.innerHTML = '';
       requestAnimationFrame(() => {
-        if (!formRef.current) return;
-        window.hbspt.forms.create({
+        requestAnimationFrame(() => {
+          if (!formRef.current) return;
+          window.hbspt.forms.create({
         region: hubspotRegion,
         portalId,
         formId,
@@ -54,6 +55,7 @@ const GetinTouch = () => {
           console.log('HubSpot form submission confirmed', form);
         },
       });
+        });
       });
     };
 

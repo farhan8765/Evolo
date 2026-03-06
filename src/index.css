@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Body lock for mobile nav - class toggle batches better than style.overflow */
+body.evolo-mobile-menu-open {
+  overflow: hidden;
+}

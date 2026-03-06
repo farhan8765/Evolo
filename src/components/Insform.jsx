@@ -23,14 +23,16 @@ const InsForm = () => {
 
       formRef.current.innerHTML = "";
       requestAnimationFrame(() => {
-        if (!formRef.current) return;
-        window.hbspt.forms.create({
+        requestAnimationFrame(() => {
+          if (!formRef.current) return;
+          window.hbspt.forms.create({
           region: hubspotRegion,
           portalId,
           formId,
           target: `#${formContainerId}`,
           onFormReady: () => setHubspotStatus("ready"),
           onFormSubmit: () => setHubspotStatus("submitted"),
+        });
         });
       });
     };

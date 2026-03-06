@@ -5,9 +5,14 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    requestAnimationFrame(() => {
-      window.scrollTo(0, 0);
+    // Double rAF: first frame allows browser to finish layout; second runs scroll
+    // Avoids forced reflow from reading layout properties during scroll
+    const id = requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+      });
     });
+    return () => cancelAnimationFrame(id);
   }, [pathname]);
 
   return null;

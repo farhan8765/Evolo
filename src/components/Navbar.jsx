@@ -102,14 +102,14 @@ const Navbar = () => {
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       if (mobileMenuOpen) {
-        document.body.style.overflow = "hidden";
+        document.body.classList.add("evolo-mobile-menu-open");
       } else {
-        document.body.style.overflow = "unset";
+        document.body.classList.remove("evolo-mobile-menu-open");
       }
     });
     return () => {
       cancelAnimationFrame(id);
-      document.body.style.overflow = "unset";
+      document.body.classList.remove("evolo-mobile-menu-open");
     };
   }, [mobileMenuOpen]);
 

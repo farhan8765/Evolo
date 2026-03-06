@@ -40,33 +40,41 @@ export default function StudSlider() {
   const [visibleSlides, setVisibleSlides] = useState(getVisibleSlides());
 
   useEffect(() => {
-    let rafId = null;
+    let outerRafId = null;
+    let innerRafId = null;
     let lastCall = 0;
     const THROTTLE_MS = 250;
+
+    const updateSlides = () => {
+      lastCall = performance.now();
+      setVisibleSlides(getVisibleSlides());
+    };
+
+    const scheduleUpdate = () => {
+      outerRafId = requestAnimationFrame(() => {
+        innerRafId = requestAnimationFrame(() => {
+          updateSlides();
+          outerRafId = null;
+          innerRafId = null;
+        });
+      });
+    };
 
     const handleResize = () => {
       const now = performance.now();
       if (now - lastCall < THROTTLE_MS) {
-        if (rafId === null) {
-          rafId = requestAnimationFrame(() => {
-            lastCall = performance.now();
-            setVisibleSlides(getVisibleSlides());
-            rafId = null;
-          });
-        }
+        if (outerRafId === null) scheduleUpdate();
         return;
       }
       lastCall = now;
-      rafId = requestAnimationFrame(() => {
-        setVisibleSlides(getVisibleSlides());
-        rafId = null;
-      });
+      scheduleUpdate();
     };
 
     window.addEventListener('resize', handleResize, { passive: true });
     return () => {
       window.removeEventListener('resize', handleResize);
-      if (rafId !== null) cancelAnimationFrame(rafId);
+      if (outerRafId !== null) cancelAnimationFrame(outerRafId);
+      if (innerRafId !== null) cancelAnimationFrame(innerRafId);
     };
   }, []);
 
