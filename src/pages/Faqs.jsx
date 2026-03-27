@@ -10,7 +10,7 @@ export default function FAQPage() {
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       applyPageMeta({
-        title: 'Evolo AI Frequently Asked Questions',
+        title: 'Evolo AI Frequently Asked Questions - Adult Education',
         description: 'Find quick answers to common questions about Evolo AI services, policies, and support. Our FAQ page makes it easy to get the help you need.',
         canonical: 'https://goevolo.com/faqs',
         keywords: 'Evolo AI FAQs, frequently asked questions, support help, services questions, policies information, AI platform help',

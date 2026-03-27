@@ -13,7 +13,7 @@ const Aboutstay = lazy(() => import('../components/Aboutstay'))
 
 const MAINHOME_META = {
   title: 'Evolo AI – K-12 & Adult Education Solutions',
-  description: 'Empowering K-12 and adult education with AI-driven student support, career connections, and streamlined operations.',
+  description: 'AI-driven solutions for K-12 student well-being and adult education, connecting students, employers, and institutions seamlessly',
   keywords: 'Evolo AI, K-12 education, adult education, AI learning, student support, career connections, education technology',
   canonical: 'https://goevolo.com/',
 };

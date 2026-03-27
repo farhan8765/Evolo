@@ -5,7 +5,7 @@ const EventTwo = () => {
   return (
     <>
       <Helmet>
-        <title>CAEP 2024 - Evolo AI</title>
+        <title>Council for the Accreditation of Educator Preparation Summit 2024 - Evolo AI</title>
         <link rel="canonical" href="https://goevolo.com/caep-2024" />
       </Helmet>
       {/* Hero Banner Section */}

@@ -7,13 +7,13 @@ export default function Blogs() {
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       applyPageMeta({
-        title: 'Evolo AI Blog & Insights',
-        description: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.',
+        title: 'Evolo AI Blog & Insights - Adult Education',
+        description: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles and resources for students and employers.',
         canonical: 'https://goevolo.com/blog',
         keywords: 'Evolo AI blog, career insights, AI learning, education tips, career advice, adult education, job market trends, learning resources',
         ogTags: [
           { property: 'og:title', content: 'Evolo AI Blog & Insights' },
-          { property: 'og:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
+          { property: 'og:description', content: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles and resources for students and employers.' },
           { property: 'og:url', content: 'https://goevolo.com/blog/' },
           { property: 'og:type', content: 'website' },
           { property: 'og:site_name', content: 'Evolo AI' },
@@ -21,7 +21,7 @@ export default function Blogs() {
         twitterTags: [
           { name: 'twitter:card', content: 'summary_large_image' },
           { name: 'twitter:title', content: 'Evolo AI Blog & Insights' },
-          { name: 'twitter:description', content: 'Explore the Evolo AI Blog for expert insights, tips, and updates on AI, careers, and learning. Stay informed with our latest articles and resources.' },
+          { name: 'twitter:description', content: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles and resources for students and employers.' },
           { name: 'twitter:url', content: 'https://goevolo.com/blog/' },
         ],
       })

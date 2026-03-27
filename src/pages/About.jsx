@@ -10,12 +10,12 @@ const About = () => {
     const id = requestAnimationFrame(() => {
       applyPageMeta({
         title: 'About Evolo AI - Revolutionizing Adult Education',
-        description: 'Evolo AI connects employers, students, and institutions to enhance career outcomes and meet educational goals through AI-driven solutions for adult education.',
+        description: 'Evolo AI connects students, employers, and institutions to improve career outcomes and achieve education goals through practical AI solutions.',
         canonical: 'https://goevolo.com/about-us',
         keywords: 'Evolo AI about, adult education revolution, AI-driven education, career outcomes, educational goals, employer-student connection, institution solutions',
         ogTags: [
           { property: 'og:title', content: 'About Evolo AI - Revolutionizing Adult Education' },
-          { property: 'og:description', content: 'Evolo AI connects employers, students, and institutions to enhance career outcomes and meet educational goals through AI-driven solutions for adult education.' },
+          { property: 'og:description', content: 'Evolo AI connects students, employers, and institutions to improve career outcomes and achieve education goals through practical AI solutions.' },
           { property: 'og:url', content: 'https://goevolo.com/about-us' },
           { property: 'og:type', content: 'website' },
           { property: 'og:site_name', content: 'Evolo AI' },
@@ -23,7 +23,7 @@ const About = () => {
         twitterTags: [
           { name: 'twitter:card', content: 'summary_large_image' },
           { name: 'twitter:title', content: 'About Evolo AI - Revolutionizing Adult Education' },
-          { name: 'twitter:description', content: 'Evolo AI connects employers, students, and institutions to enhance career outcomes and meet educational goals through AI-driven solutions for adult education.' },
+          { name: 'twitter:description', content: 'Evolo AI connects students, employers, and institutions to improve career outcomes and achieve education goals through practical AI solutions.' },
           { name: 'twitter:url', content: 'https://goevolo.com/about-us' },
         ],
       })

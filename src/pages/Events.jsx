@@ -6,7 +6,7 @@ import EventMap from '../components/Eventmap'
 const Events = () => {
   useEffect(() => {
     
-    document.title = 'Events - Evolo AI';
+    document.title = 'Council for the Accreditation of Educator Preparation Summit 2025 - Evolo AI';
     
     // Canonical link add karna
     let canonicalLink = document.querySelector('link[rel="canonical"]');

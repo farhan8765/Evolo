@@ -16,12 +16,12 @@ const Student = () => {
     const id = requestAnimationFrame(() => {
       applyPageMeta({
         title: "Find Your Next Career Move with Evolo AI's Student Job App",
-        description: "Looking for the perfect job? Evolo AI's app connects you with employer in just a swipe. Apply quickly, direct message on app, and land your next career opportunity.",
+        description: "Discover jobs faster with Evolo AI. Swipe to apply, message employers directly, and access career opportunities built for students and adult learners.",
         canonical: 'https://goevolo.com/students',
         keywords: 'student job app, career move, job search, Evolo AI, student employment, swipe to apply, direct messaging, career opportunities, student jobs',
         ogTags: [
           { property: 'og:title', content: "Find Your Next Career Move with Evolo AI's Student Job App" },
-          { property: 'og:description', content: "Looking for the perfect job? Evolo AI's app connects you with employer in just a swipe. Apply quickly, direct message on app, and land your next career opportunity." },
+          { property: 'og:description', content: "Discover jobs faster with Evolo AI. Swipe to apply, message employers directly, and access career opportunities built for students and adult learners." },
           { property: 'og:url', content: 'https://goevolo.com/students' },
           { property: 'og:type', content: 'website' },
           { property: 'og:site_name', content: 'Evolo AI' },
@@ -29,7 +29,7 @@ const Student = () => {
         twitterTags: [
           { name: 'twitter:card', content: 'summary_large_image' },
           { name: 'twitter:title', content: "Find Your Next Career Move with Evolo AI's Student Job App" },
-          { name: 'twitter:description', content: "Looking for the perfect job? Evolo AI's app connects you with employer in just a swipe. Apply quickly, direct message on app, and land your next career opportunity." },
+          { name: 'twitter:description', content: "Discover jobs faster with Evolo AI. Swipe to apply, message employers directly, and access career opportunities built for students and adult learners." },
           { name: 'twitter:url', content: 'https://goevolo.com/students' },
         ],
       })

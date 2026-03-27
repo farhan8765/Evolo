@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 const Blog17 = () => {
   useEffect(() => {
     // Document title set karna
-    document.title = 'Evolo AI at CAEP 2024: Transforming Adult Education';
+    document.title = 'CAEP Summit 2024 | Adult Education';
 
     // Meta description update karna
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -14,7 +14,7 @@ const Blog17 = () => {
       document.head.appendChild(metaDescription);
     }
     metaDescription.content =
-      'Discover how Evolo AI is revolutionizing adult education with AI solutions, enhancing student outcomes, and fostering success at the CAEP 2024 Summit in Oakland.';
+      'Highlights from CAEP Summit 2024 covering adult education trends, collaboration, and program development.';
 
     // Canonical link add karna
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -29,12 +29,12 @@ const Blog17 = () => {
     const ogTags = [
       {
         property: 'og:title',
-        content: 'Evolo AI at CAEP 2024: Transforming Adult Education',
+        content: 'CAEP Summit 2024 | Adult Education',
       },
       {
         property: 'og:description',
         content:
-          'Discover how Evolo AI is revolutionizing adult education with AI solutions, enhancing student outcomes, and fostering success at the CAEP 2024 Summit in Oakland.',
+          'Highlights from CAEP Summit 2024 covering adult education trends, collaboration, and program development.',
       },
       {
         property: 'og:url',
@@ -60,12 +60,12 @@ const Blog17 = () => {
       { name: 'twitter:card', content: 'summary_large_image' },
       {
         name: 'twitter:title',
-        content: 'Evolo AI at CAEP 2024: Transforming Adult Education',
+        content: 'CAEP Summit 2024 | Adult Education',
       },
       {
         name: 'twitter:description',
         content:
-          'Discover how Evolo AI is revolutionizing adult education with AI solutions, enhancing student outcomes, and fostering success at the CAEP 2024 Summit in Oakland.',
+          'Highlights from CAEP Summit 2024 covering adult education trends, collaboration, and program development.',
       },
       {
         name: 'twitter:url',
