@@ -149,7 +149,7 @@ export default function Blogs() {
       slug: "top-5-high-income-skills-young-adults-should-learn-for-2025/",
       image: "/images/blog15.png",
       title: "Top 5 High-Income Skills Young Adults Should Learn for 2025",
-      description: "Learn the top 5 high-income skills young adults should master in 2025. Explore career paths in healthcare, IT, manufacturing, business, and sustainability with Evolo AI.",
+      description: "Explore 5 high-income skills young adults can learn in 2025, from IT and healthcare to business and manufacturing.",
       component: "Blog15"
     },
       {

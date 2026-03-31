@@ -15,7 +15,7 @@ const Blog15 = () => {
       document.head.appendChild(metaDescription);
     }
     metaDescription.content =
-      'Learn the top 5 high-income skills young adults should master in 2025. Explore career paths in healthcare, IT, manufacturing, business, and sustainability with Evolo AI.';
+      'Explore 5 high-income skills young adults can learn in 2025, from IT and healthcare to business and manufacturing.';
 
     // Canonical link add karna
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -35,7 +35,7 @@ const Blog15 = () => {
       {
         property: 'og:description',
         content:
-          'Learn the top 5 high-income skills young adults should master in 2025. Explore career paths in healthcare, IT, manufacturing, business, and sustainability with Evolo AI.',
+          'Explore 5 high-income skills young adults can learn in 2025, from IT and healthcare to business and manufacturing.',
       },
       {
         property: 'og:url',
@@ -66,7 +66,7 @@ const Blog15 = () => {
       {
         name: 'twitter:description',
         content:
-          'Learn the top 5 high-income skills young adults should master in 2025. Explore career paths in healthcare, IT, manufacturing, business, and sustainability with Evolo AI.',
+          'Explore 5 high-income skills young adults can learn in 2025, from IT and healthcare to business and manufacturing.',
       },
       {
         name: 'twitter:url',
