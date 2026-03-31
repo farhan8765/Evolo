@@ -106,6 +106,7 @@ function App() {
           <Route path="/mental" element={<MentalHealthCybhi />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="/events/" element={<Events />} />
           <Route path="/ccae-pd" element={<OneEvent />} />

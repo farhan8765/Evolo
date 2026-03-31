@@ -251,9 +251,9 @@ const Navbar = () => {
 
           {/* Desktop Contact */}
           <Link
-            to="/contact"
+            to="/contact/"
             className={`hidden rounded-xl px-6 py-2.5 text-sm font-semibold text-white shadow-[0px_18px_30px_rgba(92,45,213,0.25)] transition-colors md:inline-flex ${
-              location.pathname === "/contact"
+              location.pathname === "/contact" || location.pathname === "/contact/"
                 ? "bg-[#4C2CC9]"
                 : "bg-[#5C2DD5] hover:bg-[#4C1DBC]"
             }`}
@@ -453,9 +453,9 @@ const Navbar = () => {
               <div className="border-t border-[#EAECF4] p-6">
                 <button
                   type="button"
-                  onClick={() => handleNavigate("/contact")}
+                  onClick={() => handleNavigate("/contact/")}
                   className={`w-full rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-[0px_18px_30px_rgba(92,45,213,0.25)] transition-colors ${
-                    location.pathname === "/contact"
+                    location.pathname === "/contact" || location.pathname === "/contact/"
                       ? "bg-[#4C2CC9]"
                       : "bg-[#5C2DD5]"
                   }`}

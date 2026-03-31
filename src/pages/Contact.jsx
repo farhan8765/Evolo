@@ -7,7 +7,7 @@ const Contact = () => {
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       applyPageMeta({
-        title: 'Contact Evolo AI',
+        title: 'Contact Evolo AI for Support, Partnerships, and Inquiries',
         description: 'Get in touch with the Evolo AI team for support, partnerships, or general inquiries about our education and career solutions.',
         canonical: 'https://goevolo.com/contact/',
       })
