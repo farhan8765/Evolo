@@ -113,9 +113,12 @@ function App() {
           <Route path="/ccae-pd/" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/accessibility" element={<Accessibility />} />
-          <Route path="/security-privacy" element={<SecurityPrivacy />} />
-          <Route path="/terms-of-service" element={<TermsofService />} />
-          <Route path="/cookie-policy" element={<CookiesPolicy />} />
+          <Route path="/security-privacy" element={<Navigate to="/security-privacy/" replace />} />
+          <Route path="/security-privacy/" element={<SecurityPrivacy />} />
+          <Route path="/terms-of-service" element={<Navigate to="/terms-of-service/" replace />} />
+          <Route path="/terms-of-service/" element={<TermsofService />} />
+          <Route path="/cookie-policy" element={<Navigate to="/cookie-policy/" replace />} />
+          <Route path="/cookie-policy/" element={<CookiesPolicy />} />
           <Route path="/privacy-policy" element={<Navigate to="/privacy-policy/" replace />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/caep-2024" element={<EventTwo />} />

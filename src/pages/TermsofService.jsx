@@ -9,7 +9,7 @@ const TermsofService = () => {
   };
   useEffect(() => {
     // Document title
-    document.title = 'Evolo AI Terms of Service';
+    document.title = 'Evolo AI Terms of Service and Website Use Agreement';
 
     // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -28,13 +28,13 @@ const TermsofService = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/terms-of-service';
+    canonicalLink.href = 'https://goevolo.com/terms-of-service/';
 
     // Open Graph tags
     const ogTags = [
       {
         property: 'og:title',
-        content: 'Evolo AI Terms of Service',
+        content: 'Evolo AI Terms of Service and Website Use Agreement',
       },
       {
         property: 'og:description',
@@ -43,7 +43,7 @@ const TermsofService = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/terms-of-service',
+        content: 'https://goevolo.com/terms-of-service/',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -62,13 +62,13 @@ const TermsofService = () => {
     // Twitter tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Evolo AI Terms of Service' },
+      { name: 'twitter:title', content: 'Evolo AI Terms of Service and Website Use Agreement' },
       {
         name: 'twitter:description',
         content:
           'Read Evolo AI Terms of Service to know your rights, responsibilities, and the conditions of using our website and services.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/terms-of-service' },
+      { name: 'twitter:url', content: 'https://goevolo.com/terms-of-service/' },
     ];
 
     twitterTags.forEach((tag) => {
@@ -410,4 +410,3 @@ const TermsofService = () => {
 };
 
 export default TermsofService;
-

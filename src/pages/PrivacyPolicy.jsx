@@ -366,7 +366,7 @@ const PrivacyPolicy = () => {
             </ul>
             <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
               For more information on how we use cookies and manage tracking technologies, please review our{' '}
-              <a href="/cookie-policy" className="text-[#2B1BDD] hover:underline">
+              <a href="/cookie-policy/" className="text-[#2B1BDD] hover:underline">
                 Cookie Policy
               </a>
               .
@@ -842,7 +842,7 @@ const PrivacyPolicy = () => {
                 Privacy Policy
               </a>
               {' '}and{' '}
-              <a href="/cookie-policy" className="text-[#2B1BDD] hover:underline">
+              <a href="/cookie-policy/" className="text-[#2B1BDD] hover:underline">
                 Cookie Policy
               </a>
               . You may request to opt-out of this type of personal information sharing using the methods described in the Cookie Policy.

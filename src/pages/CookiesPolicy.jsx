@@ -9,7 +9,7 @@ const CookiesPolicy = () => {
   };
   useEffect(() => {
     // Document title
-    document.title = 'Evolo AI Cookies & Privacy Policy';
+    document.title = 'Evolo AI Cookie Policy and Data Use Information';
 
     // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -28,13 +28,13 @@ const CookiesPolicy = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/cookie-policy';
+    canonicalLink.href = 'https://goevolo.com/cookie-policy/';
 
     // Open Graph tags
     const ogTags = [
       {
         property: 'og:title',
-        content: 'Evolo AI Cookies & Privacy Policy',
+        content: 'Evolo AI Cookie Policy and Data Use Information',
       },
       {
         property: 'og:description',
@@ -43,7 +43,7 @@ const CookiesPolicy = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/cookie-policy',
+        content: 'https://goevolo.com/cookie-policy/',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -62,13 +62,13 @@ const CookiesPolicy = () => {
     // Twitter tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Evolo AI Cookies & Privacy Policy' },
+      { name: 'twitter:title', content: 'Evolo AI Cookie Policy and Data Use Information' },
       {
         name: 'twitter:description',
         content:
           'Read Evolo AI cookies and privacy policy. Learn how we collect, use, and protect your data to ensure a safe and transparent browsing experience.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/cookie-policy' },
+      { name: 'twitter:url', content: 'https://goevolo.com/cookie-policy/' },
     ];
 
     twitterTags.forEach((tag) => {
@@ -195,4 +195,3 @@ const CookiesPolicy = () => {
 };
 
 export default CookiesPolicy;
-

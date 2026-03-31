@@ -9,7 +9,7 @@ const SecurityPrivacy = () => {
   };
   useEffect(() => {
     // Document title
-    document.title = 'Security and Privacy - Evolo AI';
+    document.title = 'Evolo AI Security and Privacy Practices Overview';
 
     // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -28,13 +28,13 @@ const SecurityPrivacy = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/security-privacy';
+    canonicalLink.href = 'https://goevolo.com/security-privacy/';
 
     // Open Graph tags (for social sharing)
     const ogTags = [
       {
         property: 'og:title',
-        content: 'Security and Privacy - Evolo AI',
+        content: 'Evolo AI Security and Privacy Practices Overview',
       },
       {
         property: 'og:description',
@@ -43,7 +43,7 @@ const SecurityPrivacy = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/security-privacy',
+        content: 'https://goevolo.com/security-privacy/',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -62,13 +62,13 @@ const SecurityPrivacy = () => {
     // Twitter tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Security and Privacy - Evolo AI' },
+      { name: 'twitter:title', content: 'Evolo AI Security and Privacy Practices Overview' },
       {
         name: 'twitter:description',
         content:
           'Learn about Evolo AI\'s comprehensive security and privacy measures, including data encryption, access control, authentication protocols, and compliance with industry best practices.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/security-privacy' },
+      { name: 'twitter:url', content: 'https://goevolo.com/security-privacy/' },
     ];
 
     twitterTags.forEach((tag) => {
@@ -331,4 +331,3 @@ const SecurityPrivacy = () => {
 };
 
 export default SecurityPrivacy;
-
