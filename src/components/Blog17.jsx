@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 const Blog17 = () => {
   useEffect(() => {
     // Document title set karna
-    document.title = 'CAEP Summit 2024 | Adult Education';
+    document.title = 'CAEP 2024 Summit Highlights for Adult Education Leaders | Evolo AI';
 
     // Meta description update karna
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -29,7 +29,7 @@ const Blog17 = () => {
     const ogTags = [
       {
         property: 'og:title',
-        content: 'CAEP Summit 2024 | Adult Education',
+        content: 'CAEP 2024 Summit Highlights for Adult Education Leaders | Evolo AI',
       },
       {
         property: 'og:description',
@@ -60,7 +60,7 @@ const Blog17 = () => {
       { name: 'twitter:card', content: 'summary_large_image' },
       {
         name: 'twitter:title',
-        content: 'CAEP Summit 2024 | Adult Education',
+        content: 'CAEP 2024 Summit Highlights for Adult Education Leaders | Evolo AI',
       },
       {
         name: 'twitter:description',
@@ -190,4 +190,3 @@ const Blog17 = () => {
 };
 
 export default Blog17;
-
