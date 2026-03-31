@@ -107,7 +107,9 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/events/" element={<Events />} />
           <Route path="/ccae-pd" element={<OneEvent />} />
+          <Route path="/ccae-pd/" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/security-privacy" element={<SecurityPrivacy />} />

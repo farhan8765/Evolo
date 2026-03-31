@@ -25,7 +25,7 @@ const OneEvent = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/ccae-pd';
+    canonicalLink.href = 'https://goevolo.com/ccae-pd/';
 
     // OG tags add/update karna
     const ogTags = [
@@ -35,7 +35,7 @@ const OneEvent = () => {
         content:
           'Details of the Northern California Adult Education Conference 2025, held in Redding, highlighting sessions and key insights.',
       },
-      { property: 'og:url', content: 'https://goevolo.com/ccae-pd' },
+      { property: 'og:url', content: 'https://goevolo.com/ccae-pd/' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
     ];
@@ -59,7 +59,7 @@ const OneEvent = () => {
         content:
           'Details of the Northern California Adult Education Conference 2025, held in Redding, highlighting sessions and key insights.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/ccae-pd' },
+      { name: 'twitter:url', content: 'https://goevolo.com/ccae-pd/' },
     ];
 
     twitterTags.forEach((tag) => {
