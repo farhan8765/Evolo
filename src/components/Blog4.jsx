@@ -1,33 +1,59 @@
-// Blog4.jsx
-import React, { useState, useEffect } from 'react'; // 👈 yahan useEffect add karen
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { applyPageMeta } from '../utils/pageMeta';
 
 const Blog4 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  useEffect(() => {
+    const id = requestAnimationFrame(() => {
+      applyPageMeta({
+        title: 'Low-Stress Jobs for Autistic Adults That Empower Independence',
+        description:
+          'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
+        canonical: 'https://goevolo.com/low-stress-jobs-for-autistic-adults/',
+        keywords:
+          'low-stress jobs for autistic adults, autism-friendly jobs, jobs for adults with autism, neurodiversity-friendly careers, low stress careers',
+        ogTags: [
+          {
+            property: 'og:title',
+            content: 'Low-Stress Jobs for Autistic Adults That Empower Independence',
+          },
+          {
+            property: 'og:description',
+            content:
+              'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
+          },
+          {
+            property: 'og:url',
+            content: 'https://goevolo.com/low-stress-jobs-for-autistic-adults/',
+          },
+          { property: 'og:type', content: 'article' },
+          { property: 'og:site_name', content: 'Evolo AI' },
+          { property: 'og:image', content: 'https://goevolo.com/images/blog4.jpg' },
+        ],
+        twitterTags: [
+          { name: 'twitter:card', content: 'summary_large_image' },
+          {
+            name: 'twitter:title',
+            content: 'Low-Stress Jobs for Autistic Adults That Empower Independence',
+          },
+          {
+            name: 'twitter:description',
+            content:
+              'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
+          },
+          {
+            name: 'twitter:url',
+            content: 'https://goevolo.com/low-stress-jobs-for-autistic-adults/',
+          },
+          { name: 'twitter:image', content: 'https://goevolo.com/images/blog4.jpg' },
+        ],
+      });
+    });
 
-    useEffect(() => {
-    // Document title set karna
-    document.title = 'Low-Stress Jobs for Autistic Adults That Empower Independence';
-    
-    // Meta description update karna
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.name = 'description';
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.content = 'Discover low-stress jobs for autistic adults that match strengths, reduce overwhelm, and offer stability. Learn how to find meaningful, accommodating careers.';
-    
-    // Canonical link add karna
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.rel = 'canonical';
-      document.head.appendChild(canonicalLink);
-    }
-    canonicalLink.href = 'https://goevolo.com/low-stress-jobs-for-autistic-adults/';
-    
-  }, []); // Empty dependency array - sirf ek baar run hoga
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   
   const toggleFAQ = (index) => {
@@ -222,7 +248,13 @@ const Blog4 = () => {
       <div className="mt-3 ml-11 p-3 rounded-lg bg-blue-50 border border-blue-200">
         <p className="text-gray-700 text-sm">
           For autistic adults interested in building creative digital careers, freelancing can be a viable option. Learn more about{" "}
-          <a href="/" className="font-medium" style={{ color: '#5A14ED' }}>Overcoming Employment Gaps: A Guide for Adult Job Seekers</a>{" "}
+          <Link
+            to="/overcoming-employment-gaps-a-guide-for-adult-job-seekers/"
+            className="font-medium"
+            style={{ color: '#5A14ED' }}
+          >
+            Overcoming Employment Gaps: A Guide for Adult Job Seekers
+          </Link>{" "}
           to position your skills even without traditional work experience.
         </p>
       </div>
@@ -277,7 +309,13 @@ const Blog4 = () => {
       <div className="mt-3 ml-11 p-3 rounded-lg bg-blue-50 border border-blue-200">
         <p className="text-gray-700 text-sm">
           Many autistic teens and young adults also start with part-time roles like retail. Learn about early job trends in our blog:{" "}
-          <a href="/" className="font-medium" style={{ color: '#5A14ED' }}>What Percentage of Teens and Young Adults Have Retail Jobs?</a>
+          <Link
+            to="/how-many-teens-and-young-adults-work-retail/"
+            className="font-medium"
+            style={{ color: '#5A14ED' }}
+          >
+            What Percentage of Teens and Young Adults Have Retail Jobs?
+          </Link>
         </p>
       </div>
     </div>
@@ -344,7 +382,13 @@ const Blog4 = () => {
   <div className="mt-4 p-4 rounded-lg bg-gray-50 border border-gray-200">
     <p className="text-gray-700">
       Interlink: Learn how to stand out even in a competitive economy with our latest blog on{" "}
-      <a href="/" className="font-medium" style={{ color: '#5A14ED' }}>The 2025 Job Search: How to Stand Out in a Competitive Market</a>.
+      <Link
+        to="/the-2025-job-search-how-to-stand-out-in-a-competitive-market/"
+        className="font-medium"
+        style={{ color: '#5A14ED' }}
+      >
+        The 2025 Job Search: How to Stand Out in a Competitive Market
+      </Link>.
     </p>
   </div>
 </div>
