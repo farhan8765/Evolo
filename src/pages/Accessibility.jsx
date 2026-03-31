@@ -6,7 +6,7 @@ import Aboutstay from '../components/Aboutstay';
 const Accessibility = () => {
   useEffect(() => {
     // Document title
-    document.title = 'Evolo AI Accessibility Commitment';
+    document.title = 'Evolo AI Accessibility Commitment and Inclusive Access Standards';
 
     // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -31,7 +31,7 @@ const Accessibility = () => {
     const ogTags = [
       {
         property: 'og:title',
-        content: 'Evolo AI Accessibility Commitment',
+        content: 'Evolo AI Accessibility Commitment and Inclusive Access Standards',
       },
       {
         property: 'og:description',
@@ -71,7 +71,7 @@ const Accessibility = () => {
       { name: 'twitter:card', content: 'summary_large_image' },
       {
         name: 'twitter:title',
-        content: 'Evolo AI Accessibility Commitment',
+        content: 'Evolo AI Accessibility Commitment and Inclusive Access Standards',
       },
       {
         name: 'twitter:description',

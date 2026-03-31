@@ -112,7 +112,8 @@ function App() {
           <Route path="/ccae-pd" element={<Navigate to="/ccae-pd/" replace />} />
           <Route path="/ccae-pd/" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/accessibility" element={<Navigate to="/accessibility/" replace />} />
+          <Route path="/accessibility/" element={<Accessibility />} />
           <Route path="/security-privacy" element={<Navigate to="/security-privacy/" replace />} />
           <Route path="/security-privacy/" element={<SecurityPrivacy />} />
           <Route path="/terms-of-service" element={<Navigate to="/terms-of-service/" replace />} />
