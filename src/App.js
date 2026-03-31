@@ -117,6 +117,7 @@ function App() {
           <Route path="/terms-of-service" element={<TermsofService />} />
           <Route path="/cookie-policy" element={<CookiesPolicy />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/caep-2024" element={<EventTwo />} />
           <Route path="/blog" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />

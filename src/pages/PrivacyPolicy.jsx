@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
   };
   useEffect(() => {
     // Document title
-    document.title = 'Evolo AI Privacy Policy';
+    document.title = 'Evolo AI Privacy Policy and Personal Data Protection';
 
     // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -28,13 +28,13 @@ const PrivacyPolicy = () => {
       canonicalLink.rel = 'canonical';
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.href = 'https://goevolo.com/privacy-policy';
+    canonicalLink.href = 'https://goevolo.com/privacy-policy/';
 
     // Open Graph tags
     const ogTags = [
       {
         property: 'og:title',
-        content: 'Evolo AI Privacy Policy',
+        content: 'Evolo AI Privacy Policy and Personal Data Protection',
       },
       {
         property: 'og:description',
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
       },
       {
         property: 'og:url',
-        content: 'https://goevolo.com/privacy-policy',
+        content: 'https://goevolo.com/privacy-policy/',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Evolo AI' },
@@ -62,13 +62,13 @@ const PrivacyPolicy = () => {
     // Twitter tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Evolo AI Privacy Policy' },
+      { name: 'twitter:title', content: 'Evolo AI Privacy Policy and Personal Data Protection' },
       {
         name: 'twitter:description',
         content:
           'Learn how Evolo AI collects, uses, and protects your personal information. Our Privacy Policy ensures transparency and safeguards your online data.',
       },
-      { name: 'twitter:url', content: 'https://goevolo.com/privacy-policy' },
+      { name: 'twitter:url', content: 'https://goevolo.com/privacy-policy/' },
     ];
 
     twitterTags.forEach((tag) => {
@@ -838,7 +838,7 @@ const PrivacyPolicy = () => {
             </ul>
             <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
               For more information about our use of cookies and other tracking technologies, please visit our{' '}
-              <a href="/privacy-policy" className="text-[#2B1BDD] hover:underline">
+              <a href="/privacy-policy/" className="text-[#2B1BDD] hover:underline">
                 Privacy Policy
               </a>
               {' '}and{' '}
@@ -1530,4 +1530,3 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
-
