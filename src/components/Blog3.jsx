@@ -16,7 +16,7 @@ const Blog3 = () => {
       metaDescription.name = 'description';
       document.head.appendChild(metaDescription);
     }
-    metaDescription.content = 'Thinking of switching careers after 30? Discover proven strategies, success stories, and resources to help you pivot with confidence. Learn how to thrive, starting now.';
+    metaDescription.content = 'Explore practical career change strategies after 30, with steps to reskill, pivot confidently, and move into a stronger-fit industry.';
     
     // Canonical link add karna
     let canonicalLink = document.querySelector('link[rel="canonical"]');
