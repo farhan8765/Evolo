@@ -107,8 +107,8 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Navigate to="/contact/" replace />} />
           <Route path="/contact/" element={<Contact />} />
-          <Route path="/events" element={<Navigate to="/events/" replace />} />
-          <Route path="/events/" element={<Events />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/events/" element={<Navigate to="/events" replace />} />
           <Route path="/ccae-pd" element={<Navigate to="/ccae-pd/" replace />} />
           <Route path="/ccae-pd/" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />

@@ -1,23 +1,32 @@
-import React, { useEffect } from 'react' 
+import React, { useEffect } from 'react'
+import { applyPageMeta } from '../utils/pageMeta'
 import EventsHero from '../components/Eventhero' 
 import EventSummit from '../components/EventSummit' 
 import EventMap from '../components/Eventmap' 
 
 const Events = () => {
   useEffect(() => {
-    
-    document.title = 'Council for the Accreditation of Educator Preparation Summit 2025 - Evolo AI';
-    
-    // Canonical link add karna
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.rel = 'canonical';
-      document.head.appendChild(canonicalLink);
-    }
-    canonicalLink.href = 'https://goevolo.com/events/';
-    
-  }, []); // Empty dependency array - sirf ek baar run hoga
+    const id = requestAnimationFrame(() => {
+      applyPageMeta({
+        title: 'Council for the Accreditation of Educator Preparation Summit 2025 - Evolo AI',
+        description: 'Join Evolo AI at the Council for the Accreditation of Educator Preparation Summit 2025 and explore our education and career solutions.',
+        canonical: 'https://goevolo.com/events',
+        ogTags: [
+          { property: 'og:title', content: 'Council for the Accreditation of Educator Preparation Summit 2025 - Evolo AI' },
+          { property: 'og:description', content: 'Join Evolo AI at the Council for the Accreditation of Educator Preparation Summit 2025 and explore our education and career solutions.' },
+          { property: 'og:url', content: 'https://goevolo.com/events' },
+          { property: 'og:type', content: 'website' },
+        ],
+        twitterTags: [
+          { name: 'twitter:title', content: 'Council for the Accreditation of Educator Preparation Summit 2025 - Evolo AI' },
+          { name: 'twitter:description', content: 'Join Evolo AI at the Council for the Accreditation of Educator Preparation Summit 2025 and explore our education and career solutions.' },
+          { name: 'twitter:url', content: 'https://goevolo.com/events' },
+        ],
+      })
+    })
+
+    return () => cancelAnimationFrame(id)
+  }, [])
 
   return ( 
     <div> 
