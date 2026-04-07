@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
-  // Rotation order: main hero (h1) + two smaller variants
+  
   const images = ['h1.png', 'Group 5.png', 'home-second.png'];
   const navigate = useNavigate();
 
@@ -36,9 +36,9 @@ export default function Hero() {
     >
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto text-center mb-6 sm:mb-8">
-        <p className="text-black text-xs sm:text-sm md:text-base font-semibold mb-3 sm:mb-4 italic">
-          The Future of Adult Education
-        </p>
+        {/* <p className="text-black text-xs sm:text-sm md:text-base font-semibold mb-3 sm:mb-4 italic">
+          Education
+        </p> */}
         
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-2">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
