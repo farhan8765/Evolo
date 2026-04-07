@@ -13,7 +13,7 @@ const Homecardsdetail = lazy(() => import('../components/Homecardsdetail'))
 const Aboutstay = lazy(() => import('../components/Aboutstay'))
 
 const MAINHOME_META = {
-  title: 'Evolo AI – K-12 & Adult Education Solutions',
+  title: 'Evolo AI – K-12 & Adult Education Solutions Platform',
   description: 'AI-driven platform for K-12 student well-being and adult education, helping schools, employers, and institutions connect learners with meaningful opportunities.',
   keywords: 'Evolo AI, K-12 education, adult education, AI learning, student support, career connections, education technology',
   canonical: 'https://goevolo.com/',
@@ -43,7 +43,14 @@ const Mainhome = () => (
       <nav aria-label="Quick internal links" className="sr-only">
         <Link to="/students">Students</Link>
         <Link to="/adult">Adult Education</Link>
+        <Link to="/contact/">Contact</Link>
       </nav>
+      <section aria-label="Homepage summary" className="sr-only">
+        <p>
+          Evolo AI provides AI-powered solutions for education and student well-being across K12 and adult education programs.
+          The platform supports students, employers, and institutions through connected learning and career pathways.
+        </p>
+      </section>
       <Homehero />
       <NewVideo />
       <HomeWho />
