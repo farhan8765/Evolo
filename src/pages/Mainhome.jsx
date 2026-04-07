@@ -1,6 +1,7 @@
 // Mainhome.jsx
 import React, { lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom'
 import Homehero from '../components/Homehero'
 import HomePlatform from '../components/HomePlatform'
 import HomeWho from '../components/HomeWho'
@@ -13,9 +14,10 @@ const Aboutstay = lazy(() => import('../components/Aboutstay'))
 
 const MAINHOME_META = {
   title: 'Evolo AI – K-12 & Adult Education Solutions',
-  description: 'AI-driven solutions for K-12 student well-being and adult education, connecting students, employers, and institutions seamlessly',
+  description: 'AI-driven platform for K-12 student well-being and adult education, helping schools, employers, and institutions connect learners with meaningful opportunities.',
   keywords: 'Evolo AI, K-12 education, adult education, AI learning, student support, career connections, education technology',
   canonical: 'https://goevolo.com/',
+  image: 'https://goevolo.com/images/Homehero.webp',
 };
 
 const Mainhome = () => (
@@ -28,14 +30,20 @@ const Mainhome = () => (
       <meta property="og:title" content={MAINHOME_META.title} />
       <meta property="og:description" content={MAINHOME_META.description} />
       <meta property="og:url" content={MAINHOME_META.canonical} />
+      <meta property="og:image" content={MAINHOME_META.image} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Evolo AI" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={MAINHOME_META.title} />
       <meta name="twitter:description" content={MAINHOME_META.description} />
       <meta name="twitter:url" content={MAINHOME_META.canonical} />
+      <meta name="twitter:image" content={MAINHOME_META.image} />
     </Helmet>
     <div className="w-full overflow-x-hidden">
+      <nav aria-label="Quick internal links" className="sr-only">
+        <Link to="/students">Students</Link>
+        <Link to="/adult">Adult Education</Link>
+      </nav>
       <Homehero />
       <NewVideo />
       <HomeWho />
