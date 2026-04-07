@@ -9,20 +9,20 @@ export default function Homehero() {
       <div className="max-w-8xl mx-auto">
         {/* Top Tagline */}
         <p className="text-center font-bold text-xs sm:text-sm md:text-base text-gray-700 mb-4 md:mb-2 italic">
-          Empowering Education Through Technology
+          Empowering Education Through Technology and student
         </p>
 
         {/* Main Heading */}
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-          AI-powered solutions for
+          AI-powered solutions for all 
           </span>
         </h1>
-        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
+        {/* <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
           Education & Student Well-Being
           </span>
-        </h1>
+        </h1> */}
         {/* <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-6 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             Mental Health
