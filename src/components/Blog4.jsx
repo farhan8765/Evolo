@@ -1,61 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { applyPageMeta } from '../utils/pageMeta';
 
 const Blog4 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  useEffect(() => {
-    const id = requestAnimationFrame(() => {
-      applyPageMeta({
-        title: 'Low-Stress Jobs for Autistic Adults That Empower Independence',
-        description:
-          'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
-        canonical: 'https://goevolo.com/low-stress-jobs-for-autistic-adults/',
-        keywords:
-          'low-stress jobs for autistic adults, autism-friendly jobs, jobs for adults with autism, neurodiversity-friendly careers, low stress careers',
-        ogTags: [
-          {
-            property: 'og:title',
-            content: 'Low-Stress Jobs for Autistic Adults That Empower Independence',
-          },
-          {
-            property: 'og:description',
-            content:
-              'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
-          },
-          {
-            property: 'og:url',
-            content: 'https://goevolo.com/low-stress-jobs-for-autistic-adults/',
-          },
-          { property: 'og:type', content: 'article' },
-          { property: 'og:site_name', content: 'Evolo AI' },
-          { property: 'og:image', content: 'https://goevolo.com/images/blog4.jpg' },
-        ],
-        twitterTags: [
-          { name: 'twitter:card', content: 'summary_large_image' },
-          {
-            name: 'twitter:title',
-            content: 'Low-Stress Jobs for Autistic Adults That Empower Independence',
-          },
-          {
-            name: 'twitter:description',
-            content:
-              'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
-          },
-          {
-            name: 'twitter:url',
-            content: 'https://goevolo.com/low-stress-jobs-for-autistic-adults/',
-          },
-          { name: 'twitter:image', content: 'https://goevolo.com/images/blog4.jpg' },
-        ],
-      });
-    });
-
-    return () => cancelAnimationFrame(id);
-  }, []);
-
-  
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
