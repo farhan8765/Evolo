@@ -52,7 +52,7 @@
   </url>
   
   <url>
-    <loc>https://goevolo.com/contact</loc>
+    <loc>https://goevolo.com/contact/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -66,7 +66,7 @@
   </url>
   
   <url>
-    <loc>https://goevolo.com/accessibility</loc>
+    <loc>https://goevolo.com/accessibility/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -81,7 +81,7 @@
   </url>
   
   <url>
-    <loc>https://goevolo.com/ccae-pd</loc>
+    <loc>https://goevolo.com/ccae-pd/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -182,31 +182,74 @@
   
   <!-- Legal Pages -->
   <url>
-    <loc>https://goevolo.com/privacy-policy</loc>
+    <loc>https://goevolo.com/privacy-policy/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://goevolo.com/terms-of-service</loc>
+    <loc>https://goevolo.com/terms-of-service/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://goevolo.com/security-privacy</loc>
+    <loc>https://goevolo.com/security-privacy/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://goevolo.com/cookie-policy</loc>
+    <loc>https://goevolo.com/cookie-policy/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Additional Blog Posts -->
+  <url>
+    <loc>https://goevolo.com/top-7-in-demand-careers-for-adults-in-2025/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://goevolo.com/the-2025-job-search-how-to-stand-out-in-a-competitive-market/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://goevolo.com/the-future-of-adult-education-how-technology-is-bridging-the-gap/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://goevolo.com/top-5-high-income-skills-young-adults-should-learn-for-2025/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://goevolo.com/top-10-career-tips-and-advice-for-young-adults-starting-their-journey/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://goevolo.com/caep-2024-summit/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
 
