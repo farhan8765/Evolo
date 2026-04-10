@@ -1,6 +1,6 @@
 /**
- * Generate route-specific static HTML files with canonical tags.
- * This avoids headless-browser dependencies (e.g. Puppeteer) in CI.
+ * Generate route-specific static HTML files with canonical tags and crawlable
+ * noscript H1 + intro (matches in-app headings; no runtime JS required for SEO tools).
  */
 const fs = require('fs');
 const path = require('path');
@@ -47,9 +47,194 @@ const routes = [
   '/caep-2024-summit/',
 ];
 
+/** Matches visible H1 intent from React pages (noscript fallback for crawlers). */
+const routeSeo = {
+  '/': {
+    h1: 'AI-powered solutions for Education & Student Well-Being',
+    intro:
+      'Evolo AI provides AI-powered solutions for K-12 student well-being and adult education, connecting learners, institutions, and employers through career-focused pathways.',
+  },
+  '/adult': {
+    h1: 'The Future of Adult Education',
+    intro:
+      'We connect Students, Employers, and Institutions through Evolo AI—building pathways from adult education to meaningful careers.',
+  },
+  '/students': {
+    h1: 'Welcome to the future of Job Searches',
+    intro:
+      'Our app connects students from Adult Schools, Community Colleges, and Job Centers with the perfect jobs. Swipe, connect with employers, and boost your chances of landing a successful career—all in one place.',
+  },
+  '/employers': {
+    h1: 'Your future workforce is at your fingertips',
+    intro:
+      'We work directly with Adult/Technical Schools to help you recruit their best and brightest.',
+  },
+  '/institution': {
+    h1: 'The Future of Adult Education',
+    intro:
+      'We help improve student outcomes and help you track and showcase your institution’s achievements, connect with employers and improve operations.',
+  },
+  '/mental': {
+    h1: 'K-12 Mental Health (CYBHI)',
+    intro:
+      'Supporting student mental health through innovative AI-powered solutions. Our CYBHI-aligned platform helps counselors, administrators, and classified staff provide better care and support to students across K-12 education systems.',
+  },
+  '/about-us': {
+    h1: 'Empowering growth through Adult Education programs',
+    intro:
+      'AdultEd Pro is revolutionizing adult education by harnessing the power of artificial intelligence to focus on enhancing student career outcomes and helping institutions meet their state-mandated objectives.',
+  },
+  '/contact/': {
+    h1: 'Have questions or need assistance we’re here to help!',
+    intro:
+      'Whether you’re a student, employee, or institution, feel free to reach out to us for support, inquiries, or collaboration opportunities.',
+  },
+  '/events': {
+    h1: "Let's Connect at the CAEP Summit 2025!",
+    intro:
+      'Join Evolo AI at the Council for the Accreditation of Educator Preparation Summit 2025 and explore our education and career solutions.',
+  },
+  '/ccae-pd/': {
+    h1: 'Presenting "AI in Adult Education" on Thursday, March 14!',
+    intro:
+      'Details of the Northern California Adult Education Conference 2025, held in Redding, highlighting sessions and key insights.',
+  },
+  '/faqs': {
+    h1: 'FAQs',
+    intro: 'Find answers to common questions about Evolo AI, our platform, and how we support students and institutions.',
+  },
+  '/accessibility/': {
+    h1: 'Accessibility',
+    intro:
+      'Evolo AI is committed to inclusive access for all learners and job seekers. Our platform meets global accessibility standards to support every user.',
+  },
+  '/security-privacy/': {
+    h1: 'Security and Privacy',
+    intro:
+      'This document outlines the security measures implemented in our application to ensure data privacy, secure access, and protection against unauthorized usage.',
+  },
+  '/terms-of-service/': {
+    h1: 'Terms of Service',
+    intro:
+      'Welcome to goevolo.com These Terms of Service govern your use of our website and services. By using our website, you agree to these Terms.',
+  },
+  '/cookie-policy/': {
+    h1: 'Cookies Policy',
+    intro:
+      'At AdultEdPro.com, we respect the privacy of our visitors and are committed to being transparent about the use of cookies on our website.',
+  },
+  '/privacy-policy/': {
+    h1: 'Privacy Policy',
+    intro:
+      'This Privacy Policy covers the mobile applications EvoloAI Student and EvoloAI Instructor, published by Yusair, Inc., and our practices for collecting and using information.',
+  },
+  '/caep-2024': {
+    h1: "Let's Connect Over Coffee At The CAEP Summit!",
+    intro:
+      "We're excited to meet you at the CAEP 2024 Summit in Oakland, California—connect with consortium leaders, school personnel, and vendors.",
+  },
+  '/blog': {
+    h1: 'Explore Our Blog',
+    intro: 'Read articles on adult education, careers, hiring trends, and workforce development from Evolo AI.',
+  },
+  '/overcoming-barriers-how-single-parents-benefit-from-adult-schools/': {
+    h1: 'Overcoming Barriers: How Single Parents Benefit from Adult Schools',
+    intro:
+      'Discover how adult schools help single parents overcome barriers to education and employment with flexible programs and support.',
+  },
+  '/adult-school-vs-online-college/': {
+    h1: 'Adult School vs. Online College: Pros & Cons for Career Changers',
+    intro:
+      'Compare adult school and online college for career changers—cost, structure, support, and outcomes.',
+  },
+  '/career-switch-strategies-after-30s/': {
+    h1: 'Career Change After 30: How Adults Can Successfully Pivot to New Industries',
+    intro:
+      'Practical strategies for adults changing careers after 30, including skills, networking, and education paths.',
+  },
+  '/low-stress-jobs-for-autistic-adults/': {
+    h1: 'Low-stress jobs for autistic adults',
+    intro:
+      'Explore low-stress jobs for autistic adults with clear routines, less overwhelm, and supportive workplaces that fit their strengths.',
+  },
+  '/9-benefits-of-work-for-teens-young-adults/': {
+    h1: '9 Benefits of Work for Teens and Young Adults',
+    intro:
+      'Learn why early work experience helps teens and young adults build skills, confidence, and career readiness.',
+  },
+  '/how-many-teens-and-young-adults-work-retail/': {
+    h1: 'What Percentage of Teens and Young Adults Have Retail Jobs?',
+    intro:
+      'Wondering how many teens and young adults work in retail? Discover key stats, trends, and career tips to help guide your journey.',
+  },
+  '/best-remote-jobs-without-degree/': {
+    h1: 'The Best Remote Jobs for Adults Without a College Degree',
+    intro:
+      'Explore remote roles that value skills and experience over a four-year degree, with paths to grow your career from home.',
+  },
+  '/upskilling-vs-reskilling-2025/': {
+    h1: "Upskilling vs. Reskilling: What's Right for You in a Rapidly Changing Job Market",
+    intro:
+      'Understand the difference between upskilling and reskilling and how to choose the right path in 2025.',
+  },
+  '/the-role-of-ai-in-hiring-how-adult-job-seekers-can-stay-competitive/': {
+    h1: 'The Role of AI in Hiring: How Adult Job Seekers Can Stay Competitive',
+    intro:
+      'How AI is changing hiring and what adult job seekers can do to stand out in automated screening and interviews.',
+  },
+  '/overcoming-employment-gaps-a-guide-for-adult-job-seekers/': {
+    h1: 'Overcoming Employment Gaps: A Guide for Adult Job Seekers',
+    intro:
+      'Practical guidance for explaining employment gaps and positioning your experience for your next role.',
+  },
+  '/empowering-lifelong-learners-how-adult-education-is-key-to-building-a-sustainable-workforce/': {
+    h1: 'Empowering Lifelong Learners: How Adult Education is Key to Building a Sustainable Workforce',
+    intro:
+      'Why lifelong learning and adult education matter for economic mobility and workforce sustainability.',
+  },
+  '/top-7-in-demand-careers-for-adults-in-2025/': {
+    h1: 'Top 7 In-Demand Careers for Adults in 2025: Opportunities You Should Know About in the U.S.',
+    intro:
+      'A look at high-demand careers for adults in 2025 and what skills employers are hiring for.',
+  },
+  '/the-2025-job-search-how-to-stand-out-in-a-competitive-market/': {
+    h1: 'The 2025 Job Search: How to Stand Out in a Competitive Market',
+    intro:
+      'Tactics to differentiate your applications, interviews, and personal brand in a competitive 2025 job market.',
+  },
+  '/the-future-of-adult-education-how-technology-is-bridging-the-gap/': {
+    h1: 'The Future of Adult Education: How Technology is Bridging the Gap Between Students, Institutions, and Employers',
+    intro:
+      'How technology platforms connect adult learners, schools, and employers to improve outcomes and transparency.',
+  },
+  '/top-5-high-income-skills-young-adults-should-learn-for-2025/': {
+    h1: 'Top 5 High-Income Skills Young Adults Should Learn for 2025',
+    intro:
+      'High-income skills that can boost earning potential for young adults entering the workforce or upskilling.',
+  },
+  '/top-10-career-tips-and-advice-for-young-adults-starting-their-journey/': {
+    h1: 'Top 10 Career Tips and Advice for Young Adults Starting Their Journey',
+    intro:
+      'Foundational career advice for young adults building their first jobs, education plans, and long-term goals.',
+  },
+  '/caep-2024-summit/': {
+    h1: 'Evolo AI Shines at the CAEP 2024 Summit: Empowering Adult Education with Innovative AI Solutions',
+    intro:
+      'Highlights from Evolo AI’s presence at the CAEP 2024 Summit and how we support adult education with AI-powered tools.',
+  },
+};
+
 if (!fs.existsSync(rootIndexPath)) {
   console.warn('scripts/generate-route-html: build/index.html not found, skipping');
   process.exit(0);
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 const rootHtml = fs.readFileSync(rootIndexPath, 'utf8');
@@ -69,9 +254,28 @@ function withCanonical(html, canonicalUrl) {
   return `${withoutCanonical}\n${canonicalTag}`;
 }
 
+/**
+ * Replace the first <h1> + following <p> inside <noscript> (crawler-visible copy).
+ */
+function withNoscriptSeo(html, route) {
+  const seo = routeSeo[route];
+  if (!seo) return html;
+
+  const h1 = escapeHtml(seo.h1);
+  const intro = escapeHtml(seo.intro);
+  const replacement = `<h1>${h1}</h1>\n      <p>\n        ${intro}\n      </p>`;
+
+  const updated = html.replace(
+    /<h1>[\s\S]*?<\/h1>\s*<p>[\s\S]*?<\/p>(?=[\s\S]*?<nav aria-label="Static internal links">)/,
+    replacement,
+  );
+  return updated;
+}
+
 for (const route of routes) {
   const canonicalUrl = toCanonical(route);
-  const routeHtml = withCanonical(rootHtml, canonicalUrl);
+  let routeHtml = withCanonical(rootHtml, canonicalUrl);
+  routeHtml = withNoscriptSeo(routeHtml, route);
 
   if (route === '/') {
     fs.writeFileSync(rootIndexPath, routeHtml);
@@ -86,4 +290,4 @@ for (const route of routes) {
   fs.writeFileSync(routeIndexPath, routeHtml);
 }
 
-console.log(`scripts/generate-route-html: generated canonical HTML for ${routes.length} routes`);
+console.log(`scripts/generate-route-html: generated canonical + SEO noscript HTML for ${routes.length} routes`);
