@@ -1,7 +1,6 @@
 // Mainhome.jsx
 import React, { lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { Link } from 'react-router-dom'
 import Homehero from '../components/Homehero'
 import HomePlatform from '../components/HomePlatform'
 import HomeWho from '../components/HomeWho'
@@ -40,17 +39,6 @@ const Mainhome = () => (
       <meta name="twitter:image" content={MAINHOME_META.image} />
     </Helmet>
     <div className="w-full overflow-x-hidden">
-      <nav aria-label="Quick internal links" className="sr-only">
-        <Link to="/students">Students</Link>
-        <Link to="/adult">Adult Education</Link>
-        <Link to="/contact/">Contact</Link>
-      </nav>
-      <section aria-label="Homepage summary" className="sr-only">
-        <p>
-          Evolo AI provides AI-powered solutions for education and student well-being across K12 and adult education programs.
-          The platform supports students, employers, and institutions through connected learning and career pathways.
-        </p>
-      </section>
       <Homehero />
       <NewVideo />
       <HomeWho />

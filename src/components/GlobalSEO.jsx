@@ -8,25 +8,8 @@ const GlobalSEO = () => {
 
   // Check if there are query parameters
   const hasQueryParams = location.search.length > 0;
-
-  // Normalize pathname and keep a trailing slash for all non-root routes.
-  let normalizedPath = location.pathname;
-
-  // Ensure leading slash (should already have it from React Router)
-  if (!normalizedPath.startsWith('/')) {
-    normalizedPath = '/' + normalizedPath;
-  }
-
-  if (normalizedPath !== '/' && !normalizedPath.endsWith('/')) {
-    normalizedPath = `${normalizedPath}/`;
-  }
-
-  // Determine canonical URL
-  const canonicalUrl = hasQueryParams 
-    ? `${baseUrl}/`
-    : normalizedPath === '/'
-      ? `${baseUrl}/`
-      : `${baseUrl}${normalizedPath}`;
+  const pathname = location.pathname && location.pathname.startsWith('/') ? location.pathname : '/';
+  const canonicalUrl = `${baseUrl}${pathname}`;
 
   // Determine robots meta
   const robotsContent = hasQueryParams 

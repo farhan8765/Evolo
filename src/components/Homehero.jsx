@@ -24,7 +24,8 @@ export default function Homehero() {
         </h1>
        
 
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
+        <div className="mb-8 md:mb-8 px-2">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
         <button 
             onClick={() => navigate('/mental')}
             className="bg-[#5A14ED] text-white px-16 sm:px-28 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-auto"
@@ -38,6 +39,25 @@ export default function Homehero() {
           >
          Adult Education Program
           </button>
+        </div>
+
+        {/* <p className="flex flex-wrap justify-center items-center gap-x-1 sm:gap-x-2 gap-y-1 text-center text-[15px] font-medium text-[#4D4F58] mt-3 mb-0">
+          <Link to="/about-us" className="transition-colors hover:text-[#5C2DD5]">
+            About
+          </Link>
+          <span aria-hidden="true" className="text-[#C4C7D5]">
+            ·
+          </span>
+          <Link to="/contact/" className="transition-colors hover:text-[#5C2DD5]">
+            Contact
+          </Link>
+          <span aria-hidden="true" className="text-[#C4C7D5]">
+            ·
+          </span>
+          <Link to="/faqs" className="transition-colors hover:text-[#5C2DD5]">
+            FAQs
+          </Link>
+        </p> */}
         </div>
 
     

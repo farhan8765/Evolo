@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && node scripts/critical-css.js && node scripts/generate-route-html.js",
+    "indexnow": "node scripts/indexnow-submit.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import GlobalSEO from './components/GlobalSEO';
 import ScrollToTop from './components/ScrollToTop';
 import Mainhome from './pages/Mainhome';
+import Events from './pages/Events';
 
 // Lazy-load below-the-fold layout components to reduce main-thread blocking
 const Footer = lazy(() => import('./components/Footer'));
@@ -18,7 +19,6 @@ const Employee = lazy(() => import('./pages/Employee'));
 const Institute = lazy(() => import('./pages/Institute'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
-const Events = lazy(() => import('./pages/Events'));
 const Faqs = lazy(() => import('./pages/Faqs'));
 const Resources = lazy(() => import('./pages/Resources'));
 const AdultEducation = lazy(() => import('./pages/AdultEducation'));
@@ -108,7 +108,7 @@ function App() {
           <Route path="/contact" element={<Navigate to="/contact/" replace />} />
           <Route path="/contact/" element={<Contact />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/events/" element={<Navigate to="/events" replace />} />
+          <Route path="/events/" element={<Events />} />
           <Route path="/ccae-pd" element={<Navigate to="/ccae-pd/" replace />} />
           <Route path="/ccae-pd/" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
