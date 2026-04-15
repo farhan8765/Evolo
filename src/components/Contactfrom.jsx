@@ -78,11 +78,11 @@ const Contactfrom = () => {
         {/* LEFT SECTION */}
         <div className="flex flex-col gap-8 md:w-2/5">
           <div>
-            <h2
+            <h1
           className="mt-3 text-4xl font-bold bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
           style={{ animationDelay: "0.15s" }}
         >
-Have questions or need assistance we’re here to help!        </h2>
+Have questions or need assistance we’re here to help!        </h1>
             <p className="mt-4 text-base leading-relaxed text-[#6b6f82]">
              Whether you’re a student, employee, or institution, feel free to reach out to us for support, inquiries, or collaboration opportunities. We’re committed to helping you achieve your goals and making your experience with us as smooth as possible.
             </p>

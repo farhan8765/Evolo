@@ -69,13 +69,13 @@ export default function Partner() {
     <section className="bg-white text-black mb-12 sm:mb-16">
       {/* Header */}
       <div ref={headerRef} className="max-w-6xl mx-auto text-center px-4 sm:px-6 pt-12 sm:pt-16 md:pt-20 pb-6 sm:pb-8 md:pb-10">
-        <h1
+        <h2
           className={`text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r from-[#12005E] to-[#4D04DB] bg-clip-text text-transparent transition-all duration-700 delay-100 ${
             headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}
         >
           AdultED Pro Presents Evolo AI: Your Partner in Adult Education Success
-        </h1>
+        </h2>
 
         <p
           className={`text-gray-600 mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-4xl mx-auto transition-all duration-700 delay-200 ${

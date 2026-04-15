@@ -53,12 +53,12 @@ const EmpGraph = () => {
           >
             Tagline
           </p> */}
-          <h1
+          <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
             style={{ animationDelay: "0.15s" }}
           >
             Evolo AI Powered by AdultED Pro
-          </h1>
+          </h2>
           <p
             className="text-gray-600 text-sm animate-hero-reveal"
             style={{ animationDelay: "0.25s" }}

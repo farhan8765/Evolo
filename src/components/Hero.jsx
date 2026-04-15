@@ -44,8 +44,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             The Future of Adult
           </span>
-        </h1>
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4">
+           <br />
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
             Education
           </span>
