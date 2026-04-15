@@ -96,7 +96,7 @@ export default function Footer() {
           {/* Middle Links Section */}
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div className="space-y-2">
-              <h1 className="font-bold text-lg">Quick Links</h1>
+              <h2 className="font-bold text-lg">Quick Links</h2>
               {quickLinks.map(({ label, to }) => (
                 <Link key={label} to={to} className="block hover:underline">
                   {label}
@@ -104,7 +104,7 @@ export default function Footer() {
               ))}
             </div>
             <div className="space-y-2">
-              <h1 className="font-bold text-lg">Resources</h1>
+              <h2 className="font-bold text-lg">Resources</h2>
               {supportLinks.map(({ label, to }) => (
                 <Link key={label} to={to} className="block hover:underline">
                   {label}
@@ -143,16 +143,16 @@ export default function Footer() {
         <div className="border-t border-white/30 mt-10 pt-6 text-xs text-gray-200 flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
           <p>© 2025 Powered by AdultEd Pro. All rights reserved.</p>
           <div className="flex space-x-4">
-            <Link to="/privacy-policy" className="hover:underline">
+            <Link to="/privacy-policy/" className="hover:underline">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="hover:underline">
+            <Link to="/terms-of-service/" className="hover:underline">
               Terms of Service
             </Link>
-            <Link to="/security-privacy" className="hover:underline">
+            <Link to="/security-privacy/" className="hover:underline">
               Security & Privacy
             </Link>
-            <Link to="/cookie-policy" className="hover:underline">
+            <Link to="/cookie-policy/" className="hover:underline">
               Cookies Settings
             </Link>
            

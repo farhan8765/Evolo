@@ -2,13 +2,31 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
+/** Policy/legal routes use trailing slashes; keep canonical aligned with visible URL. */
+const TRAILING_SLASH_ROUTES = [
+  '/privacy-policy',
+  '/terms-of-service',
+  '/security-privacy',
+  '/cookie-policy',
+];
+
+function normalizeCanonicalPathname(pathname) {
+  for (const base of TRAILING_SLASH_ROUTES) {
+    if (pathname === base || pathname === `${base}/`) {
+      return `${base}/`;
+    }
+  }
+  return pathname;
+}
+
 const GlobalSEO = () => {
   const location = useLocation();
   const baseUrl = 'https://goevolo.com';
 
   // Check if there are query parameters
   const hasQueryParams = location.search.length > 0;
-  const pathname = location.pathname && location.pathname.startsWith('/') ? location.pathname : '/';
+  const rawPath = location.pathname && location.pathname.startsWith('/') ? location.pathname : '/';
+  const pathname = normalizeCanonicalPathname(rawPath);
   const canonicalUrl = `${baseUrl}${pathname}`;
 
   useEffect(() => {
