@@ -17,9 +17,9 @@ const NAV_TABS = [
       },
       {
         title: "K-12 Mental Health (CYBHI)",
-        
+        path: "/cybhi",
         items: [
-          { label: "Counselors",  },
+          { label: "Counselors", path: "/counselors" },
           { label: "Administrators",  },
           { label: "Classified Staff",  },
         ],

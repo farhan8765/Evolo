@@ -23,6 +23,8 @@ const Faqs = lazy(() => import('./pages/Faqs'));
 const Resources = lazy(() => import('./pages/Resources'));
 const AdultEducation = lazy(() => import('./pages/AdultEducation'));
 const MentalHealthCybhi = lazy(() => import('./pages/MentalHealthCybhi'));
+const CYBHI = lazy(() => import('./pages/CYBHI'));
+const Counselors = lazy(() => import('./pages/Counselors'));
 const OneEvent = lazy(() => import('./pages/OneEvent'));
 const EventTwo = lazy(() => import('./components/EventTwo'));
 const Blog1 = lazy(() => import('./components/Blog1'));
@@ -104,6 +106,8 @@ function App() {
           <Route path="/employers" element={<Employee />} />
           <Route path="/institution" element={<Institute />} />
           <Route path="/mental" element={<MentalHealthCybhi />} />
+          <Route path="/cybhi" element={<CYBHI />} />
+          <Route path="/counselors" element={<Counselors />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Navigate to="/contact/" replace />} />
           <Route path="/contact/" element={<Contact />} />
