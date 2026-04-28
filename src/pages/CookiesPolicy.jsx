@@ -89,7 +89,7 @@ const CookiesPolicy = () => {
       document.head.appendChild(metaKeywords);
     }
     metaKeywords.content =
-      'Cookies Policy, cookie policy, cookies, website cookies, AdultEdPro, Evolo AI, privacy, data collection, analytics cookies, advertising cookies';
+      'Cookies Policy, cookie policy, cookies, website cookies, goevolo, Evolo AI, privacy, data collection, analytics cookies, advertising cookies';
   }, []);
 
   return (
@@ -104,7 +104,7 @@ const CookiesPolicy = () => {
 
         {/* Introductory Paragraph */}
         <p className="text-center text-gray-600 text-sm md:text-base mb-10 md:mb-12 leading-relaxed">
-          At AdultEdPro.com, we respect the privacy of our visitors and are committed to being transparent about the use of cookies on our website. This Cookie Policy explains how we use cookies and similar technologies on our website, and your choices regarding these technologies.
+          At goevolo.com, we respect the privacy of our visitors and are committed to being transparent about the use of cookies on our website. This Cookie Policy explains how we use cookies and similar technologies on our website, and your choices regarding these technologies.
         </p>
 
         {/* What are cookies? Section */}
@@ -171,8 +171,8 @@ const CookiesPolicy = () => {
           </h2>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
             If you have any questions about this Cookie Policy or our use of cookies, please contact us at{' '}
-            <a href="mailto:privacy@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-              privacy@adultedpro.com
+            <a href="mailto:privacy@goevolo.com" className="text-[#2B1BDD] hover:underline">
+              privacy@goevolo.com
             </a>
             .
           </p>

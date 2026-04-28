@@ -1,6 +1,6 @@
 /* App.css removed - logo-marquee moved to LogoMarquee.css (lazy-loaded in testimonials) */
 import React, { useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
 import Navbar from './components/Navbar';
@@ -109,22 +109,22 @@ function App() {
           <Route path="/cybhi" element={<CYBHI />} />
           <Route path="/counselors" element={<Counselors />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/contact" element={<Navigate to="/contact/" replace />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/contact/" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="/events/" element={<Events />} />
-          <Route path="/ccae-pd" element={<Navigate to="/ccae-pd/" replace />} />
+          <Route path="/ccae-pd" element={<OneEvent />} />
           <Route path="/ccae-pd/" element={<OneEvent />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/accessibility" element={<Navigate to="/accessibility/" replace />} />
+          <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/accessibility/" element={<Accessibility />} />
-          <Route path="/security-privacy" element={<Navigate to="/security-privacy/" replace />} />
+          <Route path="/security-privacy" element={<SecurityPrivacy />} />
           <Route path="/security-privacy/" element={<SecurityPrivacy />} />
-          <Route path="/terms-of-service" element={<Navigate to="/terms-of-service/" replace />} />
+          <Route path="/terms-of-service" element={<TermsofService />} />
           <Route path="/terms-of-service/" element={<TermsofService />} />
-          <Route path="/cookie-policy" element={<Navigate to="/cookie-policy/" replace />} />
+          <Route path="/cookie-policy" element={<CookiesPolicy />} />
           <Route path="/cookie-policy/" element={<CookiesPolicy />} />
-          <Route path="/privacy-policy" element={<Navigate to="/privacy-policy/" replace />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/caep-2024" element={<EventTwo />} />
           <Route path="/blog" element={<Resources />} />

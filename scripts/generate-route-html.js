@@ -82,7 +82,7 @@ const routeSeo = {
   '/about-us': {
     h1: 'Empowering growth through Adult Education programs',
     intro:
-      'AdultEd Pro is revolutionizing adult education by harnessing the power of artificial intelligence to focus on enhancing student career outcomes and helping institutions meet their state-mandated objectives.',
+      'goevolo is revolutionizing adult education by harnessing the power of artificial intelligence to focus on enhancing student career outcomes and helping institutions meet their state-mandated objectives.',
   },
   '/contact/': {
     h1: 'Have questions or need assistance we’re here to help!',
@@ -121,7 +121,7 @@ const routeSeo = {
   '/cookie-policy/': {
     h1: 'Cookies Policy',
     intro:
-      'At AdultEdPro.com, we respect the privacy of our visitors and are committed to being transparent about the use of cookies on our website.',
+      'At goevolo.com, we respect the privacy of our visitors and are committed to being transparent about the use of cookies on our website.',
   },
   '/privacy-policy/': {
     h1: 'Privacy Policy',

@@ -116,7 +116,7 @@ export default function Footer() {
           {/* Right Section */}
           <div>
             <h3 className="font-bold text-lg">Address:</h3>
-            <p className="text-sm">Adult Ed Pro</p>
+            <p className="text-sm">goevolo</p>
             <p className="text-sm">1110 N Virgil Ave</p>
             <p className="text-sm">PMB 98121</p>
             <p className="text-sm mb-4">Los Angeles, CA 90029</p>
@@ -141,7 +141,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-white/30 mt-10 pt-6 text-xs text-gray-200 flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
-          <p>© 2025 Powered by AdultEd Pro. All rights reserved.</p>
+          <p>© 2025 Powered by goevolo. All rights reserved.</p>
           <div className="flex space-x-4">
             <Link to="/privacy-policy/" className="hover:underline">
               Privacy Policy

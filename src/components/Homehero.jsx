@@ -1,9 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Homehero() {
-  const navigate = useNavigate();
-
   return (
     <div className="bg-gradient-to-b from-white to-gray-50 pt-8 font-['Raleway'] pt-4 md:pt-20">
       <div className="max-w-8xl mx-auto">
@@ -24,21 +22,20 @@ export default function Homehero() {
         </h1>
        
 
-        <div className="mb-8 md:mb-8 px-2">
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
-        <button 
-            onClick={() => navigate('/mental')}
-            className="bg-[#5A14ED] text-white px-16 sm:px-28 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-auto"
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
+          <Link
+            to="/mental"
+            className="bg-[#5A14ED] text-white px-16 sm:px-28 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-auto text-center"
           >
             K12 
-          </button>
+          </Link>
 
-          <button 
-            onClick={() => navigate('/adult')}
-            className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
+          <Link
+            to="/adult"
+            className="bg-white text-[#5A14ED] border-2 border-[#5A14ED] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto text-center"
           >
          Adult Education Program
-          </button>
+          </Link>
         </div>
 
         {/* <p className="flex flex-wrap justify-center items-center gap-x-1 sm:gap-x-2 gap-y-1 text-center text-[15px] font-medium text-[#4D4F58] mt-3 mb-0">
@@ -58,7 +55,6 @@ export default function Homehero() {
             FAQs
           </Link>
         </p> */}
-        </div>
 
     
         <div className="relative w-full mx-auto px-2 sm:px-0">

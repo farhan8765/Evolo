@@ -57,7 +57,7 @@ const EmpGraph = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent animate-hero-reveal"
             style={{ animationDelay: "0.15s" }}
           >
-            Evolo AI Powered by AdultED Pro
+            Evolo AI Powered by goevolo
           </h2>
           <p
             className="text-gray-600 text-sm animate-hero-reveal"

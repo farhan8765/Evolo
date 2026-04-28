@@ -23,7 +23,7 @@ const pillars = [
     title: "Hire",
     subtitle: "Recruit and report",
     description:
-      "Setup interviews with candidates, plan career fairs at schools, host lunches and provide feedback. With AdultEd Pro, you’re always on campus in one form or another!",
+      "Setup interviews with candidates, plan career fairs at schools, host lunches and provide feedback. With goevolo, you’re always on campus in one form or another!",
   },
 ];
 

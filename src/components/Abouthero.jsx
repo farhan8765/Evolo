@@ -26,7 +26,7 @@ const Abouthero = () => {
 </h1>
 
           <p className="mt-6 text-base text-[#5A666E] md:text-lg">
-           AdultEd Pro is revolutionizing adult education by harnessing the power of artificial intelligence to focus on two critical areas: enhancing student career outcomes and helping institutions meet their state-mandated objectives. Our innovative platform uses AI to create personalized learning pathways that align with in-demand job skills and local labor market needs, significantly improving students’ employment prospects upon program completion.
+           goevolo is revolutionizing adult education by harnessing the power of artificial intelligence to focus on two critical areas: enhancing student career outcomes and helping institutions meet their state-mandated objectives. Our innovative platform uses AI to create personalized learning pathways that align with in-demand job skills and local labor market needs, significantly improving students’ employment prospects upon program completion.
           </p>
        
         </div>

@@ -80,7 +80,7 @@ const InsForm = () => {
           <div>
             <h2 className="text-4xl font-bold text-[#0f0f2d]">Get in Touch</h2>
             <p className="mt-4 text-base leading-relaxed text-[#6b6f82]">
-              Get started for Free and see how quickly AdultEd Pro can help your business,
+              Get started for Free and see how quickly goevolo can help your business,
               large or small.
             </p>
           </div>

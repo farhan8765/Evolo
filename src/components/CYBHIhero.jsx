@@ -1,4 +1,7 @@
 const CYBHIhero = () => {
+  const streamPlayerUrl =
+    "https://iframe.videodelivery.net/e806d111d4daa4ad92211e32d0554ee6?letterboxColor=ffffff";
+
   return (
     <section className="px-4 py-8 sm:py-10">
       <div className="mx-auto flex w-full max-w-5xl flex-col items-center xl:max-w-6xl">
@@ -11,11 +14,15 @@ const CYBHIhero = () => {
           Health.
         </p>
 
-        <div className="mt-8 w-full">
-          <img
-            src="/images/Folder.png"
-            alt="Folder placeholder"
-            className="h-auto w-full object-contain sm:h-[600px] sm:w-auto md:h-[660px]"
+        <div className="relative mt-8 aspect-video w-full max-w-4xl overflow-hidden rounded-[22px] bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)] outline-none">
+          <iframe
+            src={streamPlayerUrl}
+            title="CYBHI Behavioral Incident and Counseling Management App video"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+            allowFullScreen
+            loading="lazy"
+            className="absolute -inset-0.5 block h-[calc(100%+4px)] w-[calc(100%+4px)] border-0 bg-white outline-none"
+            style={{ border: 0 }}
           />
         </div>
       </div>

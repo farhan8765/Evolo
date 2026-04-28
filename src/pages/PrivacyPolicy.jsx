@@ -89,7 +89,7 @@ const PrivacyPolicy = () => {
       document.head.appendChild(metaKeywords);
     }
     metaKeywords.content =
-      'Privacy Policy, Evolo AI, privacy, data protection, personal information, data security, user privacy, AdultEdPro, Yusair Inc';
+      'Privacy Policy, Evolo AI, privacy, data protection, personal information, data security, user privacy, goevolo, Yusair Inc';
   }, []);
 
   return (
@@ -105,7 +105,7 @@ const PrivacyPolicy = () => {
         {/* Paragraph 1 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy covers the mobile applications "EvoloAI Student" and "EvoloAI Instructor," which are published by "Yusair, Inc." and available through the Google Play Store. AdultEdPro.com is committed to protecting your privacy and security. This Privacy Policy outlines our practices for collecting, using, and disclosing information from our website visitors and users.
+            This Privacy Policy covers the mobile applications "EvoloAI Student" and "EvoloAI Instructor," which are published by "Yusair, Inc." and available through the Google Play Store. goevolo.com is committed to protecting your privacy and security. This Privacy Policy outlines our practices for collecting, using, and disclosing information from our website visitors and users.
           </p>
         </div>
 
@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
         {/* Paragraph 3 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Privacy has been integrated into our platform from the beginning to respect your rights, meet our regulatory obligations, and support data security best practices. For purposes of this Privacy Policy, "personal data," "personal information," or similar terms means any data relating to an identified or identifiable natural person that is processed by Yusair, Inc. (referred to as "Evolo AI," "Adult Ed Pro," "we," "us," or "our") in accordance with this Privacy Policy and applicable data privacy laws.
+            Privacy has been integrated into our platform from the beginning to respect your rights, meet our regulatory obligations, and support data security best practices. For purposes of this Privacy Policy, "personal data," "personal information," or similar terms means any data relating to an identified or identifiable natural person that is processed by Yusair, Inc. (referred to as "Evolo AI," "goevolo," "we," "us," or "our") in accordance with this Privacy Policy and applicable data privacy laws.
           </p>
         </div>
 
@@ -607,8 +607,8 @@ const PrivacyPolicy = () => {
           </ul>
           <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
             For more information about your privacy rights or to submit a request, please contact us at{' '}
-            <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-              support@adultedpro.com
+            <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+              support@goevolo.com
             </a>
             .
           </p>
@@ -708,8 +708,8 @@ const PrivacyPolicy = () => {
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
                 Email us at{' '}
-                <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                  support@adultedpro.com
+                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                  support@goevolo.com
                 </a>
               </li>
               <li>Access your account settings to adjust privacy controls.</li>
@@ -760,8 +760,8 @@ const PrivacyPolicy = () => {
             </li>
             <li>
               <strong>Reporting Concerns:</strong> If you believe we have inadvertently collected information from a child under 13, please contact us at{' '}
-              <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                support@adultedpro.com
+              <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                support@goevolo.com
               </a>
               , and we will take prompt steps to delete the data.
             </li>
@@ -916,8 +916,8 @@ const PrivacyPolicy = () => {
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               <strong>Email:</strong>{' '}
-              <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                support@adultedpro.com
+              <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                support@goevolo.com
               </a>
             </p>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -947,12 +947,12 @@ const PrivacyPolicy = () => {
           <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1">
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                support@adultedpro.com
+              <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                support@goevolo.com
               </a>
             </p>
             <p>
-              <strong>Address:</strong> AdultEd Pro
+              <strong>Address:</strong> goevolo
             </p>
             <p className="ml-4">1110 N Virgil Ave</p>
             <p className="ml-4">PMB 98121</p>
@@ -1006,14 +1006,14 @@ const PrivacyPolicy = () => {
             </p>
             <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1 ml-4">
               <p>Yusair, Inc.</p>
-              <p>Adult Ed Pro</p>
+              <p>goevolo</p>
               <p>110 N Virgil Ave</p>
               <p>PMB 98121</p>
               <p>Los Angeles, CA 90029</p>
               <p>
                 <strong>Email:</strong>{' '}
-                <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                  support@adultedpro.com
+                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                  support@goevolo.com
                 </a>
               </p>
             </div>
@@ -1093,14 +1093,14 @@ const PrivacyPolicy = () => {
             </p>
             <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1 ml-4">
               <p>Yusair, Inc.</p>
-              <p>Adult Ed Pro</p>
+              <p>goevolo</p>
               <p>110 N Virgil Ave</p>
               <p>PMB 98121</p>
               <p>Los Angeles, CA 90029</p>
               <p>
                 <strong>Email:</strong>{' '}
-                <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                  support@adultedpro.com
+                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                  support@goevolo.com
                 </a>
               </p>
             </div>
@@ -1201,8 +1201,8 @@ const PrivacyPolicy = () => {
               </li>
               <li>
                 <strong>Data Deletion Requests:</strong> Users can request deletion of AI-related interactions via{' '}
-                <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                  support@adultedpro.com
+                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                  support@goevolo.com
                 </a>
                 .
               </li>
@@ -1269,8 +1269,8 @@ const PrivacyPolicy = () => {
               Evolo AI regularly updates its privacy policy to reflect advancements in AI security, data privacy, and compliance. For inquiries related to OpenAI's ChatGPT integration, contact:
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              <a href="mailto:support@adultedpro.com" className="text-[#2B1BDD] hover:underline">
-                support@adultedpro.com
+              <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                support@goevolo.com
               </a>
             </p>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">

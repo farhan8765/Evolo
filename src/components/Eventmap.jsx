@@ -14,7 +14,7 @@ const EventMap = () => {
 </h2>
 
             <p className="mt-4 text-lg text-[#666a83]">
-              Get started for Free and see how quickly AdultEd Pro can help your
+              Get started for Free and see how quickly goevolo can help your
               business, large or small
             </p>
           </div>

@@ -32,7 +32,7 @@ const Aboutdriving = () => {
       {/* Right Paragraph Section */}
       <div className="md:w-1/2 text-gray-700 text-base md:text-lg space-y-5">
         <p>
-          For educational institutions, AdultEd Pro offers powerful tools to
+          For educational institutions, goevolo offers powerful tools to
           track, measure, and report on key performance indicators required by
           state mandates.
         </p>
@@ -45,7 +45,7 @@ const Aboutdriving = () => {
         </p>
 
         <p>
-          With AdultEd Pro, adult education programs can confidently deliver on
+          With goevolo, adult education programs can confidently deliver on
           their promise of transforming lives through education while meeting
           and exceeding institutional goals.
         </p>

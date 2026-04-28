@@ -74,7 +74,7 @@ export default function Partner() {
             headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}
         >
-          AdultED Pro Presents Evolo AI: Your Partner in Adult Education Success
+          goevolo Presents Evolo AI: Your Partner in Adult Education Success
         </h2>
 
         <p
