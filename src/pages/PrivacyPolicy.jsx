@@ -105,35 +105,41 @@ const PrivacyPolicy = () => {
         {/* Paragraph 1 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy covers the mobile applications "EvoloAI Student" and "EvoloAI Instructor," which are published by "Yusair, Inc." and available through the Google Play Store. goevolo.com is committed to protecting your privacy and security. This Privacy Policy outlines our practices for collecting, using, and disclosing information from our website visitors and users.
+            This Privacy Policy covers the Evolo AI platform, including its mobile and web-based applications, which are published by Yusair, Inc. and made available through platforms such as the Apple App Store and Google Play Store, and other distribution channels. Yusair, Inc., DBA "Evolo AI," is committed to protecting your privacy, safeguarding your data, and maintaining the highest standards of security and compliance across all Services.
           </p>
         </div>
 
         {/* Paragraph 2 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Welcome to Evolo AI, an advanced artificial intelligence platform designed to enhance productivity, streamline workflows, and empower businesses with intelligent solutions.
+            Evolo AI and Evolo AI School are advanced AI-powered platforms designed to support students and educational institutions with intelligent tools for workforce development, workforce transitions, documentation, workflow automation, and compliance-driven processes, including behavioral health and reporting systems. Evolo AI provides tools that support compliance with FERPA and HIPAA. Our platform is designed to assist educational and healthcare institutions in meeting their regulatory obligations. However, compliance depends on the specific data shared, the features enabled, and the institution's own internal privacy configurations. We act as a "School Official" under FERPA and a "Business Associate" under HIPAA only when expressly defined by a written agreement with your institution.
           </p>
         </div>
 
         {/* Paragraph 3 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Privacy has been integrated into our platform from the beginning to respect your rights, meet our regulatory obligations, and support data security best practices. For purposes of this Privacy Policy, "personal data," "personal information," or similar terms means any data relating to an identified or identifiable natural person that is processed by Yusair, Inc. (referred to as "Evolo AI," "goevolo," "we," "us," or "our") in accordance with this Privacy Policy and applicable data privacy laws.
+            Privacy is embedded into the foundation of our platform. We design and operate our systems to ensure transparency, accountability, and responsible data handling at every level. This Privacy Policy explains how we collect, use, process, and protect your personal information when you use our Services.
           </p>
         </div>
 
         {/* Paragraph 4 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy applies to your access and use of Evolo AI's user-facing applications, including web and mobile platforms, tools, APIs, websites, and documentation (collectively, the "Services"). This Privacy Policy is part of Evolo AI's Terms of Service, and by using the Services, you agree to both. If you do not agree, you should not use the Services. Defined terms in this Privacy Policy have meanings associated with them in the Terms of Service.
+            For purposes of this Privacy Policy, "personal data," "personal information," or similar terms means any information relating to an identified or identifiable individual that is processed by Yusair, Inc. (referred to as "Evolo AI," "Evolo AI School," "we," "us," or "our") in accordance with this Privacy Policy and applicable data protection laws.
           </p>
         </div>
 
         {/* Paragraph 5 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy was last updated on 6th May 2025. We are constantly improving our Services, which may necessitate updates to this Privacy Policy. We will post any updates to this page, and we encourage you to review this page periodically. Your continued use of the Services after we post any changes to this Privacy Policy will signify your agreement to the revised Privacy Policy.
+            This Privacy Policy applies to your access and use of Evolo AI's Services, including web and mobile applications, tools, APIs, documentation, and AI-powered modules that support reporting, documentation, and workflow management (collectively, the "Services"). By using the Services, you agree to this Privacy Policy and our Terms of Service. If you do not agree, you should discontinue use of the Services.
+          </p>
+        </div>
+
+        <div className="mb-6 md:mb-8">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            This Privacy Policy was recently updated on April 27, 2026. We may continue to update it periodically to reflect improvements in our Services, legal requirements, or operational changes. Your continued use of the Services after any updates constitutes your acceptance of the revised Policy.
           </p>
         </div>
 
@@ -179,6 +185,27 @@ const PrivacyPolicy = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               Records of all training sessions, including dates, participants, content outlines, and completion certificates, are retained for a minimum of three years. These records are available for customer audits upon request. Evolo AI conducts quarterly internal audits to assess the effectiveness of training programs.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              Alerts and Notifications:
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              The App may provide emergency, safety, and informational notifications, including alerts based on reports, monitoring, or integrations with third-party or user-submitted information. While we strive to deliver timely and accurate notifications, we do not warrant or guarantee that any alert will be timely, complete, accurate, uninterrupted, secure, or delivered to every user or device, and we are not responsible for any delay, failure, misdelivery, or omission of any notification.
+            </p>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Emergency information may change rapidly and may be unverified, incomplete, or subject to official confirmation. You remain responsible for following instructions from law enforcement, campus officials, emergency personnel, and other authorized authorities, and you should not rely solely on the App as your only source of emergency or safety information.
+            </p>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              To the fullest extent permitted by law, the App provider, its affiliates, officers, employees, contractors, and licensors shall not be liable for indirect, incidental, consequential, special, exemplary, or punitive damages, or for loss, injury, death, property damage, business interruption, data loss, or other harm arising out of or related to your use of, or inability to use, the App or any alert or omission of an alert, except to the extent caused by our gross negligence or willful misconduct.
+            </p>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              If you are using the App on behalf of a school, college, university, or other organization, that organization is solely responsible for determining whether an emergency notification or warning is required under applicable law, including Clery Act obligations where applicable, and for approving the content, timing, and distribution of any official alert.
+            </p>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              We may process personal information, including account details, device information, location data, and message history, to operate safety features, deliver notifications, prevent fraud, secure the service, and comply with legal obligations.
             </p>
           </div>
 
@@ -241,6 +268,9 @@ const PrivacyPolicy = () => {
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
             Personal Data We Collect:
           </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+            When Institutions provide data, it is categorized as follows: (a) "Education Records" subject to FERPA, (b) "Protected Health Information" (PHI) subject to HIPAA, or (c) "General Institutional Data." We process each category according to the specific privacy standards required by law for that data type. Institution Partners are responsible for ensuring that they provide only the data necessary for the authorized purpose of the Services.
+          </p>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
             Users need to establish an account to fully access Evolo AI's Services. You can create an account as an individual user, as part of an organization, or as an enterprise client seeking advanced AI-powered solutions. For more information on account creation, please review Evolo AI's Terms of Service.
           </p>
@@ -411,6 +441,9 @@ const PrivacyPolicy = () => {
                 <strong>Account Management:</strong> Allowing users to register, create profiles, manage accounts, and access specific features based on subscription levels or service agreements.
               </li>
             </ul>
+            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
+              Notwithstanding any other provision, Evolo AI does not use FERPA-protected Education Records or HIPAA-protected PHI to train, improve, or refine general-purpose AI models, algorithms, or analytics tools. AI-powered features within the platform are restricted to operational tasks only, and data processed by these models is handled in a secure, isolated environment without being used for model-wide improvement.
+            </p>
           </div>
 
           {/* Communication */}
@@ -471,11 +504,33 @@ const PrivacyPolicy = () => {
           </div>
         </div>
 
+        {/* CYBHI-Aligned Behavioral Health Features Section */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            CYBHI-Aligned Behavioral Health Features
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            Evolo AI School includes features designed to support behavioral health documentation and workflow management for educational institutions operating under applicable regulatory frameworks, including the California Youth Behavioral Health Initiative (CYBHI).
+          </p>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            These features may support authorized users in documenting behavioral incidents, managing counseling workflows, and generating structured reports using standardized formats. Any data processed through these features is handled in accordance with applicable privacy laws and institutional compliance requirements, including FERPA and HIPAA, where applicable.
+          </p>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            All such data is treated as part of the Services and is protected under the same security, access control, and privacy safeguards described in this Privacy Policy.
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            Data is protected using industry-standard encryption in transit and at rest, along with strict access controls designed to limit access to authorized users and personnel only.
+          </p>
+        </div>
+
         {/* How We May Share Personal Data We Collect Section */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
             How We May Share Personal Data We Collect:
           </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            Sharing of Education Records and PHI is strictly limited to authorized personnel who have a "legitimate educational interest" under FERPA or who are authorized by the Covered Entity under HIPAA. Third-party service providers acting as subprocessors are contractually bound to the same data protection, confidentiality, and security standards described in this Policy and any applicable Business Associate Agreement.
+          </p>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
             There are limited circumstances under which we may share personal data with others, as outlined below:
           </p>
@@ -752,6 +807,9 @@ const PrivacyPolicy = () => {
             Children and Minors:
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            For services provided through an Institution Partner, such as K-12 schools, we rely on the institution's determination of parental consent or its authorization to act on behalf of the student under FERPA. We do not independently collect data from children under 13 without institutional authorization, and all such data is handled as Education Records under our contractual obligations to the institution.
+          </p>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             Evolo AI is not intended for use by individuals under the age of 16 without parental consent.
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
@@ -818,6 +876,9 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
             <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
+              For FERPA-protected records, students and parents should contact their educational institution directly to exercise their rights to inspect, review, or request amendments to their records. Evolo AI will provide technical assistance to the Institution to facilitate these requests. For HIPAA-protected records, please refer to the Notice of Privacy Practices provided by your healthcare provider; we act as their agent and will support them in fulfilling your rights under HIPAA.
+            </p>
+            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
               This personal information may be collected directly from you on the website or through the Services, or indirectly from you, for example by observing your actions in using the website or the Services, from other sources such as Institution Partners, as described in the "Personal Data We Collect" section above.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
@@ -851,7 +912,7 @@ const PrivacyPolicy = () => {
               We do not knowingly share the personal information of minors under sixteen (16) years of age.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              <strong>Retention.</strong> We retain personal information for as long as reasonably necessary to provide you with the Services, to perform our legitimate business purposes, or for other essential purposes such as complying with our legal obligations, maintaining records, resolving disputes, maintaining security and preventing harm, detecting and preventing fraud and abuse, enforcing our agreements. The criteria used to determine retention periods includes the legal limitation of liability period, agreed contractual provisions, applicable regulatory requirements, and industry standards.
+              <strong>Retention.</strong> Data retention is governed by the written agreement with your institution. Upon the termination of our service agreement with an Institution Partner, or upon a verified request for deletion, we will securely destroy or return all Education Records and PHI in our possession, except where local, state, or federal law mandates a specific retention period for regulatory or audit purposes. We also retain personal information for as long as reasonably necessary to provide you with the Services, perform legitimate business purposes, comply with legal obligations, maintain records, resolve disputes, maintain security, prevent harm, detect and prevent fraud and abuse, and enforce our agreements.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               <strong>Consumer Rights and Requests:</strong>
@@ -1107,66 +1168,61 @@ const PrivacyPolicy = () => {
           </div>
         </div>
 
-        {/* Use of OpenAI's ChatGPT and Data Processing Section */}
+        {/* Use of AI Services and Data Processing Section */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Use of OpenAI's ChatGPT and Data Processing:
+            Use of AI Services and Data Processing:
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-            Evolo AI integrates OpenAI's ChatGPT (Enterprise Edition) to provide AI-powered functionalities within our platform, enhancing user experiences through automation, assistance, and intelligent interactions. As part of this integration, we ensure that no personal, sensitive, or confidential user data is shared with AI models.
+            Our AI features, including those powered by enterprise vendors, are configured to operate within a secure, private instance. Our enterprise vendors are contractually prohibited from using data submitted through these tools for their model training. We do not transmit PII, PHI, or FERPA-protected Education Records to AI service providers unless the specific feature integration and the relevant Data Processing Addendum or Business Associate Agreement explicitly authorize it for that use case.
+          </p>
+          <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+            Evolo AI may utilize artificial intelligence technologies, including third-party AI service providers, to deliver features such as automation, user assistance, content generation, and workflow support. These services are designed to enhance user experience while maintaining appropriate safeguards for data privacy and security.
           </p>
 
-          {/* Use of OpenAI's ChatGPT Enterprise Edition */}
+          {/* Use of AI Service Providers */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              1. Use of OpenAI's ChatGPT Enterprise Edition:
+              1. Use of AI Service Providers:
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI utilizes the Enterprise edition of ChatGPT, which offers:
+              Evolo AI may engage third-party AI providers to process limited data necessary to enable AI-powered functionality. Such providers are selected based on their ability to meet industry-standard security, privacy, and compliance requirements.
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
-                <strong>Stronger data privacy protections</strong> – OpenAI does not use our data for model training.
+                Maintain confidentiality of data.
               </li>
               <li>
-                <strong>Enhanced security measures</strong> – AI interactions are processed in a secure environment.
+                Implement appropriate technical and organizational safeguards.
               </li>
               <li>
-                <strong>Compliance with enterprise-grade privacy standards</strong> – Including GDPR, CCPA, and SOC 2.
+                Process data only for the purpose of providing the requested services.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
-              <strong>Important Notice:</strong> Evolo AI does not share personally identifiable information (PII), sensitive financial data, or confidential business information with ChatGPT.
-            </p>
           </div>
 
-          {/* What Data is Processed by OpenAI? */}
+          {/* Data Processed by AI Services */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              2. What Data is Processed by OpenAI?
+              2. Data Processed by AI Services:
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              When users interact with AI-powered features, OpenAI may process:
+              When users interact with AI-powered features, the following types of data may be processed:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
                 <strong>User Input:</strong> Any text, questions, or content entered by users.
               </li>
               <li>
-                <strong>Generated Responses:</strong> AI-generated replies from ChatGPT.
+                <strong>Generated Output:</strong> Responses or content produced by AI systems.
               </li>
               <li>
-                <strong>Usage Data:</strong> Metadata like timestamps, interaction logs, and system analytics (non-personal data).
+                <strong>Usage Data:</strong> Limited technical metadata, such as timestamps and system interactions.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
-              Evolo AI does not send or process:
+            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
+              Evolo AI applies data minimization principles and does not intentionally transmit sensitive personal data to AI services unless required for a specific, authorized use case.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>User account details (e.g., name, email, phone number).</li>
-              <li>Financial or payment-related information.</li>
-              <li>Confidential business, legal, or medical data.</li>
-            </ul>
           </div>
 
           {/* Purpose of AI Data Processing */}
@@ -1175,7 +1231,7 @@ const PrivacyPolicy = () => {
               3. Purpose of AI Data Processing:
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              User data processed by OpenAI is used for:
+              Data processed through AI services is used solely for:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>Generating AI-powered responses to user queries.</li>
@@ -1184,30 +1240,27 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* User Consent & Control Over AI Interactions */}
+          {/* User Transparency and Control */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              4. User Consent & Control Over AI Interactions:
+              4. User Transparency and Control:
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI ensures full transparency and user control over AI-powered interactions:
+              Evolo AI is committed to transparency in AI usage:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
-                <strong>Explicit Consent:</strong> Users are informed when interacting with AI-powered features.
+                <strong>Notice:</strong> Users are informed when interacting with AI-powered features.
               </li>
               <li>
-                <strong>Opt-Out Option:</strong> Users who do not wish to use AI features can disable them in Settings.
+                <strong>Control:</strong> AI functionality may be configurable or disabled where applicable.
               </li>
               <li>
-                <strong>Data Deletion Requests:</strong> Users can request deletion of AI-related interactions via{' '}
+                <strong>Requests:</strong> Users may request deletion of AI-related data via{' '}
                 <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
                   support@goevolo.com
                 </a>
                 .
-              </li>
-              <li>
-                <strong>No Storage of Sensitive Data:</strong> AI interactions are not retained beyond the processing session.
               </li>
             </ul>
           </div>
@@ -1218,9 +1271,9 @@ const PrivacyPolicy = () => {
               5. AI Limitations & Disclaimer:
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>AI-generated responses may not always be 100% accurate or up-to-date.</li>
-              <li>ChatGPT should not be relied upon for legal, financial, or medical decisions.</li>
-              <li>Evolo AI is not liable for actions taken based on AI-generated content.</li>
+              <li>AI-generated outputs are probabilistic and may not always be accurate, complete, or up to date.</li>
+              <li>Users should not rely on AI-generated content as a substitute for professional advice, including legal, medical, or financial guidance.</li>
+              <li>Evolo AI is not responsible for decisions made based on AI-generated outputs.</li>
             </ul>
           </div>
 
@@ -1230,7 +1283,7 @@ const PrivacyPolicy = () => {
               6. Security & Compliance Measures:
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Both Evolo AI and OpenAI implement strict security controls, including:
+              Evolo AI implements industry-standard safeguards to protect data processed through AI services, including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
@@ -1266,17 +1319,12 @@ const PrivacyPolicy = () => {
               8. Updates & Contact Information:
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI regularly updates its privacy policy to reflect advancements in AI security, data privacy, and compliance. For inquiries related to OpenAI's ChatGPT integration, contact:
+              Evolo AI may update this section from time to time to reflect changes in technology, legal requirements, or service providers.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              For questions or requests related to AI data processing, please contact:{' '}
               <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
                 support@goevolo.com
-              </a>
-            </p>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              For OpenAI's official privacy policy, visit:{' '}
-              <a href="https://openai.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#2B1BDD] hover:underline">
-                OpenAI Privacy Policy
               </a>
             </p>
           </div>
