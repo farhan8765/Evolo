@@ -20,8 +20,9 @@ const NAV_TABS = [
         path: "/cybhi",
         items: [
           { label: "Counselors", path: "/counselors" },
-          { label: "Administrators",  },
-          { label: "Classified Staff",  },
+          { label: "Administrators", path: "/administrators" },
+          { label: "Classified Staff", path: "/classified-staff" },
+          { label: "Certified Health Workers", path: "/certified-health-workers" },
         ],
       },
     ],

@@ -16,6 +16,11 @@ const routes = [
   '/employers',
   '/institution',
   '/mental',
+  '/cybhi',
+  '/counselors',
+  '/administrators',
+  '/classified-staff',
+  '/certified-health-workers',
   '/about-us',
   '/contact/',
   '/events',
@@ -78,6 +83,31 @@ const routeSeo = {
     h1: 'K-12 Mental Health (CYBHI)',
     intro:
       'Supporting student mental health through innovative AI-powered solutions. Our CYBHI-aligned platform helps counselors, administrators, and classified staff provide better care and support to students across K-12 education systems.',
+  },
+  '/cybhi': {
+    h1: 'CYBHI Behavioral Incident & Counseling Management App',
+    intro:
+      'AI-powered, CYBHI-compliant tools built for California school behavioral health teams.',
+  },
+  '/counselors': {
+    h1: 'Empowering Counselors with Smarter Documentation',
+    intro:
+      'Less paperwork. More time for students. Every session is compliant and billable.',
+  },
+  '/administrators': {
+    h1: 'Full Control. Complete Compliance. Total Visibility.',
+    intro:
+      'System overseers are responsible for compliance, approvals, and user management.',
+  },
+  '/classified-staff': {
+    h1: 'Classified Staff: You Saw It. The App Documents It.',
+    intro:
+      'Non-certified school personnel, campus security, instructional aides, and operations staff who witness and report behavioral incidents.',
+  },
+  '/certified-health-workers': {
+    h1: 'Certified Health Workers: One Role. Two Critical Jobs. One Seamless App.',
+    intro:
+      'Authorized staff who both report incidents and deliver follow-up coaching sessions.',
   },
   '/about-us': {
     h1: 'Empowering growth through Adult Education programs',
