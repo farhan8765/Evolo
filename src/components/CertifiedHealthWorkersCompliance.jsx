@@ -15,7 +15,7 @@ const CertifiedHealthWorkersCompliance = () => {
         <p className="m-0 font-['Raleway'] text-[17px] font-semibold leading-6 text-[#222731]">
           tag
         </p>
-
+{/* data */}
         <h2 className="mx-auto mt-5 max-w-5xl bg-gradient-to-r from-[#050519] via-[#120D69] to-[#2B1BDD] bg-clip-text font-['Raleway'] text-[38px] font-bold leading-[1.08] tracking-[0.5%] text-transparent sm:text-[50px] lg:text-[58px]">
           Private by Design. Compliant by Default.
         </h2>
