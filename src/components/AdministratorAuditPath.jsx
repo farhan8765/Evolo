@@ -16,14 +16,14 @@ const AdministratorAuditPath = () => {
     <section className="bg-white px-4 py-16 sm:px-6 lg:py-24">
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.12fr_0.88fr] lg:gap-0">
         <div className="relative z-10">
-          <p className="m-0 font-['Raleway'] text-[17px] font-semibold leading-6 text-[#1F2730]">
+          {/* <p className="m-0 font-['Raleway'] text-[17px] font-semibold leading-6 text-[#1F2730]">
             Tag
-          </p>
+          </p> */}
 
           <h2 className="mt-5 max-w-[650px] font-['Raleway'] text-[38px] font-bold leading-[1.02] tracking-[0.5%] sm:text-[50px] lg:text-[58px]">
-            <span className="text-[#0D0D2B]">Every Report Has a Clear,</span>
+            <span className="text-[#0D0D2B]">Every Report Has a </span>
             <br />
-            <span className="text-[#2B1BDD]">Auditable Path</span>
+            <span className="text-[#2B1BDD]">Clear, Auditable Path</span>
           </h2>
 
           <p className="mt-7 max-w-[640px] font-['Raleway'] text-[17px] font-medium leading-8 text-[#65707A] sm:text-[18px]">

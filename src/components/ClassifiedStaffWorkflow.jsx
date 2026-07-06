@@ -38,9 +38,9 @@ const ClassifiedStaffWorkflow = () => {
     <section className="bg-[#EEF0FF] px-4 py-16 sm:px-6 lg:py-24">
       <div className="mx-auto w-full max-w-6xl">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="m-0 font-['Raleway'] text-[15px] font-semibold leading-6 text-[#1D202B]">
+          {/* <p className="m-0 font-['Raleway'] text-[15px] font-semibold leading-6 text-[#1D202B]">
             Tagline
-          </p>
+          </p> */}
 
           <h2 className="mt-4 bg-gradient-to-r from-[#050519] via-[#120D69] to-[#2B1BDD] bg-clip-text font-['Raleway'] text-[34px] font-bold leading-[1.06] tracking-[0.5%] text-transparent sm:text-[46px] lg:text-[54px]">
             Describe It. Review It. Submit It. Done.

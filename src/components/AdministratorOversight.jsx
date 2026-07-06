@@ -38,20 +38,20 @@ const AdministratorOversight = () => {
     <section className=" px-4 py-16 sm:px-6 lg:py-24">
       <div className="mx-auto w-full max-w-6xl">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="m-0 font-['Raleway'] text-[15px] font-semibold leading-6 text-[#14252B]">
+          {/* <p className="m-0 font-['Raleway'] text-[15px] font-semibold leading-6 text-[#14252B]">
             Tagline
-          </p>
+          </p> */}
 
           <h2 className="mt-4 bg-gradient-to-r from-[#080619] via-[#120D69] to-[#2B1BDD] bg-clip-text font-['Raleway'] text-[34px] font-bold leading-[1.05] tracking-[0.5%] text-transparent sm:text-[44px] lg:text-[52px]">
-            Full Oversight. No Gaps. Every Report
+            Full Oversight. No Gaps. Every 
             <br className="hidden md:block" />
-            Accounted For.
+            Report Accounted For.
           </h2>
 
-          <p className="mx-auto mt-6 max-w-[720px] font-['Raleway'] text-[17px] font-medium leading-7 text-[#62747C] sm:text-[18px]">
+          {/* <p className="mx-auto mt-6 max-w-[720px] font-['Raleway'] text-[17px] font-medium leading-7 text-[#62747C] sm:text-[18px]">
             Lorem ipsum dolor sit amet consectetur. Tristique gravida posuere
             neque cras.
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-11 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
