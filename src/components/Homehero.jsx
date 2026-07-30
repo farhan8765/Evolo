@@ -83,8 +83,8 @@ export default function Homehero() {
           <img
             src="/images/Homehero.webp"
             alt="Platform Preview"
-            width={1200}
-            height={675}
+            width={1440}
+            height={513}
             loading="eager"
             decoding="sync"
             fetchPriority="high"

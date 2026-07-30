@@ -1,6 +1,6 @@
 /**
- * Post-build: Inline critical CSS and defer non-critical stylesheet loading.
- * Improves FCP by rendering above-the-fold content without blocking on full CSS.
+ * Post-build: Inline critical CSS for the shell/header.
+ * Keep the main stylesheet render-blocking to avoid late CSS layout shifts.
  */
 const fs = require('fs');
 const path = require('path');
@@ -24,13 +24,5 @@ if (!html.includes('id="critical-css"')) {
   html = html.replace(/<head>/i, `<head>${styleTag}`);
 }
 
-// 3. Defer non-critical CSS: change main stylesheet to load asynchronously
-html = html.replace(
-  /<link\s+[^>]*href="(\/static\/css\/[^"]+)"[^>]*>/g,
-  (match, href) => {
-    return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="${href}" /></noscript>`;
-  }
-);
-
 fs.writeFileSync(indexPath, html);
-console.log('scripts/critical-css: Inlined critical CSS and deferred main stylesheet');
+console.log('scripts/critical-css: Inlined critical CSS and kept main stylesheet blocking');
