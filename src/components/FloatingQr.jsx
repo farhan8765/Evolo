@@ -4,7 +4,7 @@ const FloatingQr = () => (
   <div className="fixed bottom-6 right-6 z-40">
     <div className="rounded-2xl bg-white p-2 shadow-[0_10px_25px_rgba(0,0,0,0.18)]">
       <img
-        src="/images/Evolo-AI.png"
+        src="/images/Evolo-AI-160.png"
         alt="Scan to learn more about Evolo AI"
         width={80}
         height={80}

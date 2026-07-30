@@ -62,8 +62,8 @@ export default function Homehero() {
           <img
             src="/images/hleft.webp"
             alt=""
-            width={400}
-            height={600}
+            width={359}
+            height={682}
             loading="lazy"
             decoding="async"
             className="pointer-events-none hidden lg:block absolute left-[5%] top-[0%] -translate-y-1/2 -translate-x-1/3 h-[600px] w-auto object-cover"
@@ -73,8 +73,8 @@ export default function Homehero() {
           <img
             src="/images/hright.webp"
             alt=""
-            width={400}
-            height={600}
+            width={359}
+            height={615}
             loading="lazy"
             decoding="async"
             className="pointer-events-none hidden lg:block absolute right-[5%] top-[0%] -translate-y-1/2 translate-x-1/3 h-[600px] w-auto object-cover"

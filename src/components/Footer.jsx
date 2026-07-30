@@ -53,6 +53,8 @@ export default function Footer() {
                 <img
                   src="/images/wcag2.1A-blue-v.png"
                   alt="WCAG 2.1 Level A Conformance (claimed)"
+                  width={341}
+                  height={88}
                   className="h-8 object-contain"
                 />
               </a>

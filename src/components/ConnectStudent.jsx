@@ -40,7 +40,7 @@ employers discover talent, and institutions prove impact.
 
             <button className="w-full text-left bg-[#F3F3FF] px-4 sm:px-6 py-3 rounded-xl flex gap-3 items-center font-semibold text-black shadow-sm text-sm sm:text-base hover:bg-[#E8E8FF] transition-colors">
               <span className="bg-[#4F00DA] text-white w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/images/Hic5.svg" alt="Career Events" className="w-5 h-5" />
+                <img src="/images/Hic5.svg" alt="Career Events" width={20} height={20} className="w-5 h-5" />
               </span>
               Career Enablement
             </button>
@@ -73,9 +73,11 @@ employers discover talent, and institutions prove impact.
         <div className="flex items-center justify-center order-2 md:order-1">
           <img
             src="/images/home-fourth.png"
+            srcSet="/images/home-fourth-480.png 480w, /images/home-fourth.png 628w"
+            sizes="(max-width: 640px) 92vw, (max-width: 768px) 80vw, 628px"
             alt="Mobile Preview"
-            width={900}
-            height={900}
+            width={628}
+            height={624}
             loading="lazy"
             decoding="async"
             className="w-full sm:w-[80%] md:w-[75%] lg:w-[700px] xl:w-[800px] 2xl:w-[900px] h-auto drop-shadow-xl"
