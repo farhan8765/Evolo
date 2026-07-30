@@ -8,6 +8,10 @@ const path = require('path');
 const buildDir = path.join(__dirname, '../build');
 const rootIndexPath = path.join(buildDir, 'index.html');
 const baseUrl = 'https://goevolo.com';
+const siteName = 'Evolo AI';
+const siteDescription =
+  'Evolo AI provides AI-powered education and career tools for adult education, K-12 student well-being, institutions, employers, counselors, administrators, classified staff, certified health workers, and learners.';
+const deploymentDate = '2026-07-30';
 
 const routes = [
   '/',
@@ -51,6 +55,8 @@ const routes = [
   '/top-10-career-tips-and-advice-for-young-adults-starting-their-journey/',
   '/caep-2024-summit/',
 ];
+
+const blogPostRoutes = new Set(routes.slice(routes.indexOf('/overcoming-barriers-how-single-parents-benefit-from-adult-schools/')));
 
 /** Matches visible H1 intent from React pages (noscript fallback for crawlers). */
 const routeSeo = {
@@ -267,7 +273,19 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
+function escapeJsonLd(obj) {
+  return JSON.stringify(obj)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026');
+}
+
 const rootHtml = fs.readFileSync(rootIndexPath, 'utf8');
+
+function getPageTitle(route) {
+  const seo = routeSeo[route] || routeSeo['/'];
+  return route === '/' ? 'Evolo AI - K-12 & Adult Education Solutions Platform' : `${seo.h1} | Evolo AI`;
+}
 
 function toCanonical(route) {
   if (route === '/') return `${baseUrl}/`;
@@ -293,7 +311,7 @@ function upsertHeadTag(html, regex, tag) {
 
 function withHeadSeo(html, route, canonicalUrl) {
   const seo = routeSeo[route] || routeSeo['/'];
-  const title = route === '/' ? 'Evolo AI - K-12 & Adult Education Solutions Platform' : `${seo.h1} | Evolo AI`;
+  const title = getPageTitle(route);
   const description = seo.intro;
 
   let updated = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(title)}</title>`);
@@ -329,6 +347,130 @@ function withHeadSeo(html, route, canonicalUrl) {
   );
 
   return updated;
+}
+
+function getPageSchemaType(route) {
+  if (route === '/about-us') return 'AboutPage';
+  if (route === '/contact/') return 'ContactPage';
+  if (route === '/blog') return 'Blog';
+  return 'WebPage';
+}
+
+function buildStructuredData(route, canonicalUrl) {
+  const seo = routeSeo[route] || routeSeo['/'];
+  const title = getPageTitle(route);
+  const pageId = `${canonicalUrl}#webpage`;
+  const organizationId = `${baseUrl}/#organization`;
+  const websiteId = `${baseUrl}/#website`;
+  const graph = [
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: siteName,
+      url: `${baseUrl}/`,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/images/evolologo.png`,
+        width: 182,
+        height: 38,
+      },
+      description: siteDescription,
+    },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: siteName,
+      url: `${baseUrl}/`,
+      publisher: {
+        '@id': organizationId,
+      },
+      inLanguage: 'en-US',
+    },
+    {
+      '@type': getPageSchemaType(route),
+      '@id': pageId,
+      url: canonicalUrl,
+      name: title,
+      headline: seo.h1,
+      description: seo.intro,
+      isPartOf: {
+        '@id': websiteId,
+      },
+      about: {
+        '@id': organizationId,
+      },
+      primaryImageOfPage: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/images/Homehero.webp`,
+        width: 1200,
+        height: 675,
+      },
+      dateModified: deploymentDate,
+      inLanguage: 'en-US',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${canonicalUrl}#breadcrumb`,
+      itemListElement: [],
+    },
+  ];
+
+  const breadcrumb = graph[3];
+  breadcrumb.itemListElement = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: `${baseUrl}/`,
+    },
+  ];
+
+  if (route !== '/') {
+    breadcrumb.itemListElement.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: seo.h1,
+      item: canonicalUrl,
+    });
+  }
+
+  if (blogPostRoutes.has(route)) {
+    const articleId = `${canonicalUrl}#article`;
+    graph[2].mainEntity = {
+      '@id': articleId,
+    };
+    graph.push({
+      '@type': 'BlogPosting',
+      '@id': articleId,
+      mainEntityOfPage: {
+        '@id': pageId,
+      },
+      headline: seo.h1,
+      description: seo.intro,
+      image: `${baseUrl}/images/Homehero.webp`,
+      author: {
+        '@id': organizationId,
+      },
+      publisher: {
+        '@id': organizationId,
+      },
+      datePublished: '2025-01-27',
+      dateModified: deploymentDate,
+      inLanguage: 'en-US',
+    });
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': graph,
+  };
+}
+
+function withStructuredData(html, route, canonicalUrl) {
+  const schema = buildStructuredData(route, canonicalUrl);
+  const schemaTag = `<script type="application/ld+json" id="evolo-schema">${escapeJsonLd(schema)}</script>`;
+  const withoutExisting = html.replace(/<script type="application\/ld\+json" id="evolo-schema">[\s\S]*?<\/script>/gi, '');
+  return withoutExisting.replace('</head>', `  ${schemaTag}\n</head>`);
 }
 
 function renderRouteList() {
@@ -455,6 +597,7 @@ for (const route of routes) {
   const canonicalUrl = toCanonical(route);
   let routeHtml = withCanonical(rootHtml, canonicalUrl);
   routeHtml = withHeadSeo(routeHtml, route, canonicalUrl);
+  routeHtml = withStructuredData(routeHtml, route, canonicalUrl);
   routeHtml = withNoscriptSeo(routeHtml, route);
   routeHtml = withStaticShell(routeHtml, route);
 
