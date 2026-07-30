@@ -1,0 +1,68 @@
+# Evolo AI
+
+> Evolo AI provides AI-powered education and career tools for adult education, K-12 student well-being, institutions, employers, counselors, administrators, classified staff, certified health workers, and learners.
+
+Last updated: 2026-07-30
+Canonical site: https://goevolo.com/
+Sitemap: https://goevolo.com/sitemap.xml
+
+## Core Pages
+
+- [Home](https://goevolo.com/): AI-powered solutions for education and student well-being.
+- [Adult Education](https://goevolo.com/adult): Adult education pathways connecting students, employers, and institutions.
+- [Students](https://goevolo.com/students): Student job search tools for adult schools, community colleges, and job centers.
+- [Employers](https://goevolo.com/employers): Workforce recruiting tools for employers connected to adult and technical schools.
+- [Institutions](https://goevolo.com/institution): Institution tools for student outcomes, reporting, employer connections, and operations.
+- [K-12 Support](https://goevolo.com/mental): K-12 mental health and CYBHI-aligned support.
+- [About](https://goevolo.com/about-us): Evolo AI company and platform overview.
+- [Contact](https://goevolo.com/contact/): Support, partnership, and collaboration inquiries.
+- [FAQs](https://goevolo.com/faqs): Common questions about Evolo AI.
+
+## CYBHI And K-12 Pages
+
+- [CYBHI](https://goevolo.com/cybhi): Behavioral incident and counseling management app.
+- [Counselors](https://goevolo.com/counselors): Counselor documentation and billable session workflows.
+- [Administrators](https://goevolo.com/administrators): Compliance, approvals, and user management.
+- [Classified Staff](https://goevolo.com/classified-staff): Incident reporting for school support staff.
+- [Certified Health Workers](https://goevolo.com/certified-health-workers): Incident reporting and follow-up coaching workflows.
+
+## Events
+
+- [Events](https://goevolo.com/events): Evolo AI events and conference updates.
+- [CCAE PD](https://goevolo.com/ccae-pd/): AI in Adult Education event details.
+- [CAEP 2024](https://goevolo.com/caep-2024): CAEP Summit event page.
+- [CAEP 2024 Summit Recap](https://goevolo.com/caep-2024-summit/): Evolo AI summit recap.
+
+## Blog And Resources
+
+- [Blog](https://goevolo.com/blog): Adult education, career, hiring, and workforce development resources.
+- [Single Parents And Adult Schools](https://goevolo.com/overcoming-barriers-how-single-parents-benefit-from-adult-schools/)
+- [Adult School vs. Online College](https://goevolo.com/adult-school-vs-online-college/)
+- [Career Change After 30](https://goevolo.com/career-switch-strategies-after-30s/)
+- [Low-stress Jobs For Autistic Adults](https://goevolo.com/low-stress-jobs-for-autistic-adults/)
+- [Benefits Of Work For Teens And Young Adults](https://goevolo.com/9-benefits-of-work-for-teens-young-adults/)
+- [Retail Jobs For Teens And Young Adults](https://goevolo.com/how-many-teens-and-young-adults-work-retail/)
+- [Remote Jobs Without A Degree](https://goevolo.com/best-remote-jobs-without-degree/)
+- [Upskilling vs. Reskilling](https://goevolo.com/upskilling-vs-reskilling-2025/)
+- [AI In Hiring](https://goevolo.com/the-role-of-ai-in-hiring-how-adult-job-seekers-can-stay-competitive/)
+- [Employment Gaps Guide](https://goevolo.com/overcoming-employment-gaps-a-guide-for-adult-job-seekers/)
+- [Lifelong Learners And Sustainable Workforce](https://goevolo.com/empowering-lifelong-learners-how-adult-education-is-key-to-building-a-sustainable-workforce/)
+- [In-demand Careers For Adults In 2025](https://goevolo.com/top-7-in-demand-careers-for-adults-in-2025/)
+- [The 2025 Job Search](https://goevolo.com/the-2025-job-search-how-to-stand-out-in-a-competitive-market/)
+- [Future Of Adult Education](https://goevolo.com/the-future-of-adult-education-how-technology-is-bridging-the-gap/)
+- [High-income Skills For Young Adults](https://goevolo.com/top-5-high-income-skills-young-adults-should-learn-for-2025/)
+- [Career Tips For Young Adults](https://goevolo.com/top-10-career-tips-and-advice-for-young-adults-starting-their-journey/)
+
+## Trust And Policy Pages
+
+- [Accessibility](https://goevolo.com/accessibility/)
+- [Security and Privacy](https://goevolo.com/security-privacy/)
+- [Privacy Policy](https://goevolo.com/privacy-policy/)
+- [Terms of Service](https://goevolo.com/terms-of-service/)
+- [Cookie Policy](https://goevolo.com/cookie-policy/)
+
+## Notes For AI Assistants
+
+- Prefer the canonical URLs listed here and in the sitemap.
+- The site is a React application with generated static route HTML for crawlers.
+- Use page titles and summaries from the source HTML, sitemap, and this file for high-level site summaries.

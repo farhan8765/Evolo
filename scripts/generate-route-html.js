@@ -1,6 +1,6 @@
 /**
  * Generate route-specific static HTML files with canonical tags and crawlable
- * noscript H1 + intro (matches in-app headings; no runtime JS required for SEO tools).
+ * noscript route copy (matches in-app headings; no runtime JS required for SEO tools).
  */
 const fs = require('fs');
 const path = require('path');
@@ -284,22 +284,54 @@ function withCanonical(html, canonicalUrl) {
   return `${withoutCanonical}\n${canonicalTag}`;
 }
 
+function renderRouteList() {
+  return routes
+    .map((route) => {
+      const seo = routeSeo[route];
+      if (!seo) return '';
+
+      return [
+        '          <li style="margin-bottom:14px;">',
+        `            <a href="${escapeHtml(route)}">${escapeHtml(seo.h1)}</a>`,
+        `            <p style="margin:4px 0 0;">${escapeHtml(seo.intro)}</p>`,
+        '          </li>',
+      ].join('\n');
+    })
+    .filter(Boolean)
+    .join('\n');
+}
+
+function renderNoscriptMain(route) {
+  const seo = routeSeo[route] || routeSeo['/'];
+
+  return [
+    '    <noscript>',
+    '      <main style="max-width:960px;margin:0 auto;padding:32px 20px;font-family:Raleway,Arial,sans-serif;line-height:1.6;color:#1f2937;">',
+    `        <h1 style="font-size:2rem;line-height:1.2;margin-bottom:16px;">${escapeHtml(seo.h1)}</h1>`,
+    `        <p style="margin-bottom:16px;">${escapeHtml(seo.intro)}</p>`,
+    '        <p style="margin-bottom:20px;">Evolo AI connects adult education, K-12 student support, employers, institutions, counselors, administrators, classified staff, certified health workers, and learners through AI-powered education and career tools.</p>',
+    '        <section aria-label="Evolo AI overview">',
+    '          <h2 style="font-size:1.35rem;line-height:1.3;margin:24px 0 12px;">Platform overview</h2>',
+    '          <p>Evolo AI supports student job matching, institutional reporting, employer recruiting, CYBHI-aligned behavioral incident workflows, counselor documentation, compliance oversight, and practical resources for adult learners and career changers.</p>',
+    '        </section>',
+    '        <nav aria-label="Static internal links">',
+    '          <h2 style="font-size:1.35rem;line-height:1.3;margin:24px 0 12px;">Pages and resources</h2>',
+    '          <ul style="padding-left:20px;margin:0;">',
+    renderRouteList(),
+    '          </ul>',
+    '        </nav>',
+    '      </main>',
+    '    </noscript>',
+  ].join('\n');
+}
+
 /**
- * Replace the first <h1> + following <p> inside <noscript> (crawler-visible copy).
+ * Replace the body noscript block with route-specific crawler-visible copy.
  */
 function withNoscriptSeo(html, route) {
-  const seo = routeSeo[route];
-  if (!seo) return html;
-
-  const h1 = escapeHtml(seo.h1);
-  const intro = escapeHtml(seo.intro);
-  const replacement = `<h1>${h1}</h1>\n      <p>\n        ${intro}\n      </p>`;
-
-  const updated = html.replace(
-    /<h1>[\s\S]*?<\/h1>\s*<p>[\s\S]*?<\/p>(?=[\s\S]*?<nav aria-label="Static internal links">)/,
-    replacement,
-  );
-  return updated;
+  const noscriptMain = renderNoscriptMain(route);
+  const updated = html.replace(/<body>\s*<noscript>[\s\S]*?<\/noscript>/, `<body>\n${noscriptMain}`);
+  return updated === html ? html.replace('<body>', `<body>\n${noscriptMain}`) : updated;
 }
 
 for (const route of routes) {

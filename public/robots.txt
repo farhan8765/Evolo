@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://goevolo.com/sitemap.xml
+
+# AI crawler reference
+# https://goevolo.com/llms.txt
