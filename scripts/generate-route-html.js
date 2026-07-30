@@ -372,6 +372,76 @@ function renderNoscriptMain(route) {
   ].join('\n');
 }
 
+function renderStaticShell(route) {
+  const seo = routeSeo[route] || routeSeo['/'];
+
+  if (route === '/') {
+    return [
+      '      <!-- static-shell:start -->',
+      '      <main class="static-shell" data-static-shell style="min-height:100vh;background:linear-gradient(#fff,#f9fafb);font-family:Raleway,Arial,sans-serif;color:#1f2937;">',
+      '        <header style="min-height:72px;padding:24px 16px;">',
+      '          <nav style="max-width:1152px;min-height:56px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #eaecf4;border-radius:32px;background:#fff;padding:16px 24px;">',
+      '            <a href="/" aria-label="Evolo AI home">',
+      '              <img src="/images/evolologo.png" alt="Evolo AI logo" width="120" height="32" style="height:32px;width:auto;object-fit:contain;" />',
+      '            </a>',
+      '            <a href="/contact" style="border-radius:12px;background:#5c2dd5;color:#fff;padding:10px 24px;font-size:14px;font-weight:700;text-decoration:none;">Contact</a>',
+      '          </nav>',
+      '        </header>',
+      '        <section style="max-width:1536px;margin:0 auto;padding:16px 8px 0;text-align:center;">',
+      '          <p style="margin:0 0 16px;font-size:14px;font-weight:700;font-style:italic;color:#374151;">Empowering Education Through Technology</p>',
+      '          <h1 style="margin:0 0 16px;font-size:clamp(32px,5vw,60px);line-height:1.1;font-weight:800;color:#111827;">AI-powered solutions for<br />Education &amp; Student Well-Being</h1>',
+      '          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:0 0 32px;padding:0 8px;">',
+      '            <a href="/mental" style="min-width:172px;border-radius:8px;background:#5a14ed;color:#fff;padding:12px 40px;font-weight:700;text-decoration:none;">K12</a>',
+      '            <a href="/adult" style="min-width:220px;border:2px solid #5a14ed;border-radius:8px;background:#fff;color:#5a14ed;padding:10px 24px;font-weight:700;text-decoration:none;">Adult Education Program</a>',
+      '          </div>',
+      '          <img src="/images/Homehero.webp" alt="Evolo AI platform preview" width="1200" height="675" fetchpriority="high" decoding="async" style="display:block;width:100%;height:auto;max-width:1200px;margin:0 auto;border-radius:8px;" />',
+      '        </section>',
+      '      </main>',
+      '      <!-- static-shell:end -->',
+    ].join('\n');
+  }
+
+  return [
+    '      <!-- static-shell:start -->',
+    '      <main class="static-shell" data-static-shell style="min-height:100vh;background:#fff;font-family:Raleway,Arial,sans-serif;color:#1f2937;">',
+    '        <header style="min-height:72px;padding:24px 16px;">',
+    '          <nav style="max-width:1152px;min-height:56px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #eaecf4;border-radius:32px;background:#fff;padding:16px 24px;">',
+    '            <a href="/" aria-label="Evolo AI home">',
+    '              <img src="/images/evolologo.png" alt="Evolo AI logo" width="120" height="32" style="height:32px;width:auto;object-fit:contain;" />',
+    '            </a>',
+    '            <a href="/contact" style="border-radius:12px;background:#5c2dd5;color:#fff;padding:10px 24px;font-size:14px;font-weight:700;text-decoration:none;">Contact</a>',
+    '          </nav>',
+    '        </header>',
+    '        <section style="max-width:960px;margin:0 auto;padding:40px 20px;">',
+    `          <h1 style="margin:0 0 16px;font-size:clamp(32px,5vw,56px);line-height:1.1;font-weight:800;color:#111827;">${escapeHtml(seo.h1)}</h1>`,
+    `          <p style="max-width:760px;margin:0 0 24px;font-size:18px;line-height:1.7;color:#4b5563;">${escapeHtml(seo.intro)}</p>`,
+    '          <nav aria-label="Primary links" style="display:flex;flex-wrap:wrap;gap:12px;">',
+    '            <a href="/" style="color:#5a14ed;font-weight:700;">Home</a>',
+    '            <a href="/adult" style="color:#5a14ed;font-weight:700;">Adult Education</a>',
+    '            <a href="/mental" style="color:#5a14ed;font-weight:700;">K-12 Support</a>',
+    '            <a href="/blog" style="color:#5a14ed;font-weight:700;">Resources</a>',
+    '            <a href="/contact/" style="color:#5a14ed;font-weight:700;">Contact</a>',
+    '          </nav>',
+    '        </section>',
+    '      </main>',
+    '      <!-- static-shell:end -->',
+  ].join('\n');
+}
+
+function withStaticShell(html, route) {
+  const shell = renderStaticShell(route);
+  const withMarkers = html.replace(
+    /<!-- static-shell:start -->[\s\S]*?<!-- static-shell:end -->/,
+    shell,
+  );
+  if (withMarkers !== html) return withMarkers;
+
+  return html.replace(
+    /<main[^>]*class="[^"]*\bstatic-shell\b[^"]*"[^>]*>[\s\S]*?<\/main>/,
+    shell,
+  );
+}
+
 /**
  * Replace the body noscript block with route-specific crawler-visible copy.
  */
@@ -386,6 +456,7 @@ for (const route of routes) {
   let routeHtml = withCanonical(rootHtml, canonicalUrl);
   routeHtml = withHeadSeo(routeHtml, route, canonicalUrl);
   routeHtml = withNoscriptSeo(routeHtml, route);
+  routeHtml = withStaticShell(routeHtml, route);
 
   if (route === '/') {
     fs.writeFileSync(rootIndexPath, routeHtml);

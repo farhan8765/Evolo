@@ -3,11 +3,11 @@ import React, { lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import Homehero from '../components/Homehero'
-import HomePlatform from '../components/HomePlatform'
-import HomeWho from '../components/HomeWho'
-import NewVideo from '../components/NewVideo'
 
 // Lazy-load below-the-fold sections to reduce main-thread blocking on initial load
+const NewVideo = lazy(() => import('../components/NewVideo'))
+const HomeWho = lazy(() => import('../components/HomeWho'))
+const HomePlatform = lazy(() => import('../components/HomePlatform'))
 const ConnectStudent = lazy(() => import('../components/ConnectStudent'))
 const Homecardsdetail = lazy(() => import('../components/Homecardsdetail'))
 const Aboutstay = lazy(() => import('../components/Aboutstay'))
@@ -52,10 +52,10 @@ const Mainhome = () => (
         </p>
       </section>
       <Homehero />
-      <NewVideo />
-      <HomeWho />
-      <HomePlatform />
       <Suspense fallback={<div className="min-h-[120px]" aria-hidden="true" />}>
+        <NewVideo />
+        <HomeWho />
+        <HomePlatform />
         <ConnectStudent />
         <Homecardsdetail />
         <Aboutstay />
