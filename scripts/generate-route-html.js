@@ -284,6 +284,53 @@ function withCanonical(html, canonicalUrl) {
   return `${withoutCanonical}\n${canonicalTag}`;
 }
 
+function upsertHeadTag(html, regex, tag) {
+  if (regex.test(html)) {
+    return html.replace(regex, tag);
+  }
+  return html.replace('</head>', `  ${tag}\n</head>`);
+}
+
+function withHeadSeo(html, route, canonicalUrl) {
+  const seo = routeSeo[route] || routeSeo['/'];
+  const title = route === '/' ? 'Evolo AI - K-12 & Adult Education Solutions Platform' : `${seo.h1} | Evolo AI`;
+  const description = seo.intro;
+
+  let updated = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(title)}</title>`);
+  updated = upsertHeadTag(
+    updated,
+    /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i,
+    `<meta name="description" content="${escapeHtml(description)}" />`,
+  );
+  updated = upsertHeadTag(
+    updated,
+    /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/i,
+    `<meta property="og:title" content="${escapeHtml(title)}" />`,
+  );
+  updated = upsertHeadTag(
+    updated,
+    /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/i,
+    `<meta property="og:description" content="${escapeHtml(description)}" />`,
+  );
+  updated = upsertHeadTag(
+    updated,
+    /<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i,
+    `<meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`,
+  );
+  updated = upsertHeadTag(
+    updated,
+    /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/?>/i,
+    `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
+  );
+  updated = upsertHeadTag(
+    updated,
+    /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/?>/i,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+  );
+
+  return updated;
+}
+
 function renderRouteList() {
   return routes
     .map((route) => {
@@ -337,6 +384,7 @@ function withNoscriptSeo(html, route) {
 for (const route of routes) {
   const canonicalUrl = toCanonical(route);
   let routeHtml = withCanonical(rootHtml, canonicalUrl);
+  routeHtml = withHeadSeo(routeHtml, route, canonicalUrl);
   routeHtml = withNoscriptSeo(routeHtml, route);
 
   if (route === '/') {
