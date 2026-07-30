@@ -1,5 +1,5 @@
 /* App.css removed - logo-marquee moved to LogoMarquee.css (lazy-loaded in testimonials) */
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import GlobalSEO from './components/GlobalSEO';
 import ScrollToTop from './components/ScrollToTop';
 import Mainhome from './pages/Mainhome';
-import Events from './pages/Events';
 
 // Lazy-load below-the-fold layout components to reduce main-thread blocking
 const Footer = lazy(() => import('./components/Footer'));
@@ -29,6 +28,7 @@ const Administrators = lazy(() => import('./pages/Administrators'));
 const ClassifiedStaff = lazy(() => import('./pages/ClassifiedStaff'));
 const CertifiedHealthWorkers = lazy(() => import('./pages/CertifiedHealthWorkers'));
 const OneEvent = lazy(() => import('./pages/OneEvent'));
+const Events = lazy(() => import('./pages/Events'));
 const EventTwo = lazy(() => import('./components/EventTwo'));
 const Blog1 = lazy(() => import('./components/Blog1'));
 const Blog2 = lazy(() => import('./components/Blog2'));
@@ -92,6 +92,27 @@ function SpamBlocker() {
 // ====== SPAM BLOCKER COMPONENT END ======
 
 function App() {
+  const [loadDeferredChrome, setLoadDeferredChrome] = useState(false);
+
+  useEffect(() => {
+    if (loadDeferredChrome) return undefined;
+
+    const load = () => setLoadDeferredChrome(true);
+    const timer = window.setTimeout(load, 12000);
+    const options = { once: true, passive: true };
+
+    window.addEventListener('scroll', load, options);
+    window.addEventListener('pointerdown', load, options);
+    window.addEventListener('keydown', load, { once: true });
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener('scroll', load);
+      window.removeEventListener('pointerdown', load);
+      window.removeEventListener('keydown', load);
+    };
+  }, [loadDeferredChrome]);
+
   return (
     <HelmetProvider>
       <Router>
@@ -153,12 +174,16 @@ function App() {
           <Route path="/caep-2024-summit/" element={<Blog17 />} />
         </Routes>
           </Suspense>
-        <Suspense fallback={<div className="min-h-[280px]" aria-hidden="true" />}>
-          <Footer />
-        </Suspense>
-        <Suspense fallback={null}>
-          <FloatingQr />
-        </Suspense>
+        {loadDeferredChrome && (
+          <>
+            <Suspense fallback={<div className="min-h-[280px]" aria-hidden="true" />}>
+              <Footer />
+            </Suspense>
+            <Suspense fallback={null}>
+              <FloatingQr />
+            </Suspense>
+          </>
+        )}
       </div>
       </Router>
     </HelmetProvider>

@@ -11,13 +11,20 @@ export default function Homehero() {
         </p>
 
  
-        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
+        <h1 className="px-4 text-center text-[22px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 leading-tight">
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
           AI-powered solutions for
           </span>
           <br />
           <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
-          Education & Student Well-Being
+          Education & Student
+          </span>
+          <br className="sm:hidden" />
+          <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent sm:hidden">
+          Well-Being
+          </span>
+          <span className="hidden bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent sm:inline">
+          {' '}Well-Being
           </span>
         </h1>
        
@@ -58,28 +65,6 @@ export default function Homehero() {
 
     
         <div className="relative w-full mx-auto px-2 sm:px-0">
-         
-          <img
-            src="/images/hleft.webp"
-            alt=""
-            width={359}
-            height={682}
-            loading="lazy"
-            decoding="async"
-            className="pointer-events-none hidden lg:block absolute left-[5%] top-[0%] -translate-y-1/2 -translate-x-1/3 h-[600px] w-auto object-cover"
-          />
-
-        
-          <img
-            src="/images/hright.webp"
-            alt=""
-            width={359}
-            height={615}
-            loading="lazy"
-            decoding="async"
-            className="pointer-events-none hidden lg:block absolute right-[5%] top-[0%] -translate-y-1/2 translate-x-1/3 h-[600px] w-auto object-cover"
-          />
-
           <img
             src="/images/Homehero.webp"
             alt="Platform Preview"

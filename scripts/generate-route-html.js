@@ -495,7 +495,7 @@ function renderNoscriptMain(route) {
 
   return [
     '    <noscript>',
-    '      <main style="max-width:960px;margin:0 auto;padding:32px 20px;font-family:Raleway,Arial,sans-serif;line-height:1.6;color:#1f2937;">',
+    '      <main style="max-width:960px;margin:0 auto;padding:32px 20px;font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#1f2937;">',
     `        <h1 style="font-size:2rem;line-height:1.2;margin-bottom:16px;">${escapeHtml(seo.h1)}</h1>`,
     `        <p style="margin-bottom:16px;">${escapeHtml(seo.intro)}</p>`,
     '        <p style="margin-bottom:20px;">Evolo AI connects adult education, K-12 student support, employers, institutions, counselors, administrators, classified staff, certified health workers, and learners through AI-powered education and career tools.</p>',

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-\[\'Raleway\'\],
+.font-\[Raleway\] {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 /* Body lock for mobile nav - class toggle batches better than style.overflow */
 body.evolo-mobile-menu-open {
   overflow: hidden;

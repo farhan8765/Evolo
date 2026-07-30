@@ -3,38 +3,18 @@
   <head>
     <meta charset="utf-8" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CX3SC9M0Z"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-6CX3SC9M0Z');
+      document.documentElement.dataset.evoloRoute = window.location.pathname === '/' ? 'home' : 'app';
     </script>
-    
-    <!-- Preconnect to Google Fonts (faster connection) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Load Google Fonts non-blocking -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      />
-    </noscript>
+    <style>
+      html[data-evolo-route="app"] [data-static-shell] { display: none !important; }
+      .evolo-shell-mobile-only { display: inline; }
+      .evolo-shell-desktop-only { display: none; }
+      @media (min-width: 640px) {
+        .evolo-shell-mobile-break, .evolo-shell-mobile-only { display: none; }
+        .evolo-shell-desktop-only { display: inline; }
+      }
+    </style>
     <link
       rel="icon"
       type="image/png"
@@ -74,7 +54,7 @@
   </head>
   <body>
     <noscript>
-      <main style="max-width:960px;margin:0 auto;padding:32px 20px;font-family:Raleway,Arial,sans-serif;line-height:1.6;color:#1f2937;">
+      <main style="max-width:960px;margin:0 auto;padding:32px 20px;font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#1f2937;">
         <h1 style="font-size:2rem;line-height:1.2;margin-bottom:16px;">AI-powered solutions for Education &amp; Student Well-Being</h1>
         <p style="margin-bottom:16px;">Evolo AI provides AI-powered solutions for K-12 student well-being and adult education, connecting learners, institutions, and employers through career-focused pathways.</p>
         <p style="margin-bottom:20px;">Evolo AI supports student job matching, institutional reporting, employer recruiting, CYBHI-aligned behavioral incident workflows, counselor documentation, compliance oversight, and practical resources for adult learners and career changers.</p>
@@ -103,7 +83,54 @@
         </nav>
       </main>
     </noscript>
-    <div id="root"></div>
+    <div id="root">
+      <main data-static-shell style="min-height:100vh;max-width:100vw;overflow:hidden;background:linear-gradient(#fff,#f9fafb);font-family:Arial,Helvetica,sans-serif;color:#1f2937;">
+        <header style="min-height:72px;color:#5c6174;">
+          <nav style="width:100%;min-height:72px;padding:24px 16px;">
+            <div style="max-width:1152px;min-height:56px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:24px;border:1px solid #eaecf4;border-radius:32px;background:#fff;padding:16px 24px;">
+              <a href="/" aria-label="Evolo AI home">
+                <img src="/images/evolologo.png" alt="Evolo AI logo" width="120" height="32" style="height:32px;width:auto;object-fit:contain;" />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <section style="width:100%;max-width:100vw;box-sizing:border-box;overflow:hidden;padding:16px 8px 0;text-align:center;">
+          <p style="margin:0 0 16px;font-size:14px;font-weight:700;font-style:italic;color:#374151;">Empowering Education Through Technology</p>
+          <h1 style="max-width:100%;box-sizing:border-box;margin:0 0 16px;padding:0 16px;font-size:clamp(22px,5vw,60px);line-height:1.12;font-weight:800;color:#111827;overflow-wrap:break-word;">
+            <span style="background:linear-gradient(90deg,#000,#2b1bdd);-webkit-background-clip:text;background-clip:text;color:transparent;">AI-powered solutions for</span><br />
+            <span style="background:linear-gradient(90deg,#000,#2b1bdd);-webkit-background-clip:text;background-clip:text;color:transparent;">Education &amp; Student</span><br class="evolo-shell-mobile-break" />
+            <span class="evolo-shell-mobile-only" style="background:linear-gradient(90deg,#000,#2b1bdd);-webkit-background-clip:text;background-clip:text;color:transparent;">Well-Being</span>
+            <span class="evolo-shell-desktop-only" style="background:linear-gradient(90deg,#000,#2b1bdd);-webkit-background-clip:text;background-clip:text;color:transparent;"> Well-Being</span>
+          </h1>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:0 0 32px;padding:0 8px;">
+            <a href="/mental" style="display:block;width:100%;max-width:320px;box-sizing:border-box;border-radius:8px;background:#5a14ed;color:#fff;padding:12px 24px;font-size:16px;font-weight:700;text-decoration:none;box-shadow:0 10px 15px rgba(0,0,0,.1);">K12</a>
+            <a href="/adult" style="display:block;width:100%;max-width:320px;box-sizing:border-box;border:2px solid #5a14ed;border-radius:8px;background:#fff;color:#5a14ed;padding:10px 24px;font-size:16px;font-weight:700;text-decoration:none;box-shadow:0 10px 15px rgba(0,0,0,.1);">Adult Education Program</a>
+          </div>
+          <img src="/images/Homehero.webp" alt="Platform Preview" width="1440" height="513" fetchpriority="high" decoding="async" style="display:block;width:100%;height:auto;border-radius:8px;" />
+        </section>
+      </main>
+    </div>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+      (function(){
+        function loadGtag(){
+          if (window.__evoloGtagLoaded) return;
+          window.__evoloGtagLoaded = true;
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-6CX3SC9M0Z';
+          document.head.appendChild(script);
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-6CX3SC9M0Z');
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGtag, { timeout: 5000 });
+        } else {
+          setTimeout(loadGtag, 5000);
+        }
+      })();
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

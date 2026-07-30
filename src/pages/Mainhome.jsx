@@ -1,5 +1,5 @@
 // Mainhome.jsx
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import Homehero from '../components/Homehero'
@@ -19,6 +19,44 @@ const MAINHOME_META = {
   canonical: 'https://goevolo.com/',
   image: 'https://goevolo.com/images/Homehero.webp',
 };
+
+function DeferredHomepageSections() {
+  const [loadSections, setLoadSections] = useState(false);
+
+  useEffect(() => {
+    if (loadSections) return undefined;
+
+    const load = () => setLoadSections(true);
+    const timer = window.setTimeout(load, 12000);
+    const options = { once: true, passive: true };
+
+    window.addEventListener('scroll', load, options);
+    window.addEventListener('pointerdown', load, options);
+    window.addEventListener('keydown', load, { once: true });
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener('scroll', load);
+      window.removeEventListener('pointerdown', load);
+      window.removeEventListener('keydown', load);
+    };
+  }, [loadSections]);
+
+  if (!loadSections) {
+    return <div className="min-h-[720px] bg-[#f7f6fb]" aria-hidden="true" />;
+  }
+
+  return (
+    <Suspense fallback={<div className="min-h-[720px] bg-[#f7f6fb]" aria-hidden="true" />}>
+      <NewVideo />
+      <HomeWho />
+      <HomePlatform />
+      <ConnectStudent />
+      <Homecardsdetail />
+      <Aboutstay />
+    </Suspense>
+  );
+}
 
 const Mainhome = () => (
   <>
@@ -52,14 +90,7 @@ const Mainhome = () => (
         </p>
       </section>
       <Homehero />
-      <Suspense fallback={<div className="min-h-[120px]" aria-hidden="true" />}>
-        <NewVideo />
-        <HomeWho />
-        <HomePlatform />
-        <ConnectStudent />
-        <Homecardsdetail />
-        <Aboutstay />
-      </Suspense>
+      <DeferredHomepageSections />
     </div>
   </>
 );
