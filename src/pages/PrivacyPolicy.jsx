@@ -1013,7 +1013,7 @@ const PrivacyPolicy = () => {
               </a>
             </p>
             <p>
-              <strong>Address:</strong> goevolo
+              <strong>Address:</strong> Evolo AI
             </p>
             <p className="ml-4">1110 N Virgil Ave</p>
             <p className="ml-4">PMB 98121</p>
@@ -1067,7 +1067,7 @@ const PrivacyPolicy = () => {
             </p>
             <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1 ml-4">
               <p>Yusair, Inc.</p>
-              <p>goevolo</p>
+              <p>Evolo AI</p>
               <p>110 N Virgil Ave</p>
               <p>PMB 98121</p>
               <p>Los Angeles, CA 90029</p>
@@ -1154,7 +1154,7 @@ const PrivacyPolicy = () => {
             </p>
             <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1 ml-4">
               <p>Yusair, Inc.</p>
-              <p>goevolo</p>
+              <p>Evolo AI</p>
               <p>110 N Virgil Ave</p>
               <p>PMB 98121</p>
               <p>Los Angeles, CA 90029</p>

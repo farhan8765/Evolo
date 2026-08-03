@@ -118,7 +118,7 @@ export default function Footer() {
           {/* Right Section */}
           <div>
             <h3 className="font-bold text-lg">Address:</h3>
-            <p className="text-sm">goevolo</p>
+            <p className="text-sm">Evolo AI</p>
             <p className="text-sm">1110 N Virgil Ave</p>
             <p className="text-sm">PMB 98121</p>
             <p className="text-sm mb-4">Los Angeles, CA 90029</p>
