@@ -885,7 +885,7 @@ const PrivacyPolicy = () => {
             <br />
             Adult Ed Pro
             <br />
-            110 N Virgil Ave
+            1110 N Virgil Ave
             <br />
             PMB 98121
             <br />
