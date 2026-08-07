@@ -102,183 +102,48 @@ const PrivacyPolicy = () => {
           </span>
         </h1>
 
-        {/* Paragraph 1 */}
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy covers the Evolo AI platform, including its mobile and web-based applications, which are published by Yusair, Inc. and made available through platforms such as the Apple App Store and Google Play Store, and other distribution channels. Yusair, Inc., DBA "Evolo AI," is committed to protecting your privacy, safeguarding your data, and maintaining the highest standards of security and compliance across all Services.
-          </p>
-        </div>
-
-        {/* Paragraph 2 */}
-        <div className="mb-6 md:mb-8">
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Evolo AI and Evolo AI School are advanced AI-powered platforms designed to support students and educational institutions with intelligent tools for workforce development, workforce transitions, documentation, workflow automation, and compliance-driven processes, including behavioral health and reporting systems. Evolo AI provides tools that support compliance with FERPA and HIPAA. Our platform is designed to assist educational and healthcare institutions in meeting their regulatory obligations. However, compliance depends on the specific data shared, the features enabled, and the institution's own internal privacy configurations. We act as a "School Official" under FERPA and a "Business Associate" under HIPAA only when expressly defined by a written agreement with your institution.
-          </p>
-        </div>
-
-        {/* Paragraph 3 */}
-        <div className="mb-6 md:mb-8">
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Privacy is embedded into the foundation of our platform. We design and operate our systems to ensure transparency, accountability, and responsible data handling at every level. This Privacy Policy explains how we collect, use, process, and protect your personal information when you use our Services.
-          </p>
-        </div>
-
-        {/* Paragraph 4 */}
-        <div className="mb-6 md:mb-8">
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            For purposes of this Privacy Policy, "personal data," "personal information," or similar terms means any information relating to an identified or identifiable individual that is processed by Yusair, Inc. (referred to as "Evolo AI," "Evolo AI School," "we," "us," or "our") in accordance with this Privacy Policy and applicable data protection laws.
-          </p>
-        </div>
-
-        {/* Paragraph 5 */}
-        <div className="mb-6 md:mb-8">
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy applies to your access and use of Evolo AI's Services, including web and mobile applications, tools, APIs, documentation, and AI-powered modules that support reporting, documentation, and workflow management (collectively, the "Services"). By using the Services, you agree to this Privacy Policy and our Terms of Service. If you do not agree, you should discontinue use of the Services.
+            At Goevolo.com, we are committed to protecting the privacy and security of our users' personal information. This Privacy Policy outlines our practices and policies for collecting, using, and disclosing information from our website visitors and users.
           </p>
         </div>
 
         <div className="mb-6 md:mb-8">
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            This Privacy Policy was recently updated on April 27, 2026. We may continue to update it periodically to reflect improvements in our Services, legal requirements, or operational changes. Your continued use of the Services after any updates constitutes your acceptance of the revised Policy.
+            Welcome to Evolo AI, an advanced artificial intelligence platform designed to enhance productivity, streamline workflows, and empower businesses with intelligent solutions.
           </p>
         </div>
 
-        {/* Employee and Subcontractor Confidentiality Training Section */}
+        <div className="mb-6 md:mb-8">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            From the very beginning, our goal has been to design privacy into our platform in a way that respects the rights of our users, meets regulatory obligations, and supports data security best practices. This Privacy Policy (the "Privacy Policy") describes how Yusair, Inc. ("Evolo AI," "Adult Ed Pro," "we," "us," or "our") collects, uses, and shares your personal data. By "personal data," "personal information," or similar terms, we mean any data relating to an identified or identifiable natural person that is processed by us in accordance with this Privacy Policy and applicable data privacy laws.
+          </p>
+        </div>
+
+        <div className="mb-6 md:mb-8">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            This Privacy Policy applies to your access and use of Evolo AI's user-facing applications, including but not limited to our web and mobile platforms, tools, APIs, websites, and documentation (collectively, the "Services"). This Privacy Policy is part of Evolo AI's Terms of Service. By using the Services, you agree to both our Terms of Service and this Privacy Policy; if you do not agree, please do not use the Services. Unless otherwise stated, defined terms used in this Privacy Policy have the meanings associated with them in our Terms of Service.
+          </p>
+        </div>
+
+        <div className="mb-6 md:mb-8">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            This Privacy Policy was last updated on 6th May 2025. We're constantly improving our Services, so we may need to update this Privacy Policy from time to time. If any changes are made, we'll post them on this page, so please be sure to review it periodically. When you continue to use the Services after changes have been posted, you are confirming that you agree to the revised Privacy Policy.
+          </p>
+        </div>
+
+        {/* Personal Data We Collect */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Employee and Subcontractor Confidentiality Training
+            Personal Data We Collect
           </h2>
-          <p className="text-gray-600 text-sm md:text-base mb-4 leading-relaxed">
-            Evolo AI is committed to safeguarding sensitive information through comprehensive training programs for all employees, contractors, and subcontractors responsible for handling or having access to customer data.
-          </p>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Onboarding Training:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Upon joining the organization, new hires, contractors, and subcontractors are required to participate in mandatory confidentiality and data protection training within their initial week. This training encompasses modules on identifying confidential information, implementing secure handling procedures, adhering to non-disclosure obligations, categorizing data, and reporting data breaches. Training is delivered through interactive online modules accompanied by quizzes, and participants must sign a completed acknowledgment of training completion.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Annual Refresher Training:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Existing personnel are mandated to complete annual refresher training on the latest confidentiality best practices, updates to privacy laws such as the GDPR and CCPA, AI-specific data risks, and incident response procedures. Completion rates for relevant roles are monitored at 100%, and retraining is required for non-completion.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Role-Specific Training:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Staff members handling sensitive data, including developers and support teams, undergo specialized training on encryption, access controls, secure coding, and AI model security. Subcontractors are expected to demonstrate equivalent training through certifications or attestations prior to engagement.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Training Documentation and Auditing:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Records of all training sessions, including dates, participants, content outlines, and completion certificates, are retained for a minimum of three years. These records are available for customer audits upon request. Evolo AI conducts quarterly internal audits to assess the effectiveness of training programs.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Alerts and Notifications:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              The App may provide emergency, safety, and informational notifications, including alerts based on reports, monitoring, or integrations with third-party or user-submitted information. While we strive to deliver timely and accurate notifications, we do not warrant or guarantee that any alert will be timely, complete, accurate, uninterrupted, secure, or delivered to every user or device, and we are not responsible for any delay, failure, misdelivery, or omission of any notification.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Emergency information may change rapidly and may be unverified, incomplete, or subject to official confirmation. You remain responsible for following instructions from law enforcement, campus officials, emergency personnel, and other authorized authorities, and you should not rely solely on the App as your only source of emergency or safety information.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              To the fullest extent permitted by law, the App provider, its affiliates, officers, employees, contractors, and licensors shall not be liable for indirect, incidental, consequential, special, exemplary, or punitive damages, or for loss, injury, death, property damage, business interruption, data loss, or other harm arising out of or related to your use of, or inability to use, the App or any alert or omission of an alert, except to the extent caused by our gross negligence or willful misconduct.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              If you are using the App on behalf of a school, college, university, or other organization, that organization is solely responsible for determining whether an emergency notification or warning is required under applicable law, including Clery Act obligations where applicable, and for approving the content, timing, and distribution of any official alert.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              We may process personal information, including account details, device information, location data, and message history, to operate safety features, deliver notifications, prevent fraud, secure the service, and comply with legal obligations.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Enforcement and Breach Response:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Violations of training protocols result in disciplinary action, potentially extending to termination of employment. All personnel are required to reaffirm their confidentiality obligations annually through signed agreements.
-            </p>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Implementation Procedures:
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full border border-gray-300 text-sm md:text-base">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Step</th>
-                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Action</th>
-                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Responsible Party</th>
-                    <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-700">Timeline</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">1</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Develop/update training modules with legal review</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">HR/Security Team</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Within 30 days</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">2</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Roll out to current staff and subcontractors</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">HR</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Next onboarding cycle</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">3</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Track via LMS (e.g., integrated with HRIS) and report completion to leadership</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Security Officer</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Monthly</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">4</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Annual policy review and training refresh</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">Compliance Team</td>
-                    <td className="border border-gray-300 px-4 py-2 text-gray-600">End of fiscal year</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        {/* Personal Data We Collect Section */}
-        <div className="mb-8 md:mb-10">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Personal Data We Collect:
-          </h2>
-          <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-            When Institutions provide data, it is categorized as follows: (a) "Education Records" subject to FERPA, (b) "Protected Health Information" (PHI) subject to HIPAA, or (c) "General Institutional Data." We process each category according to the specific privacy standards required by law for that data type. Institution Partners are responsible for ensuring that they provide only the data necessary for the authorized purpose of the Services.
-          </p>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
             Users need to establish an account to fully access Evolo AI's Services. You can create an account as an individual user, as part of an organization, or as an enterprise client seeking advanced AI-powered solutions. For more information on account creation, please review Evolo AI's Terms of Service.
           </p>
 
-          {/* Information From Partner Organizations */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Information From Partner Organizations:
+              Information From Partner Organizations
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               When businesses or institutions sign up for Evolo AI, they may provide us with personal data about their employees or users to help manage accounts and provide the Services. This data may include:
@@ -295,10 +160,9 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Information From Students and Alumni */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Information From Students and Alumni:
+              Information From Students and Alumni
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               When you create an Evolo AI account, we collect personal data, including:
@@ -316,10 +180,9 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Information From Employer Partners */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Information From Employer Partners:
+              Information From Employer Partners
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               When representatives of enterprise clients create accounts, we collect:
@@ -332,20 +195,18 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Information From Career Center Professionals */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Information From Career Center Professionals of Adult Schools:
+              Information From Career Center Professionals of Adult Schools
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               When career center professionals of Institution Partners create a Evolo AI account, we collect basic contact information, including first and last name, email address and telephone number.
             </p>
           </div>
 
-          {/* Information Collected Through Use of the Services */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Information Collected Through Use of the Services:
+              Information Collected Through Use of the Services
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               We automatically collect certain information to improve and secure our Services, including:
@@ -358,7 +219,7 @@ const PrivacyPolicy = () => {
                 <strong>Service Interactions:</strong> Personal data you include in feedback, support requests, or when participating in beta programs.
               </li>
               <li>
-                <strong>Communications & Recordings:</strong> If you engage in meetings, webinars, or support calls via Evolo AI, we may record sessions with your consent. You'll be notified when recording is enabled.
+                <strong>Communications &amp; Recordings:</strong> If you engage in meetings, webinars, or support calls via Evolo AI, we may record sessions with your consent. You'll be notified when recording is enabled.
               </li>
               <li>
                 <strong>User Contributions:</strong> Content you choose to publish within public or shared spaces of the platform, such as comments, posts, or feedback.
@@ -377,46 +238,41 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
           </div>
-
-          {/* Information We Automatically Collect */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Information We Automatically Collect:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              To better understand how you interact with our Services, we and our partners use cookies, web beacons, and similar technologies to collect:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>
-                <strong>Log and Device Data:</strong> IP address, browser type, device identifiers, operating system, network information, and session timestamps.
-              </li>
-              <li>
-                <strong>Usage Data:</strong> Pages visited, features used, time spent on the platform, and user interaction patterns.
-              </li>
-            </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
-              For more information on how we use cookies and manage tracking technologies, please review our{' '}
-              <a href="/cookie-policy/" className="text-[#2B1BDD] hover:underline">
-                Cookie Policy
-              </a>
-              .
-            </p>
-          </div>
         </div>
 
-        {/* How We Use Your Personal Data Section */}
+        {/* Information We Automatically Collect */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            How We Use Your Personal Data:
+            Information We Automatically Collect
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            To better understand how you interact with our Services, we and our partners use cookies, web beacons, and similar technologies to collect:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
+            <li>
+              <strong>Log and Device Data:</strong> IP address, browser type, device identifiers, operating system, network information, and session timestamps.
+            </li>
+            <li>
+              <strong>Usage Data:</strong> Pages visited, features used, time spent on the platform, and user interaction patterns.
+            </li>
+          </ul>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            For more information on how we use cookies and manage tracking technologies, please review our Cookie Policy.
+          </p>
+        </div>
+
+        {/* How We Use Your Personal Data */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            How We Use Your Personal Data
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
             We may use the information that we collect about you, including personal data, as described below:
           </p>
 
-          {/* To Provide the Services */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              1. To Provide the Services:
+              1. To Provide the Services
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               This includes:
@@ -426,10 +282,10 @@ const PrivacyPolicy = () => {
                 <strong>Enhancing User Experience:</strong> Maximizing opportunities to connect student and alumni users with potential employers.
               </li>
               <li>
-                <strong>Allowing student and alumni users to make appointments:</strong> With career center professionals or sign up for career fairs and other events.
+                Allowing student and alumni users to make appointments with career center professionals or sign up for career fairs and other events.
               </li>
               <li>
-                <strong>Personalizing the Services:</strong> By, for example, suggesting employers based on the information in a user's resume, or suggesting students with public profiles to employers based on search criteria. For more information about public profiles and student consent, see the "How We May Share Personal Data We Collect" section below.
+                Personalizing the Services by, for example, suggesting employers based on the information in a user's resume, or suggesting students with public profiles to employers based on search criteria. For more information about public profiles and student consent, see the "How We May Share Personal Data We Collect" section below.
               </li>
               <li>
                 <strong>Optimizing AI Performance:</strong> Using data to train, improve, and refine our AI models, algorithms, and analytics tools to deliver more accurate and effective results.
@@ -441,15 +297,11 @@ const PrivacyPolicy = () => {
                 <strong>Account Management:</strong> Allowing users to register, create profiles, manage accounts, and access specific features based on subscription levels or service agreements.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
-              Notwithstanding any other provision, Evolo AI does not use FERPA-protected Education Records or HIPAA-protected PHI to train, improve, or refine general-purpose AI models, algorithms, or analytics tools. AI-powered features within the platform are restricted to operational tasks only, and data processed by these models is handled in a secure, isolated environment without being used for model-wide improvement.
-            </p>
           </div>
 
-          {/* Communication */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              2. Communication:
+              2. Communication
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               This includes:
@@ -459,18 +311,17 @@ const PrivacyPolicy = () => {
                 <strong>Service Notifications:</strong> Sending essential updates related to your account, such as system alerts, technical notices, security updates, and support messages.
               </li>
               <li>
-                <strong>Marketing & Promotions:</strong> Delivering promotional content, product updates, newsletters, and offers related to Evolo AI, subject to your communication preferences. You can opt out at any time via the unsubscribe link in our emails or by updating your account settings.
+                <strong>Marketing &amp; Promotions:</strong> Delivering promotional content, product updates, newsletters, and offers related to Evolo AI, subject to your communication preferences. You can opt out at any time via the unsubscribe link in our emails or by updating your account settings.
               </li>
               <li>
-                <strong>Feedback & Surveys:</strong> Requesting user feedback to improve our services, conduct surveys, and gather insights for product development.
+                <strong>Feedback &amp; Surveys:</strong> Requesting user feedback to improve our services, conduct surveys, and gather insights for product development.
               </li>
             </ul>
           </div>
 
-          {/* Compliance and Protection */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              3. Compliance and Protection:
+              3. Compliance and Protection
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               We may use your information to:
@@ -483,20 +334,18 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Research and Development */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              4. Research and Development:
+              4. Research and Development
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               We continuously work to improve our services. This includes analyzing usage data to develop new features, optimize performance, and conduct internal research related to artificial intelligence and data analytics.
             </p>
           </div>
 
-          {/* Other Uses */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              5. Other Uses:
+              5. Other Uses
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               We may use your information for other purposes that are disclosed to you at the time we collect your data or with your consent, where legally required.
@@ -504,38 +353,15 @@ const PrivacyPolicy = () => {
           </div>
         </div>
 
-        {/* CYBHI-Aligned Behavioral Health Features Section */}
+        {/* How We May Share Personal Data We Collect */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            CYBHI-Aligned Behavioral Health Features
+            How We May Share Personal Data We Collect
           </h2>
-          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-            Evolo AI School includes features designed to support behavioral health documentation and workflow management for educational institutions operating under applicable regulatory frameworks, including the California Youth Behavioral Health Initiative (CYBHI).
-          </p>
-          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-            These features may support authorized users in documenting behavioral incidents, managing counseling workflows, and generating structured reports using standardized formats. Any data processed through these features is handled in accordance with applicable privacy laws and institutional compliance requirements, including FERPA and HIPAA, where applicable.
-          </p>
-          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-            All such data is treated as part of the Services and is protected under the same security, access control, and privacy safeguards described in this Privacy Policy.
-          </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            Data is protected using industry-standard encryption in transit and at rest, along with strict access controls designed to limit access to authorized users and personnel only.
-          </p>
-        </div>
-
-        {/* How We May Share Personal Data We Collect Section */}
-        <div className="mb-8 md:mb-10">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            How We May Share Personal Data We Collect:
-          </h2>
-          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-            Sharing of Education Records and PHI is strictly limited to authorized personnel who have a "legitimate educational interest" under FERPA or who are authorized by the Covered Entity under HIPAA. Third-party service providers acting as subprocessors are contractually bound to the same data protection, confidentiality, and security standards described in this Policy and any applicable Business Associate Agreement.
-          </p>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
             There are limited circumstances under which we may share personal data with others, as outlined below:
           </p>
 
-          {/* Employer Partners */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Employer Partners:
@@ -545,7 +371,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Institution Partners */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Institution Partners:
@@ -555,7 +380,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Other Users */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Other Users:
@@ -565,7 +389,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Shareable Profile Link */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Shareable Profile Link:
@@ -575,7 +398,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Authorized Agents */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Authorized Agents:
@@ -585,7 +407,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Service Providers, Advisors, Consultants */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Service Providers, Advisors, Consultants:
@@ -595,7 +416,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Affiliates */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Affiliates:
@@ -605,7 +425,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Business Transfers */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Business Transfers:
@@ -615,7 +434,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Legal Requirements */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               Legal Requirements:
@@ -624,32 +442,32 @@ const PrivacyPolicy = () => {
               We may share personal data with relevant law enforcement bodies if we believe that disclosure is reasonably necessary to comply with a law, regulation, valid legal process (e.g., subpoenas or warrants served on us), or governmental or regulatory request; to enforce applicable terms in this Privacy Policy or the Terms of Service; to protect the security or integrity of the Services, and/or to protect the rights, property, or safety of Evolo AI, its employees, users, or others; to detect, prevent, or otherwise address security or technical issues, illegal, or suspected illegal activities (including fraud); or as evidence in litigation in which we are involved, as part of a judicial or regulatory proceeding. If we are going to release your data, we will do our best to provide you with notice in advance by email, unless we are prohibited by law from doing so.
             </p>
           </div>
-
-          {/* Non-Personal Data */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Non-Personal Data:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              We may deidentify, aggregate, or anonymize data from the personal data you and others make available in connection with the Services such that you are not individually identified. We use and share this data in a variety of ways to help our partners and the public understand trends in the job seeking market through analytics reports, statistics and other metrics and guides. For example, to understand:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>What percentage of students from certain colleges work in a specific geographic area.</li>
-              <li>Whether a certain major or extra-curricular activity fits well with a particular employer's hiring patterns.</li>
-              <li>How employers compare to each other in the number of applicants they receive from different colleges.</li>
-            </ul>
-          </div>
         </div>
 
-        {/* Your Data Privacy Choices Section */}
+        {/* Non-Personal Data */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Your Data Privacy Choices:
+            Non-Personal Data
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            We may deidentify, aggregate, or anonymize data from the personal data you and others make available in connection with the Services such that you are not individually identified. We use and share this data in a variety of ways to help our partners and the public understand trends in the job seeking market through analytics reports, statistics and other metrics and guides. For example, to understand:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <li>What percentage of students from certain colleges work in a specific geographic area.</li>
+            <li>Whether a certain major or extra-curricular activity fits well with a particular employer's hiring patterns.</li>
+            <li>How employers compare to each other in the number of applicants they receive from different colleges.</li>
+          </ul>
+        </div>
+
+        {/* Your Data Privacy Choices */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Your Data Privacy Choices
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             You have control over how your personal data is collected and used. You can:
           </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
             <li>
               <strong>Manage Account Settings:</strong> Update your preferences in your account dashboard.
             </li>
@@ -660,30 +478,28 @@ const PrivacyPolicy = () => {
               <strong>Access, Correct, or Delete Data:</strong> Request access to your personal data or ask us to correct, update, or delete your information, subject to legal obligations.
             </li>
           </ul>
-          <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
             For more information about your privacy rights or to submit a request, please contact us at{' '}
             <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
               support@goevolo.com
             </a>
-            .
           </p>
         </div>
 
-        {/* Storage, Security, and How to Remove Your Information Section */}
+        {/* Storage, Security, and How to Remove Your Information */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
             Storage, Security, and How to Remove Your Information
           </h2>
 
-          {/* Data Security */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              1. Data Security:
+              1. Data Security
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               Evolo AI employs industry-standard technical, administrative, and physical security measures to protect the personal data we collect. This includes:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
               <li>
                 <strong>Data Encryption:</strong> Encrypting personal data both at rest and during transmission to safeguard against unauthorized access.
               </li>
@@ -693,6 +509,11 @@ const PrivacyPolicy = () => {
               <li>
                 <strong>Monitoring and Auditing:</strong> Regular security assessments, vulnerability testing, and continuous monitoring of our systems to detect and mitigate threats.
               </li>
+            </ul>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              While we take reasonable precautions to prevent security breaches, no system can be completely secure. We cannot guarantee that unauthorized access, hacking, data breaches, or other security incidents will never occur. In the event of a data breach, we will:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
                 <strong>Investigate Promptly:</strong> Take immediate steps to assess and contain the incident.
               </li>
@@ -702,10 +523,9 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* How You Can Protect Your Data */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              2. How You Can Protect Your Data:
+              2. How You Can Protect Your Data
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               You also play an important role in keeping your information secure. To help protect your data:
@@ -717,15 +537,14 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Data Retention */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              3. Data Retention:
+              3. Data Retention
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               We retain personal data for as long as necessary to:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
               <li>
                 <strong>Provide the Services:</strong> Support your account and enable access to platform features.
               </li>
@@ -736,20 +555,19 @@ const PrivacyPolicy = () => {
                 <strong>Legal Compliance:</strong> Satisfy applicable laws, regulations, and contractual obligations.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               When personal data is no longer needed, we will securely delete, anonymize, or de-identify it.
             </p>
           </div>
 
-          {/* How to Deactivate or Delete Your Information */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              4. How to Deactivate or Delete Your Information:
+              4. How to Deactivate or Delete Your Information
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               If you wish to no longer be visible or active within Evolo AI's Services, you can:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
               <li>
                 <strong>Deactivate Your Account:</strong> This will disable your account without deleting your data, allowing for future reactivation.
               </li>
@@ -757,10 +575,10 @@ const PrivacyPolicy = () => {
                 <strong>Request Data Deletion:</strong> Submit a request to delete your personal information entirely.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               To request deactivation or deletion:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
               <li>
                 Email us at{' '}
                 <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
@@ -769,8 +587,8 @@ const PrivacyPolicy = () => {
               </li>
               <li>Access your account settings to adjust privacy controls.</li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
-              <strong>Please note:</strong>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Please note:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
@@ -783,10 +601,10 @@ const PrivacyPolicy = () => {
           </div>
         </div>
 
-        {/* Third-Party Links Section */}
+        {/* Third-Party Links */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Third-Party Links:
+            Third-Party Links
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             Our Services may contain links to third-party websites, applications, or services. These external sites are not governed by this Privacy Policy.
@@ -801,14 +619,11 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
 
-        {/* Children and Minors Section */}
+        {/* Children and Minors */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Children and Minors:
+            Children and Minors
           </h2>
-          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-            For services provided through an Institution Partner, such as K-12 schools, we rely on the institution's determination of parental consent or its authorization to act on behalf of the student under FERPA. We do not independently collect data from children under 13 without institutional authorization, and all such data is handled as Education Records under our contractual obligations to the institution.
-          </p>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             Evolo AI is not intended for use by individuals under the age of 16 without parental consent.
           </p>
@@ -826,10 +641,10 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
 
-        {/* Your California Privacy Rights (CCPA Notice) Section */}
+        {/* Your California Privacy Rights (CCPA Notice) */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Your California Privacy Rights (CCPA Notice):
+            Your California Privacy Rights (CCPA Notice)
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             <strong>Effective Date:</strong> 02/10/2025
@@ -838,15 +653,14 @@ const PrivacyPolicy = () => {
             This section applies to California residents under the California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA).
           </p>
 
-          {/* Personal Information We Collect */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              1. Personal Information We Collect:
+              1. Personal Information We Collect
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               In the past 12 months, Evolo AI may have collected the following categories of personal information:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
               <li>
                 <strong>Identifiers:</strong> Name, email address, phone number, IP address, and unique identifiers.
               </li>
@@ -875,10 +689,7 @@ const PrivacyPolicy = () => {
                 <strong>Inferences:</strong> Preferences and trends derived from your interactions with our platform.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
-              For FERPA-protected records, students and parents should contact their educational institution directly to exercise their rights to inspect, review, or request amendments to their records. Evolo AI will provide technical assistance to the Institution to facilitate these requests. For HIPAA-protected records, please refer to the Notice of Privacy Practices provided by your healthcare provider; we act as their agent and will support them in fulfilling your rights under HIPAA.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               This personal information may be collected directly from you on the website or through the Services, or indirectly from you, for example by observing your actions in using the website or the Services, from other sources such as Institution Partners, as described in the "Personal Data We Collect" section above.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
@@ -893,41 +704,42 @@ const PrivacyPolicy = () => {
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               However, subject to the preferences you indicate to us, we may share for purposes of cross-context behavioral advertising, including in the preceding twelve (12) months, the following information with third parties:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>Identifiers such as online identifier, Internet Protocol address, and other similar identifiers.</li>
-              <li>Internet or other electronic network activity information, such as browsing history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements.</li>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
+              <li>
+                Identifiers such as online identifier, Internet Protocol address, and other similar identifiers.
+              </li>
+              <li>
+                Internet or other electronic network activity information, such as browsing history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements.
+              </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
-              For more information about our use of cookies and other tracking technologies, please visit our{' '}
-              <a href="/privacy-policy/" className="text-[#2B1BDD] hover:underline">
-                Privacy Policy
-              </a>
-              {' '}and{' '}
-              <a href="/cookie-policy/" className="text-[#2B1BDD] hover:underline">
-                Cookie Policy
-              </a>
-              . You may request to opt-out of this type of personal information sharing using the methods described in the Cookie Policy.
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              For more information about our use of cookies and other tracking technologies, please visit our Privacy Policy and Cookie Policy. You may request to opt-out of this type of personal information sharing using the methods described in the Cookie Policy.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               We do not knowingly share the personal information of minors under sixteen (16) years of age.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              <strong>Retention.</strong> Data retention is governed by the written agreement with your institution. Upon the termination of our service agreement with an Institution Partner, or upon a verified request for deletion, we will securely destroy or return all Education Records and PHI in our possession, except where local, state, or federal law mandates a specific retention period for regulatory or audit purposes. We also retain personal information for as long as reasonably necessary to provide you with the Services, perform legitimate business purposes, comply with legal obligations, maintain records, resolve disputes, maintain security, prevent harm, detect and prevent fraud and abuse, and enforce our agreements.
+              <strong>Retention.</strong> We retain personal information for as long as reasonably necessary to provide you with the Services, to perform our legitimate business purposes, or for other essential purposes such as complying with our legal obligations, maintaining records, resolving disputes, maintaining security and preventing harm, detecting and preventing fraud and abuse, enforcing our agreements. The criteria used to determine retention periods includes the legal limitation of liability period, agreed contractual provisions, applicable regulatory requirements, and industry standards.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              <strong>Consumer Rights and Requests:</strong>
+              <strong>Consumer Rights and Requests:</strong> You may request that we disclose to you the following information as required by law:
             </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              You may request that we disclose to you the following information as required by law:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>The categories of personal information we collect about you and the categories of sources from which we collect such information;</li>
-              <li>The business or commercial purpose for collecting, selling, or sharing personal information about you;</li>
-              <li>The categories of personal information about you that we have sold or shared and the categories of third parties to whom we sold or shared such information; and</li>
-              <li>The categories of personal information about you that we otherwise disclosed, and the categories of third parties to whom we disclosed such personal information.</li>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
+              <li>
+                The categories of personal information we collect about you and the categories of sources from which we collect such information;
+              </li>
+              <li>
+                The business or commercial purpose for collecting, selling, or sharing personal information about you;
+              </li>
+              <li>
+                The categories of personal information about you that we have sold or shared and the categories of third parties to whom we sold or shared such information; and
+              </li>
+              <li>
+                The categories of personal information about you that we otherwise disclosed, and the categories of third parties to whom we disclosed such personal information.
+              </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
-              You may also request (i) to correct inaccuracies in your personal information; (ii) to receive a copy of your personal information: (iii) that we delete your personal information, subject to certain exceptions; or (iv) to "opt-out" of your personal information being shared with certain third parties, as described above.
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              You may also request (i) to correct inaccuracies in your personal information; (ii) to receive a copy of your personal information; (iii) that we delete your personal information, subject to certain exceptions; or (iv) to "opt-out" of your personal information being shared with certain third parties, as described above.
             </p>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               <strong>Non-Discrimination:</strong> We will not unlawfully discriminate against you for exercising any of your CCPA rights.
@@ -940,10 +752,9 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Your Rights Under CCPA */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              2. Your Rights Under CCPA:
+              2. Your Rights Under CCPA
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               As a California resident, you have the right to:
@@ -967,29 +778,29 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* How to Exercise Your Rights */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              3. How to Exercise Your Rights:
+              3. How to Exercise Your Rights
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               You can submit a request by:
             </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              <strong>Email:</strong>{' '}
-              <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
-                support@goevolo.com
-              </a>
-            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
+              <li>
+                <strong>Email:</strong>{' '}
+                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+                  support@goevolo.com
+                </a>
+              </li>
+            </ul>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               We will respond to verifiable requests within 45 days. If we require more time, we'll notify you of the reason and expected timeframe.
             </p>
           </div>
 
-          {/* Shine the Light Law */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              4. Shine the Light Law (California Civil Code §1798.83):
+              4. Shine the Light Law (California Civil Code §1798.83)
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               California residents may request information about our disclosure of personal information to third parties for direct marketing purposes. Evolo AI does not disclose personal information for such purposes.
@@ -997,42 +808,45 @@ const PrivacyPolicy = () => {
           </div>
         </div>
 
-        {/* Contact Us Section */}
+        {/* Contact Us */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Contact Us:
+            Contact Us
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             If you have questions about this Privacy Policy or need assistance exercising your rights, please contact us at:
           </p>
-          <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1">
-            <p>
+          <ul className="list-none space-y-2 text-gray-600 text-sm md:text-base leading-relaxed mb-3">
+            <li>
               <strong>Email:</strong>{' '}
               <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
                 support@goevolo.com
               </a>
-            </p>
-            <p>
-              <strong>Address:</strong> Evolo AI
-            </p>
-            <p className="ml-4">1110 N Virgil Ave</p>
-            <p className="ml-4">PMB 98121</p>
-            <p className="ml-4">Los Angeles, CA 90029</p>
-          </div>
-          <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
+            </li>
+            <li>
+              <strong>Address:</strong> AdultEd Pro
+              <br />
+              1110 N Virgil Ave
+              <br />
+              PMB 98121
+              <br />
+              Los Angeles, CA 90029
+            </li>
+          </ul>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
             If you require this policy in an alternative format, please reach out to the contact information above.
           </p>
         </div>
 
-        {/* Data Privacy Framework (DPF) Notice Section */}
+        {/* Data Privacy Framework (DPF) Notice */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Data Privacy Framework (DPF) Notice:
+            Data Privacy Framework (DPF) Notice
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             Evolo AI complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce. Evolo AI has certified to the U.S. Department of Commerce that it adheres to the:
           </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
             <li>
               EU-U.S. Data Privacy Framework Principles (EU-U.S. DPF Principles) regarding the processing of personal data received from the European Union in reliance on the EU-U.S. DPF,
             </li>
@@ -1043,7 +857,7 @@ const PrivacyPolicy = () => {
               Swiss-U.S. Data Privacy Framework Principles (Swiss-U.S. DPF Principles) for personal data received from Switzerland.
             </li>
           </ul>
-          <p className="text-gray-600 text-sm md:text-base mt-3 mb-3 leading-relaxed">
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             If there is any conflict between the terms of this Privacy Policy and the DPF Principles, the DPF Principles shall govern.
           </p>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -1053,210 +867,221 @@ const PrivacyPolicy = () => {
             </a>
             .
           </p>
-
-          {/* Handling Inquiries and Complaints */}
-          <div className="mt-6 mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Handling Inquiries and Complaints:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              In compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF, Evolo AI is committed to resolving complaints related to our collection, use, and processing of personal data.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Individuals from the EU, UK, or Switzerland with inquiries or complaints regarding the handling of their personal data should first contact us directly at:
-            </p>
-            <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1 ml-4">
-              <p>Yusair, Inc.</p>
-              <p>Evolo AI</p>
-              <p>110 N Virgil Ave</p>
-              <p>PMB 98121</p>
-              <p>Los Angeles, CA 90029</p>
-              <p>
-                <strong>Email:</strong>{' '}
-                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
-                  support@goevolo.com
-                </a>
-              </p>
-            </div>
-          </div>
-
-          {/* Independent Dispute Resolution */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Independent Dispute Resolution:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              If your privacy concern or complaint cannot be resolved through Evolo AI's internal processes, we will refer unresolved complaints to an independent third-party dispute resolution provider:
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              <strong>VeraSafe DPF Dispute Resolution Procedure</strong>
-            </p>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              This service is provided at no cost to you. To submit a complaint, please visit VeraSafe's dispute resolution portal.
-            </p>
-          </div>
-
-          {/* Binding Arbitration */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Binding Arbitration (If Applicable):
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Under certain conditions specified in Annex I of the EU-U.S. DPF Principles and Annex I of the Swiss-U.S. DPF Principles, you may invoke binding arbitration to address unresolved complaints. This option is available only after you have:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>Raised the issue with Evolo AI,</li>
-              <li>Sought resolution through the independent dispute resolution provider, and</li>
-              <li>Attempted to resolve the matter through the appropriate data protection authorities.</li>
-            </ul>
-          </div>
-
-          {/* U.S. Federal Trade Commission (FTC) Jurisdiction */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              U.S. Federal Trade Commission (FTC) Jurisdiction:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              Evolo AI's compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF is subject to the enforcement authority of the U.S. Federal Trade Commission (FTC).
-            </p>
-          </div>
-
-          {/* Accountability for Data Transfers */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Accountability for Data Transfers:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              When Evolo AI transfers personal data to third-party service providers or agents, we remain accountable under the DPF Principles. We require these third parties to process personal data in a manner consistent with the DPF Principles.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              Evolo AI remains liable for the processing of personal data by third-party agents if they process such data in a way that violates the DPF Principles—unless Evolo AI can prove that it is not responsible for the event giving rise to the damage.
-            </p>
-          </div>
-
-          {/* Legal Disclosures */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Legal Disclosures:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              Evolo AI may be required to disclose personal data in response to lawful requests from public authorities, including to meet national security or law enforcement requirements.
-            </p>
-          </div>
-
-          {/* General Contact Information */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              General Contact Information:
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              If you have questions about this Privacy Policy, the Data Privacy Framework, or Evolo AI's data privacy practices, please contact us:
-            </p>
-            <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-1 ml-4">
-              <p>Yusair, Inc.</p>
-              <p>Evolo AI</p>
-              <p>110 N Virgil Ave</p>
-              <p>PMB 98121</p>
-              <p>Los Angeles, CA 90029</p>
-              <p>
-                <strong>Email:</strong>{' '}
-                <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
-                  support@goevolo.com
-                </a>
-              </p>
-            </div>
-          </div>
         </div>
 
-        {/* Use of AI Services and Data Processing Section */}
+        {/* Handling Inquiries and Complaints */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Use of AI Services and Data Processing:
+            Handling Inquiries and Complaints
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            In compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF, Evolo AI is committed to resolving complaints related to our collection, use, and processing of personal data.
+          </p>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            Individuals from the EU, UK, or Switzerland with inquiries or complaints regarding the handling of their personal data should first contact us directly at:
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-1">
+            Yusair, Inc.
+            <br />
+            Adult Ed Pro
+            <br />
+            110 N Virgil Ave
+            <br />
+            PMB 98121
+            <br />
+            Los Angeles, CA 90029
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            Email:{' '}
+            <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+              support@goevolo.com
+            </a>
+          </p>
+        </div>
+
+        {/* Independent Dispute Resolution */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Independent Dispute Resolution
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            If your privacy concern or complaint cannot be resolved through Evolo AI's internal processes, we will refer unresolved complaints to an independent third-party dispute resolution provider:
+          </p>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            <strong>VeraSafe DPF Dispute Resolution Procedure</strong>
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            This service is provided at no cost to you. To submit a complaint, please visit VeraSafe's dispute resolution portal.
+          </p>
+        </div>
+
+        {/* Binding Arbitration */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Binding Arbitration (If Applicable)
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            Under certain conditions specified in Annex I of the EU-U.S. DPF Principles and Annex I of the Swiss-U.S. DPF Principles, you may invoke binding arbitration to address unresolved complaints. This option is available only after you have:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <li>Raised the issue with Evolo AI,</li>
+            <li>Sought resolution through the independent dispute resolution provider, and</li>
+            <li>Attempted to resolve the matter through the appropriate data protection authorities.</li>
+          </ul>
+        </div>
+
+        {/* U.S. Federal Trade Commission (FTC) Jurisdiction */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            U.S. Federal Trade Commission (FTC) Jurisdiction
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            Evolo AI's compliance with the EU-U.S. DPF, the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. DPF is subject to the enforcement authority of the U.S. Federal Trade Commission (FTC).
+          </p>
+        </div>
+
+        {/* Accountability for Data Transfers */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Accountability for Data Transfers
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            When Evolo AI transfers personal data to third-party service providers or agents, we remain accountable under the DPF Principles. We require these third parties to process personal data in a manner consistent with the DPF Principles.
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            Evolo AI remains liable for the processing of personal data by third-party agents if they process such data in a way that violates the DPF Principles—unless Evolo AI can prove that it is not responsible for the event giving rise to the damage.
+          </p>
+        </div>
+
+        {/* Legal Disclosures */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Legal Disclosures
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            Evolo AI may be required to disclose personal data in response to lawful requests from public authorities, including to meet national security or law enforcement requirements.
+          </p>
+        </div>
+
+        {/* General Contact Information */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            General Contact Information
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+            If you have questions about this Privacy Policy, the Data Privacy Framework, or Evolo AI's data privacy practices, please contact us:
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-1">
+            Yusair, Inc.
+            <br />
+            Adult Ed Pro
+            <br />
+            1110 N Virgil Ave
+            <br />
+            PMB 98121
+            <br />
+            Los Angeles, CA 90029
+          </p>
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            Email:{' '}
+            <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
+              support@goevolo.com
+            </a>
+          </p>
+        </div>
+
+        {/* Use of Microsoft Azure OpenAI Service and Data Processing */}
+        <div className="mb-8 md:mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            Use of Microsoft Azure OpenAI Service and Data Processing
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-            Our AI features, including those powered by enterprise vendors, are configured to operate within a secure, private instance. Our enterprise vendors are contractually prohibited from using data submitted through these tools for their model training. We do not transmit PII, PHI, or FERPA-protected Education Records to AI service providers unless the specific feature integration and the relevant Data Processing Addendum or Business Associate Agreement explicitly authorize it for that use case.
-          </p>
-          <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
-            Evolo AI may utilize artificial intelligence technologies, including third-party AI service providers, to deliver features such as automation, user assistance, content generation, and workflow support. These services are designed to enhance user experience while maintaining appropriate safeguards for data privacy and security.
+            Evolo AI integrates the Microsoft Azure OpenAI Service ("Microsoft AI Service") to provide AI-powered functionality within our platform, enhancing user experiences through automation, assistance, and intelligent interactions. Microsoft acts as our data processor for these AI-powered features and processes data only as described below.
           </p>
 
-          {/* Use of AI Service Providers */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              1. Use of AI Service Providers:
+              AI Data Privacy Statement (FERPA &amp; DPA Compliant)
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI may engage third-party AI providers to process limited data necessary to enable AI-powered functionality. Such providers are selected based on their ability to meet industry-standard security, privacy, and compliance requirements.
+              To ensure the privacy of student and user records, our platform utilizes enterprise-tier Microsoft Azure OpenAI Service, governed by a comprehensive Data Protection Addendum (DPA) that meets FERPA data safety requirements.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>
-                Maintain confidentiality of data.
-              </li>
-              <li>
-                Implement appropriate technical and organizational safeguards.
-              </li>
-              <li>
-                Process data only for the purpose of providing the requested services.
-              </li>
-            </ul>
-          </div>
-
-          {/* Data Processed by AI Services */}
-          <div className="mb-6">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              2. Data Processed by AI Services:
-            </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              When users interact with AI-powered features, the following types of data may be processed:
+              Under this framework, user prompts (inputs), completions (outputs), and embeddings strictly conform to the following protections. They:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>
-                <strong>User Input:</strong> Any text, questions, or content entered by users.
-              </li>
-              <li>
-                <strong>Generated Output:</strong> Responses or content produced by AI systems.
-              </li>
-              <li>
-                <strong>Usage Data:</strong> Limited technical metadata, such as timestamps and system interactions.
-              </li>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
+              <li>are NOT available to other customers.</li>
+              <li>are NOT available to OpenAI or other providers of Models sold by Azure.</li>
+              <li>are NOT used by providers of Models sold by Azure to improve their models or services.</li>
+              <li>are NOT used to train any generative AI foundation models without your permission or instruction.</li>
+              <li>Customer Data, Prompts, and Completions are NOT used to improve Microsoft or third-party products or services.</li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
-              Evolo AI applies data minimization principles and does not intentionally transmit sensitive personal data to AI services unless required for a specific, authorized use case.
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              Read more at{' '}
+              <a
+                href="https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/openai/data-privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2B1BDD] hover:underline"
+              >
+                learn.microsoft.com/en-us/azure/foundry/responsible-ai/openai/data-privacy
+              </a>
+              .
             </p>
           </div>
 
-          {/* Purpose of AI Data Processing */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              3. Purpose of AI Data Processing:
+              1. Who We Share Data With
             </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Data processed through AI services is used solely for:
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              When you use an AI-powered feature within Evolo AI, the data described in Section 2 below is sent to Microsoft Corporation through the Microsoft Azure OpenAI Service, which Evolo AI uses under a data processing agreement with Microsoft. Microsoft processes this data solely to generate a response to your request.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>Generating AI-powered responses to user queries.</li>
-              <li>Enhancing system performance without compromising privacy.</li>
-              <li>Delivering seamless AI-powered functionalities while maintaining data security.</li>
-            </ul>
           </div>
 
-          {/* User Transparency and Control */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              4. User Transparency and Control:
+              2. What Data Is Sent to Microsoft Azure OpenAI Service
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI is committed to transparency in AI usage:
+              Depending on which AI-powered feature you use, Evolo AI may send the following categories of data to Microsoft Azure OpenAI Service:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
+              <li>
+                <strong>User Input:</strong> the text, questions, or content you enter into an AI-powered feature.
+              </li>
+              <li>
+                <strong>Relevant Context Data:</strong> information needed to generate a useful response, limited to what is required for that specific feature.
+              </li>
+              <li>
+                <strong>Usage Metadata:</strong> timestamps and session identifiers needed to operate the feature.
+              </li>
+            </ul>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              Evolo AI does not send your account password, payment or financial information, or government identification numbers to Microsoft Azure OpenAI Service.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              3. Purpose of This Processing
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              Data sent to Microsoft Azure OpenAI Service is used only to generate the AI-powered response you requested. Per Microsoft's Azure OpenAI Service data-handling commitments, this data is not used by Microsoft to train, retrain, or otherwise improve the underlying AI models.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              4. Your Consent and Control
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
+              Before Evolo AI sends your data to Microsoft Azure OpenAI Service for the first time, the app displays an in-app notice explaining what data will be sent and to whom, and asks for your permission before enabling the AI-powered feature. You can:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+              <li>Decline or withdraw consent at any time in Settings, which disables AI-powered features.</li>
               <li>
-                <strong>Notice:</strong> Users are informed when interacting with AI-powered features.
-              </li>
-              <li>
-                <strong>Control:</strong> AI functionality may be configurable or disabled where applicable.
-              </li>
-              <li>
-                <strong>Requests:</strong> Users may request deletion of AI-related data via{' '}
+                Request deletion of your AI interaction history by contacting{' '}
                 <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
                   support@goevolo.com
                 </a>
@@ -1265,43 +1090,47 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* AI Limitations & Disclaimer */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              5. AI Limitations & Disclaimer:
+              5. Microsoft's Data Protection Commitments
             </h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
-              <li>AI-generated outputs are probabilistic and may not always be accurate, complete, or up to date.</li>
-              <li>Users should not rely on AI-generated content as a substitute for professional advice, including legal, medical, or financial guidance.</li>
-              <li>Evolo AI is not responsible for decisions made based on AI-generated outputs.</li>
-            </ul>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              Microsoft processes data on our behalf under Microsoft's Product and Services Data Protection Addendum (DPA), which includes contractual commitments covering data security, confidentiality, data location, retention, and subprocessor management. These commitments provide protections consistent with those described in this Privacy Policy.
+            </p>
           </div>
 
-          {/* Security & Compliance Measures */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              6. Security & Compliance Measures:
+              6. AI Limitations &amp; Disclaimer
+            </h3>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              AI-generated responses may not always be 100% accurate or up-to-date. Responses generated through the Microsoft Azure OpenAI Service should not be relied upon for legal, financial, or medical decisions. Evolo AI is not liable for actions taken based on AI-generated content.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
+              7. Security &amp; Compliance Measures
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI implements industry-standard safeguards to protect data processed through AI services, including:
+              Both Evolo AI and Microsoft implement security controls for this integration, including:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
               <li>
-                <strong>End-to-End Encryption</strong> – Protecting AI interactions using secure transmission protocols.
+                <strong>End-to-End Encryption</strong> – protecting AI interactions using secure transmission protocols.
               </li>
               <li>
                 <strong>Strict Access Controls</strong> – AI-generated responses are accessible only within Evolo AI's platform.
               </li>
               <li>
-                <strong>GDPR & CCPA Compliance</strong> – Fully aligned with global data protection laws.
+                <strong>GDPR &amp; CCPA Compliance</strong> – aligned with applicable global data protection laws.
               </li>
             </ul>
           </div>
 
-          {/* Compliance with Third-Party Platform Requirements */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              7. Compliance with Third-Party Platform Requirements:
+              8. Compliance with Third-Party Platform Requirements
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               For mobile apps (iOS/Android) and third-party platforms (Google Play, App Store, LinkedIn, etc.), this policy aligns with:
@@ -1313,32 +1142,33 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Updates & Contact Information */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              8. Updates & Contact Information:
+              9. Updates &amp; Contact Information
             </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              Evolo AI may update this section from time to time to reflect changes in technology, legal requirements, or service providers.
-            </p>
-            <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
-              For questions or requests related to AI data processing, please contact:{' '}
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              Evolo AI regularly updates this Privacy Policy to reflect advancements in AI security, data privacy, and compliance. For inquiries related to the Microsoft Azure OpenAI Service integration, contact{' '}
               <a href="mailto:support@goevolo.com" className="text-[#2B1BDD] hover:underline">
                 support@goevolo.com
               </a>
+              . For Microsoft's official privacy statement, visit{' '}
+              <a href="https://privacy.microsoft.com" target="_blank" rel="noopener noreferrer" className="text-[#2B1BDD] hover:underline">
+                privacy.microsoft.com
+              </a>
+              .
             </p>
           </div>
         </div>
 
-        {/* Cookies and Similar Technologies Section */}
+        {/* Cookies and Similar Technologies */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-            Cookies and Similar Technologies:
+            Cookies and Similar Technologies
           </h2>
           <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
             Like many businesses, Evolo AI and our third-party partners use cookies and similar technologies—including web beacons, pixels, tags, and scripts (collectively referred to as "cookies")—to:
           </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+          <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-6">
             <li>Recognize your browser,</li>
             <li>Understand how you interact with our Services,</li>
             <li>Analyze trends,</li>
@@ -1346,31 +1176,29 @@ const PrivacyPolicy = () => {
             <li>Operate, administer, and improve our Services.</li>
           </ul>
 
-          {/* What Are Cookies? */}
-          <div className="mt-6 mb-6">
+          <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
               What Are Cookies?
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               Cookies are small data files stored on your computer, mobile device, or browser. We use:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
+            <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4 mb-3">
               <li>
-                <strong>Session cookies,</strong> which expire when you close your browser, and
+                <strong>Session cookies</strong>, which expire when you close your browser, and
               </li>
               <li>
-                <strong>Persistent cookies,</strong> which remain on your device until you delete them.
+                <strong>Persistent cookies</strong>, which remain on your device until you delete them.
               </li>
             </ul>
-            <p className="text-gray-600 text-sm md:text-base mt-3 leading-relaxed">
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               These cookies help us provide a more efficient, personalized experience based on how you interact with our Services.
             </p>
           </div>
 
-          {/* Managing Your Cookie Preferences */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Managing Your Cookie Preferences:
+              Managing Your Cookie Preferences
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               When you visit the Evolo AI website for the first time, you'll see a cookie banner tailored to your region, allowing you to manage your preferences. You can adjust your cookie settings at any time by:
@@ -1381,36 +1209,32 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Agreement to Arbitrate */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Agreement to Arbitrate:
+              Agreement to Arbitrate
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               Any claim, dispute, or controversy arising out of or relating to your relationship with the Company—including but not limited to claims involving services, agreements, personal data, privacy breaches, or other interactions—shall be resolved exclusively by final and binding arbitration.
             </p>
           </div>
 
-          {/* Waiver of Jury Trial */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Waiver of Jury Trial:
+              Waiver of Jury Trial
             </h3>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               You understand and agree that, by accepting this Agreement, you waive your right to a jury trial for any disputes subject to arbitration under this section.
             </p>
           </div>
 
-          {/* Types of Cookies We Use */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Types of Cookies We Use:
+              Types of Cookies We Use
             </h3>
 
-            {/* Essential Cookies */}
             <div className="mb-4">
               <h4 className="text-base md:text-lg font-semibold text-gray-700 mb-2">
-                1. Essential Cookies:
+                Essential Cookies
               </h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
                 <li>
@@ -1425,10 +1249,9 @@ const PrivacyPolicy = () => {
               </ul>
             </div>
 
-            {/* Functional Cookies */}
             <div className="mb-4">
               <h4 className="text-base md:text-lg font-semibold text-gray-700 mb-2">
-                2. Functional Cookies:
+                Functional Cookies
               </h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
                 <li>
@@ -1440,10 +1263,9 @@ const PrivacyPolicy = () => {
               </ul>
             </div>
 
-            {/* Performance Cookies */}
             <div className="mb-4">
               <h4 className="text-base md:text-lg font-semibold text-gray-700 mb-2">
-                3. Performance Cookies:
+                Performance Cookies
               </h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
                 <li>
@@ -1458,10 +1280,9 @@ const PrivacyPolicy = () => {
               </ul>
             </div>
 
-            {/* Marketing Cookies */}
             <div className="mb-4">
               <h4 className="text-base md:text-lg font-semibold text-gray-700 mb-2">
-                4. Marketing Cookies:
+                Marketing Cookies
               </h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm md:text-base leading-relaxed ml-4">
                 <li>
@@ -1474,10 +1295,9 @@ const PrivacyPolicy = () => {
             </div>
           </div>
 
-          {/* Third-Party Cookies and Services */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Third-Party Cookies and Services:
+              Third-Party Cookies and Services
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               We work with trusted third-party partners who may place cookies on our site to support analytics, advertising, and security. These partners include:
@@ -1488,13 +1308,23 @@ const PrivacyPolicy = () => {
                 <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base leading-relaxed ml-6 mt-1">
                   <li>
                     Learn More:{' '}
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#2B1BDD] hover:underline">
+                    <a
+                      href="https://policies.google.com/technologies/partner-sites"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2B1BDD] hover:underline"
+                    >
                       Google's Data Practices
                     </a>
                   </li>
                   <li>
                     Opt-Out:{' '}
-                    <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#2B1BDD] hover:underline">
+                    <a
+                      href="https://tools.google.com/dlpage/gaoptout"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2B1BDD] hover:underline"
+                    >
                       Google Analytics Opt-Out Tool
                     </a>
                   </li>
@@ -1505,13 +1335,23 @@ const PrivacyPolicy = () => {
                 <ul className="list-disc list-inside space-y-1 text-gray-600 text-sm md:text-base leading-relaxed ml-6 mt-1">
                   <li>
                     Opt-Out:{' '}
-                    <a href="https://www.facebook.com/settings?tab=ads" target="_blank" rel="noopener noreferrer" className="text-[#2B1BDD] hover:underline">
+                    <a
+                      href="https://www.facebook.com/settings?tab=ads"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2B1BDD] hover:underline"
+                    >
                       Facebook Ad Preferences
                     </a>
                   </li>
                   <li>
                     Privacy Policy:{' '}
-                    <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer" className="text-[#2B1BDD] hover:underline">
+                    <a
+                      href="https://www.facebook.com/privacy/policy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2B1BDD] hover:underline"
+                    >
                       Facebook Data Policy
                     </a>
                   </li>
@@ -1520,10 +1360,9 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Your Choices and Controls */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Your Choices and Controls:
+              Your Choices and Controls
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               You have several options to control how cookies are used:
@@ -1544,10 +1383,9 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
 
-          {/* Do Not Track (DNT) Signals */}
           <div className="mb-6">
             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-3">
-              Do Not Track (DNT) Signals:
+              Do Not Track (DNT) Signals
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-3 leading-relaxed">
               Some browsers offer a "Do Not Track" (DNT) feature. Currently, Evolo AI does not respond to DNT signals due to the lack of industry-wide standards.
@@ -1565,7 +1403,7 @@ const PrivacyPolicy = () => {
         <div className="text-center mt-20 mb-10">
           <h3 className="text-2xl font-bold text-gray-900">Still have questions?</h3>
 
-          <button 
+          <button
             onClick={handleContactClick}
             className="mt-6 px-6 py-2 rounded-lg border border-[#6C4BFF] text-[#6C4BFF] hover:bg-[#6C4BFF] hover:text-white transition-all"
           >
