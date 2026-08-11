@@ -47,6 +47,7 @@ const Blog14 = lazy(() => import('./components/Blog14'));
 const Blog15 = lazy(() => import('./components/Blog15'));
 const Blog16 = lazy(() => import('./components/Blog16'));
 const Blog17 = lazy(() => import('./components/Blog17'));
+const Blog18 = lazy(() => import('./components/Blog18'));
 const Accessibility = lazy(() => import('./pages/Accessibility'));
 const SecurityPrivacy = lazy(() => import('./pages/SecurityPrivacy'));
 const TermsofService = lazy(() => import('./pages/TermsofService'));
@@ -154,7 +155,10 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/caep-2024" element={<EventTwo />} />
+          <Route path="/resource" element={<Resources />} />
+          <Route path="/resource/" element={<Resources />} />
           <Route path="/blog" element={<Resources />} />
+          <Route path="/blog/" element={<Resources />} />
           <Route path="/overcoming-barriers-how-single-parents-benefit-from-adult-schools/" element={<Blog1 />} />
           <Route path="/adult-school-vs-online-college/" element={<Blog2 />} />
           <Route path="/career-switch-strategies-after-30s/" element={<Blog3 />} />
@@ -172,6 +176,7 @@ function App() {
           <Route path="/top-5-high-income-skills-young-adults-should-learn-for-2025/" element={<Blog15 />} />
           <Route path="/top-10-career-tips-and-advice-for-young-adults-starting-their-journey/" element={<Blog16 />} />
           <Route path="/caep-2024-summit/" element={<Blog17 />} />
+          <Route path="/cybhi-documentation-california-schools/" element={<Blog18 />} />
         </Routes>
           </Suspense>
         {loadDeferredChrome && (

@@ -27,7 +27,7 @@ const NAV_TABS = [
       },
     ],
   },
-  { label: "Resources", path: "/blog" },
+  { label: "Resources", path: "/resource" },
   {
     label: "About us",
     path: null,

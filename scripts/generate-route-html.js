@@ -36,6 +36,7 @@ const routes = [
   '/cookie-policy/',
   '/privacy-policy/',
   '/caep-2024',
+  '/resource',
   '/blog',
   '/overcoming-barriers-how-single-parents-benefit-from-adult-schools/',
   '/adult-school-vs-online-college/',
@@ -168,6 +169,10 @@ const routeSeo = {
     h1: "Let's Connect Over Coffee At The CAEP Summit!",
     intro:
       "We're excited to meet you at the CAEP 2024 Summit in Oakland, California—connect with consortium leaders, school personnel, and vendors.",
+  },
+  '/resource': {
+    h1: 'Explore Our Blog',
+    intro: 'Read articles on adult education, careers, hiring trends, and workforce development from Evolo AI.',
   },
   '/blog': {
     h1: 'Explore Our Blog',
@@ -352,7 +357,7 @@ function withHeadSeo(html, route, canonicalUrl) {
 function getPageSchemaType(route) {
   if (route === '/about-us') return 'AboutPage';
   if (route === '/contact/') return 'ContactPage';
-  if (route === '/blog') return 'Blog';
+  if (route === '/resource' || route === '/blog') return 'Blog';
   return 'WebPage';
 }
 

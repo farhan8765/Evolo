@@ -35,7 +35,7 @@ Sitemap: https://goevolo.com/sitemap.xml
 
 ## Blog And Resources
 
-- [Blog](https://goevolo.com/blog): Adult education, career, hiring, and workforce development resources.
+- [Blog](https://goevolo.com/resource): Adult education, career, hiring, and workforce development resources.
 - [Single Parents And Adult Schools](https://goevolo.com/overcoming-barriers-how-single-parents-benefit-from-adult-schools/)
 - [Adult School vs. Online College](https://goevolo.com/adult-school-vs-online-college/)
 - [Career Change After 30](https://goevolo.com/career-switch-strategies-after-30s/)

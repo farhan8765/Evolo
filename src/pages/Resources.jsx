@@ -1,20 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { applyPageMeta } from '../utils/pageMeta';
 import Aboutstay from "../components/Aboutstay"
 
 export default function Blogs() {
+  const [activeCategory, setActiveCategory] = useState("Adult Education");
+
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       applyPageMeta({
-        title: 'Evolo AI Blog & Insights - Adult Education',
-        description: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles and resources for students and employers.',
-        canonical: 'https://goevolo.com/blog',
-        keywords: 'Evolo AI blog, career insights, AI learning, education tips, career advice, adult education, job market trends, learning resources',
+        title: 'Evolo AI Blog & Insights - Adult Education & CYBHI',
+        description: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles for adult education programs and CYBHI-aligned behavioral health documentation.',
+        canonical: 'https://goevolo.com/resource',
+        keywords: 'Evolo AI blog, career insights, AI learning, education tips, career advice, adult education, CYBHI, behavioral health documentation, job market trends, learning resources',
         ogTags: [
           { property: 'og:title', content: 'Evolo AI Blog & Insights' },
           { property: 'og:description', content: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles and resources for students and employers.' },
-          { property: 'og:url', content: 'https://goevolo.com/blog/' },
+          { property: 'og:url', content: 'https://goevolo.com/resource/' },
           { property: 'og:type', content: 'website' },
           { property: 'og:site_name', content: 'Evolo AI' },
         ],
@@ -22,7 +24,7 @@ export default function Blogs() {
           { name: 'twitter:card', content: 'summary_large_image' },
           { name: 'twitter:title', content: 'Evolo AI Blog & Insights' },
           { name: 'twitter:description', content: 'Explore the Evolo AI Blog for practical insights on AI, careers, and learning, with fresh articles and resources for students and employers.' },
-          { name: 'twitter:url', content: 'https://goevolo.com/blog/' },
+          { name: 'twitter:url', content: 'https://goevolo.com/resource/' },
         ],
       })
     })
@@ -167,8 +169,23 @@ export default function Blogs() {
       title: "Evolo AI Shines at the CAEP 2024 Summit: Empowering Adult Education with Innovative AI Solutions",
       description: "Discover how Evolo AI is revolutionizing adult education with AI solutions, enhancing student outcomes, and fostering success at the CAEP 2024 Summit in Oakland.",
       component: "Blog17"
+    },
+    {
+      id: 18,
+      slug: "cybhi-documentation-california-schools/",
+      image: "/images/101.png",
+      title: "From Incident to Intervention: CYBHI Documentation Guide",
+      description:
+        "A modern guide to school behavioral health documentation for California schools—SOAP/BIRP workflows, coaching-to-counseling continuity, and auditable admin oversight.",
+      component: "Blog18",
+      category: "CYBHI"
     }
   ];
+
+  const filteredPosts =
+    activeCategory === "CYBHI"
+      ? blogPosts.filter((p) => p.category === "CYBHI")
+      : blogPosts.filter((p) => !p.category || p.category === "Adult Education");
 
   return (
     <div className="min-h-screen bg-gray-50 pt-8">
@@ -177,12 +194,38 @@ export default function Blogs() {
       <div className="max-w-7xl mx-auto px-6 py-16 text-center">
        <h1 className="text-4xl md:text-5xl pb-2 font-bold mb-6 bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
 Explore Our Blog</h1>
+
+        {/* Category Switcher */}
+        <div className="flex items-center justify-center gap-3">
+          <button
+            type="button"
+            onClick={() => setActiveCategory("Adult Education")}
+            className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+              activeCategory === "Adult Education"
+                ? "bg-[#2B1BDD] text-white border-[#2B1BDD]"
+                : "bg-white text-gray-800 border-gray-200 hover:border-[#2B1BDD]"
+            }`}
+          >
+            Adult Education
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveCategory("CYBHI")}
+            className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+              activeCategory === "CYBHI"
+                ? "bg-[#2B1BDD] text-white border-[#2B1BDD]"
+                : "bg-white text-gray-800 border-gray-200 hover:border-[#2B1BDD]"
+            }`}
+          >
+            CYBHI
+          </button>
+        </div>
       </div>
 
     {/* Blog Grid */}
 <div className="max-w-7xl mx-auto px-6 pb-16">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-    {blogPosts.map((post) => (
+    {filteredPosts.map((post) => (
       <div key={post.id} className="flex flex-col">
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col h-full">
           

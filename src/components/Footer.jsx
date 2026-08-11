@@ -17,7 +17,7 @@ const quickLinks = [
 ];
 
 const supportLinks = [
-  { label: "Blog", to: "/blog" },
+  { label: "Blog", to: "/resource" },
   { label: "FAQS", to: "/faqs" },
   { label: "Events", to: "/events" },
   { label: "Accessibility", to: "/accessibility" },
