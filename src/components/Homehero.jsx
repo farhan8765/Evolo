@@ -31,7 +31,7 @@ export default function Homehero() {
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8 md:mb-8 px-2">
           <Link
-            to="/mental"
+            to="/cybhi"
             className="bg-[#5A14ED] text-white px-16 sm:px-28 py-3 rounded-lg font-semibold hover:bg-[#4910c9] transition-colors shadow-lg text-sm sm:text-base w-auto text-center"
           >
             K12 
