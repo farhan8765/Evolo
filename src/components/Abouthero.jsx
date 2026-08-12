@@ -8,9 +8,7 @@ const Abouthero = () => {
 
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16">
         <div className="flex-1 text-center lg:text-left">
-          {/* <p className="text-xs uppercase tracking-[0.35em] text-[#182126]">
-            Tagline
-          </p> */}
+        
       <h1 className="mt-4 text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl ">
   <span className="bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent whitespace-nowrap">
   Empowering growth
