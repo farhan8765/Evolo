@@ -10,7 +10,7 @@ const Aboutdriving = () => {
           <span className="md:hidden bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent font-[Raleway]">
             Driving career success and institutional excellence
           </span>
-          
+          {/* data */}
           {/* Desktop only: separate lines */}
           <span className="hidden md:block">
             <span className="block bg-gradient-to-r from-[#000000] to-[#2B1BDD] bg-clip-text text-transparent">
